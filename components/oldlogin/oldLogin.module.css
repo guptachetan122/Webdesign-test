@@ -79,5 +79,10 @@
 	width: 70%;
 }
 
+@media screen and (max-width:992px) {
+	.waitlistContainer{
+		width:100vw;
+	}
+}
 
 
