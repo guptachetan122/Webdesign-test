@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Form, Input } from 'antd'
-import { Typography } from 'antd'
+import { Typography , Space } from 'antd'
 import 'antd/dist/antd.css';
 import styles from './oldLogin.module.css';
 import Link from 'next/link'
@@ -48,26 +48,27 @@ const OldLoginPage = () => {
                                 <Form.Item
                                     className={styles.inputLabel}
                                     label='email'
-                                    name='email'
-                                    rules={[
-                                        {
-                                            required: true,
-                                            message: 'please enter your email',
-                                        },
-                                        () => ({
-                                            validator(_, value) {
-                                                if (!value) {
-                                                    return Promise.reject()
-                                                }
-                                                if (!validateEmail(value.toLowerCase())) {
-                                                    return Promise.reject('please enter a valid email')
-                                                }
-                                                return Promise.resolve()
-                                            },
-                                        }),
-                                    ]}
-                                >
+                                            name='email'
+                                            rules={[
+                                                {
+                                                    required: true,
+                                                    message: 'please enter your email',
+                                                },
+                                                () => ({
+                                                    validator(_, value) {
+                                                        if (!value) {
+                                                            return Promise.reject()
+                                                        }
+                                                        if (!validateEmail(value.toLowerCase())) {
+                                                            return Promise.reject('please enter a valid email')
+                                                        }
+                                                        return Promise.resolve()
+                                                    },
+                                                }),
+                                            ]}>
+                                        
                                     <Input  prefix={<UserOutlined className="site-form-item-icon" />} className={styles.input} placeholder=' gal@gadot.com' />
+                                
                                 </Form.Item>
                                 <Form.Item
                                     className={styles.inputLabel}

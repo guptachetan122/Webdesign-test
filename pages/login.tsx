@@ -13,8 +13,8 @@ const oldLogin = () => {
     <div className={styles.divBackground}>
 
     <Row  className={styles.mainSectionWrapper}>
-        <Col xs={0} sm={0} md={3} lg={3} xl={5} xxl={5}></Col>
-        <Col  xs={24} sm ={24} md={18} lg={18} xl={14} xxl={14} className={styles.collogin}>
+        <Col xs={1} sm={1} md={5} lg={5} xl={6} xxl={6} ></Col>
+        <Col  xs={22} sm ={22} md={14} lg={14} xl={12} xxl={12} >
             <img className={styles.imageWrapper}
 							src='../assets/images/image3.png'
 							alt='leap club logo'
@@ -22,9 +22,7 @@ const oldLogin = () => {
                          {/* <Image src='/image3.png' alt='' layout='fill' /> */}
                          <OldLoginPage />
         </Col>
-        <Col xs={0} sm={0} md={3} lg={3} xl={5} xxl={5} >  
-                
-        </Col>
+        <Col xs={1} sm={1} md={5} lg={5} xl={6} xxl={6} > </Col>
     </Row>
    
     </div>
