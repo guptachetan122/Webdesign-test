@@ -5,7 +5,6 @@
 }
 
 
-
 .imageWrapper{
     width:12rem;
     height: 12rem;
@@ -18,8 +17,23 @@
 }
 
 
-@media screen and ( max-width: 80rem) {
+@media screen and ( max-width: 992px) {
     .mainSectionWrapper{
         padding : 12rem 2rem;
     }
 }
+
+
+@media screen and ( max-height: 860px) {
+    .mainSectionWrapper{
+        height: 880px;
+    }
+}
+
+
+
+/* @media screen and ( max-height: 860px) {
+    .mainSectionWrapper{
+       padding-bottom: 50rem;
+    }
+} */

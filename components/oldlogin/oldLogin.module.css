@@ -81,10 +81,5 @@
 	width: 60%;
 }
 
-@media screen and (max-width:992px) {
-	.waitlistContainer{
-		padding: 2rem 2rem;
-	}
-}
 
 

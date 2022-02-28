@@ -10,7 +10,7 @@ const { Title } = Typography;
 const oldLogin = () => {
 
    return (
-       < >
+    <div className={styles.divBackground}>
 
     <Row  className={styles.mainSectionWrapper}>
         <Col xs={0} sm={0} md={3} lg={3} xl={5} xxl={5}></Col>
@@ -27,8 +27,7 @@ const oldLogin = () => {
         </Col>
     </Row>
    
- 
-    </>
+    </div>
    )
 }
 
