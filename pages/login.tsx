@@ -7,14 +7,14 @@ import styles from '../styles/OldLogin.module.css'
 
 const { Title } = Typography;
 
-const Login = () => {
+const oldLogin = () => {
 
    return (
        < >
 
     <Row  className={styles.mainSectionWrapper}>
-        <Col xs={0} sm={0} md={0} lg={7}></Col>
-        <Col  xs={24} sm ={24} md={24} lg={10}>
+        <Col xs={0} sm={0} md={3} lg={3} xl={5} xxl={5}></Col>
+        <Col  xs={24} sm ={24} md={18} lg={18} xl={14} xxl={14} className={styles.collogin}>
             <img className={styles.imageWrapper}
 							src='../assets/images/image3.png'
 							alt='leap club logo'
@@ -22,7 +22,7 @@ const Login = () => {
                          {/* <Image src='/image3.png' alt='' layout='fill' /> */}
                          <OldLoginPage />
         </Col>
-        <Col xs={0} sm={0} md={0} lg={7} className={styles.collogin} >  
+        <Col xs={0} sm={0} md={3} lg={3} xl={5} xxl={5} >  
                 
         </Col>
     </Row>
@@ -32,4 +32,4 @@ const Login = () => {
    )
 }
 
-export default Login
+export default oldLogin
