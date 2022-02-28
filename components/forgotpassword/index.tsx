@@ -81,8 +81,8 @@ const ForgotPass = () => {
                                 
                             </Form>
                             <div className={styles.forgotPassWrapper}>
-                            <Link href="/forgotpassword" >
-                                <a>forgot password ?</a>
+                            <Link href="/login" >
+                                <a>Sign in?</a>
                             </Link>
                             </div>
                             {/* {isError && (
