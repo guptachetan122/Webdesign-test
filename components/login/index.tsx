@@ -5,7 +5,6 @@ import 'antd/dist/antd.css';
 import styles from './LoginPage.module.css';
 import Link from 'next/link'
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import Image from 'next/Image'
 import useForm , {useAppDispatch} from '../../app/hooks'
 import { setCredentials } from './LoginSlice';
 
