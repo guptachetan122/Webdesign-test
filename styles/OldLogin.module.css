@@ -30,14 +30,14 @@
 
 /* 1.4 */
 @media screen and ( min-width : 1920px) {
-    /* .mainSectionWrapper{
+    .mainSectionWrapper{
         padding : 15rem 15rem;
-    } */
+    }
 }
 
 /* 1.6 */
 @media screen and ( min-width : 2500px) {
-    /* .mainSectionWrapper{
+    .mainSectionWrapper{
         padding : 20rem 20rem;
-    } */
+    }
 }
