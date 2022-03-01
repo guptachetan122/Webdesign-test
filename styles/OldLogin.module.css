@@ -1,7 +1,8 @@
 .mainSectionWrapper {
-    min-height: 100vh;
-    overflow: auto;
+    height: 100vh;
+    padding: 7.3rem 7.3rem;
     background-color: #FFF1F0;
+    overflow: auto;
     
 }
 
@@ -16,22 +17,13 @@
 }
 
 @media screen and ( max-height:1024px) {
-    .imageWrapper{
-        margin-top: 1rem;
-    }
-}
-
-@media screen and ( max-height:1024px) {
-        .imageWrapper{
-            margin-top: 5rem;
-        }
+    
 }
 
 @media screen and ( min-height:1025px) {
     .imageWrapper{
-        margin-top: 6rem;
-        width:20rem;
-        height:20rem;
+        width:14rem;
+        height:14rem;
     }
 }
 
@@ -45,7 +37,7 @@
 
 /* 1.6 */
 @media screen and ( min-width : 2500px) {
-    .mainSectionWrapper{
+    /* .mainSectionWrapper{
         padding : 20rem 20rem;
-    }
+    } */
 }
