@@ -80,8 +80,8 @@
 }
 
 .bottomText {
-	font-size: 1.2rem;
-	line-height: 1.5rem;
+	font-size: 1rem;
+	line-height: 1.2rem;
 	width: 80%;
 }
 
@@ -144,6 +144,7 @@
 	}
 	.bottomText{
 		font-size: 1.4em;
+		line-height: 1.4em;
 	}
 	.forgotPassWrapper{
 		font-size:1.4em;
