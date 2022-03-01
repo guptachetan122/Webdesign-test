@@ -9,6 +9,7 @@ const { Title } = Typography;
 
 const oldLogin = () => {
 
+    console.log("logg");
    return (
     <div className={styles.divBackground}>
 
