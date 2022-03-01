@@ -12,7 +12,8 @@
 .inputLabel {
 	font-weight: 600;
 	margin-top: 1rem;
-	
+	margin-left: 6rem;
+	margin-right:6rem;
 }
 
 .inputLabel label {
@@ -85,7 +86,7 @@
 
 .TextWrapper{
 	margin-top : 4rem;
-
+	margin-left: 6rem;
 }
 
 .Text{
