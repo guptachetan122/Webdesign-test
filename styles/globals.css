@@ -21,11 +21,10 @@ a {
 * {
   box-sizing: border-box;
 }
-
 Input[type="text"]{
-  font-size:2.4rem;
+  font-size:2rem;
 }
 
 input[type="password"]{
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
