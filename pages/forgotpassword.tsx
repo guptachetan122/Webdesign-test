@@ -2,33 +2,31 @@
 import React from 'react'
 import { Typography , Col, Row  } from 'antd'
 import 'antd/dist/antd.css';
-import ForgotPass from '../components/forgotpassword';
 import styles from '../styles/ForgotPassword.module.css'
+import ForgotPass from '../components/forgotpassword';
 
 const { Title } = Typography;
 
 const ForgotPassword = () => {
 
+    console.log("logg");
    return (
-       < >
+    <div>
 
     <Row  className={styles.mainSectionWrapper}>
-        <Col  xs={24} sm ={24} md={24} lg={12} className={styles.colimg}>
+        <Col xs={0} sm={0} md={5} lg={5} xl={6} xxl={6} ></Col>
+        <Col  xs={24} sm ={24} md={14} lg={14} xl={12} xxl={12} >
             <img className={styles.imageWrapper}
 							src='../assets/images/image3.png'
 							alt='leap club logo'
 						></img>
                          {/* <Image src='/image3.png' alt='' layout='fill' /> */}
-            <Title level={3} className={styles.contentWrapper} >yeh kadam nahi chalang hai</Title>
-            <Title level={3} className={styles.contentWrapper1}>  ये कदम नहीं, छलांग है </Title>
+                        <ForgotPass/>
         </Col>
-        <Col xs={24} sm={24} md={24} lg={12} className={styles.collogin} >  
-                <ForgotPass /> 
-        </Col>
+        <Col xs={0} sm={0} md={5} lg={5} xl={6} xxl={6} > </Col>
     </Row>
    
- 
-    </>
+    </div>
    )
 }
 

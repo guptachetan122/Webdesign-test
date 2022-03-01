@@ -6,20 +6,15 @@ import styles from './Login.module.css';
 import Link from 'next/link'
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import useForm , {useAppDispatch} from '../../app/hooks'
-import { setCredentials } from './LoginSlice';
+
 
 const { Text } = Typography
 
-const LoginPage = () => {
+const ChangePass = () => {
     const [form] = Form.useForm();
     const [loading, setLoading] = useState(false)
     const dispatch = useAppDispatch();
-    const validateEmail = (email: string) => {
-		const regex =
-			/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-		return regex.test(email)
-	}
-
+  
 	
 	const onFinishFailed = (errorInfo: any) => {
 		console.log('Failed:', errorInfo)
@@ -33,7 +28,6 @@ const LoginPage = () => {
      
             
             console.log(user);
-            dispatch(setCredentials(user))
             
 	}
 
@@ -50,27 +44,11 @@ const LoginPage = () => {
                             >
                                 <Form.Item
                                     className={styles.inputLabel}
-                                    label='email'
-                                    name='email'
-                                    rules={[
-                                        {
-                                            required: true,
-                                            message: 'please enter your email',
-                                        },
-                                        () => ({
-                                            validator(_, value) {
-                                                if (!value) {
-                                                    return Promise.reject()
-                                                }
-                                                if (!validateEmail(value.toLowerCase())) {
-                                                    return Promise.reject('please enter a valid email')
-                                                }
-                                                return Promise.resolve()
-                                            },
-                                        }),
-                                    ]}
+                                    label="password"
+                                    name="password"
+                                    rules={[{ required: true, message: 'Please input your password!' }]}
                                 >
-                                    <Input  prefix={<UserOutlined className="site-form-item-icon" />} className={styles.input} placeholder=' gal@gadot.com' />
+                                    <Input.Password className={styles.input} placeholder='enter your password' />
                                 </Form.Item>
                                 <Form.Item
                                     className={styles.inputLabel}
@@ -116,4 +94,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default ChangePass

@@ -91,7 +91,7 @@ const OldLoginPage = () => {
                                 
                             </Form>
                             <div className={styles.forgotPassWrapper}>
-                            <Link href="#" >
+                            <Link href="/forgotpassword" >
                                 <a>forgot password ?</a>
                             </Link>
                             </div>
