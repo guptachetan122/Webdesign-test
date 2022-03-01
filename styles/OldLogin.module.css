@@ -19,8 +19,11 @@
     margin-bottom: 0rem;
 }
 
-@media screen and ( max-height:1024px) {
-    
+@media screen and ( max-width:570px) {
+   .mainSectionWrapper{
+    padding-left: 0rem;
+    padding-right: 0rem;
+   } 
 }
 
 @media screen and ( min-height:1025px) {
@@ -36,6 +39,10 @@
     .mainSectionWrapper{
         padding : 10rem 10rem;
     }
+    .imageWrapper{
+        width:18rem;
+        height:18rem;
+    }
 }
 
 /* 1.6 */
@@ -43,4 +50,8 @@
     .mainSectionWrapper{
         padding : 15rem 15rem;
     }
+    /* .imageWrapper{
+        width:25rem;
+        height:25rem;
+    } */
 }

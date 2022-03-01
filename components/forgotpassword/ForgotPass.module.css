@@ -65,7 +65,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1.6rem;
 	margin-top: 1.6rem;
 	/* font-size: 1.2rem; */
 }
@@ -111,35 +111,13 @@
 /* 1.2 */
 @media screen and ( min-width : 1024px) {
     .inputLabel label {
-		font-size:1.2em;
-	}
-	
-	.input {
-		font-size: 1.2em;
-		
-		/* padding: 1.2em 1.2em */
-	}
-	#buttonPrimary{
-		font-size: 1.2em;
-		line-height: 1.2em;
-	}
-	.bottomText{
-		font-size: 1.2em;
-		line-height: 1.2em;
-	}
-	.forgotPassWrapper{
-		font-size:1.2em;
-	}
-}
-
-/* 1.3 */
-@media screen and ( min-width : 1366px) {
-    .inputLabel label {
 		font-size:1.3em;
 	}
 	
 	.input {
 		font-size: 1.3em;
+		
+		/* padding: 1.2em 1.2em */
 	}
 	#buttonPrimary{
 		font-size: 1.3em;
@@ -147,50 +125,72 @@
 	}
 	.bottomText{
 		font-size: 1.3em;
+		line-height: 1.3em;
 	}
 	.forgotPassWrapper{
 		font-size:1.3em;
 	}
 }
 
-/* 1.4 */
-@media screen and ( min-width : 1920px) {
+/* 1.3 */
+@media screen and ( min-width : 1366px) {
     .inputLabel label {
-		font-size:1.4em;
+		font-size:1.5em;
 	}
 	
 	.input {
-		font-size: 1.4em;
+		font-size: 1.5em;
 	}
 	#buttonPrimary{
-		font-size: 1.4em;
+		font-size: 1.5em;
+		line-height: 1.5em;
 	}
 	.bottomText{
-		font-size: 1.4em;
+		font-size: 1.5em;
 	}
 	.forgotPassWrapper{
-		font-size:1.4em;
+		font-size:1.5em;
+	}
+}
+
+/* 1.4 */
+@media screen and ( min-width : 1920px) {
+    .inputLabel label {
+		font-size:1.8em;
+	}
+	
+	.input {
+		font-size: 1.8em;
+	}
+	#buttonPrimary{
+		font-size: 1.8em;
+	}
+	.bottomText{
+		font-size: 1.8em;
+	}
+	.forgotPassWrapper{
+		font-size:1.8em;
 	}
 }
 
 /* 1.6 */
 @media screen and ( min-width : 2500px) {
     .inputLabel label {
-		font-size:1.6em;
+		font-size:2em;
 	}
 	
 	.input {
-		font-size: 1.6em;
+		font-size: 2em;
 	}
 	#buttonPrimary{
-		font-size: 1.6em;
-		line-height: 1.6em;
+		font-size: 2em;
+		line-height: 2em;
 	}
 	.bottomText{
-		font-size: 1.6em;
+		font-size: 2em;
 	}
 	.forgotPassWrapper{
-		font-size:1.6em;
+		font-size:2em;
 	}
 
 }
