@@ -2,7 +2,6 @@
     min-height: 100vh;
     overflow: auto;
     background-color: #FFF1F0; 
-    
 }
 
 .imageWrapper{
@@ -12,24 +11,35 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 13rem;
+    margin-top: 15rem;
     margin-bottom: 0rem;
 }
 
-.collogin{
-    background-color: red;
-}
-
-@media screen and ( max-height: 900px) {
+@media screen and ( max-height:1024px) {
         .imageWrapper{
-            margin-top: 3rem;
+            margin-top: 6rem;
         }
 }
 
-
-
-/* @media screen and ( max-height: 860px) {
-    .mainSectionWrapper{
-       padding-bottom: 50rem;
+@media screen and ( min-height:1024px) {
+    .imageWrapper{
+        margin-top: 4rem;
+        width:20rem;
+        height:20rem;
     }
-} */
+}
+
+
+/* 1.4 */
+@media screen and ( min-width : 1920px) {
+    /* .mainSectionWrapper{
+        padding : 15rem 15rem;
+    } */
+}
+
+/* 1.6 */
+@media screen and ( min-width : 2500px) {
+    .mainSectionWrapper{
+        padding : 20rem 20rem;
+    }
+}
