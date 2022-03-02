@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { Typography , Col, Row  } from 'antd'
-import ChangePassword from '../components/ChangePassword';
+import ChangePass from '../components/ChangePassword';
 import styles from '../styles/ChangePasswordPage.module.css'
 
 const { Title } = Typography;
@@ -20,7 +20,7 @@ const ChangePasswordPage = () => {
 							alt='leap club logo'
 						></img>
                          {/* <Image src='/image3.png' alt='' layout='fill' /> */}
-                         <ChangePassword />
+                         <ChangePass />
         </Col>
         <Col xs={0} sm={0} md={5} lg={6} xl={7} xxl={7} > </Col>
     </Row>

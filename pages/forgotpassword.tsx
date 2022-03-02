@@ -2,7 +2,7 @@
 import React from 'react'
 import { Typography , Col, Row  } from 'antd'
 import styles from '../styles/ForgotPasswordPage.module.css'
-import ForgotPassword from '../components/ForgotPassword';
+import ForgotPass from '../components/ForgotPassword';
 
 const { Title } = Typography;
 
@@ -20,7 +20,7 @@ const ForgotPasswordPage = () => {
 							alt='leap club logo'
 						></img>
                          {/* <Image src='/image3.png' alt='' layout='fill' /> */}
-                        <ForgotPassword/>
+                        <ForgotPass/>
         </Col>
         <Col xs={0} sm={0} md={4} lg={6} xl={6} xxl={6} > </Col>
     </Row>

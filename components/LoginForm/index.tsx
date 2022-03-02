@@ -10,7 +10,7 @@ import { setCredentials } from './LoginSlice';
 
 const { Text } = Typography
 
-const LoginPage = () => {
+const LoginForm = () => {
     const [form] = Form.useForm();
     const [loading, setLoading] = useState(false)
     const dispatch = useAppDispatch();
@@ -116,4 +116,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default LoginForm
