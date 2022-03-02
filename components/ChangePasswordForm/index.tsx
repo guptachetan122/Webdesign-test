@@ -3,7 +3,7 @@ import { Button, Form, Input } from 'antd'
 import { Typography } from 'antd'
 import styles from './ChangePassword.module.css';
 import Link from 'next/link'
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import {LockOutlined  } from '@ant-design/icons';
 import useForm , {useAppDispatch} from '../../app/hooks'
 
 
@@ -47,7 +47,7 @@ const ChangePasswordForm = () => {
                                     name="password"
                                     rules={[{ required: true, message: 'please input your old password!' }]}
                                 >
-                                    <Input className={styles.input} placeholder='enter your password' />
+                                    <Input prefix={<LockOutlined className="site-form-item-icon" />} className={styles.input} placeholder=' enter your password' />
                                 </Form.Item>
                                 <Form.Item
                                     className={styles.inputLabel}
@@ -55,7 +55,7 @@ const ChangePasswordForm = () => {
                                     name="password1"
                                     rules={[{ required: true, message: 'please input your new password!' }]}
                                 >
-                                    <Input.Password className={styles.input} placeholder='enter your password' />
+                                    <Input.Password prefix={<LockOutlined className="site-form-item-icon" />} className={styles.input} placeholder=' enter your password' />
                                 </Form.Item>
                                 <Form.Item
                                     className={styles.inputLabel}
@@ -63,7 +63,7 @@ const ChangePasswordForm = () => {
                                     name="password2"
                                     rules={[{ required: true, message: 'please input your new password again!' }]}
                                 >
-                                    <Input.Password className={styles.input} placeholder='enter your password' />
+                                    <Input.Password prefix={<LockOutlined className="site-form-item-icon" />} className={styles.input} placeholder=' enter your password' />
                                 </Form.Item>
                                 <Form.Item className={styles.buttonWrapper}>
                                     <Button

@@ -20,7 +20,16 @@ const LoginForm = () => {
 		return regex.test(email)
 	}
 
+    function LeapWebsite() {
+        window.open(
+            "https://leap.club", "_blank");
+    }
 	
+    function EmailSupport() {
+        window.open(
+          "mailto:members@leap.club", "_blank");
+    }
+
 	const onFinishFailed = (errorInfo: any) => {
 		console.log('Failed:', errorInfo)
 	}
@@ -80,6 +89,11 @@ const LoginForm = () => {
                                 >
                                     <Input.Password prefix={<LockOutlined className="site-form-item-icon" />} className={styles.input} placeholder=' enter your password'  />
                                 </Form.Item>
+                                <div className={styles.forgotPassWrapper}>
+                                    <Link href="/forgotpassword" >
+                                        <a className={styles.linkstyle}>forgot password ?</a>
+                                    </Link>
+                                 </div>
                                 <Form.Item className={styles.buttonWrapper}>
                                     <Button
                                         type='primary'
@@ -92,15 +106,20 @@ const LoginForm = () => {
                                 </Form.Item>
                                 
                             </Form>
-                            <div className={styles.forgotPassWrapper}>
-                            <Link href="/forgotpassword" >
-                                <a className={styles.linkstyle}>forgot password ?</a>
-                            </Link>
-                            </div>
+                            <Text className={styles.linkstyle3}>
+                                      not a member?<a onClick={LeapWebsite} target="_blank">join the waitlist </a>
+                            </Text>
                            
                             <div className={styles.bottomTextWrapper}>
                                 <Text className={styles.bottomText}>
-                                    by logging in you agree to our community guidelines & terms of use, you do do not agree, please write to us on members@leap.club
+                                    by logging in you agree to our 
+                                    <Text onClick={LeapWebsite}  className={styles.linkstyle2}>
+                                        <a  target="_blank" > community guidelines & terms of use</a>
+                                    </Text>
+                                    , you do do not agree, please write to us on  
+                                    <Text onClick={EmailSupport}  className={styles.linkstyle2}>
+                                        <a target="_blank"  > members@leap.club</a>
+                                    </Text>
                                 </Text>
                             </div>
                             {/* {isError && (

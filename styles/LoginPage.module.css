@@ -24,15 +24,12 @@
     padding-left: 0rem;
     padding-right: 0rem;
    } 
-}
 
-@media screen and ( min-height:1025px) {
-    .imageWrapper{
-        width:14rem;
-        height:14rem;
-    }
+   .imageWrapper{
+       width: 10rem;
+       height: 10rem;
+   }
 }
-
 
 /* 1.4 */
 @media screen and ( min-width : 1920px) {
@@ -40,18 +37,14 @@
         padding : 10rem 10rem;
     }
     .imageWrapper{
-        width:18rem;
-        height:18rem;
+        width:14rem;
+        height:14rem;
     }
 }
 
 /* 1.6 */
 @media screen and ( min-width : 2500px) {
     .mainSectionWrapper{
-        padding : 15rem 15rem;
+        padding : 12rem 12rem;
     }
-    /* .imageWrapper{
-        width:25rem;
-        height:25rem;
-    } */
 }
