@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
-import loginReducer from '../components/login/LoginSlice'
+import loginReducer from '../components/Login/LoginSlice'
 
 export function makeStore() {
 	return configureStore({

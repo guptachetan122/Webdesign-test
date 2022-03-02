@@ -1,13 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { Typography , Col, Row  } from 'antd'
-import 'antd/dist/antd.css';
-import OldLoginPage from '../components/oldlogin';
-import styles from '../styles/OldLogin.module.css'
+import Login from '../components/Login';
+import styles from '../styles/LoginPage.module.css'
 
 const { Title } = Typography;
 
-const oldLogin = () => {
+const LoginPage = () => {
 
     console.log("logg");
    return (
@@ -21,7 +20,7 @@ const oldLogin = () => {
 							alt='leap club logo'
 						></img>
                          {/* <Image src='/image3.png' alt='' layout='fill' /> */}
-                         <OldLoginPage />
+                         <Login />
         </Col>
         <Col xs={0} sm={0} md={5} lg={6} xl={7} xxl={7} > </Col>
     </Row>
@@ -29,4 +28,4 @@ const oldLogin = () => {
    )
 }
 
-export default oldLogin
+export default LoginPage

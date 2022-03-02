@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Form, Input } from 'antd'
 import { Typography } from 'antd'
-import 'antd/dist/antd.css';
-import styles from './ChangePass.module.css';
+import styles from './ChangePassword.module.css';
 import Link from 'next/link'
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import useForm , {useAppDispatch} from '../../app/hooks'
@@ -10,7 +9,7 @@ import useForm , {useAppDispatch} from '../../app/hooks'
 
 const { Text } = Typography
 
-const ChangePass = () => {
+const ChangePassword = () => {
     const [form] = Form.useForm();
     const [loading, setLoading] = useState(false)
     const dispatch = useAppDispatch();
@@ -92,4 +91,4 @@ const ChangePass = () => {
   )
 }
 
-export default ChangePass
+export default ChangePassword

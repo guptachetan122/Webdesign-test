@@ -1,13 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { Typography , Col, Row  } from 'antd'
-import 'antd/dist/antd.css';
-import styles from '../styles/ForgotPassword.module.css'
-import ForgotPass from '../components/forgotpassword';
+import styles from '../styles/ForgotPasswordPage.module.css'
+import ForgotPassword from '../components/ForgotPassword';
 
 const { Title } = Typography;
 
-const ForgotPassword = () => {
+const ForgotPasswordPage = () => {
 
     console.log("logg");
    return (
@@ -21,7 +20,7 @@ const ForgotPassword = () => {
 							alt='leap club logo'
 						></img>
                          {/* <Image src='/image3.png' alt='' layout='fill' /> */}
-                        <ForgotPass/>
+                        <ForgotPassword/>
         </Col>
         <Col xs={0} sm={0} md={4} lg={6} xl={6} xxl={6} > </Col>
     </Row>
@@ -30,4 +29,4 @@ const ForgotPassword = () => {
    )
 }
 
-export default ForgotPassword
+export default ForgotPasswordPage

@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
 import { Button, Form, Input } from 'antd'
 import { Typography , Space } from 'antd'
-import 'antd/dist/antd.css';
-import styles from './ForgotPass.module.css';
+import styles from './ForgotPassword.module.css';
 import Link from 'next/link'
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import useForm , {useAppDispatch} from '../../app/hooks';
 
 const { Text } = Typography
 
-const OldLoginPage = () => {
+const ForgotPassword = () => {
     const [form] = Form.useForm();
     const [loading, setLoading] = useState(false)
     const dispatch = useAppDispatch();
@@ -87,7 +86,7 @@ const OldLoginPage = () => {
                             </Form>
                             <div className={styles.forgotPassWrapper}>
                             <Link href="/login" >
-                                <a>sign in ?</a>
+                                <a className={styles.linkstyle}>sign in ?</a>
                             </Link>
                             </div>
                            
@@ -107,4 +106,4 @@ const OldLoginPage = () => {
   )
 }
 
-export default OldLoginPage
+export default ForgotPassword
