@@ -116,7 +116,7 @@ const LoginForm = () => {
                                     <Text onClick={LeapWebsite}  className={styles.linkstyle2}>
                                         <a  target="_blank" > community guidelines & terms of use</a>
                                     </Text>
-                                    , you do do not agree, please write to us on  
+                                    , if you do do not agree, please write to us on  
                                     <Text onClick={EmailSupport}  className={styles.linkstyle2}>
                                         <a target="_blank"  > members@leap.club</a>
                                     </Text>
