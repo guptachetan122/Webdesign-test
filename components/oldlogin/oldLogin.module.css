@@ -126,21 +126,21 @@
 /* 1.4 */
 @media screen and ( min-width : 1920px) {
     .inputLabel label {
-		font-size:1.8em;
+		font-size:1.6em;
 	}
 	
 	.input {
-		font-size: 1.8em;
+		font-size: 1.6em;
 	}
 	#buttonPrimary{
-		font-size: 1.8em;
+		font-size: 1.6em;
 	}
 	
 	.forgotPassWrapper{
-		font-size:1.8em;
+		font-size:1.6em;
 	}
 	.bottomText {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 
 	}
 }
@@ -163,7 +163,7 @@
 	}
 
 	.bottomText{
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 
 }

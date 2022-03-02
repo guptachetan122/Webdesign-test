@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button, Form, Input } from 'antd'
 import { Typography } from 'antd'
 import 'antd/dist/antd.css';
-import styles from './Login.module.css';
+import styles from './ChangePass.module.css';
 import Link from 'next/link'
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import useForm , {useAppDispatch} from '../../app/hooks'
@@ -44,17 +44,25 @@ const ChangePass = () => {
                             >
                                 <Form.Item
                                     className={styles.inputLabel}
-                                    label="password"
+                                    label="enter old password"
                                     name="password"
-                                    rules={[{ required: true, message: 'Please input your password!' }]}
+                                    rules={[{ required: true, message: 'Please input your old password!' }]}
+                                >
+                                    <Input className={styles.input} placeholder='enter your password' />
+                                </Form.Item>
+                                <Form.Item
+                                    className={styles.inputLabel}
+                                    label="enter new password"
+                                    name="password1"
+                                    rules={[{ required: true, message: 'Please input your new password!' }]}
                                 >
                                     <Input.Password className={styles.input} placeholder='enter your password' />
                                 </Form.Item>
                                 <Form.Item
                                     className={styles.inputLabel}
-                                    label="password"
-                                    name="password"
-                                    rules={[{ required: true, message: 'Please input your password!' }]}
+                                    label="retype new password"
+                                    name="password2"
+                                    rules={[{ required: true, message: 'Please input your new password again!' }]}
                                 >
                                     <Input.Password className={styles.input} placeholder='enter your password' />
                                 </Form.Item>
@@ -65,22 +73,12 @@ const ChangePass = () => {
                                         id={styles.buttonPrimary}
                                         loading={loading}
                                     >
-                                        login
+                                        update password
                                     </Button>
                                 </Form.Item>
                                 
                             </Form>
-                            <div className={styles.forgotPassWrapper}>
-                            <Link href="/forgotpassword" >
-                                <a>forgot password ?</a>
-                            </Link>
-                            </div>
                            
-                            <div className={styles.bottomTextWrapper}>
-                                <Text className={styles.bottomText}>
-                                    by logging in you agree to our community guidelines & terms of use, you do do not agree, please write to us on members@leap.club
-                                </Text>
-                            </div>
                             {/* {isError && (
                                 <div className={styles.errorWrapper}>
                                     <span
