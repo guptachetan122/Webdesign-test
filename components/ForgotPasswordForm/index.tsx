@@ -8,7 +8,7 @@ import useForm , {useAppDispatch} from '../../app/hooks';
 
 const { Text } = Typography
 
-const ForgotPassword = () => {
+const ForgotPasswordForm = () => {
     const [form] = Form.useForm();
     const [loading, setLoading] = useState(false)
     const dispatch = useAppDispatch();
@@ -106,4 +106,4 @@ const ForgotPassword = () => {
   )
 }
 
-export default ForgotPassword
+export default ForgotPasswordForm

@@ -2,7 +2,7 @@
 import React from 'react'
 import { Typography , Col, Row  } from 'antd'
 import styles from '../styles/ForgotPasswordPage.module.css'
-import ForgotPass from '../components/ForgotPassword';
+import ForgotPass from '../components/ForgotPasswordForm';
 
 const { Title } = Typography;
 

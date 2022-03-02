@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { Typography , Col, Row  } from 'antd'
-import ChangePass from '../components/ChangePassword';
+import ChangePass from '../components/ChangePasswordForm';
 import styles from '../styles/ChangePasswordPage.module.css'
 
 const { Title } = Typography;
