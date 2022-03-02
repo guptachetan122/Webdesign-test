@@ -3,6 +3,7 @@ import React from 'react'
 import { Typography , Col, Row  } from 'antd'
 import Login from '../components/LoginForm';
 import styles from '../styles/LoginPage.module.css'
+import Link from 'next/link';
 
 const { Title } = Typography;
 

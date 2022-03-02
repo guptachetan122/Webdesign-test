@@ -21,9 +21,9 @@ export const LoginSlice = createSlice({
         ) => {
             state.email = email,
             state.password = password
-        }
-    }
-})
+        },
+    },
+});
 
 
 export const { setCredentials } = LoginSlice.actions;
