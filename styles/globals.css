@@ -42,6 +42,9 @@ input[type="password"]{
 }
 
 @media screen and (min-width :1920px){ 
+  :root{
+    font-size:70%
+  }
   Input[type="text"]{
     font-size:2rem;
   }

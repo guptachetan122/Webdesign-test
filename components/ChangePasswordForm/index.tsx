@@ -45,7 +45,7 @@ const ChangePasswordForm = () => {
                                     className={styles.inputLabel}
                                     label="enter old password"
                                     name="password"
-                                    rules={[{ required: true, message: 'Please input your old password!' }]}
+                                    rules={[{ required: true, message: 'please input your old password!' }]}
                                 >
                                     <Input className={styles.input} placeholder='enter your password' />
                                 </Form.Item>
@@ -53,7 +53,7 @@ const ChangePasswordForm = () => {
                                     className={styles.inputLabel}
                                     label="enter new password"
                                     name="password1"
-                                    rules={[{ required: true, message: 'Please input your new password!' }]}
+                                    rules={[{ required: true, message: 'please input your new password!' }]}
                                 >
                                     <Input.Password className={styles.input} placeholder='enter your password' />
                                 </Form.Item>
@@ -61,7 +61,7 @@ const ChangePasswordForm = () => {
                                     className={styles.inputLabel}
                                     label="retype new password"
                                     name="password2"
-                                    rules={[{ required: true, message: 'Please input your new password again!' }]}
+                                    rules={[{ required: true, message: 'please input your new password again!' }]}
                                 >
                                     <Input.Password className={styles.input} placeholder='enter your password' />
                                 </Form.Item>

@@ -3,7 +3,7 @@ import { Button, Form, Input } from 'antd'
 import { Typography , Space } from 'antd'
 import styles from './Login.module.css';
 import Link from 'next/link'
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import { UserOutlined, LockOutlined , EyeOutlined, EyeInvisibleOutlined} from '@ant-design/icons';
 import useForm , {useAppDispatch} from '../../app/hooks';
 import { setCredentials } from './LoginSlice';
 
@@ -76,9 +76,9 @@ const LoginForm = () => {
                                     className={styles.inputLabel}
                                     label="password"
                                     name="password"
-                                    rules={[{ required: true, message: 'Please input your password!' }]}
+                                    rules={[{ required: true, message: 'please input your password!' }]}
                                 >
-                                    <Input.Password className={styles.input} placeholder='enter your password' />
+                                    <Input.Password prefix={<LockOutlined className="site-form-item-icon" />} className={styles.input} placeholder=' enter your password'  />
                                 </Form.Item>
                                 <Form.Item className={styles.buttonWrapper}>
                                     <Button
