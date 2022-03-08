@@ -1,0 +1,89 @@
+.listWrapper {
+  position: fixed;
+  width: 100%;
+  padding: 0rem 5rem;
+  height: 6rem;
+  background-color: white;
+  /* background-color: yellow; */
+}
+
+.listWrapper2 {
+  position: fixed;
+  width: 100%;
+  padding: 0rem 2rem;
+  height: 6rem;
+  background-color: white;
+  /* background-color: yellow; */
+}
+
+.listItem {
+  width: 100%;
+  height: 6rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.listItem:hover {
+  border-bottom-color: red;
+  background-color: white;
+  /* background-color: red; */
+}
+
+.listItem3 {
+  width: 100%;
+  height: 6rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-bottom: 4px solid #ff4500;
+}
+
+.listItem3:hover {
+  border-bottom-color: #ff4500;
+  background-color: white;
+}
+
+.imageWrapper {
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media screen and (min-width:1200px) {
+  .listWrapper {
+  padding: 0rem 20rem;
+}
+
+.listWrapper2 {
+  padding: 0rem 15rem;
+}
+  
+}
+
+@media screen and (min-width:1920px) {
+  .listWrapper {
+  position: fixed;
+  width: 100%;
+  padding: 0rem 40rem;
+  height: 6rem;
+  background-color: white;
+  /* background-color: yellow; */
+}
+
+.listWrapper2 {
+  position: fixed;
+  width: 100%;
+  padding: 0rem 30rem;
+  height: 6rem;
+  background-color: white;
+  /* background-color: yellow; */
+}
+  
+}

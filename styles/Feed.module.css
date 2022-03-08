@@ -1,0 +1,19 @@
+.Body {
+  min-height: 100vh;
+  overflow: auto;
+  padding-top: 8rem;
+  background-color: #E5E5E5;
+}
+
+.Header {
+  padding-top: 8rem;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.sidebarPos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

@@ -1,0 +1,32 @@
+.headerDiv {
+	min-height: 6rem;
+	background-color: #F6F6F6;
+	color: white;
+	padding: 1rem 6.375rem 1rem 7.3rem;
+	
+}
+
+.imageWrapper {
+	width: 66px;
+	height:66px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1rem;
+}
+
+.iconCol{
+	display: flex;
+	justify-content: right;
+	align-items: right;
+}
+
+.iconWrapper{
+	margin-left: 2rem;
+}
+
+.iconSize{
+	width :3rem;
+	height:4rem;
+}

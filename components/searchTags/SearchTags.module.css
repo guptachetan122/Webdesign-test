@@ -1,0 +1,35 @@
+.searchTagsBody{
+    width: 100%;
+    height: fit-content;
+}
+
+.searchTagsButton{
+    /* background: linear-gradient(90deg, #606C88 0%, #274046 100%); */
+    border: 1px solid #616161;
+    /* color : #FAFAFA; */
+    color: #313131;
+    padding: 0rem 2rem;
+    height: 40px;
+    width: fit-content;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.searchTagsButton2{
+    background: linear-gradient(90deg, #606C88 0%, #274046 100%);
+    border: 1px solid #616161;
+    color : #FAFAFA;
+    /* color: #313131; */
+    padding: 0rem 2rem;
+    height: 40px;
+    width: fit-content;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.searchTagsLink{
+    color :#0500FF;
+    text-decoration: underline;
+}

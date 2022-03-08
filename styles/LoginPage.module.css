@@ -1,50 +1,49 @@
 .mainSectionWrapper {
-    height: 100vh;
-    padding-top: 4rem;
-    padding-bottom : 4rem;
-    padding-left: 7.3rem;
-    padding-right: 7.3rem;
-    background-color: #FFF1F0;
-    overflow: auto;
-    
+  height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 7.3rem;
+  padding-right: 7.3rem;
+  background-color: #fff1f0;
+  overflow: auto;
 }
 
-.imageWrapper{
-    width:12rem;
-    height: 12rem;
-    border-radius:1rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0rem;
+.imageWrapper {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0rem;
 }
 
-@media screen and ( max-width:570px) {
-   .mainSectionWrapper{
+@media screen and (max-width: 570px) {
+  .mainSectionWrapper {
     padding-left: 0rem;
     padding-right: 0rem;
-   } 
+  }
 
-   .imageWrapper{
-       width: 10rem;
-       height: 10rem;
-   }
+  .imageWrapper {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 /* 1.4 */
-@media screen and ( min-width : 1920px) {
-    .mainSectionWrapper{
-        padding : 10rem 10rem;
-    }
-    .imageWrapper{
-        width:14rem;
-        height:14rem;
-    }
+@media screen and (min-width: 1920px) {
+  .mainSectionWrapper {
+    padding: 10rem 10rem;
+  }
+  .imageWrapper {
+    width: 14rem;
+    height: 14rem;
+  }
 }
 
 /* 1.6 */
-@media screen and ( min-width : 2500px) {
-    .mainSectionWrapper{
-        padding : 12rem 12rem;
-    }
+@media screen and (min-width: 2500px) {
+  .mainSectionWrapper {
+    padding: 12rem 12rem;
+  }
 }
