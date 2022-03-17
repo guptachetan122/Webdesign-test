@@ -8,6 +8,7 @@ import Sidebar from "../../components/Sidebar";
 import MemberRecommendations from "../../components/MemberRecommendation";
 import { SearchOutlined } from "@ant-design/icons";
 import Link from "next/link";
+import Head from "next/head";
 
 const Recommendations = () => {
 
@@ -17,6 +18,12 @@ const Recommendations = () => {
 
   return (
     <>
+      <Head>
+        <meta
+          property="og:image"
+          content="https://leap.club/careers-page-final-thumbnail.jpg"
+        />
+      </Head>
       <div className={styles.Header}>
         {" "}
         <Subheader SubheaderData={superconnectionNavbar} />{" "}
