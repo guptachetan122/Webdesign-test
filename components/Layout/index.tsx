@@ -12,10 +12,11 @@ interface LayoutProps {
 const LayoutPage = ({ children }: LayoutProps) => {
   return (
     <>
-      <div className={styles.layoutWrapper}>
-        <Header />
-      </div>
-      <div> {children} </div>
+        <div className={styles.layoutWrapper}>
+          {" "}
+          <Header />
+        </div>
+        <div> {children} </div>
     </>
   );
 };

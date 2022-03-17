@@ -1,3 +1,20 @@
+export const backNavbar = [
+  {
+    id: 1,
+    name: "back",
+    link: "/clubhouse",
+  },
+];
+
+export const expbackNavbar = [
+  {
+    id: 1,
+    name: "back",
+    link: "/experiences",
+  },
+];
+
+
 export const feedNavbar = [
   {
     id: 1,
@@ -34,7 +51,7 @@ export const clubhouseNavbar = [
   },
   {
     id: 3,
-    name: "other clubhouses",
+    name: "join a clubhouse",
     link: "/clubhouse/otherclubhouses",
   },
   {
@@ -65,31 +82,54 @@ export const coachingNavbar = [
 export const superconnectionNavbar = [
   {
     id: 1,
-    name: "chats",
+    name: "recommendations",
     link: "/superconnections",
   },
   {
     id: 2,
-    name: "my sc",
-    link: "/superconnections/mysc",
+    name: "my network",
+    link: "/superconnections/mynetwork",
   },
   {
     id: 3,
-    name: "message requests",
-    link: "/superconnections/messagereq",
+    name: "messages",
+    link: "/superconnections/messages",
   },
 ];
 
 export const mySuperconnectionNavbar = [
   {
     id: 1,
-    name: "received",
-    link: "superconnections/mysc/received",
+    name: `back`,
+    link: "/superconnections",
   },
   {
     id: 2,
     name: "sent",
-    link: "superconnections/mysc/sent",
+    link: "/superconnections/mynetwork",
+  },
+  {
+    id: 3,
+    name: "received",
+    link: "/superconnections/mynetwork/received",
+  },
+];
+
+export const messageNavbar = [
+  {
+    id: 1,
+    name: `back`,
+    link: "/superconnections",
+  },
+  {
+    id: 2,
+    name: "chats",
+    link: "/superconnections/messages",
+  },
+  {
+    id: 3,
+    name: "message requests",
+    link: "/superconnections/messages/messagereq",
   },
 ];
 
@@ -114,40 +154,40 @@ export const experiencesNavbar = [
 export const sidebarItems = [
   {
     id: 1,
-    img: "/assets/images/feed-inactive.png",
-    img2: "/assets/images/feed-active.png",
+    img: "<FeedInactive />",
+    img2: "<FeedActive />",
     name: "feed",
     link: "/feed",
     pathname: "feed",
   },
   {
     id: 2,
-    img: "/assets/images/ch-inactive.png",
-    img2: "/assets/images/ch-active.png",
+    img: "<ChInactive />",
+    img2: "<ChActive />",
     name: "clubhouse",
     link: "/clubhouse",
     pathname: "clubhouse",
   },
   {
     id: 3,
-    img: "/assets/images/sc-inactive.png",
-    img2: "/assets/images/sc-active.png",
+    img: "<ScInactive />",
+    img2: `{<ScActive />`,
     name: "superconnections",
     link: "/superconnections",
     pathname: "superconnections",
   },
   {
     id: 4,
-    img: "/assets/images/experiences-inactive.png",
-    img2: "/assets/images/experiences-active.png",
+    img: "<ExperienceInactive />",
+    img2: "<ExperienceActive />",
     name: "experiences",
     link: "/experiences",
     pathname: "experiences",
   },
   {
     id: 5,
-    img: "/assets/images/learn-inactive.png",
-    img2: "/assets/images/learn-active.png",
+    img: "<learnInactive />",
+    img2: "<learnActive />",
     name: "learn",
     link: "/learn",
     pathname: "learn",
@@ -158,7 +198,7 @@ export const tagsData = [
   {
     id: 1,
     name: "all",
-    checked: false,
+    checked: true,
   },
   {
     id: 2,

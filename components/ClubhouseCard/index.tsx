@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./ClubhouseCard.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import ButtonComponent from "../ButtonComponent";
 const { Text } = Typography;
 
 const ClubhouseCard = ({ isJoined = false }) => {
@@ -11,28 +12,39 @@ const ClubhouseCard = ({ isJoined = false }) => {
   function onPress() {
     SetisClicked(!isClicked);
   }
-
+  /* 
+    Have Used antd Grid system 
+    - divided the card in four row 
+    - isJoined is the boolean variable used to change the button component and 
+  */
   return (
     <>
-      <div className={styles.container}>
-        <Row className={styles.Row}>
+      <div className={styles.ChCardcontainer}>
+        <Row className={styles.ChCardrow}>
           <Col xs={20} md={20} lg={20} xl={20} xxl={20}>
             <Link href="/clubhouse/id" passHref>
               <a>
-                <Text className={styles.ChTopContent}>
+                <Text className={styles.ChCardTopContent}>
                   simplifying personal finance for women
                 </Text>
               </a>
             </Link>
           </Col>
-          <Col xs={4} md={4} lg={4} xl={4} xxl={4} className={styles.col3}>
+          <Col
+            xs={4}
+            md={4}
+            lg={4}
+            xl={4}
+            xxl={4}
+            className={styles.ChCardcol2}
+          >
             <Image
               src={
                 isClicked
                   ? "/assets/images/heartFilled.png"
                   : "/assets/images/heartNotFilled.png"
               }
-              alt="profile picture"
+              alt="isJoined picture"
               width={28}
               height={28}
               onClick={onPress}
@@ -41,19 +53,17 @@ const ClubhouseCard = ({ isJoined = false }) => {
         </Row>
         <Link href="/clubhouse/id" passHref>
           <a>
-            <Row className={styles.Row}>
+            <Row className={styles.ChCardrow}>
               <Image
                 src="/assets/images/ch-inactive.png"
-                alt="profile picture"
+                alt="ch-inactive icon"
                 width={35}
                 height={20}
               />
-              <Text style={{ marginLeft: "3rem", marginRight: "3rem" }}>
-                121
-              </Text>
+              <Text className={styles.ChCardText}>121</Text>
               {isJoined ? null : (
-                <Badge className={styles.ChBadge}>
-                  <Text style={{ color: "#FAFAFA" }}>public</Text>
+                <Badge className={styles.ChCardBadge}>
+                  <Text className={styles.ChCardBadgeText}>public</Text>
                 </Badge>
               )}
             </Row>
@@ -61,8 +71,8 @@ const ClubhouseCard = ({ isJoined = false }) => {
         </Link>
         <Link href="/clubhouse/id" passHref>
           <a>
-            <Row className={styles.Row}>
-              <Text>
+            <Row className={styles.ChCardrow}>
+              <Text className={styles.ChCardDescription}>
                 women playing sports, bindass, lorem Ipsum is simply dummy text
                 of the printing and typesetting industry. Lorem Ipsum has been
                 the industry&apos;s standard du,dummy text of the printing and
@@ -71,30 +81,36 @@ const ClubhouseCard = ({ isJoined = false }) => {
             </Row>
           </a>
         </Link>
-        <Row className={styles.Row}>
+        <Row className={styles.ChCardrow}>
           <Col xs={6} md={6} lg={5} xl={4} xxl={3}>
             {" "}
             <Avatar
-              className={styles.Avatar}
+              className={styles.ChCardAvatar}
               src={"/assets/images/Ragini.png"}
             />
           </Col>
-          <Col xs={8} md={8} lg={9} xl={10} xxl={11} className={styles.col}>
+          <Col
+            xs={8}
+            md={8}
+            lg={9}
+            xl={10}
+            xxl={11}
+            className={styles.ChCardcol}
+          >
             <Text>ragini das</Text>
             {/* {!isFounder ? (
             <Text className={styles.Chtext2}>is a Founder</Text>
           ) : null} */}
           </Col>
-          <Col xs={10} md={10} lg={10} xl={10} xxl={10} className={styles.col2}>
-            {isJoined ? (
-              <Link href="/clubhouse/id/chat" passHref>
-                  <button className={styles.button}>
-                    <span style={{ fontWeight: "700" }}>100</span>new messages
-                  </button>
-              </Link>
-            ) : (
-              <button className={styles.button2}>join clubhouse</button>
-            )}
+          <Col
+            xs={10}
+            md={10}
+            lg={10}
+            xl={10}
+            xxl={10}
+            className={styles.ChCardcol2}
+          >
+            <ButtonComponent pageName="clubhouse" isJoined/>
           </Col>
         </Row>
       </div>

@@ -1,6 +1,6 @@
 .searchTagsBody{
     width: 100%;
-    height: fit-content;
+    
 }
 
 .searchTagsButton{
@@ -8,10 +8,11 @@
     border: 1px solid #616161;
     /* color : #FAFAFA; */
     color: #313131;
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
     height: 40px;
     width: fit-content;
-    margin-right: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     margin-bottom: 1rem;
     border-radius: 5px;
 }
@@ -24,9 +25,15 @@
     padding: 0rem 2rem;
     height: 40px;
     width: fit-content;
-    margin-right: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-bottom: 1rem;
     border-radius: 5px;
+}
+
+.searchTagsLinkWrapper{
+    display: flex;
+    justify-content: center;
 }
 
 .searchTagsLink{

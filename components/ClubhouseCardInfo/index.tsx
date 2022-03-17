@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./ClubhouseCardInfo.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import ButtonComponent from "../ButtonComponent";
 const { Text } = Typography;
 
 const ClubhouseCardInfo = ({ isJoined = true }) => {
@@ -10,6 +11,7 @@ const ClubhouseCardInfo = ({ isJoined = true }) => {
   const [viewAll, SetviewAll] = useState(false);
   const [isFounder, SetisFounder] = useState(false);
   const n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
   function onPress() {
     SetisClicked(!isClicked);
   }
@@ -34,7 +36,7 @@ const ClubhouseCardInfo = ({ isJoined = true }) => {
             )}
           </Col>
         </Row>
-        <Row className={styles.Row}>
+        <Row className={styles.row}>
           <Text>
             women playing sports, bindass, lorem Ipsum is simply dummy text of
             the printing and typesetting industry. Lorem Ipsum has been the
@@ -43,19 +45,11 @@ const ClubhouseCardInfo = ({ isJoined = true }) => {
           </Text>
         </Row>
       </div>
-      <div className={styles.container2}>
-        {isJoined ? (
-          <>
-            <Link href="/clubhouse/id/chat" passHref>
-              <button className={styles.button}>view messages</button>
-            </Link>
-            <button className={styles.button}>mute clubhouse</button>
-            <button className={styles.button}>exit clubhouse</button>
-          </>
-        ) : (
-          <button className={styles.button2}>join clubhouse</button>
-        )}
+
+      <div className={styles.container3}>
+        <ButtonComponent pageName="clubhouseinfo" isJoined/>
       </div>
+
       <div className={styles.container2}>
         <Image
           src="/assets/images/ch-inactive.png"

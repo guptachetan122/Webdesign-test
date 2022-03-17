@@ -24,6 +24,14 @@ const LoginForm = () => {
     return regex.test(email);
   };
 
+  function TermsOfUSe() {
+    window.open("https://leap.club/terms_of_use", "_blank");
+  }
+
+  function Policy() {
+    window.open("https://leap.club/privacy_policy", "_blank");
+  }
+
   function LeapWebsite() {
     window.open("https://leap.club", "_blank");
   }
@@ -122,8 +130,12 @@ const LoginForm = () => {
       <div className={styles.bottomTextWrapper}>
         <Text className={styles.bottomText}>
           by logging in you agree to our
-          <Text onClick={LeapWebsite} className={styles.linkstyle2}>
-            <a target="_blank"> community guidelines & terms of use</a>
+          <Text onClick={Policy} className={styles.linkstyle2}>
+            <a target="_blank">community guidelines</a>
+          </Text>
+          {" & "}
+          <Text onClick={TermsOfUSe} className={styles.linkstyle2}>
+            <a target="_blank">terms of use</a>
           </Text>
           , if you do do not agree, please write to us on
           <Text onClick={EmailSupport} className={styles.linkstyle2}>

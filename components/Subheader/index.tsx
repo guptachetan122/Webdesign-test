@@ -3,37 +3,58 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import styles from "./Subheader.module.css";
-import HeadRoom from "react-headroom";
+import Image from "next/image";
 
 interface SubheaderProps {
-  data: {
+  SubheaderData: {
     id: number;
     name: string;
     link: string;
   }[];
 }
 
-const Sidebar = ({ data }: SubheaderProps) => {
+const Subheader = ({ SubheaderData}: SubheaderProps) => {
   const Router = useRouter();
-
+  const msg = 5;
   return (
     <>
       <List
-        className={data.length > 3 ? styles.listWrapper2 : styles.listWrapper}
-        dataSource={data}
-        grid={{ column: data.length }}
+        className={
+          SubheaderData.length > 3
+            ? styles.SubheaderWrapper2
+            : styles.SubheaderWrapper
+        }
+        dataSource={SubheaderData}
+        grid={SubheaderData.length < 3 ? { gutter:8 , column: 3 } : {gutter:8 , column: SubheaderData.length }}
         renderItem={(item) => (
           <List.Item key={item.id}>
             <Button
               type="text"
               className={
                 Router.pathname == item.link
-                  ? styles.listItem3
-                  : styles.listItem
+                  ? styles.SubheaderListItemActive
+                  : styles.SubheaderListItem
               }
             >
               <Link href={item.link}>
-                <a>{item.name}</a>
+                {item.name == "back" ? (
+                  <a>
+                    <Image
+                      src="/assets/images/back-arrow-2.png"
+                      alt="back-arrow"
+                      width={12}
+                      height={12}
+                    />{" "}
+                    {item.name}
+                  </a>
+                ) : item.name == "messages" ||
+                  item.name == "message requests" ? (
+                  <a>
+                    {item.name} ({msg})
+                  </a>
+                ) : (
+                  <a>{item.name}</a>
+                )}
               </Link>
             </Button>
           </List.Item>
@@ -43,4 +64,6 @@ const Sidebar = ({ data }: SubheaderProps) => {
   );
 };
 
-export default Sidebar;
+export default Subheader;
+
+

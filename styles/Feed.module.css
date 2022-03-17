@@ -1,14 +1,13 @@
 .Body {
-  min-height: 100vh;
+  min-height: 200vh;
   overflow: auto;
-  padding-top: 8rem;
+  padding-top: 6rem;
   background-color: #E5E5E5;
 }
 
 .Header {
-  padding-top: 8rem;
+  padding-top: 6rem;
   width: 100%;
-  position: relative;
   z-index: 2;
 }
 
@@ -16,4 +15,10 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  border-right: 1px solid black;
+  padding-top: 2rem;
+}
+
+.middleCol{
+  padding-top: 3rem;
 }

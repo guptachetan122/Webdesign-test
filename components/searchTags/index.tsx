@@ -7,43 +7,38 @@ const SearchTags = () => {
 
   const handleViewAll = () => {
     setViewAll(!viewAll);
-    };
-    
-    const array = tagsData;
-    const handlecheck = (tag: any) => {
-        
-    }
+  };
+
+  const handlecheck = (tag: any) => { };
+  
   return (
     <>
-          {viewAll ? (
-              <>
-                  <div className={styles.searchTagsBody}>
-                      {tagsData.map((tag) => {
-                          return (
-                              <>
-                                  <button
-                                      className={
-                                          tag.checked
-                                              ? styles.searchTagsButton2
-                                              : styles.searchTagsButton
-                                      }
-                                      key={tag.id}
-                                      onClick={() => handlecheck(tag)}
-                                  >
-                                      {tag.name}
-                                  </button>
-                              </>
-                          );
-                      })}
-                     </div> 
-                          <div className={styles.searchTagsLink}>
-                      <a
-                          className={styles.searchTagsLink}
-                          onClick={handleViewAll}
-                      >
-                          view less
-                      </a>
-                      </div>
+      {viewAll ? (
+        <>
+          <div className={styles.searchTagsBody}>
+            {tagsData.map((tag) => {
+              return (
+                <>
+                  <button
+                    className={
+                      tag.checked
+                        ? styles.searchTagsButton2
+                        : styles.searchTagsButton
+                    }
+                    key={tag.id}
+                    onClick={() => handlecheck(tag)}
+                  >
+                    {tag.name}
+                  </button>
+                </>
+              );
+            })}
+          </div>
+          <div className={styles.searchTagsLinkWrapper}>
+            <a className={styles.searchTagsLink} onClick={handleViewAll}>
+             ^ close
+            </a>
+          </div>
         </>
       ) : (
         <>
@@ -56,7 +51,7 @@ const SearchTags = () => {
                       ? styles.searchTagsButton2
                       : styles.searchTagsButton
                   }
-                  key={tag.name}
+                  key={tag.id}
                 >
                   {tag.name}
                 </button>

@@ -1,7 +1,7 @@
 import { Col, Row } from 'antd';
 import React from 'react'
 import Sidebar from '../../components/Sidebar';
-import Subheader from "../../components/Subheader";
+import Subheader from "../../components/Subheader2";
 import { coachingNavbar } from "../../constants/constants";
 import styles from "../../styles/Feed.module.css";
 
@@ -11,22 +11,21 @@ const courses = () => {
     <>
       <div className={styles.Header}>
         {" "}
-        <Subheader data={coachingNavbar} />{" "}
+        <Subheader SubheaderData={coachingNavbar} />{" "}
       </div>
       <Row className={styles.Body}>
-        <Col
-          md={5}
-          lg={7}
-          style={{
-            paddingTop: "3rem",
-          }}
-          className={styles.sidebarPos}
-        >
+        <Col span={6} className={styles.sidebarPos}>
           {" "}
-          <Sidebar data={"learn"} />{" "}
+          <Sidebar pageName={"learn"} />{" "}
         </Col>
-        <Col md={14} lg={10} style={{ backgroundColor: "aqua" }}></Col>
-        <Col md={5} lg={7}></Col>
+        <Col span={12} className={styles.middleCol}>
+          <Row>
+            <Col span={2}></Col>
+            <Col span={20}></Col>
+            <Col span={2}></Col>
+          </Row>
+        </Col>
+        <Col span={6}></Col>
       </Row>
     </>
   );

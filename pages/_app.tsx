@@ -12,11 +12,15 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <Provider store={store}>
-      {Router.pathname == `/login` ?
-      <Component {...pageProps} /> :
-      <Layout>
+      {Router.pathname == `/login` ||
+      Router.pathname == `/changepassword` ||
+      Router.pathname == `/forgotpassword` ? (
         <Component {...pageProps} />
-      </Layout> }
+      ) : (
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      )}
     </Provider>
   ); 
 }

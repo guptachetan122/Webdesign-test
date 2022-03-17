@@ -1,22 +1,10 @@
-import { Row, Col, Button, Badge, Typography } from "antd";
-import { BellOutlined, MenuOutlined, MessageOutlined } from "@ant-design/icons";
+import { Row, Col, Badge, Typography , Avatar } from "antd";
+import { BellOutlined, MessageOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import styles from "./Header.module.css";
 import Link from "next/link";
 import { useAppDispatch } from "../../app/hooks";
-import { Avatar } from "antd";
-import { Menu } from "antd";
-import {
-  feedNavbar,
-  superconnectionNavbar,
-  mySuperconnectionNavbar,
-  coachingNavbar,
-  experiencesNavbar,
-  clubhouseNavbar,
-} from "../../constants/constants";
-import { List, Card } from "antd";
 import { useRouter } from "next/router";
-import { useState } from "react";
 
 const { Text } = Typography;
 
@@ -26,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-      <Row className={styles.headerDiv} justify="space-between" align="middle">
+      <Row className={styles.headerDiv}>
         <Col span={8}>
           <Avatar
             src={
@@ -47,7 +35,7 @@ const Header = () => {
 
         <Col span={8}>
           <Link href="/" passHref>
-            <div className={styles.imageWrapper}>
+            <div className={styles.headerImageWrapper}>
               <Image
                 src="/assets/images/image3.png"
                 alt="leap club logo"
@@ -58,51 +46,21 @@ const Header = () => {
             </div>
           </Link>
         </Col>
-        <Col className={styles.iconCol} span={8}>
-          <Badge count={100} className={styles.iconWrapper}>
+        <Col className={styles.headerIconCol} span={8}>
+          <Badge count={10} className={styles.headerIconWrapper}>
             <Avatar
-              src={<MessageOutlined />}
+              src="/assets/images/bell.svg"
               style={{ color: "black", fontSize: "30px" }}
             />
           </Badge>
-          <Badge count={10} className={styles.iconWrapper}>
+          <Badge count={100} className={styles.headerIconWrapper}>
             <Avatar
-              src={<BellOutlined />}
+              src="/assets/images/message-circle.svg"
               style={{ color: "black", fontSize: "30px" }}
             />
           </Badge>
         </Col>
       </Row>
-
-      {/* {data.map((item) => ( 
-				<List key={item.id} className={styles.listWrapper}
-				grid={{ column: data.length }}>
-					<List.Item key={item.id} className={styles.listItem}>
-								<Button type="text">
-									<Link href={item.link}>
-										<a>{item.name}</a>    
-									</Link>    
-								</Button>
-					</List.Item>
-				</List>
-			))
-			}
-				 */}
-
-      {/* /* 
-			<List className={styles.listWrapper}
-			dataSource={data}
-			grid={{ column: data.length }}
-				{data.map((item , ind)=> (
-						<List.Item key={item.id} className={styles.listItem}>
-							<Button type="text">
-								<Link href={item.link}>
-									<a>{item.name}</a>    
-								</Link>    
-							</Button>
-						</List.Item>
-				)}
-			/> */}
     </>
   );
 };

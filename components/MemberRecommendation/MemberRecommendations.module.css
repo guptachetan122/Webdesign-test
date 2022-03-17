@@ -1,0 +1,25 @@
+.MemberRecommendationsContainer{
+margin-bottom: 12px;
+  border-width: 1px;
+  padding: 12px 8px;
+  border-radius: 8px;
+  border-color: black;
+}
+
+.MemberRecommendationsCard{
+    border-radius: 20px;
+}
+
+.MemberRecommendationsTitle{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.MemberRecommendationsSubTitle{
+    font-size : 18px;
+    font-weight: 400;
+}
+
+.MemberRecommendationsIcon{
+   font-size :30px;
+}

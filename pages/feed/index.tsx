@@ -2,7 +2,7 @@ import { Card, Col, Row, Typography } from "antd";
 import React, { useState } from "react";
 import ExperienceCard from "../../components/ExperienceCard";
 import Sidebar from "../../components/Sidebar";
-import Subheader from "../../components/Subheader";
+import Subheader from "../../components/Subheader2";
 import { feedNavbar } from "../../constants/constants";
 import styles from "../../styles/Feed.module.css";
 import { useFetchPostsQuery } from "../../components/Posts/PostsApi";
@@ -19,37 +19,36 @@ const PublicFeed = () => {
   return (
     <>
       <div className={styles.Header}>
-        <Subheader data={feedNavbar} />
+        <Subheader SubheaderData={feedNavbar} />
       </div>
       <Row className={styles.Body}>
-        <Col
-          md={5}
-          lg={7}
-          style={{
-            paddingTop: "3rem",
-          }}
-          className={styles.sidebarPos}
-        >
-          <Sidebar data={"feed"} />
+        <Col span={6} className={styles.sidebarPos}>
+          <Sidebar pageName={"feed"} />
         </Col>
 
-        <Col md={14} lg={10}>
-          <h1>HELLO</h1>
-          {data && Stay
-            ? data.map((val) => {
-                console.log(val.id);
-                console.log(val.email);
-                return (
-                  <Card key={val.id}>
-                    <Text>I was HERE</Text>
-                    <Text>{val.name}</Text>
-                  </Card>
-                );
-              })
-            : console.log("logg")}
+        <Col span={12} className={styles.middleCol}>
+          <Row>
+            <Col span={2}></Col>
+            <Col span={20}>
+              <h1>FEED UI</h1>
+              {data && Stay
+                ? data.map((val) => {
+                    console.log(val.id);
+                    console.log(val.email);
+                    return (
+                      <Card key={val.id}>
+                        <Text>My name is {" "}</Text>
+                        <Text>{val.name}</Text>
+                      </Card>
+                    );
+                  })
+                : console.log("logg")}
+            </Col>
+            <Col span={2}></Col>
+          </Row>
         </Col>
 
-        <Col md={5} lg={7}>
+        <Col span={6}>
           <button onClick={handle}>Click</button>
         </Col>
       </Row>

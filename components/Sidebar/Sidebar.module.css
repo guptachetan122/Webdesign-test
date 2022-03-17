@@ -1,31 +1,27 @@
-.cardStyle{
+.SidebarCardStyle{
     position: fixed;
-    width :300px;
+    width :fit-content;
     border-radius : 20px;
-    background-color: #ffffff;
+    background: none;
 }
 
-.list{
+.SidebarList{
     list-style: none;
     padding : 0 1rem;
-    
-}
-
-.list div {
     margin-right : 1rem;
-    font-size: 1.5rem;
+    font-size: 20px;
 }
 
-
-.listItem{
+.SidebarListItem{
     display: flex;
     flex-direction: row;
     margin-bottom: 2rem;
     cursor: pointer;
+    color: #616161;
     /* background-color: red; */
 }
 
-.listItem3{
+.SidebarListItemActive{
     display: flex;
     flex-direction: row;
     margin-bottom: 2rem;
@@ -33,75 +29,34 @@
     font-weight: bolder;
 }
 
-.button2{
-    background: linear-gradient(90deg, #232526 0%, #414345 100%);
-    color : #FFFFFF;
-    cursor: pointer;
-    font-weight: 700;
-    font-size : 15px;
-    width: 180px;
-    height: 44px;
-    border-radius: 200px;
-    margin-top: 1rem;
-}
-
-.button3{
-    background: #FFFFFF;
-    color : #232526;
-    cursor: pointer;
-    font-weight: 700;
-    font-size : 15px;
-    width: 180px;
-    height: 44px;
-    border-radius: 200px;
-    margin-top: 1rem;
-}
-
-.button4{
-    background: #ffffff;
-    color : #232526;
-    cursor: pointer;
-    font-weight: 400;
-    font-size : 14px;
-    width: 180px;
-    line-height: 21px;
-    margin-top: 1rem;
-    border: 0px;
-}
-
-.button5{
-    background: linear-gradient(90deg, #232526 0%, #414345 100%);
-    color : #FFFFFF;
-    cursor: pointer;
-    font-weight: 700;
-    font-size : 16px;
-    width: 180px;
-    height: 50px;
-    border-radius: 200px;
-    margin-top: 1rem;
-}
-
-.modal{
-    height: fit-content;
-    background: #FAFAFA;
-    border-radius: 10px;
-}
-
-.modalButton{
+.SidebarButtonWrapper{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.modalTitle{
-    font-family:sans-serif;
-    font-size: 24px;
-    line-height: 25px;
-    font-weight: 800;
-    margin-bottom: 3rem;
+
+.SidebarButton{
+    background: #FAFAFA;
+    cursor: pointer;
+    font-weight: 700;
+    font-size : 15px;
+    width: 180px;
+    height: 44px;
+    border-radius: 200px;
+    margin-top: 1rem;
 }
 
-.modal p{
-    font-family:sans-serif;
-    font-size: 24px;
-    line-height: 25px;
+
+.SidebarIcon{
+    width : 25px;
+    height : 25px;
+    margin: 0rem 2rem;
+    color : #616161;
+}
+
+.SidebarIconActive{
+    width : 25px;
+    height : 25px;
+    margin: 0rem 2rem;
 }

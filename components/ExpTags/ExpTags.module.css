@@ -1,0 +1,31 @@
+.buttonBody {
+  background: none;
+  border: 1px solid #616161;
+  color: #616161;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0.5rem 1rem;
+  padding: 0rem 1rem;
+  font-size: 16px;
+}
+
+.buttonBodyActive {
+  background: none;
+  color: #313131;
+  border: 2px solid #313131;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0.5rem 1rem;
+  padding: 0rem 1rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+.buttonsWrapper {
+  margin: 1rem 0rem;
+}
+
+@media screen and (min-width: 3000px) {
+  .buttonBody , .buttonBodyActive{
+    font-size: 2rem;
+  }
+}
