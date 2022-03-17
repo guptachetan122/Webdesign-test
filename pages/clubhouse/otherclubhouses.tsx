@@ -7,7 +7,7 @@ import Subheader from "../../components/Subheader2";
 import { clubhouseNavbar } from "../../constants/constants";
 import styles from "../../styles/ClubHouse.module.css";
 import { Tag } from "antd";
-import SearchTags from '../../components/SearchTags';
+import SearchTags from "../../components/SearchTags";
 const { CheckableTag } = Tag;
 
 const Otherclubhouses = () => {
