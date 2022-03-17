@@ -7,7 +7,7 @@ import Subheader from "../../components/Subheader2";
 import { clubhouseNavbar } from "../../constants/constants";
 import styles from "../../styles/ClubHouse.module.css";
 import { Tag } from "antd";
-import SearchTags from "../../components/SearchTags";
+import SearchTagComponent from '../../components/SearchTagComponent';
 const { CheckableTag } = Tag;
 
 const Otherclubhouses = () => {
@@ -27,7 +27,7 @@ const Otherclubhouses = () => {
           <Row>
             <Col span={2}></Col>
             <Col span={20}>
-              <SearchTags />
+              <SearchTagComponent />
               <Input
                 className={styles.ChInput}
                 prefix={<SearchOutlined className={styles.iconSize} />}
