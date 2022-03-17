@@ -107,3 +107,15 @@
   height: 14px;
   margin-right: 0.5rem;
 }
+
+@media screen and (min-width:2500px) {
+  .LabelButton {
+  font-size: 1.6rem;
+}
+
+
+.LabelButtonIcon {
+  width: 16px;
+  height: 16px;
+}
+}

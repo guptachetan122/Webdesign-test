@@ -6,7 +6,7 @@ import { LocationMarkerIcon , CurrencyDollarIcon } from '@heroicons/react/outlin
 import styles from './ButtonComponent.module.css'
 import { DollarCircleOutlined } from '@ant-design/icons';
 
-const Button = ({isJoined = false ,isConnect = false , title = '' , pageName = ''}) => {
+const Button = ({isJoined = false ,isConnect = false , title = '' , pageName = '' , pay = false , online = false}) => {
   return (
     <>
       {pageName == "clubhouseinfo" ? (
@@ -60,16 +60,25 @@ const Button = ({isJoined = false ,isConnect = false , title = '' , pageName = '
       ) : pageName == "label" ? (
         <>
           <div className={styles.LabelButtonWrapper}>
-            <button className={styles.LabelButton}>
-              {" "}
-              <LocationMarkerIcon className={styles.LabelButtonIcon} />
-              offline
-            </button>
-            <button className={styles.LabelButton}>
-              {" "}
-              <DollarCircleOutlined className={styles.LabelButtonIcon} />
-              paid
-            </button>
+            {online ? (
+              <button className={styles.LabelButton}>
+                {" "}
+                <LocationMarkerIcon className={styles.LabelButtonIcon} />
+                online
+              </button>
+            ) : (
+              <button className={styles.LabelButton}>
+                {" "}
+                <LocationMarkerIcon className={styles.LabelButtonIcon} />
+                offline
+              </button>
+            )}
+            {pay ? (
+              <button className={styles.LabelButton}>
+                {" "}
+                <DollarCircleOutlined className={styles.LabelButtonIcon} /> paid
+              </button>
+            ) : null}
           </div>
         </>
       ) : pageName == "experienceinfo" ? (

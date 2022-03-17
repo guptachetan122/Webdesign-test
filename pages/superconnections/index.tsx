@@ -37,9 +37,9 @@ const Recommendations = () => {
                 placeholder={`  search member's`}
               />
               <Row>
-                <Link href="/superconnections/messagereq" passHref>
+                <Link href="/superconnections/messages/messagereq" passHref>
                   <button className={styles.ScButton}>
-                    10 message requests
+                    5 message requests
                   </button>
                 </Link>
                 <Link href="/superconnections/mynetwork" passHref>

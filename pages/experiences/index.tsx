@@ -31,14 +31,15 @@ const Upcoming = () => {
             <Col span={2}></Col>
           </Row>
           <Row>
-            <Col span={4}></Col>
-            <Col span={14}>
+            <Col span={6}></Col>
+            <Col span={12}>
               <div style={{}}>
                 <ExperienceCard viewMore />
                 <ExperienceCard viewMore />
                 <ExperienceCard viewMore />
               </div>
             </Col>
+            <Col span={6}></Col>
           </Row>
         </Col>
         <Col span={6}></Col>

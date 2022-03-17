@@ -30,7 +30,7 @@ const Subheader2 = ({ SubheaderData }: SubheaderProps) => {
                 : styles.SubheaderListItem
             }
           >
-            <Link href={item.link}>
+            <Link href={item?.link} passHref>
               {item.name == "back" ? (
                 <a>
                   <Image
@@ -45,7 +45,8 @@ const Subheader2 = ({ SubheaderData }: SubheaderProps) => {
                 <a>
                   {item.name} ({msg})
                 </a>
-              ) : (
+              ) : item.name ==
+                "thisisjusttosetbackonleftsideofthepage" ? null : (
                 <a>{item.name}</a>
               )}
             </Link>
