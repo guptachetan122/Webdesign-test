@@ -6,6 +6,8 @@ import { feedNavbar } from "../../constants/constants";
 import styles from '../../styles/Feed.module.css'
 
 const MentionsFeed = () => {
+
+  console.log("logg");
   return (
     <>
       <div className={styles.Header}>
