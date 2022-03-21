@@ -2,8 +2,6 @@ import { Col, Row } from "antd";
 import React from "react";
 import Member from "../../../components/Member";
 import Sidebar from "../../../components/Sidebar";
-import Subheader from "../../../components/Subheader2";
-import { myNetworkNavbar } from "../../../constants/constants";
 import styles from "../../../styles/superconnections.module.css";
 
 const RecievedSc = () => {
