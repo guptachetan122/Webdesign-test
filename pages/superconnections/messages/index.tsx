@@ -1,13 +1,10 @@
 // this page is recommendations.tsx
 import React from "react";
-import { messageNavbar } from "../../../constants/constants";
 import styles from "../../../styles/Superconnections.module.css";
-import Subheader from "../../../components/Subheader2";
 import { Card, Col, Input, Row, Switch } from "antd";
 import Sidebar from "../../../components/Sidebar";
 import Member from "../../../components/Member";
 import { SearchOutlined } from "@ant-design/icons";
-
 
 const Chats = () => {
   function onChange() {

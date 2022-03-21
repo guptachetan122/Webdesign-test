@@ -2,7 +2,7 @@ import { Col, Row } from "antd";
 import React from "react";
 import Member from "../../../components/Member";
 import Sidebar from "../../../components/Sidebar";
-import styles from "../../../styles/superconnections.module.css";
+import styles from "../../../styles/Superconnections.module.css";
 
 const SentSc = () => {
   return (
