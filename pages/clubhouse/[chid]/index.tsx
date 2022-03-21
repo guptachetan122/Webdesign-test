@@ -6,7 +6,7 @@ import { backNavbar } from "../../../constants/constants";
 import styles from "../../../styles/ClubHouse.module.css";
 import { SearchOutlined } from "@ant-design/icons";
 import ClubhouseCardInfo from "../../../components/ClubhouseCardInfo";
-import Subheader from "../../../components/Subheader2";
+import Subheader from "../../../components/Subheader";
 
 const { Text } = Typography;
 
@@ -15,10 +15,10 @@ const ClubhouseInfo = () => {
   const { chid } = Router.query;
   return (
     <>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         {" "}
         <Subheader SubheaderData={backNavbar} />{" "}
-      </div>
+      </div> */}
 
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>

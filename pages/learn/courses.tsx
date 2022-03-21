@@ -9,14 +9,14 @@ import styles from "../../styles/Feed.module.css";
 const courses = () => {
   return (
     <>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         {" "}
         <Subheader SubheaderData={coachingNavbar} />{" "}
-      </div>
+      </div> */}
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>
           {" "}
-          <Sidebar pageName={"learn"} />{" "}
+              <Sidebar pageName={"learn"} />{" "}
         </Col>
         <Col span={12} className={styles.middleCol}>
           <Row>

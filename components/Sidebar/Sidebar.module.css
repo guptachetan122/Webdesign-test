@@ -1,62 +1,71 @@
-.SidebarCardStyle{
-    position: fixed;
-    width :fit-content;
-    border-radius : 20px;
-    background: none;
+.SidebarCardStyle {
+  position: fixed;
+  width: fit-content;
+  border-radius: 20px;
 }
 
-.SidebarList{
-    list-style: none;
-    padding : 0 1rem;
-    margin-right : 1rem;
-    font-size: 20px;
+.SidebarList {
+  list-style: none;
+  padding: 0rem 0.5rem;
+  font-size: 20px;
+  /* background-color: red; */
 }
 
-.SidebarListItem{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2rem;
-    cursor: pointer;
-    color: #616161;
-    /* background-color: red; */
+.SidebarListItem {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  color: #616161;
+  /* background-color: red; */
 }
 
-.SidebarListItemActive{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2rem;
-    cursor: pointer;
-    font-weight: bolder;
+.SidebarListItemActive {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-weight: 700;
 }
 
-.SidebarButtonWrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.SidebarIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+  color: #616161;
 }
 
-
-.SidebarButton{
-    background: #FAFAFA;
-    cursor: pointer;
-    font-weight: 700;
-    font-size : 15px;
-    width: 180px;
-    height: 44px;
-    border-radius: 200px;
-    margin-top: 1rem;
+.SidebarIconActive {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
 }
 
-
-.SidebarIcon{
-    width : 25px;
-    height : 25px;
-    margin: 0rem 2rem;
-    color : #616161;
+.SidebarButtonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.SidebarIconActive{
-    width : 25px;
-    height : 25px;
-    margin: 0rem 2rem;
+.SidebarButton {
+  background: #fafafa;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  width: 180px;
+  height: 44px;
+  border-radius: 200px;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 2500px) {
+  .SidebarList {
+    font-size: 30px;
+  }
+
+  .SidebarIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .SidebarIconActive {
+    width: 30px;
+    height: 30px;
+  }
 }

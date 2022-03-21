@@ -97,7 +97,7 @@ export const superconnectionNavbar = [
   },
 ];
 
-export const mySuperconnectionNavbar = [
+export const myNetworkNavbar = [
   {
     id: 1,
     name: `back`,
@@ -154,40 +154,30 @@ export const experiencesNavbar = [
 export const sidebarItems = [
   {
     id: 1,
-    img: "<FeedInactive />",
-    img2: "<FeedActive />",
     name: "feed",
     link: "/feed",
     pathname: "feed",
   },
   {
     id: 2,
-    img: "<ChInactive />",
-    img2: "<ChActive />",
     name: "clubhouse",
     link: "/clubhouse",
     pathname: "clubhouse",
   },
   {
     id: 3,
-    img: "<ScInactive />",
-    img2: `{<ScActive />`,
     name: "superconnections",
     link: "/superconnections",
     pathname: "superconnections",
   },
   {
     id: 4,
-    img: "<ExperienceInactive />",
-    img2: "<ExperienceActive />",
     name: "experiences",
     link: "/experiences",
     pathname: "experiences",
   },
   {
     id: 5,
-    img: "<learnInactive />",
-    img2: "<learnActive />",
     name: "learn",
     link: "/learn",
     pathname: "learn",

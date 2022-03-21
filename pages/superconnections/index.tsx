@@ -24,25 +24,26 @@ const Recommendations = () => {
           content="https://leap.club/careers-page-final-thumbnail.jpg"
         />
       </Head>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         {" "}
         <Subheader SubheaderData={superconnectionNavbar} />{" "}
-      </div>
+      </div> */}
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>
-          {" "}
-          <Sidebar pageName={"superconnections"} />{" "}
+          <Sidebar pageName={"superconnections"} />
         </Col>
         <Col span={12} className={styles.middleCol}>
           <Row>
             <Col span={2}></Col>
             <Col span={20}>
               {" "}
-              <Input
-                className={styles.ScInput}
-                prefix={<SearchOutlined className={styles.ScIconSize} />}
-                placeholder={`  search member's`}
-              />
+              <Row>
+                <Input
+                  className={styles.ScInput}
+                  prefix={<SearchOutlined className={styles.ScIconSize} />}
+                  placeholder={`  search member's`}
+                />
+              </Row>
               <Row>
                 <Link href="/superconnections/messages/messagereq" passHref>
                   <button className={styles.ScButton}>
@@ -58,7 +59,7 @@ const Recommendations = () => {
               <Card className={styles.ScCard}>
                 <Row>
                   <Col span={22}>receive messages from other members </Col>
-                  <Col>
+                  <Col span={2}>
                     {" "}
                     <Switch defaultChecked onChange={onChange} />
                   </Col>

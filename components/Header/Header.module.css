@@ -1,33 +1,54 @@
 .headerDiv {
-	position: fixed;
-	width: 100%;
-	max-height: 7.5rem;
-	background-color: white;
-	color: white;
-	padding: 0.5rem 6.375rem 0.5rem 7.3rem;
-	z-index: 3;
-	/* justify-content: space-between;
+  /* position: fixed; */
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  padding: 0.5rem 6.375rem 0rem 7.3rem;
+  z-index: 2;
+  /* justify-content: space-between;
 	align-items: center; */
-	
+}
+
+.subHeader {
+  width: 100%;
+  z-index: 2;
+}
+
+.headerCol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .headerImageWrapper {
-	width: 66px;
-	height:66px;
-	cursor: pointer;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
 }
 
-.headerIconCol{
-	padding: 2rem 0rem;
-	display: flex;
-	justify-content: right;
-	align-items: right;
+.headerIconCol {
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: right;
+  align-items: right;
 }
 
-.headerIconWrapper{
-	margin-right: 2rem;
+.headerIconWrapper {
+  margin-right: 4rem;
+}
+
+.headerAvatar {
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (min-width: 2500px) {
+  .headerAvatar {
+    height: 60px;
+    width: 60px;
+  }
+  .headerImageWrapper {
+    width: 100px;
+    height: 100px;
+  }
 }

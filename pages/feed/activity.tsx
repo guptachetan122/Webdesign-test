@@ -3,20 +3,18 @@ import React from "react";
 import Sidebar from "../../components/Sidebar";
 import Subheader from "../../components/Subheader2";
 import { feedNavbar } from "../../constants/constants";
-import styles from '../../styles/Feed.module.css'
+import styles from "../../styles/Feed.module.css";
 
 const MentionsFeed = () => {
-
   console.log("logg");
   return (
     <>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         {" "}
         <Subheader SubheaderData={feedNavbar} />{" "}
-      </div>
+      </div> */}
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>
-          {" "}
           <Sidebar pageName={"feed"} />{" "}
         </Col>
         <Col span={12} className={styles.middleCol}>

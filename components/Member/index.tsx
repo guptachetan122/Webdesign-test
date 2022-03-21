@@ -14,7 +14,7 @@ const Member = ({pageName = ""}) => {
     <>
       <Card className={styles.MemberContainer}>
         <Row>
-          <Col span={2} className={styles.MemberAvatarCol}>
+          <Col span={3} className={styles.MemberAvatarCol}>
             {" "}
             <Avatar
               className={styles.MemberAvatar}
@@ -31,7 +31,7 @@ const Member = ({pageName = ""}) => {
               </Text>
             </Row>
           </Col>
-          <Col span={9}>
+          <Col span={8}>
            <ButtonComponent pageName={pageName}/>
           </Col>
         </Row>

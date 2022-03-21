@@ -10,10 +10,10 @@ import styles from "../../styles/Feed.module.css";
 const Coaching = () => {
   return (
     <>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         {" "}
         <Subheader SubheaderData={coachingNavbar} />{" "}
-      </div>
+      </div> */}
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>
           {" "}

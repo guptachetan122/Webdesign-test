@@ -1,25 +1,38 @@
-.MemberRecommendationsContainer{
-margin-bottom: 12px;
+.MemberRecommendationsContainer {
+  width: 100%;
+  margin-bottom: 12px;
   border-width: 1px;
   padding: 12px 8px;
   border-radius: 8px;
   border-color: black;
 }
 
-.MemberRecommendationsCard{
-    border-radius: 20px;
+.MemberRecommendationsCard {
+  border-radius: 20px;
 }
 
-.MemberRecommendationsTitle{
-    font-size: 22px;
+.MemberRecommendationsTitle {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.MemberRecommendationsSubTitle {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.MemberRecommendationsIcon {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 2500px) {
+  .MemberRecommendationsTitle {
+    font-size: 30px;
     font-weight: 700;
-}
+  }
 
-.MemberRecommendationsSubTitle{
-    font-size : 18px;
+  .MemberRecommendationsSubTitle {
+    font-size: 26px;
     font-weight: 400;
-}
-
-.MemberRecommendationsIcon{
-   font-size :30px;
+  }
 }

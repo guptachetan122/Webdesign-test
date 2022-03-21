@@ -16,10 +16,10 @@ const Chats = () => {
 
   return (
     <>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         {" "}
         <Subheader SubheaderData={messageNavbar} />{" "}
-      </div>
+      </div> */}
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>
           {" "}

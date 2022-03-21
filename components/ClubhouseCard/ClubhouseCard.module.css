@@ -1,8 +1,7 @@
 .ChCardcontainer{
   background-color: #F6F6F6;
-  margin-top: 12px;
+  margin: 1.5rem 0rem;
   border-radius: 20px;
-  
   padding: 1rem 3rem;
 }
 
@@ -120,3 +119,10 @@
   align-items: center;
 }
  */
+
+ @media screen and (min-width: 2500px) {
+  .ChCardDescription {
+      font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+}

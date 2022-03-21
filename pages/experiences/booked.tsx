@@ -1,6 +1,6 @@
-import { Col, Row } from 'antd';
-import React from 'react'
-import Sidebar from '../../components/Sidebar';
+import { Col, Row } from "antd";
+import React from "react";
+import Sidebar from "../../components/Sidebar";
 import Subheader from "../../components/Subheader2";
 import { experiencesNavbar } from "../../constants/constants";
 import styles from "../../styles/Experience.module.css";
@@ -8,10 +8,10 @@ import styles from "../../styles/Experience.module.css";
 const booked = () => {
   return (
     <>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         {" "}
         <Subheader SubheaderData={experiencesNavbar} />{" "}
-      </div>
+      </div> */}
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>
           {" "}
@@ -22,6 +22,6 @@ const booked = () => {
       </Row>
     </>
   );
-}
+};
 
-export default booked
+export default booked;

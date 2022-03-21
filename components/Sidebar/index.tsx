@@ -77,7 +77,7 @@ const Sidebar = ({ pageName }: SidebarProps) => {
               }}
             >
               <SwitchIcon pathName={val.pathname} />
-              <div>{val.name}</div>
+              {val.name}
             </li>
           </ul>
         ))}

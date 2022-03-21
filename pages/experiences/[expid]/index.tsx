@@ -15,10 +15,10 @@ const ExperienceDetails = () => {
     
   return (
     <>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         {" "}
         <Subheader SubheaderData={expbackNavbar} />{" "}
-      </div>
+      </div> */}
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>
           {" "}
@@ -26,8 +26,8 @@ const ExperienceDetails = () => {
         </Col>
         <Col span={12} className={styles.middleCol}>
           <Row>
-            <Col span={4}></Col>
-            <Col span={14}>
+            <Col span={6}></Col>
+            <Col span={12}>
               <div style={{}}>
                 <ExperienceInfo />
               </div>

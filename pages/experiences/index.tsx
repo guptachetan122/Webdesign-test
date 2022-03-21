@@ -12,10 +12,10 @@ import styles from "../../styles/Experience.module.css";
 const Upcoming = () => {
   return (
     <>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         {" "}
         <Subheader SubheaderData={experiencesNavbar} />{" "}
-      </div>
+      </div> */}
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>
           {" "}
@@ -23,12 +23,12 @@ const Upcoming = () => {
         </Col>
         <Col span={12} className={styles.middleCol}>
           <Row>
-            <Col span={2}></Col>{" "}
-            <Col span={20}>
+            <Col span={3}></Col>{" "}
+            <Col span={18}>
               {" "}
               <ExpTags />
             </Col>
-            <Col span={2}></Col>
+            <Col span={3}></Col>
           </Row>
           <Row>
             <Col span={6}></Col>

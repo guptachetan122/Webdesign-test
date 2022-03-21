@@ -53,7 +53,7 @@ const Button = ({isJoined = false ,isConnect = false , title = '' , pageName = '
         <>
           <button className={styles.BookButton}>
             {" "}
-            <ExperienceInactive className={styles.ButtonIcon} />
+            <ExperienceInactive className={styles.BookIcon} />
             book slot
           </button>
         </>
@@ -73,7 +73,7 @@ const Button = ({isJoined = false ,isConnect = false , title = '' , pageName = '
                 offline
               </button>
             )}
-            {pay ? (
+            {!pay ? (
               <button className={styles.LabelButton}>
                 {" "}
                 <DollarCircleOutlined className={styles.LabelButtonIcon} /> paid
@@ -85,7 +85,7 @@ const Button = ({isJoined = false ,isConnect = false , title = '' , pageName = '
         <>
           <button className={styles.BookInfoButton}>
             {" "}
-            <ExperienceInactive className={styles.ButtonInfoIcon} />
+            <ExperienceInactive className={styles.BookInfoIcon} />
             book slot and pay
           </button>
         </>

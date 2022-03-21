@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button, List } from "antd";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -33,11 +34,10 @@ const Subheader2 = ({ SubheaderData }: SubheaderProps) => {
             <Link href={item?.link} passHref>
               {item.name == "back" ? (
                 <a>
-                  <Image
+                  <img
                     src="/assets/images/back-arrow-2.png"
                     alt="back-arrow"
-                    width={12}
-                    height={12}
+                    className={styles.SubheaderImg}
                   />{" "}
                   {item.name}
                 </a>
@@ -45,8 +45,7 @@ const Subheader2 = ({ SubheaderData }: SubheaderProps) => {
                 <a>
                   {item.name} ({msg})
                 </a>
-              ) : item.name ==
-                "thisisjusttosetbackonleftsideofthepage" ? null : (
+              ) : (
                 <a>{item.name}</a>
               )}
             </Link>

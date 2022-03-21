@@ -10,9 +10,9 @@ import styles from "../../styles/ClubHouse.module.css";
 const myclubhouses = () => {
   return (
     <>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         <Subheader SubheaderData={clubhouseNavbar} />
-      </div>
+      </div> */}
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>
           <Sidebar pageName={"clubhouse"} />

@@ -3,16 +3,16 @@ import React from "react";
 import Member from "../../../components/Member";
 import Sidebar from "../../../components/Sidebar";
 import Subheader from "../../../components/Subheader2";
-import { mySuperconnectionNavbar } from "../../../constants/constants";
-import styles from "../../../styles/Feed.module.css";
+import { myNetworkNavbar } from "../../../constants/constants";
+import styles from "../../../styles/superconnections.module.css";
 
 const RecievedSc = () => {
   return (
     <>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         {" "}
         <Subheader SubheaderData={mySuperconnectionNavbar} />{" "}
-      </div>
+      </div> */}
 
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>

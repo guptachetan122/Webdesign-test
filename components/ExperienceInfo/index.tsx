@@ -25,7 +25,9 @@ const ExperienceInfo = () => {
             </Row>
           </div>
         </Row>
-        <Row className={styles.row2}>the pow(d)er room</Row>
+        <Row className={styles.row2}>
+          <Text className={styles.Text3}>the pow(d)er room</Text>
+        </Row>
         <Row className={styles.row4}>
           <ButtonComponent pageName="experienceinfo" />
         </Row>

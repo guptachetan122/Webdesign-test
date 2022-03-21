@@ -1,20 +1,10 @@
 .SubheaderWrapper {
   position: fixed;
   width: 100%;
-  padding: 0rem 40rem;
+  padding: 0rem 50rem;
   height: 6rem;
   background-color: white;
   z-index: 2;
-}
-
-.SubheaderWrapper2 {
-  position: fixed;
-  width: 100%;
-  padding: 0rem 35rem;
-  height: 6rem;
-  background-color: white;
-  z-index: 2;
- 
 }
 
 .SubheaderListItem {
@@ -63,15 +53,17 @@
 }
   
 }
-
-@media screen and (max-width:1920px) {
+*/
+@media screen and (max-width:1500px) {
   .SubheaderListWrapper {
   width: 100%;
-  padding: 0rem 40rem;
+  padding: 0rem 20rem;
   height: 6rem;
   background-color: white;
  
 }
+}
+/*
 
 .SubheaderListWrapper2 {
   width: 100%;

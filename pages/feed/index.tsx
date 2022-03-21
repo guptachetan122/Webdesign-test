@@ -18,12 +18,12 @@ const PublicFeed = () => {
   };
   return (
     <>
-      <div className={styles.Header}>
+      {/* <div className={styles.Header}>
         <Subheader SubheaderData={feedNavbar} />
-      </div>
+      </div> */}
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>
-          <Sidebar pageName={"feed"} />
+              <Sidebar pageName={"feed"} />{" "}
         </Col>
 
         <Col span={12} className={styles.middleCol}>
@@ -37,7 +37,7 @@ const PublicFeed = () => {
                     console.log(val.email);
                     return (
                       <Card key={val.id}>
-                        <Text>My name is {" "}</Text>
+                        <Text>My name is </Text>
                         <Text>{val.name}</Text>
                       </Card>
                     );

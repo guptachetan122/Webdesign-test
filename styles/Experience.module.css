@@ -1,22 +1,14 @@
 .Body {
   min-height: 200vh;
   overflow: auto;
-  padding-top: 6rem;
   background-color: #E5E5E5;
-}
-
-.Header {
-  padding-top: 6rem;
-  width: 100%;
-  z-index: 2;
 }
 
 .sidebarPos{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-right: 1px solid black;
-  padding-top: 2rem;
+  padding: 2rem 0rem;
 }
 
 .rowStyling{
