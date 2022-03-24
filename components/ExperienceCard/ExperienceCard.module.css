@@ -3,7 +3,7 @@
   height: fit-content;
   margin-bottom: 3rem;
   background-color: #fafafa;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .cardInfoWrapper {
@@ -12,6 +12,10 @@
 
 .RowBackground {
   height: fit-content;
+}
+
+.coverImage{
+  transform: translateY(-1%);
 }
 
 .row {
@@ -34,10 +38,10 @@
 
 
 .row4{
-    /* background-color: greenyellow; */
     padding: 2rem 3rem;
     flex-grow : 1;
-    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .card {
