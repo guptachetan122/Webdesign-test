@@ -12,7 +12,12 @@ const ExperienceInfo = () => {
       <div className={styles.cardWrapper}>
         <Row className={styles.RowBackground}>
           <ButtonComponent pageName="label" />
-          <img src="/assets/images/exp2.png" alt="alt" width="100%" />
+          <img
+            src="/assets/images/exp2.png"
+            alt="alt"
+            width="100%"
+            className={styles.coverImage}
+          />
         </Row>
         <Row className={styles.row}>
           {" "}
