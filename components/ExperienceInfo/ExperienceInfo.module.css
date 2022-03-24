@@ -75,3 +75,24 @@
 .description{
     font-size: 1.6rem;
 }
+
+@media screen and ( min-width : 2500px) {
+  .row2{
+    font-size: 1.5rem;
+  }
+  .row3{
+    font-size: 1.2rem;
+  }
+
+  .Text{
+    font-size: 2rem;
+  }
+
+  .Text2{
+    font-size: 1.6rem;
+  }
+
+  .row{
+    margin-bottom: 2rem;
+  }
+}

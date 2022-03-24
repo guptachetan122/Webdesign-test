@@ -1,12 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import {
-  EditOutlined,
-  EllipsisOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
-import { Avatar, Card, Divider, Row, Typography } from "antd";
+import { Row, Typography } from "antd";
 import React from "react";
-import Image from "next/image";
 import ButtonComponent from "../ButtonComponent";
 import styles from "./ExperienceCard.module.css";
 import Link from "next/link";

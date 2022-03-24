@@ -1,4 +1,4 @@
-import { Card } from "antd";
+import { Card , Typography} from "antd";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import styles from "./Sidebar.module.css";
@@ -15,13 +15,14 @@ import { LightningBoltIcon as ScActive } from "@heroicons/react/solid";
 import { CalendarIcon as ExperienceActive } from "@heroicons/react/solid";
 import ClubhouseModal from "../Modal/ClubhouseModal";
 
+const { Text } = Typography;
 interface SidebarProps {
   pageName: string;
 }
 const Sidebar = ({ pageName }: SidebarProps) => {
   const Router = useRouter();
 
-  const SwitchIcon = ({pathName }: any) => {
+  const SwitchIcon = ({ pathName }: any) => {
     const PATH = Router.pathname.split("/")[1];
 
     switch (pathName) {
@@ -63,7 +64,7 @@ const Sidebar = ({ pageName }: SidebarProps) => {
 
   return (
     <>
-      <Card bordered={false} className={styles.SidebarCardStyle}>
+      <div className={styles.SidebarCardStyle}>
         {sidebarItems.map((val) => (
           <ul key={val.id} className={styles.SidebarList}>
             <li
@@ -76,8 +77,11 @@ const Sidebar = ({ pageName }: SidebarProps) => {
                 Router.push(`${val.link}`);
               }}
             >
-              <SwitchIcon pathName={val.pathname} />
-              {val.name}
+              
+                {" "}
+                <SwitchIcon pathName={val.pathname} />
+                <Text>{val.name}</Text>
+             
             </li>
           </ul>
         ))}
@@ -99,7 +103,7 @@ const Sidebar = ({ pageName }: SidebarProps) => {
             <ClubhouseModal />
           </>
         ) : null}
-      </Card>
+      </div>
     </>
   );
 };

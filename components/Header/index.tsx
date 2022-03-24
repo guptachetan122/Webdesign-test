@@ -1,4 +1,5 @@
-import { Row, Col, Badge, Typography , Avatar } from "antd";
+/* eslint-disable @next/next/no-img-element */
+import { Row, Col, Badge, Typography, Avatar } from "antd";
 import { BellOutlined, MessageOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import styles from "./Header.module.css";
@@ -6,13 +7,21 @@ import Link from "next/link";
 import { useAppDispatch } from "../../app/hooks";
 import { useRouter } from "next/router";
 import Subheader2 from "../Subheader2";
-import { backNavbar, clubhouseNavbar, coachingNavbar, expbackNavbar, experiencesNavbar, feedNavbar, messageNavbar, myNetworkNavbar, superconnectionNavbar } from "../../constants/constants";
+import {
+  backNavbar,
+  clubhouseNavbar,
+  coachingNavbar,
+  expbackNavbar,
+  experiencesNavbar,
+  feedNavbar,
+  messageNavbar,
+  myNetworkNavbar,
+  superconnectionNavbar,
+} from "../../constants/constants";
 
 const { Text } = Typography;
 
 const Header = () => {
-
-  
   const dispatch = useAppDispatch();
   const Router = useRouter();
   const PATH = Router.pathname.split("/")[1];
@@ -34,22 +43,18 @@ const Header = () => {
                   objectFit="contain"
                 />
               }
-              style={{ width: 86.38, height: 86.38 }}
+              className={styles.profileAvatar}
             />
-            <div style={{ color: "black", fontSize: 16 }}>my profile</div>
+            <div style={{fontSize: 20, width : 'fit-content'}}>my profile</div>
           </Col>
 
           <Col span={8} className={styles.headerCol}>
             <Link href="/" passHref>
-              <div className={styles.headerImageWrapper}>
-                <Image
-                  src="/assets/images/image3.png"
-                  alt="leap club logo"
-                  width="100%"
-                  height="100%"
-                  objectFit="contain"
-                />
-              </div>
+              <img
+                src="/assets/images/image3.png"
+                alt="leap club logo"
+                className={styles.headerImageWrapper}
+              />
             </Link>
           </Col>
           <Col className={styles.headerIconCol} span={8}>

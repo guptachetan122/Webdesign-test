@@ -1,7 +1,9 @@
 .SidebarCardStyle {
   position: fixed;
   width: fit-content;
+  padding: 2rem 2rem;
   border-radius: 20px;
+  background-color: #FAFAFA;
 }
 
 .SidebarList {
@@ -9,17 +11,19 @@
   padding: 0rem 0.5rem;
   font-size: 20px;
   /* background-color: red; */
+  display: flex;
+  flex-direction: row;
 }
 
 .SidebarListItem {
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   cursor: pointer;
   color: #616161;
   /* background-color: red; */
 }
 
 .SidebarListItemActive {
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   cursor: pointer;
   font-weight: 700;
 }
