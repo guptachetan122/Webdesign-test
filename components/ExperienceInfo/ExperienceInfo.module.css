@@ -11,11 +11,12 @@
 }
 
 .RowBackground {
+  border-radius: 20px;
   height: fit-content;
 }
 
 .coverImage{
-  transform: translateY(-1%);
+  transform: translateY(-3%);
 }
 
 .row {
