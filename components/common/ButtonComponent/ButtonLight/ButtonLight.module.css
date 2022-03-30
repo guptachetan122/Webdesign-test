@@ -1,0 +1,70 @@
+.ButtonWrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ButtonLight {
+  background: none;
+  font-size: 18px;
+  width: fit-content;
+  padding: 1rem 1rem;
+  border-radius: 12px;
+  margin-right: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardIcon{
+  width: 18px;
+  height: 18px;
+  margin-right: 1rem;
+}
+
+.ButtonLight2 {
+  background: none;
+  font-size: 18px;
+  width: fit-content;
+  padding: 0.5rem 4rem;
+  border-radius: 12px;
+  margin-right: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 2500px) {
+  .LabelButton {
+    font-size: 1.6rem;
+  }
+
+  .LabelButtonIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .BookInfoButton {
+    font-size: 26px;
+  }
+
+  .BookInfoIcon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .BookButton {
+    font-size: 26px;
+  }
+
+  .BookIcon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .SidebarIcon {
+    width: 26px;
+    height: 26px;
+  }
+}

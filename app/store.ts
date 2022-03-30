@@ -1,7 +1,7 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
 import { setupListeners } from '@reduxjs/toolkit/query';
-import loginReducer from '../components/LoginForm/LoginSlice'
-import { postsApi } from '../components/Posts/PostsApi'
+import loginReducer from '../components/auth/LoginForm/LoginSlice'
+import { postsApi } from '../components/feed/Posts/PostsApi'
 
 export function makeStore() {
 	return configureStore({

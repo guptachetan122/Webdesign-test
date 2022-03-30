@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { Typography , Col, Row  } from 'antd'
-import Login from '../components/LoginForm';
+import Login from '../components/auth/LoginForm';
 import styles from '../styles/LoginPage.module.css'
 import Link from 'next/link';
 

@@ -1,13 +1,13 @@
 import { SearchOutlined } from '@ant-design/icons';
 import { Col, Input, Row } from 'antd';
 import React, { useState } from 'react'
-import ClubhouseCard from '../../components/ClubhouseCard';
+import ClubhouseCard from '../../components/clubhouse/ClubhouseCard';
 import Sidebar from '../../components/Sidebar';
 import Subheader from "../../components/Subheader2";
 import { clubhouseNavbar } from "../../constants/constants";
 import styles from "../../styles/ClubHouse.module.css";
 import { Tag } from "antd";
-import SearchTagComponent from '../../components/SearchTagComponent';
+import SearchTagComponent from '../../components/search/SearchTagComponent';
 const { CheckableTag } = Tag;
 
 const Otherclubhouses = () => {
@@ -34,9 +34,9 @@ const Otherclubhouses = () => {
                 placeholder={`  type a clubhouse’s name`}
               />
 
-              <ClubhouseCard />
-              <ClubhouseCard />
-              <ClubhouseCard />
+              <ClubhouseCard badge="public" />
+              <ClubhouseCard badge="private" />
+              <ClubhouseCard badge="public" />
             </Col>
             <Col span={2}></Col>
           </Row>

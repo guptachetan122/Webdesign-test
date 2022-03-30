@@ -3,7 +3,7 @@ import React from "react";
 import styles from "../../../styles/Superconnections.module.css";
 import { Card, Col, Input, Row, Switch } from "antd";
 import Sidebar from "../../../components/Sidebar";
-import Member from "../../../components/Member";
+import Member from "../../../components/sc/Member";
 import { SearchOutlined } from "@ant-design/icons";
 
 const Chats = () => {

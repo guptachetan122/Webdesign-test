@@ -5,7 +5,7 @@ import Sidebar from "../../../components/Sidebar";
 import { backNavbar} from "../../../constants/constants";
 import styles from "../../../styles/ClubHouse.module.css";
 import { SearchOutlined } from "@ant-design/icons";
-import ClubhouseChat from "../../../components/ClubhouseChat";
+import ClubhouseChat from "../../../components/clubhouse/ClubhouseChat";
 import Subheader from "../../../components/Subheader2";
 
 const { Text } = Typography;
@@ -15,10 +15,6 @@ const ClubhouseChatPage = () => {
   const { chid } = Router.query;
   return (
     <>
-      <div className={styles.Header}>
-        {" "}
-        <Subheader SubheaderData={backNavbar} />{" "}
-      </div>
       <Row className={styles.Body}>
         <Col span={6} className={styles.sidebarPos}>
           <Sidebar pageName={"clubhouse2"} />

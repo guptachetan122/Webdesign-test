@@ -3,11 +3,12 @@
 import { Col, Row, Typography } from "antd";
 import Link from "next/link";
 import React from "react";
-import ClubhouseCard from "../../components/ClubhouseCard";
+import ClubhouseCard from "../../components/clubhouse/ClubhouseCard";
+import ClubhouseModal from "../../components/common/Modal/ClubhouseModal";
 import Sidebar from "../../components/Sidebar";
-import Subheader from "../../components/Subheader2";
-import { clubhouseNavbar } from "../../constants/constants";
 import styles from "../../styles/ClubHouse.module.css";
+import { UserGroupIcon as ChInactive } from "@heroicons/react/outline";
+import CreateChModal from "../../components/common/Modal/CreateChModal";
 
 const { Text } = Typography;
 const Starred = () => {
@@ -29,9 +30,11 @@ const Starred = () => {
               <Text className={styles.ChTopText}>
                 heart your favourite clubhouses to pin them here!
               </Text>
-              <ClubhouseCard isJoined />
-              <ClubhouseCard isJoined />
-              <ClubhouseCard isJoined />
+              <ClubhouseCard isJoined isPinned upcomingHuddle />
+              <ClubhouseCard isJoined isPinned />
+              <ClubhouseCard isJoined isPinned upcomingHuddle />
+              <ClubhouseCard isJoined isPinned />
+              <ClubhouseCard isJoined isPinned />
               <div className={styles.ChLink}>
                 <Link href="/clubhouse/myclubhouses">
                   view all clubhouses that i’m a part of
@@ -41,7 +44,21 @@ const Starred = () => {
             <Col span={2}></Col>
           </Row>
         </Col>
-        <Col span={6}></Col>
+        <Col span={6}>
+          {" "}
+          <div className={styles.chButtonWrapper}>
+            <button className={styles.ButtonDark}>
+              <ChInactive className={styles.SidebarIcon} />
+              join a clubhouse
+            </button>
+          </div>
+          <div className={styles.chButtonWrapper}>
+            <CreateChModal />
+          </div>
+          <div className={styles.chButtonWrapper}>
+            <ClubhouseModal />
+          </div>
+        </Col>
       </Row>
     </>
   );

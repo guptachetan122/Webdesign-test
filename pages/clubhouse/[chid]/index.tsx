@@ -5,7 +5,7 @@ import Sidebar from "../../../components/Sidebar";
 import { backNavbar } from "../../../constants/constants";
 import styles from "../../../styles/ClubHouse.module.css";
 import { SearchOutlined } from "@ant-design/icons";
-import ClubhouseCardInfo from "../../../components/ClubhouseCardInfo";
+import ClubhouseCardInfo from "../../../components/clubhouse/ClubhouseCardInfo";
 import Subheader from "../../../components/Subheader";
 
 const { Text } = Typography;

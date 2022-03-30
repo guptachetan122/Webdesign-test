@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <>
-      <div>
+      <div className={styles.headerWrapper}>
         <Row className={styles.headerDiv}>
           <Col span={8}>
             <Avatar

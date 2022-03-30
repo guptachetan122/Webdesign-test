@@ -5,7 +5,7 @@ import styles from "../../styles/Superconnections.module.css";
 import Subheader from "../../components/Subheader2";
 import { Card, Col, Input, Row, Switch } from "antd";
 import Sidebar from "../../components/Sidebar";
-import MemberRecommendations from "../../components/MemberRecommendation";
+import MemberRecommendations from "../../components/sc/MemberRecommendation";
 import { SearchOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import Head from "next/head";

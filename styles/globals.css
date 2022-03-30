@@ -38,12 +38,16 @@ a {
 }
 
 Input[type="text"] {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 input[type="password"] {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
+
+:root textarea {
+    font-size: 1.4rem;
+  }
 
 @media screen and (max-width: 570px) {
   Input[type="text"] {
@@ -53,6 +57,9 @@ input[type="password"] {
   input[type="password"] {
     font-size: 1.2rem;
   }
+  :root textarea {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -60,11 +67,15 @@ input[type="password"] {
     font-size: 70%;
   }
   Input[type="text"] {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   input[type="password"] {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+
+  :root textarea {
+    font-size: 1.6rem;
   }
 }
 
@@ -72,10 +83,31 @@ input[type="password"] {
   :root {
     font-size: 95%;
   }
+    Input[type="text"] {
+    font-size: 1.8rem;
+    padding: .5rem .5rem;
+  }
+
+  input[type="password"] {
+    font-size: 1.8rem;
+  }
+  :root textarea {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 3600px) {
   :root {
     font-size: 120%;
+  }
+    Input[type="text"] {
+    font-size: 2rem;
+  }
+
+  input[type="password"] {
+    font-size: 2rem;
+  }
+  :root textarea {
+    font-size: 2rem;
   }
 }

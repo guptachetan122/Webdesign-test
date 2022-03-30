@@ -70,3 +70,25 @@
   font-size:25px;
   text-align: center;
 }
+
+.chButtonWrapper {
+  margin: 2rem 2rem;
+}
+
+.SidebarIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+  color: #fafafa;
+}
+
+.ButtonDark {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 20px;
+  width: fit-content;
+  padding: 1rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+}

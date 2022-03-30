@@ -1,12 +1,17 @@
 .headerDiv {
   /* position: fixed; */
-  width: 100%;
+  /* width: 100%; */
   height: fit-content;
   background-color: white;
   padding: 0.5rem 12rem 0rem 12rem;
   z-index: 2;
   /* justify-content: space-between;
 	align-items: center; */
+}
+
+.headerWrapper{
+  position: relative;
+  width: 100%;
 }
 
 .subHeader {
@@ -40,6 +45,7 @@
 
 .headerIconWrapper {
   margin-right: 4rem;
+  cursor: pointer;
 }
 
 .headerAvatar {

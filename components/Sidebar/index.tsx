@@ -1,4 +1,4 @@
-import { Card , Typography} from "antd";
+import { Typography } from "antd";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import styles from "./Sidebar.module.css";
@@ -13,7 +13,6 @@ import { RssIcon as FeedActive } from "@heroicons/react/solid";
 import { UserGroupIcon as ChActive } from "@heroicons/react/solid";
 import { LightningBoltIcon as ScActive } from "@heroicons/react/solid";
 import { CalendarIcon as ExperienceActive } from "@heroicons/react/solid";
-import ClubhouseModal from "../Modal/ClubhouseModal";
 
 const { Text } = Typography;
 interface SidebarProps {
@@ -64,46 +63,26 @@ const Sidebar = ({ pageName }: SidebarProps) => {
 
   return (
     <>
-      <div className={styles.SidebarCardStyle}>
-        {sidebarItems.map((val) => (
-          <ul key={val.id} className={styles.SidebarList}>
-            <li
-              className={
-                Router.pathname.split("/")[1] == val.pathname
-                  ? styles.SidebarListItemActive
-                  : styles.SidebarListItem
-              }
-              onClick={() => {
-                Router.push(`${val.link}`);
-              }}
-            >
-              
+        <div className={styles.SidebarCardStyle}>
+          {sidebarItems.map((val) => (
+            <ul key={val.id} className={styles.SidebarList}>
+              <li
+                className={
+                  Router.pathname.split("/")[1] == val.pathname
+                    ? styles.SidebarListItemActive
+                    : styles.SidebarListItem
+                }
+                onClick={() => {
+                  Router.push(`${val.link}`);
+                }}
+              >
                 {" "}
                 <SwitchIcon pathName={val.pathname} />
                 <Text>{val.name}</Text>
-             
-            </li>
-          </ul>
-        ))}
-
-        {pageName == "feed" ? (
-          /* This for feed */
-          <div className={styles.SidebarButtonWrapper}>
-            <button className={styles.SidebarButton}> create a post </button>
-          </div>
-        ) : pageName == "clubhouse" ? (
-          /* This for Clubhouse */
-          <>
-            <div className={styles.SidebarButtonWrapper}>
-              <button className={styles.SidebarButton}>
-                {" "}
-                + create Clubhouse
-              </button>
-            </div>
-            <ClubhouseModal />
-          </>
-        ) : null}
-      </div>
+              </li>
+            </ul>
+          ))}
+        </div>
     </>
   );
 };

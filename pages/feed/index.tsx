@@ -1,11 +1,11 @@
 import { Card, Col, Row, Typography } from "antd";
 import React, { useState } from "react";
-import ExperienceCard from "../../components/ExperienceCard";
+import ExperienceCard from "../../components/experience/ExperienceCard";
 import Sidebar from "../../components/Sidebar";
 import Subheader from "../../components/Subheader2";
 import { feedNavbar } from "../../constants/constants";
 import styles from "../../styles/Feed.module.css";
-import { useFetchPostsQuery } from "../../components/Posts/PostsApi";
+import { useFetchPostsQuery } from "../../components/feed/Posts/PostsApi";
 import { SafetyCertificateTwoTone } from "@ant-design/icons";
 
 const { Text } = Typography;

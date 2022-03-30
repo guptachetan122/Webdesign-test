@@ -3,7 +3,7 @@
 import { Col, Row } from "antd";
 import { useRouter } from "next/router";
 import React from "react";
-import ExperienceInfo from "../../../components/ExperienceInfo";
+import ExperienceInfo from "../../../components/experience/ExperienceInfo";
 import Sidebar from "../../../components/Sidebar";
 import Subheader from "../../../components/Subheader2";
 import { expbackNavbar} from "../../../constants/constants";
