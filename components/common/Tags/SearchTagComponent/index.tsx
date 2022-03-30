@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { tagsData } from "../../../constants/constants";
+import { tagsData } from "../../../../constants/constants";
 import styles from "./SearchTags.module.css";
 
 const SearchTags = () => {

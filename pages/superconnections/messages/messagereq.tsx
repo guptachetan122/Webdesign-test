@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 import React from 'react'
-import Sidebar from '../../../components/Sidebar';
+import Sidebar from '../../../ui/Sidebar';
 import styles from "../../../styles/Superconnections.module.css";
 
 const MessageReq = () => {

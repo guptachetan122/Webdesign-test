@@ -3,7 +3,7 @@
   margin-top: 12px;
   border-radius: 20px;
   height: fit-content;
-  padding: 3rem 3rem;
+  padding: 2rem 3rem;
 }
 
 .container2 {
@@ -56,7 +56,7 @@
 }
 
 .row {
-  margin-top: 1.6rem;
+  margin-top: 1.2rem;
 }
 
 .row2 {
@@ -74,18 +74,19 @@
   font-weight: 700;
 }
 
-.ChDescription {
+.ChCardDescription {
   font-size: 1.6rem;
   line-height: 24px;
 }
-.ChBadge {
+
+/* .ChBadge {
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
   padding: 5px 10px;
   border-radius: 2px;
   border-width: 2px;
   margin-top: auto;
   margin-bottom: auto;
-}
+} */
 
 .ChLink {
   margin-top: 3rem;
@@ -141,7 +142,7 @@
   /* background-color: yellowgreen; */
 }
 
-.button {
+/* .button {
   background: none;
   font-size: 18px;
   width: 220px;
@@ -173,7 +174,7 @@
   width: 220px;
   height: 44px;
   border-radius: 200px;
-}
+} */
 
 .AvatarGroup {
   flex-direction: row;

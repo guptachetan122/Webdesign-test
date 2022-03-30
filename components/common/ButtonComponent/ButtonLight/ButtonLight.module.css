@@ -35,6 +35,25 @@
   align-items: center;
 }
 
+.ButtonLight3 {
+  background: none;
+  font-size: 18px;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: .5rem;
+}
+
 @media screen and (min-width: 2500px) {
   .LabelButton {
     font-size: 1.6rem;

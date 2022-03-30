@@ -3,7 +3,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
 import store from '../app/store'
-import Layout from '../components/Layout';
+import Layout from '../ui/Layout';
 import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }: AppProps) {

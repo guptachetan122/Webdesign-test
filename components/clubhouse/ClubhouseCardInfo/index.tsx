@@ -6,6 +6,7 @@ import Link from "next/link";
 import { UserGroupIcon as ChInactive } from "@heroicons/react/outline";
 import ButtonLight from "../../common/ButtonComponent/ButtonLight";
 import ButtonDark from "../../common/ButtonComponent/ButtonDark";
+import ClubhouseCard from "../ClubhouseCard";
 const { Text } = Typography;
 
 const ClubhouseCardInfo = ({ isJoined = true }) => {
@@ -23,7 +24,7 @@ const ClubhouseCardInfo = ({ isJoined = true }) => {
   }
   return (
     <>
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
         <Row className={styles.row}>
           <Col xs={20} md={20} lg={20} xl={20} xxl={20} className={styles.col}>
             <Text className={styles.ChTopContent}>
@@ -39,32 +40,27 @@ const ClubhouseCardInfo = ({ isJoined = true }) => {
           </Col>
         </Row>
         <Row className={styles.row}>
-          <Text>
+          <Text className={styles.ChCardDescription}>
             women playing sports, bindass, lorem Ipsum is simply dummy text of
             the printing and typesetting industry. Lorem Ipsum has been the
             industry&apos;s standard du,dummy text of the printing and
             typesetting industry. ...more
           </Text>
         </Row>
-      </div>
-
+      </div> */}
+      <ClubhouseCard isJoined infoPage/>
       <div className={styles.container3}>
         {isJoined ? (
           <>
             <Row>
-              <Col span={8}>
-                {" "}
-                <Link href="/clubhouse/id/chat" passHref>
-                  <ButtonLight name="view messages" />
-                </Link>
-              </Col>
-              <Col span={8}>
+              <Col span={7}>
                 {" "}
                 <ButtonLight name="mute clubhouse" />
               </Col>{" "}
-              <Col span={8}>
+              <Col span={7}>
                 <ButtonLight name="exit clubhouse" />
               </Col>
+              <Col span={10}></Col>
             </Row>
           </>
         ) : (

@@ -4,8 +4,8 @@ import { Col, Row } from "antd";
 import { useRouter } from "next/router";
 import React from "react";
 import ExperienceInfo from "../../../components/experience/ExperienceInfo";
-import Sidebar from "../../../components/Sidebar";
-import Subheader from "../../../components/Subheader2";
+import Sidebar from "../../../ui/Sidebar";
+import Subheader from "../../../ui/Subheader2";
 import { expbackNavbar} from "../../../constants/constants";
 import styles from "../../../styles/Experience.module.css";
 

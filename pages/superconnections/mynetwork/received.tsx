@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import React from "react";
 import Member from "../../../components/sc/Member";
-import Sidebar from "../../../components/Sidebar";
+import Sidebar from "../../../ui/Sidebar";
 import styles from "../../../styles/Superconnections.module.css";
 
 const RecievedSc = () => {

@@ -2,9 +2,9 @@
 import React from "react";
 import { superconnectionNavbar } from "../../constants/constants";
 import styles from "../../styles/Superconnections.module.css";
-import Subheader from "../../components/Subheader2";
+import Subheader from "../../ui/Subheader2";
 import { Card, Col, Input, Row, Switch } from "antd";
-import Sidebar from "../../components/Sidebar";
+import Sidebar from "../../ui/Sidebar";
 import MemberRecommendations from "../../components/sc/MemberRecommendation";
 import { SearchOutlined } from "@ant-design/icons";
 import Link from "next/link";

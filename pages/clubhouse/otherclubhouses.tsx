@@ -2,12 +2,12 @@ import { SearchOutlined } from '@ant-design/icons';
 import { Col, Input, Row } from 'antd';
 import React, { useState } from 'react'
 import ClubhouseCard from '../../components/clubhouse/ClubhouseCard';
-import Sidebar from '../../components/Sidebar';
-import Subheader from "../../components/Subheader2";
+import Sidebar from '../../ui/Sidebar';
+import Subheader from "../../ui/Subheader2";
 import { clubhouseNavbar } from "../../constants/constants";
 import styles from "../../styles/ClubHouse.module.css";
 import { Tag } from "antd";
-import SearchTagComponent from '../../components/search/SearchTagComponent';
+import SearchTagComponent from '../../components/common/Tags/SearchTagComponent';
 const { CheckableTag } = Tag;
 
 const Otherclubhouses = () => {

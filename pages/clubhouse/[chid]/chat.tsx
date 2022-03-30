@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
 import { Col, Input, Row, Typography } from "antd";
 import React from "react";
-import Sidebar from "../../../components/Sidebar";
+import Sidebar from "../../../ui/Sidebar";
 import { backNavbar} from "../../../constants/constants";
 import styles from "../../../styles/ClubHouse.module.css";
 import { SearchOutlined } from "@ant-design/icons";
 import ClubhouseChat from "../../../components/clubhouse/ClubhouseChat";
-import Subheader from "../../../components/Subheader2";
+import Subheader from "../../../ui/Subheader2";
 
 const { Text } = Typography;
 

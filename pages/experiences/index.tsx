@@ -4,8 +4,8 @@ import { Col, Layout, Row } from "antd";
 import React from "react";
 import ExperienceCard from "../../components/experience/ExperienceCard";
 import ExpTags from "../../components/experience/ExpTags";
-import Sidebar from "../../components/Sidebar";
-import Subheader from "../../components/Subheader2";
+import Sidebar from "../../ui/Sidebar";
+import Subheader from "../../ui/Subheader2";
 import { experiencesNavbar } from "../../constants/constants";
 import styles from "../../styles/Experience.module.css";
 

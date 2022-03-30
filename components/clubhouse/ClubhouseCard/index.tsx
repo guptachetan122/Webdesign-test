@@ -31,6 +31,7 @@ const ClubhouseCard = ({
   upcomingHuddle = false,
   badge = "",
   pinned = 5,
+  infoPage = false,
 }) => {
   const [isPin, setPin] = useState(isPinned);
   const [isMute, setMute] = useState(isMuted);
@@ -52,7 +53,7 @@ const ClubhouseCard = ({
   }
 
   function unPin() {
-    setPin(false)
+    setPin(false);
     setPinnedCh(pinnedCh - 1);
   }
 
@@ -82,7 +83,7 @@ const ClubhouseCard = ({
       )}
     </Menu>
   );
- 
+
   return (
     <>
       <div className={styles.ChCardcontainer}>
@@ -105,7 +106,7 @@ const ClubhouseCard = ({
                   <EllipsisOutlined className={styles.threedots} />
                 </Button>
               </Dropdown>
-            ) : (
+            ) : ( infoPage ? null :
               <button className={styles.ChCardBadge}>
                 <h6 className={styles.ChCardBadgeText}>{badge}</h6>
               </button>
@@ -141,7 +142,7 @@ const ClubhouseCard = ({
           <Col span={10} className={styles.ChCardcol2}>
             {isJoined ? (
               <ButtonLight msgs="121" name="clubhouse" />
-            ) : (
+            ) : infoPage ? null : (
               <ButtonDark name="join clubhouse" />
             )}
           </Col>
