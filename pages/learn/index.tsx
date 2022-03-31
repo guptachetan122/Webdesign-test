@@ -13,6 +13,7 @@ import styles from "../../styles/Learn.module.css";
 const { Text } = Typography;
 
 const Coaching = () => {
+  console.log("logg");
   return (
     <>
       {/* <div className={styles.Header}>
