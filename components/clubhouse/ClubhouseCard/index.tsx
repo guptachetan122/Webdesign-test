@@ -61,7 +61,7 @@ const ClubhouseCard = ({
     setMute(!isMute);
   }
 
-  const menu = (
+  const menu = () => (
     <Menu style={{ padding: "0" }}>
       {isPin ? (
         <Menu.Item key="1" onClick={unPin} className={styles.Menu}>

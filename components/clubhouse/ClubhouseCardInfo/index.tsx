@@ -1,18 +1,16 @@
-import { Avatar, Badge, Button, Card, Col, Row, Typography } from "antd";
+import { Avatar, Col, Row, Typography } from "antd";
 import React, { useState } from "react";
 import styles from "./ClubhouseCardInfo.module.css";
-import Image from "next/image";
-import Link from "next/link";
 import { UserGroupIcon as ChInactive } from "@heroicons/react/outline";
 import ButtonLight from "../../common/ButtonComponent/ButtonLight";
 import ButtonDark from "../../common/ButtonComponent/ButtonDark";
 import ClubhouseCard from "../ClubhouseCard";
 const { Text } = Typography;
 
-const ClubhouseCardInfo = ({ isJoined = true }) => {
+const ClubhouseCardInfo = ({ isJoined = false }) => {
   const [isClicked, SetisClicked] = useState(false);
   const [viewAll, SetviewAll] = useState(false);
-  const [isFounder, SetisFounder] = useState(false);
+  const [isJoin, SetisJoin] = useState(isJoined);
   const n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   function onPress() {
@@ -48,9 +46,9 @@ const ClubhouseCardInfo = ({ isJoined = true }) => {
           </Text>
         </Row>
       </div> */}
-      <ClubhouseCard isJoined infoPage/>
+      <ClubhouseCard infoPage />
       <div className={styles.container3}>
-        {isJoined ? (
+        {isJoin ? (
           <>
             <Row>
               <Col span={7}>
@@ -64,7 +62,9 @@ const ClubhouseCardInfo = ({ isJoined = true }) => {
             </Row>
           </>
         ) : (
-          <ButtonDark name="join clubhouse" />
+          <Row>
+            <ButtonDark name="join clubhouse" />
+          </Row>
         )}
       </div>
 
