@@ -8,7 +8,7 @@ const { Text } = Typography;
 const CoachCard = () => {
   return (
     <>
-      <Card className={styles.MemberContainer}>
+      <div className={styles.MemberContainer}>
         <Row>
           <Col span={4} className={styles.MemberAvatarCol}>
             {" "}
@@ -40,7 +40,7 @@ const CoachCard = () => {
           </Col>
           <Col span={4} className={styles.buttonStyle}></Col>
         </Row>
-      </Card>
+      </div>
     </>
   );
 }

@@ -1,10 +1,11 @@
-import { Avatar, Col, Row, Typography } from "antd";
+import { Avatar, Col, Divider, Row, Typography } from "antd";
 import React, { useState } from "react";
 import styles from "./ClubhouseCardInfo.module.css";
-import { UserGroupIcon as ChInactive } from "@heroicons/react/outline";
+import { UserGroupIcon as ChInactive } from "@heroicons/react/solid";
 import ButtonLight from "../../common/ButtonComponent/ButtonLight";
 import ButtonDark from "../../common/ButtonComponent/ButtonDark";
 import ClubhouseCard from "../ClubhouseCard";
+import ClubhouseMember from "../ClubhouseMember";
 const { Text } = Typography;
 
 const ClubhouseCardInfo = ({ isJoined = false }) => {
@@ -67,29 +68,17 @@ const ClubhouseCardInfo = ({ isJoined = false }) => {
           </Row>
         )}
       </div>
-
+      <Divider className={styles.Divider} />
       <div className={styles.container2}>
-        <div>
+        <Row>
           <ChInactive className={styles.SidebarIcon} />
           <Text className={styles.Chmembers}>121 members</Text>
-        </div>
+        </Row>
       </div>
       {n.slice(0, 3).map((i) => {
         return (
           <>
-            <Row className={styles.row2}>
-              <Col span={3}>
-                {" "}
-                <Avatar
-                  className={styles.Avatar}
-                  src={"/assets/images/Ragini.png"}
-                />
-              </Col>
-              <Col span={11} className={styles.col}>
-                <Text>ragini das</Text>
-              </Col>
-              <Col span={10}></Col>
-            </Row>
+           <ClubhouseMember />
           </>
         );
       })}

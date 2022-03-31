@@ -1,8 +1,6 @@
 import { Avatar, Typography, Card, Row, Col, Modal } from "antd";
 import React, { useState } from "react";
-import Image from "next/image";
 import styles from "./Member.module.css";
-import TextArea from "antd/lib/input/TextArea";
 import ScModal from "../../common/Modal/ScModal";
 import ButtonLight from "../../common/ButtonComponent/ButtonLight";
 const { Text } = Typography;
