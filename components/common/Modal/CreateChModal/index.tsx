@@ -1,5 +1,5 @@
 import { PlusOutlined, QuestionOutlined } from "@ant-design/icons";
-import { Col, Input, Modal, Radio, Row, Typography } from "antd";
+import { Input, Modal, Radio, Row, Typography } from "antd";
 import TextArea from "antd/lib/input/TextArea";
 import React, { useState } from "react";
 import styles from "./CreateCh.module.css";
@@ -37,13 +37,15 @@ const CreateChModal = () => {
         width={600}
       >
         <div className={styles.ChModalTitle}>start a new clubhouse</div>
-        <Text>give your clubhouse a name</Text>
+        <Text className={styles.ChModalText}>give your clubhouse a name</Text>
         <Input
           placeholder="go ahead, give it a cool name"
           className={styles.ChModalInput}
         />
 
-        <Text>what will this clubhouse talk about?</Text>
+        <Text className={styles.ChModalText}>
+          what will this clubhouse talk about?
+        </Text>
         <TextArea
           placeholder="6-10 words will be ideal"
           className={styles.ChModalInput}
@@ -58,9 +60,9 @@ const CreateChModal = () => {
         <br />
         <br />
         {value == 1 ? (
-          <Text className={styles.radioText}>any member can join</Text>
+          <Text className={styles.ChRadioText}>any member can join</Text>
         ) : (
-          <Text className={styles.radioText}>
+          <Text className={styles.ChRadioText}>
             only invited members or members approved by founder can join
           </Text>
         )}

@@ -2,44 +2,38 @@
 
 import { Col, Layout, Row } from "antd";
 import React from "react";
-import ExperienceCard from "../../components/experience/ExperienceCard";
-import ExpTags from "../../components/experience/ExpTags";
+import ExperienceCard from "../../components/experience/UpcomingExperienceCard";
+import ExpTags from "../../components/common/Tags/ExpTags";
 import Sidebar from "../../ui/Sidebar";
-import Subheader from "../../ui/Subheader2";
-import { experiencesNavbar } from "../../constants/constants";
 import styles from "../../styles/Experience.module.css";
 
 const Upcoming = () => {
   return (
     <>
-      {/* <div className={styles.Header}>
-        {" "}
-        <Subheader SubheaderData={experiencesNavbar} />{" "}
-      </div> */}
       <Row className={styles.Body}>
-        <Col span={6} className={styles.sidebarPos}>
+        <Col span={6} className={styles.Sidebar}>
           {" "}
           <Sidebar pageName={"experiences"} />{" "}
         </Col>
-        <Col span={12} className={styles.middleCol}>
-          <Row>
-            <Col span={3}></Col>{" "}
-            <Col span={18}>
+        <Col span={12} className={styles.MiddleCol}>
+          <Row className={styles.TagRow}>
+            <Col span={2}></Col>{" "}
+            <Col span={20}>
               {" "}
               <ExpTags />
             </Col>
-            <Col span={3}></Col>
+            <Col span={2}></Col>
           </Row>
           <Row>
-            <Col span={6}></Col>
-            <Col span={12}>
+            <Col span={4}></Col>
+            <Col span={15}>
               <div style={{}}>
                 <ExperienceCard viewMore />
-                <ExperienceCard viewMore />
+                <ExperienceCard viewMore isBooked/>
                 <ExperienceCard viewMore />
               </div>
             </Col>
-            <Col span={6}></Col>
+            <Col span={4}></Col>
           </Row>
         </Col>
         <Col span={6}></Col>

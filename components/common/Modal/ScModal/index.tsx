@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Image from "next/image";
 import styles from './ScModal.module.css'
 import { Modal } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';

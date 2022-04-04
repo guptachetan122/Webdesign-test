@@ -4,13 +4,13 @@
   background-color: #E5E5E5;
 }
 
-.sidebarPos{
+.Sidebar{
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 2rem;
 }
 
-.middleCol{
+.MiddleCol{
   padding-top: 3rem;
 }

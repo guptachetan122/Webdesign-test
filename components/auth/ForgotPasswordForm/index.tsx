@@ -33,12 +33,12 @@ const ForgotPasswordForm = () => {
 
   return (
     <>
-      <div className={styles.TextWrapper2}>
-        <Text className={styles.Text2}> recover your leap account </Text>
+      <div className={styles.ForgotTopTextWrap}>
+        <Text className={styles.ForgotText}> recover your leap account </Text>
       </div>
-      <div className={styles.waitlistContainer}>
-        <div className={styles.TextWrapper}>
-          <Text className={styles.Text}> enter your registered email-id </Text>
+      <div className={styles.ForgotContainer}>
+        <div className={styles.ForgotTextWrapper}>
+          <Text className={styles.ForgotText}> enter your registered email-id </Text>
         </div>
         <Form
           className="form"
@@ -49,7 +49,7 @@ const ForgotPasswordForm = () => {
           form={form}
         >
           <Form.Item
-            className={styles.inputLabel}
+            className={styles.ForgotInputLabel}
             label="email"
             name="email"
             rules={[
@@ -72,36 +72,26 @@ const ForgotPasswordForm = () => {
           >
             <Input
               prefix={<UserOutlined className="site-form-item-icon" />}
-              className={styles.input}
+              className={styles.ForgotInput}
               placeholder=" gal@gadot.com"
             />
           </Form.Item>
-          <Form.Item className={styles.buttonWrapper}>
+          <Form.Item className={styles.ForgotButtonWrapper}>
             <Button
               type="primary"
               htmlType="submit"
-              id={styles.buttonPrimary}
+              id={styles.ForgotButton}
               loading={loading}
             >
               reset password
             </Button>
           </Form.Item>
         </Form>
-        <div className={styles.forgotPassWrapper}>
+        <div className={styles.SignInWrapper}>
           <Link href="/login">
-            <a className={styles.linkstyle}>sign in ?</a>
+            <a className={styles.SignInLink}>sign in ?</a>
           </Link>
         </div>
-
-        {/* {isError && (
-                                <div className={styles.errorWrapper}>
-                                    <span
-                                        className={`${commonStyles.textCenter} ${commonStyles.highlightedText}`}
-                                    >
-                                        something went wrong! please try again later.
-                                    </span>
-                                </div>
-                            )} */}
       </div>
     </>
   );

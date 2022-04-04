@@ -23,43 +23,13 @@ const ClubhouseCardInfo = ({ isJoined = false }) => {
   }
   return (
     <>
-      {/* <div className={styles.container}>
-        <Row className={styles.row}>
-          <Col xs={20} md={20} lg={20} xl={20} xxl={20} className={styles.col}>
-            <Text className={styles.ChTopContent}>
-              simplifying personal finance for women
-            </Text>
-          </Col>
-          <Col xs={4} md={4} lg={4} xl={4} xxl={4} className={styles.col3}>
-            {!isJoined ? null : (
-              <button className={styles.ChCardBadge}>
-                <h6 className={styles.ChCardBadgeText}>public</h6>
-              </button>
-            )}
-          </Col>
-        </Row>
-        <Row className={styles.row}>
-          <Text className={styles.ChCardDescription}>
-            women playing sports, bindass, lorem Ipsum is simply dummy text of
-            the printing and typesetting industry. Lorem Ipsum has been the
-            industry&apos;s standard du,dummy text of the printing and
-            typesetting industry. ...more
-          </Text>
-        </Row>
-      </div> */}
       <ClubhouseCard infoPage />
-      <div className={styles.container3}>
+      <div className={styles.ButtonWrapper}>
         {isJoin ? (
           <>
             <Row>
-              <Col span={7}>
-                {" "}
                 <ButtonLight name="mute clubhouse" />
-              </Col>{" "}
-              <Col span={7}>
                 <ButtonLight name="exit clubhouse" />
-              </Col>
-              <Col span={10}></Col>
             </Row>
           </>
         ) : (
@@ -68,11 +38,11 @@ const ClubhouseCardInfo = ({ isJoined = false }) => {
           </Row>
         )}
       </div>
-      <Divider className={styles.Divider} />
-      <div className={styles.container2}>
+      <Divider className={styles.ChCardInfoDivider} />
+      <div className={styles.MemberInfoWrapper}>
         <Row>
-          <ChInactive className={styles.SidebarIcon} />
-          <Text className={styles.Chmembers}>121 members</Text>
+          <ChInactive className={styles.ChCardInfoIcon} />
+          <Text className={styles.ChCardInfoMembers}>121 members</Text>
         </Row>
       </div>
       {n.slice(0, 3).map((i) => {
@@ -86,27 +56,12 @@ const ClubhouseCardInfo = ({ isJoined = false }) => {
         n.slice(3).map((i) => {
           return (
             <>
-              <Row className={styles.row2}>
-                <Col span={3}>
-                  {" "}
-                  <Avatar
-                    className={styles.Avatar}
-                    src={"/assets/images/Ragini.png"}
-                  />
-                </Col>
-                <Col span={11} className={styles.col}>
-                  <Text>ragini das</Text>
-                  {/* {!isFounder ? (
-            <Text className={styles.Chtext2}>is a Founder</Text>
-          ) : null} */}
-                </Col>
-                <Col span={10}></Col>
-              </Row>
+             <ClubhouseMember />
             </>
           );
         })
       ) : (
-        <div className={styles.ChLink} onClick={handleViewAll}>
+        <div className={styles.ChCardInfoLink} onClick={handleViewAll}>
           <a>view all members </a>
         </div>
       )}

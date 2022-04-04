@@ -29,7 +29,7 @@ const Member = ({pageName = ""}) => {
               </Text>
             </Row>
           </Col>
-          <Col span={8} className={styles.buttonStyle}>
+          <Col span={8} className={styles.MemberButtonWrapper}>
             {pageName == "chats" ? (
               <ButtonLight name="reply" />
             ) : pageName == "mysc" ? (

@@ -1,14 +1,4 @@
-.col {
-  color: #616161;
-  display: block;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.row2 {
+.ChMemberWrapper {
   background: none;
   margin-top: 1.6rem;
   padding: 1rem 1rem;
@@ -20,18 +10,54 @@
     0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-.Avatar {
-  width: 65px;
-  height: 65px;
+.ChMemberNameCol {
+  color: #616161;
+  display: block;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 0rem 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.MemberName{
-    font-size: 20px;
-    font-weight: bold;
+.ChMemberAvatar {
+  width: fit-content;
+  height: fit-content;
 }
 
-.MemberDescription{
-    font-size : 18px;
-    font-weight: lighter;
+.ChMemberName {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 1rem 0rem;
+}
+
+.ChMemberDescription {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 2500px) {
+  .ChMemberName {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .ChMemberDescription {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .ChMemberName {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .ChMemberDescription {
+    font-size: 15px;
+    line-height: 19px;
+  }
 }

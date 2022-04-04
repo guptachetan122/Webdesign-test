@@ -1,85 +1,108 @@
-.MemberContainer{
+.CoachCardContainer {
   margin: 8px 0px;
-  padding:2rem 1rem;
-  background-color: #FAFAFA;
+  padding: 2rem 2rem;
+  background-color: #fafafa;
   border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.6s ease-in-out;
+  width: 100%;
+  cursor: pointer;
 }
 
-.row{
-    margin-bottom: .5rem;
+.CoachCardContainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -5px, 5px);
 }
 
-.iconRow{
-    margin-top: 1.5rem;
+.CoachCardAvatarCol {
+  margin-right: 1rem;
 }
 
-.MemberName{
-    font-size: 24px;
-    font-weight: bold;
+.CoachCardAvatar {
+  height: fit-content;
+  width: fit-content;
 }
 
-.MemberDescription{
-    font-size : 20px;
-    font-weight: lighter;
+.CoachCardMiddleCol {
+  padding: 0.5rem 2rem;
 }
 
-.MemberAvatar{
-    height: fit-content;
-    width: fit-content;
+.CoachCardRow {
+  margin-bottom: 0.5rem;
 }
 
-.MemberAvatarCol{
-    margin-right: 1rem;
-    /* background-color: red; */
+.CoachCardName {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.CardButton{
-    background: none;
-    border: none;
-    padding: 0;
-    margin-right: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.CoachCardDescription {
+  font-size: 20px;
+  font-weight: lighter;
 }
 
-.CardIcon {
+/* Coach Card Icon Row starts */
+
+.CoachCardIconRow {
+  margin-top: 1.5rem;
+}
+
+.CoachCardButton {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CoachCardIcon {
   width: 20px;
   height: 20px;
   margin-right: 1rem;
   color: #616161;
 }
 
-.MemberMiddleCol{
-    padding: 0rem 2rem;
-}
-
-
-.MemberChatButton{
-    background : none;
-    font-size : 18px;
-    padding: 1rem 5rem;
-    border-radius: 200px;
-    display: block;
-    margin-left:auto;
-    margin-right: 0px;
-    cursor: pointer;
-}
-
-.buttonStyle{
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
+/* Coach Card Icon Row ends */
 
 @media screen and (min-width: 2500px) {
-  .MemberName {
+  .CoachCardName {
     font-size: 30px;
-    font-weight: 700;
   }
 
-  .MemberDescription {
+  .CoachCardDescription {
     font-size: 26px;
-    font-weight: 400;
+  }
+
+  .CoachCardIcon {
+    width: 28px;
+    height: 28px;
+    margin-right: 1rem;
+  }
+
+  .CoachCardButton {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width:1600px) {
+  .CoachCardName {
+    font-size: 15px;
+  }
+
+  .CoachCardDescription {
+    font-size: 13px;
+  }
+
+  .CoachCardIcon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .CoachCardButton {
+    font-size: 14px;
   }
 }

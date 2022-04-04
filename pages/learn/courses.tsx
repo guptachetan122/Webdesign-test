@@ -1,27 +1,31 @@
-import { Col, Row } from 'antd';
-import React from 'react'
-import Sidebar from '../../ui/Sidebar';
-import Subheader from "../../ui/Subheader2";
-import { coachingNavbar } from "../../constants/constants";
-import styles from "../../styles/Feed.module.css";
-
+import { Card, Col, Row } from "antd";
+import React from "react";
+import Sidebar from "../../ui/Sidebar";
+import styles from "../../styles/Learn.module.css";
 
 const courses = () => {
   return (
     <>
-      {/* <div className={styles.Header}>
-        {" "}
-        <Subheader SubheaderData={coachingNavbar} />{" "}
-      </div> */}
       <Row className={styles.Body}>
-        <Col span={6} className={styles.sidebarPos}>
+        <Col span={6} className={styles.Sidebar}>
           {" "}
-              <Sidebar pageName={"learn"} />{" "}
+          <Sidebar pageName={"learn"} />{" "}
         </Col>
-        <Col span={12} className={styles.middleCol}>
+        <Col span={12} className={styles.MiddleCol}>
           <Row>
             <Col span={2}></Col>
-            <Col span={20}></Col>
+            <Col span={20}>
+              {" "}
+              <Card className={styles.CourseCardStyle}>
+                {" "}
+                <div className={styles.CourseTitle}>cohort based courses</div>
+                <div className={styles.CourseSubTitle}>
+                  coming soon - we hosted 8 creators and sold 100+ seats in
+                  2021. these courses were rated 9+ by our members. we are
+                  excited to relaunch courses in 2022. bigger. bolder.
+                </div>
+              </Card>
+            </Col>
             <Col span={2}></Col>
           </Row>
         </Col>
@@ -29,6 +33,6 @@ const courses = () => {
       </Row>
     </>
   );
-}
+};
 
-export default courses
+export default courses;

@@ -1,13 +1,13 @@
 .SidebarCardStyle {
   position: fixed;
-  width: fit-content;
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
   border-radius: 20px;
   background-color: #FAFAFA;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .SidebarList {
+  margin: 0%;
   list-style: none;
   padding: 0rem 0.5rem;
   font-size: 20px;
@@ -17,16 +17,21 @@
 }
 
 .SidebarListItem {
-  margin-bottom: 0rem;
+  padding: 0rem 1rem;
+  margin: 0.5rem 0rem;
+  width: 100%;
   cursor: pointer;
   color: #616161;
   /* background-color: red; */
 }
 
 .SidebarListItemActive {
-  margin-bottom: 0rem;
+  padding: 0rem 1rem;
+  margin: 0.5rem 0rem;
+  width: 100%;
   cursor: pointer;
   font-weight: 700;
+  /* background-color: red; */
 }
 
 .SidebarIcon {
@@ -72,5 +77,21 @@
   .SidebarIconActive {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .SidebarList {
+    font-size: 15px;
+  }
+
+  .SidebarIcon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .SidebarIconActive {
+    width: 15px;
+    height:15px;
   }
 }

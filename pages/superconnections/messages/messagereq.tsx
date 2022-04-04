@@ -6,16 +6,12 @@ import styles from "../../../styles/Superconnections.module.css";
 const MessageReq = () => {
   return (
     <>
-      {/* <div className={styles.Header}>
-        {" "}
-        <Subheader SubheaderData={messageNavbar} />{" "}
-      </div> */}
       <Row className={styles.Body}>
-        <Col span={6} className={styles.sidebarPos}>
+        <Col span={6} className={styles.Sidebar}>
           {" "}
           <Sidebar pageName={"superconnections"} />{" "}
         </Col>
-        <Col span={12} className={styles.middleCol}>
+        <Col span={12} className={styles.MiddleCol}>
           <Row>
             <Col span={2}></Col>
             <Col span={20}></Col>

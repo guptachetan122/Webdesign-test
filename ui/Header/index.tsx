@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { Row, Col, Badge, Typography, Avatar } from "antd";
-import { BellOutlined, MessageOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import styles from "./Header.module.css";
 import Link from "next/link";
@@ -18,6 +17,7 @@ import {
   myNetworkNavbar,
   superconnectionNavbar,
 } from "../../constants/constants";
+import ProfileDrawer from "../Drawer";
 
 const { Text } = Typography;
 
@@ -45,7 +45,7 @@ const Header = () => {
               }
               className={styles.profileAvatar}
             />
-            <div style={{fontSize: 20, width : 'fit-content'}}>my profile</div>
+            <div><ProfileDrawer /></div>
           </Col>
 
           <Col span={8} className={styles.headerCol}>
@@ -111,7 +111,7 @@ const Header = () => {
             <Subheader2 SubheaderData={superconnectionNavbar} />
           ) : PATH == "learn" ? (
             <Subheader2 SubheaderData={coachingNavbar} />
-          ) : PATH == "feed" ? (
+          ) : PATH == "feed" || PATH == ''? (
             <div className={styles.subHeader}>
               <Subheader2 SubheaderData={feedNavbar} />
             </div>

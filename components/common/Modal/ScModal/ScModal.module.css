@@ -17,16 +17,9 @@
   border-radius: 200px;
   cursor: pointer;
 }
-
-.MemberChatButton {
-  background: none;
-  font-size: 18px;
-  padding: 1rem 5rem;
-  border-radius: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: 0px;
-  cursor: pointer;
+.ScIcon{
+  width: 24px;
+  height: 24px;
 }
 
 .ScModalButtonWrapper {
@@ -44,9 +37,4 @@
   height: 50px;
   border-radius: 200px;
   margin-top: 1rem;
-}
-
-.ScIcon{
-  width: 24px;
-  height: 24px;
 }

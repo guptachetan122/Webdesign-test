@@ -3,8 +3,6 @@ import { Col, Input, Row } from 'antd';
 import React, { useState } from 'react'
 import ClubhouseCard from '../../components/clubhouse/ClubhouseCard';
 import Sidebar from '../../ui/Sidebar';
-import Subheader from "../../ui/Subheader2";
-import { clubhouseNavbar } from "../../constants/constants";
 import styles from "../../styles/ClubHouse.module.css";
 import { Tag } from "antd";
 import SearchTagComponent from '../../components/common/Tags/SearchTagComponent';
@@ -16,21 +14,18 @@ const Otherclubhouses = () => {
 
   return (
     <>
-      {/* <div className={styles.Header}>
-        <Subheader SubheaderData={clubhouseNavbar} />
-      </div> */}
       <Row className={styles.Body}>
-        <Col span={6} className={styles.sidebarPos}>
+        <Col span={6} className={styles.Sidebar}>
           <Sidebar pageName={"clubhouse"} />
         </Col>
-        <Col span={12} className={styles.middleCol}>
+        <Col span={12} className={styles.MiddleCol}>
           <Row>
             <Col span={2}></Col>
             <Col span={20}>
               <SearchTagComponent />
               <Input
                 className={styles.ChInput}
-                prefix={<SearchOutlined className={styles.iconSize} />}
+                prefix={<SearchOutlined className={styles.ChIcon} />}
                 placeholder={`  type a clubhouse’s name`}
               />
 

@@ -1,6 +1,5 @@
 import {
   Avatar,
-  Button,
   Col,
   Divider,
   Dropdown,
@@ -64,21 +63,29 @@ const ClubhouseCard = ({
   const menu = () => (
     <Menu style={{ padding: "0" }}>
       {isPin ? (
-        <Menu.Item key="1" onClick={unPin} className={styles.Menu}>
-          <PushpinFilled className={styles.SidebarIcon4} /> unpin clubhouse
+        <Menu.Item key="1" onClick={unPin}>
+          <div className={styles.ChCardMenu}>
+            <PushpinFilled className={styles.ChCardMenuIcon} /> unpin clubhouse
+          </div>
         </Menu.Item>
       ) : (
-        <Menu.Item key="1" onClick={onPin} className={styles.Menu}>
-          <PushpinFilled className={styles.SidebarIcon4} /> pin clubhouse
+        <Menu.Item key="1" onClick={onPin}>
+          <div className={styles.ChCardMenu}>
+            <PushpinFilled className={styles.ChCardMenuIcon} /> pin clubhouse
+          </div>
         </Menu.Item>
       )}
       {isMute ? (
-        <Menu.Item key="2" onClick={onMute} className={styles.Menu}>
-          <VolumeOffIcon className={styles.SidebarIcon4} /> unmute clubhouse
+        <Menu.Item key="2" onClick={onMute}>
+          <div className={styles.ChCardMenu}>
+            <VolumeOffIcon className={styles.ChCardMenuIcon} /> unmute clubhouse
+          </div>
         </Menu.Item>
       ) : (
-        <Menu.Item key="2" onClick={onMute} className={styles.Menu}>
-          <VolumeOffIcon className={styles.SidebarIcon4} /> mute clubhouse
+        <Menu.Item key="2" onClick={onMute}>
+          <div className={styles.ChCardMenu}>
+            <VolumeOffIcon className={styles.ChCardMenuIcon} /> mute clubhouse
+          </div>
         </Menu.Item>
       )}
     </Menu>
@@ -86,8 +93,8 @@ const ClubhouseCard = ({
 
   return (
     <>
-      <div className={styles.ChCardcontainer}>
-        <Row className={styles.ChCardrow}>
+      <div className={styles.ChCardContainer}>
+        <Row className={styles.ChCardRow}>
           <Col span={20}>
             <Link href="/clubhouse/id" passHref>
               <a>
@@ -96,19 +103,20 @@ const ClubhouseCard = ({
                 </Text>
               </a>
             </Link>
-            {isMute ? <VolumeOffIcon className={styles.SidebarIcon4} /> : null}
-            {isPin ? <PushpinFilled className={styles.SidebarIcon4} /> : null}
+            {isMute ? <VolumeOffIcon className={styles.ChCardMenuIcon} /> : null}
+            {isPin ? <PushpinFilled className={styles.ChCardMenuIcon} /> : null}
           </Col>
-          <Col span={4} className={styles.ChCardcol2}>
+
+          <Col span={4} className={styles.ChCardMenuCol}>
             {isJoined ? (
-              <Dropdown className={styles.Dropdown} overlay={menu}>
-                <Button style={{ background: "none" }}>
-                  <EllipsisOutlined className={styles.threedots} />
-                </Button>
+              <Dropdown className={styles.ChCardDropdown} overlay={menu}>
+                <button style={{ background: "none" , border : "none"}}>
+                  <EllipsisOutlined className={styles.ChCardDropdownIcon} />
+                </button>
               </Dropdown>
-            ) : ( infoPage ? null :
-              <button className={styles.ChCardBadge}>
-                <h6 className={styles.ChCardBadgeText}>{badge}</h6>
+            ) : infoPage ? null : (
+              <button className={styles.ChCardBadgeButton}>
+                <h6 className={styles.ChCardBadge}>{badge}</h6>
               </button>
             )}
           </Col>
@@ -116,7 +124,7 @@ const ClubhouseCard = ({
         {isJoined ? null : (
           <Link href="/clubhouse/id" passHref>
             <a>
-              <Row className={styles.ChCardrow3}>
+              <Row className={styles.ChCardDescriptionRow}>
                 <Text className={styles.ChCardDescription}>
                   women playing sports, bindass, lorem Ipsum is simply dummy
                   text of the printing and typesetting industry. Lorem Ipsum has
@@ -127,7 +135,7 @@ const ClubhouseCard = ({
             </a>
           </Link>
         )}
-        <Row className={styles.ChCardrow}>
+        <Row className={styles.ChCardRow}>
           <Col span={3}>
             {" "}
             <Avatar
@@ -135,11 +143,12 @@ const ClubhouseCard = ({
               src={"/assets/images/Ragini.png"}
             />
           </Col>
-          <Col span={11} className={styles.ChCardcol}>
-            <Text>ragini das</Text>
-            <Text className={styles.ChCardText}>+ 121</Text>
+
+          <Col span={10} className={styles.ChCardNameCol}>
+            <Text className={styles.ChCardName}>ragini das + 121</Text>
           </Col>
-          <Col span={10} className={styles.ChCardcol2}>
+
+          <Col span={10} className={styles.ChCardButtonCol}>
             {isJoined ? (
               <ButtonLight msgs="121" name="clubhouse" />
             ) : infoPage ? null : (
@@ -151,11 +160,13 @@ const ClubhouseCard = ({
           <Link href="#">
             <a>
               {" "}
-              <Row className={styles.ChCardrow2}>
-                <Divider className={styles.Divider} />
-                <ExperienceInactive className={styles.SidebarIcon2} />
-                1 upcoming huddle
-                <RightOutlined className={styles.SidebarIcon3} />
+              <Row className={styles.ChCardFooterWrapper}>
+                <Divider className={styles.ChCardDivider} />
+                <div className={styles.ChCardFooter}>
+                  <ExperienceInactive className={styles.ChCardFooterIcon} />
+                  <Text>1 upcoming huddle</Text>
+                  <RightOutlined className={styles.ChCardFooterIcon} />
+                </div>
               </Row>
             </a>
           </Link>

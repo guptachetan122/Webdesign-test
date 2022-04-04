@@ -1,0 +1,102 @@
+.DrawerButton {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0rem 0.5rem;
+}
+
+.DrawerAvatar {
+  width: fit-content;
+  height: fit-content;
+}
+
+.DrawerCol {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.DrawerName {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  color: #333333;
+}
+
+.DrawerLink {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: underline;
+  color: #0500ff;
+  cursor: pointer;
+}
+
+.DrawerMiddle {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DrawerMiddleRow {
+  padding: 0rem 3rem;
+  margin: 1rem 0rem;
+  border-bottom: 1px solid #c2c2c2;
+  cursor: pointer;
+}
+
+.DrawerText {
+  font-size: 20px;
+  line-height: 30px;
+  /* font-weight: 400; */
+  color: #333333;
+}
+
+.DrawerIcon {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.DrawerIconRow {
+  padding: 0rem 1rem;
+  margin: 1rem 0rem;
+  cursor: pointer;
+}
+
+.DrawerIconText {
+  font-size: 22px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.DrawerIconStyle {
+  height: 26px;
+  width: 26px;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 2500px) {
+  .DrawerName {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+    color: #333333;
+  }
+
+  .DrawerLink {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    text-decoration: underline;
+    color: #0500ff;
+  }
+
+  .DrawerButton {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 0rem 0.5rem;
+  }
+}

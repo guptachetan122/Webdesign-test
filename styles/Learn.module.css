@@ -1,32 +1,95 @@
 .Body {
   min-height: 200vh;
   overflow: auto;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
-.sidebarPos{
+.Sidebar {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 2rem;
+  padding: 6rem 0rem;
 }
 
-.middleCol{
+.MiddleCol {
   padding-top: 3rem;
 }
 
-.row{
-    padding: 1rem 0rem;
+.LearnRow {
+  padding: 1rem 0rem;
 }
 
-.textStyle{
-    font-size: 22px;
-    font-weight: 500;
-    color: #313131;
+.LearnText {
+  font-size: 22px;
+  font-weight: 500;
+  color: #313131;
 }
 
-.textLinkStyle{
-    font-size: 20px;
-    color: #0500FF;
-    text-decoration: underline;
+.LearnBookingLink {
+  font-size: 20px;
+  color: #0500ff;
+  text-decoration: underline;
+}
+
+.LearnCol {
+  display: flex;
+  justify-content: left;
+}
+
+.LearnCol2 {
+  display: flex;
+  justify-content: right;
+}
+
+.CourseCardStyle {
+  background: none;
+  border: none;
+  padding: 2rem 5rem;
+  margin-top: 5rem;
+}
+
+.CourseTitle {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 2rem 0rem;
+}
+
+.CourseSubTitle {
+  color: #616161;
+  font-size: 22px;
+}
+
+.CourseImage {
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 1600px) {
+  .LearnText {
+    font-size: 16px;
+  }
+
+  .LearnBookingLink {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .LearnText {
+    font-size: 32px;
+  }
+
+  .LearnBookingLink {
+    font-size: 30px;
+  }
+
+  .CourseTitle {
+    font-weight: 700;
+    font-size: 34px;
+    margin: 2rem 0rem;
+  }
+
+  .CourseSubTitle {
+    color: #616161;
+    font-size: 32px;
+  }
 }

@@ -1,3 +1,13 @@
+.ChModalTriggerButton {
+  background: none;
+  font-size: 18px;
+  width: fit-content;
+  padding: 1rem 1rem;
+  border-radius: 12px;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
 .ChModal {
   height: fit-content;
   background: #fafafa;
@@ -14,16 +24,6 @@
 .ChModal p {
   font-size: 16px;
   line-height: 25px;
-}
-
-.ChModalTriggerButton {
-  background: none;
-  font-size: 18px;
-  width: fit-content;
-  padding: 1rem 1rem;
-  border-radius: 12px;
-  margin-right: 2rem;
-  cursor: pointer;
 }
 
 .ChModalButton {
@@ -43,21 +43,15 @@
   margin-top: 1rem;
 }
 
-.radioWrapper {
-  padding: 2rem 1rem;
+@media screen and (min-width: 2500px) {
+  .ChModalTriggerButton {
+    font-size: 28px;
+  }
 }
 
-.chTypeButton {
-  background-color: red;
-}
 
-.container{
-   display: block;
-   width: 100%;
-  margin: 1rem 1rem;
-}
-
-.radioText{
-    margin-bottom: 2rem;
-    border: 2px solid black;
+@media screen and (max-width: 1400px) {
+  .ChModalTriggerButton {
+    padding: 1rem 0.5rem;
+  }
 }

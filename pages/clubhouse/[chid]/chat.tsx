@@ -2,11 +2,9 @@ import { useRouter } from "next/router";
 import { Col, Input, Row, Typography } from "antd";
 import React from "react";
 import Sidebar from "../../../ui/Sidebar";
-import { backNavbar} from "../../../constants/constants";
 import styles from "../../../styles/ClubHouse.module.css";
 import { SearchOutlined } from "@ant-design/icons";
 import ClubhouseChat from "../../../components/clubhouse/ClubhouseChat";
-import Subheader from "../../../ui/Subheader2";
 
 const { Text } = Typography;
 
@@ -16,22 +14,22 @@ const ClubhouseChatPage = () => {
   return (
     <>
       <Row className={styles.Body}>
-        <Col span={6} className={styles.sidebarPos}>
+        <Col span={6} className={styles.Sidebar}>
           <Sidebar pageName={"clubhouse2"} />
         </Col>
-        <Col span={12} className={styles.middleCol}>
+        <Col span={12} className={styles.MiddleCol}>
           <Row>
             <Col span={2}></Col>
             <Col span={20}>
-              <div className={styles.backDiv}>
-                <Text className={styles.backDivText}>
+              <div className={styles.ChBackDiv}>
+                <Text className={styles.ChBackDivText}>
                   {" "}
                   simplifying personal finance for women
                 </Text>
               </div>
               <Input
                 className={styles.ChInput}
-                prefix={<SearchOutlined className={styles.iconSize} />}
+                prefix={<SearchOutlined className={styles.ChIcon} />}
                 placeholder={`  search a message`}
               />
               <ClubhouseChat />

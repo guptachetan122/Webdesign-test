@@ -15,23 +15,20 @@ const ExperienceDetails = () => {
     
   return (
     <>
-      {/* <div className={styles.Header}>
-        {" "}
-        <Subheader SubheaderData={expbackNavbar} />{" "}
-      </div> */}
       <Row className={styles.Body}>
-        <Col span={6} className={styles.sidebarPos}>
+        <Col span={6} className={styles.Sidebar}>
           {" "}
           <Sidebar pageName={"experiences"} />{" "}
         </Col>
-        <Col span={12} className={styles.middleCol}>
+        <Col span={12} className={styles.MiddleCol}>
           <Row>
-            <Col span={6}></Col>
-            <Col span={12}>
-              <div style={{}}>
-                <ExperienceInfo />
+            <Col span={4}></Col>
+            <Col span={15}>
+              <div>
+                <ExperienceInfo isPay isBooked/>
               </div>
             </Col>
+            <Col span={4}></Col>
           </Row>
         </Col>
         <Col span={6}></Col>

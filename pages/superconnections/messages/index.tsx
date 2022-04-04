@@ -13,16 +13,12 @@ const Chats = () => {
 
   return (
     <>
-      {/* <div className={styles.Header}>
-        {" "}
-        <Subheader SubheaderData={messageNavbar} />{" "}
-      </div> */}
       <Row className={styles.Body}>
-        <Col span={6} className={styles.sidebarPos}>
+        <Col span={6} className={styles.Sidebar}>
           {" "}
           <Sidebar pageName={"superconnections"} />{" "}
         </Col>
-        <Col span={12} className={styles.middleCol}>
+        <Col span={12} className={styles.MiddleCol}>
           <Row>
             <Col span={2}></Col>
             <Col span={20}>
@@ -48,7 +44,7 @@ const Chats = () => {
             <Col span={2}></Col>
           </Row>
         </Col>
-        <Col span={6} className={styles.sidebarPos1}>
+        <Col span={6} className={styles.Sidebar2}>
           <Card style={{ position: "fixed", width: "300px", fontSize: "16px" }}>
             messages from new superconnections appear here till you reply to
             them, your posts will now appear in their private feed. once you

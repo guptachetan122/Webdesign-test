@@ -9,7 +9,7 @@
 	align-items: center; */
 }
 
-.headerWrapper{
+.headerWrapper {
   position: relative;
   width: 100%;
 }
@@ -19,12 +19,12 @@
   z-index: 2;
 }
 
-.profileAvatar{
-  width: 100px;
-  height: 100px;
+.profileAvatar {
+  width: 50px;
+  height: 50px;
 }
 
-.headerCol{
+.headerCol {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,6 +53,13 @@
   width: 30px;
 }
 
+@media screen and (min-width: 1920px) {
+  .profileAvatar {
+    width: 75px;
+    height: 75px;
+  }
+}
+
 @media screen and (min-width: 2500px) {
   .headerAvatar {
     height: 60px;
@@ -61,6 +68,9 @@
   .headerImageWrapper {
     width: 120px;
     height: 120px;
-    background-color: rgb(17, 0, 255);
+  }
+  .profileAvatar {
+    width: 100px;
+    height: 100px;
   }
 }

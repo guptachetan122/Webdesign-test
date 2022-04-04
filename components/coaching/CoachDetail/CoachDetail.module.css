@@ -1,0 +1,82 @@
+.CoachCardContainer {
+  margin: 8px 0px;
+  padding: 2rem 2rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  cursor: pointer;
+}
+
+.CoachCardAvatarCol {
+  margin-right: 1rem;
+}
+
+.CoachCardAvatar {
+  height: fit-content;
+  width: fit-content;
+}
+
+.CoachCardMiddleCol {
+  padding: 0rem 2rem;
+}
+
+.CoachCardRow {
+  margin-bottom: 1rem;
+}
+
+.CoachBookRow {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.CoachCardDetailRow {
+  margin-bottom: 0.25rem;
+}
+
+.CoachCardName {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.CoachCardDescription {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.CoachCardIcon {
+  font-size: 24px;
+  margin-right: 1rem;
+  color: #0b86ca;
+}
+
+.CoachDetailTitle {
+  color: #313131;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.CoachDetailBottom {
+  margin: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CoachDetailBottomText {
+  font-size: 12px;
+  line-height: 18px;
+  color: #616161;
+}
+
+.CoachDetailTagButton {
+  background: none;
+  margin-right: 1rem;
+  padding: 0.5rem 3rem;
+  border: 1.5px solid #616161;
+  color: #616161;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+

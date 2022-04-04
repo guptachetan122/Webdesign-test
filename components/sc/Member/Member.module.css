@@ -5,6 +5,20 @@
   border-radius: 10px;
 }
 
+.MemberAvatarCol{
+    margin-right: 1rem;
+    /* background-color: red; */
+}
+
+.MemberAvatar{
+    height: fit-content;
+    width: fit-content;
+}
+
+.MemberMiddleCol{
+    padding: 0rem 2rem;
+}
+
 .MemberName{
     font-size: 20px;
     font-weight: bold;
@@ -15,34 +29,7 @@
     font-weight: lighter;
 }
 
-.MemberAvatar{
-    height: fit-content;
-    width: fit-content;
-}
-
-.MemberAvatarCol{
-    margin-right: 1rem;
-    /* background-color: red; */
-}
-
-
-.MemberMiddleCol{
-    padding: 0rem 2rem;
-}
-
-
-.MemberChatButton{
-    background : none;
-    font-size : 18px;
-    padding: 1rem 5rem;
-    border-radius: 200px;
-    display: block;
-    margin-left:auto;
-    margin-right: 0px;
-    cursor: pointer;
-}
-
-.buttonStyle{
+.MemberButtonWrapper{
   display: flex;
   flex-direction: row-reverse;
   align-items: center;

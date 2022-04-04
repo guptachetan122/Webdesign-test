@@ -55,7 +55,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className={styles.waitlistContainer}>
+    <div className={styles.LoginContainer}>
       <Form
         className="form"
         name="basic"
@@ -65,7 +65,7 @@ const LoginForm = () => {
         form={form}
       >
         <Form.Item
-          className={styles.inputLabel}
+          className={styles.LoginInputLabel}
           label="email"
           name="email"
           rules={[
@@ -88,70 +88,61 @@ const LoginForm = () => {
         >
           <Input
             prefix={<UserOutlined className="site-form-item-icon" />}
-            className={styles.input}
+            className={styles.LoginInput}
             placeholder=" gal@gadot.com"
           />
         </Form.Item>
         <Form.Item
-          className={styles.inputLabel}
+          className={styles.LoginInputLabel}
           label="password"
           name="password"
           rules={[{ required: true, message: "please input your password!" }]}
         >
           <Input.Password
             prefix={<LockOutlined className="site-form-item-icon" />}
-            className={styles.input}
+            className={styles.LoginInput}
             placeholder=" enter your password"
           />
         </Form.Item>
-        <div className={styles.forgotPassWrapper}>
+        <div className={styles.LoginForgot}>
           <Link href="/forgotpassword">
-            <a className={styles.linkstyle}>forgot password ?</a>
+            <a className={styles.LoginForgotLink}>forgot password ?</a>
           </Link>
         </div>
-        <Form.Item className={styles.buttonWrapper}>
+        <Form.Item className={styles.LoginButtonWrapper}>
           <Button
             type="primary"
             htmlType="submit"
-            id={styles.buttonPrimary}
+            id={styles.LoginButton}
             loading={loading}
           >
             login
           </Button>
         </Form.Item>
       </Form>
-      <Text className={styles.linkstyle3}>
+      <Text className={styles.LoginJoinLink}>
         not a member?
         <a onClick={LeapWebsite} target="_blank">
           join the waitlist{" "}
         </a>
       </Text>
 
-      <div className={styles.bottomTextWrapper}>
-        <Text className={styles.bottomText}>
+      <div className={styles.LoginBottomTextWrapper}>
+        <Text className={styles.LoginBottomText}>
           by logging in you agree to our
-          <Text onClick={Policy} className={styles.linkstyle2}>
+          <Text onClick={Policy} className={styles.LoginBottomLink}>
             <a target="_blank">community guidelines</a>
           </Text>
           {" & "}
-          <Text onClick={TermsOfUSe} className={styles.linkstyle2}>
+          <Text onClick={TermsOfUSe} className={styles.LoginBottomLink}>
             <a target="_blank">terms of use</a>
           </Text>
           , if you do do not agree, please write to us on
-          <Text onClick={EmailSupport} className={styles.linkstyle2}>
+          <Text onClick={EmailSupport} className={styles.LoginBottomLink}>
             <a target="_blank"> members@leap.club</a>
           </Text>
         </Text>
       </div>
-      {/* {isError && (
-                                <div className={styles.errorWrapper}>
-                                    <span
-                                        className={`${commonStyles.textCenter} ${commonStyles.highlightedText}`}
-                                    >
-                                        something went wrong! please try again later.
-                                    </span>
-                                </div>
-                            )} */}
     </div>
   );
 };

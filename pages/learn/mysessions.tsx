@@ -1,32 +1,35 @@
-import { Col, Row } from "antd";
+import { Col, Row, Typography } from "antd";
 import React from "react";
 import Sidebar from "../../ui/Sidebar";
-import Subheader from "../../ui/Subheader2";
-import { coachingNavbar } from "../../constants/constants";
-import styles from "../../styles/Feed.module.css";
-const mySessions = () => {
+import styles from "../../styles/Learn.module.css";
+import PastBooking from "../../components/coaching/PastBooking";
+const { Text } = Typography;
+
+const MySessions = () => {
+  console.log("logg");
   return (
     <>
-      {/* <div className={styles.Header}>
-        {" "}
-        <Subheader SubheaderData={coachingNavbar} />{" "}
-      </div> */}
       <Row className={styles.Body}>
-        <Col span={6} className={styles.sidebarPos}>
+        <Col span={6} className={styles.Sidebar}>
           {" "}
           <Sidebar pageName={"learn"} />{" "}
         </Col>
-        <Col span={12} className={styles.middleCol}>
+        <Col span={12} className={styles.MiddleCol}>
           <Row>
-            <Col span={2}></Col>
-            <Col span={20}></Col>
-            <Col span={2}></Col>
+            <Col span={3}></Col>
+            <Col span={18} className={styles.MiddleContent}>
+              <PastBooking />
+              <PastBooking />
+              <PastBooking />
+              <PastBooking />
+            </Col>
+            <Col span={3}></Col>
           </Row>
         </Col>
-        <Col span={6}></Col>
+        <Col span={4}></Col>
       </Row>
     </>
   );
 };
 
-export default mySessions;
+export default MySessions;

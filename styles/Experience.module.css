@@ -4,11 +4,19 @@
   background-color: #E5E5E5;
 }
 
-.sidebarPos{
+.Sidebar{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem 0rem;
+  padding: 6rem 0rem;
+}
+
+.MiddleCol{
+  padding-top: 3rem;
+}
+
+.TagRow{
+  padding: 0rem 2rem;
 }
 
 .rowStyling{
@@ -17,7 +25,4 @@
   justify-content: center;
 }
 
-.middleCol{
-  padding-top: 3rem;
-}
 

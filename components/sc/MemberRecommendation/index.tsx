@@ -1,5 +1,5 @@
 import { DownOutlined, UpOutlined } from "@ant-design/icons";
-import { Avatar, Typography, Card, Row, Col } from "antd";
+import { Typography, Card, Row, Col } from "antd";
 import React, { useState } from "react";
 import Member from "../Member";
 import styles from "./MemberRecommendations.module.css";
@@ -13,17 +13,17 @@ const MemberRecommendations = ({ title = "", subTitle = "" }) => {
   return (
     <>
       
-        <Card className={styles.MemberRecommendationsCard}>
+        <Card className={styles.MrContainer}>
           <Row>
             <Col span={22}>
               <Row>
                 {" "}
-                <Text className={styles.MemberRecommendationsTitle}>
+                <Text className={styles.MrTitle}>
                   {title}
                 </Text>
               </Row>
               <Row>
-                <Text className={styles.MemberRecommendationsSubTitle}>
+                <Text className={styles.MrSubTitle}>
                   {subTitle}
                 </Text>
               </Row>
@@ -32,12 +32,12 @@ const MemberRecommendations = ({ title = "", subTitle = "" }) => {
               {isClicked ? (
                 <UpOutlined
                   onClick={handleOpen}
-                  className={styles.MemberRecommendationsIcon}
+                  className={styles.MrIcon}
                 />
               ) : (
                 <DownOutlined
                   onClick={handleOpen}
-                  className={styles.MemberRecommendationsIcon}
+                  className={styles.MrIcon}
                 />
               )}
             </Col>

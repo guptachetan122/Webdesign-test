@@ -9,25 +9,23 @@ import Subheader from "../../ui/Subheader2";
 import { clubhouseNavbar } from "../../constants/constants";
 import styles from "../../styles/ClubHouse.module.css";
 import { UserGroupIcon as ChInactive } from "@heroicons/react/outline";
+import Link from "next/link";
 
 const myclubhouses = () => {
   return (
     <>
-      {/* <div className={styles.Header}>
-        <Subheader SubheaderData={clubhouseNavbar} />
-      </div> */}
       <Row className={styles.Body}>
-        <Col span={6} className={styles.sidebarPos}>
+        <Col span={6} className={styles.Sidebar}>
           <Sidebar pageName={"clubhouse"} />
         </Col>
-        <Col span={12} className={styles.middleCol}>
+        <Col span={12} className={styles.MiddleCol}>
           <Row>
             <Col span={2}></Col>
             <Col span={20}>
               {" "}
               <Input
                 className={styles.ChInput}
-                prefix={<SearchOutlined className={styles.iconSize} />}
+                prefix={<SearchOutlined className={styles.ChIcon} />}
                 placeholder={`  type a clubhouse’s name`}
               />
               <ClubhouseCard isJoined upcomingHuddle />
@@ -41,16 +39,18 @@ const myclubhouses = () => {
           </Row>
         </Col>
         <Col span={6}>
-          <div className={styles.chButtonWrapper}>
-            <button className={styles.ButtonDark}>
-              <ChInactive className={styles.SidebarIcon} />
-              join a clubhouse
-            </button>
+          <div className={styles.ChButtonWrapper}>
+            <Link href="/clubhouse/otherclubhouses" passHref>
+              <button className={styles.ButtonDark}>
+                <ChInactive className={styles.ButtonIcon} />
+                join a clubhouse
+              </button>
+            </Link>
           </div>
-          <div className={styles.chButtonWrapper}>
+          <div className={styles.ChButtonWrapper}>
             <CreateChModal />
           </div>
-          <div className={styles.chButtonWrapper}>
+          <div className={styles.ChButtonWrapper}>
             <ClubhouseModal />
           </div>
         </Col>

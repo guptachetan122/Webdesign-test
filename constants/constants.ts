@@ -118,7 +118,7 @@ export const myNetworkNavbar = [
 export const messageNavbar = [
   {
     id: 1,
-    name: `back`,
+    name: "back",
     link: "/superconnections",
   },
   {
@@ -147,7 +147,7 @@ export const experiencesNavbar = [
   {
     id: 3,
     name: "podcasts and videos",
-    link: "/experiences/masterclass",
+    link: "/experiences/archives",
   },
 ];
 

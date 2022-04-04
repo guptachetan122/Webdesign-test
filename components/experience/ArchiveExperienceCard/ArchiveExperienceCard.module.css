@@ -1,0 +1,30 @@
+.ExpCardWrapper {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 3rem;
+  background-color: #fafafa;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+.ExpCardBackground {
+  height: fit-content;
+}
+
+.ExpCardCoverImage {
+  transform: translateY(-3%);
+}
+
+.ExpCardRow2 {
+  padding: 1rem 3rem;
+  font-size: 18px;
+  font-weight: 500;
+  color: #313131;
+}
+
+@media screen and (min-width: 2500px) {
+  .ExpCardRow2 {
+    font-size: 1.5rem;
+  }
+  
+}

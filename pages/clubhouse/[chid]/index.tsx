@@ -12,16 +12,11 @@ const ClubhouseInfo = () => {
   const { chid } = Router.query;
   return (
     <>
-      {/* <div className={styles.Header}>
-        {" "}
-        <Subheader SubheaderData={backNavbar} />{" "}
-      </div> */}
-
       <Row className={styles.Body}>
-        <Col span={6} className={styles.sidebarPos}>
+        <Col span={6} className={styles.Sidebar}>
           <Sidebar pageName={"clubhouse2"} />
         </Col>
-        <Col span={12} className={styles.middleCol}>
+        <Col span={12} className={styles.MiddleCol}>
           <Row>
             <Col span={2}></Col>
             <Col span={20}>

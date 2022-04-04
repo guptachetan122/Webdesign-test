@@ -7,32 +7,28 @@
   background: none;
   font-size: 18px;
   width: fit-content;
-  padding: 1rem 1rem;
-  border-radius: 12px;
-  margin-right: 2rem;
+  padding: 1rem 2rem;
+  border: 1.5px solid #616161;
+  border-radius: 200px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.cardIcon{
-  width: 18px;
-  height: 18px;
-  margin-right: 1rem;
+  /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
 }
 
 .ButtonLight2 {
   background: none;
   font-size: 18px;
-  width: fit-content;
-  padding: 0.5rem 4rem;
-  border-radius: 12px;
+  padding: 1rem 4rem;
+  border: 1.5px solid #616161;
+  border-radius: 200px;
   margin-right: 2rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
 }
 
 .ButtonLight3 {
@@ -40,50 +36,83 @@
   font-size: 18px;
   width: fit-content;
   padding: 1rem 2rem;
-  border-radius: 12px;
+  border: 1.5px solid #616161;
+  border-radius: 200px;
   margin-right: 1rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
 }
 
-.buttonIcon{
+.ButtonLight4 {
+  background: none;
+  font-size: 18px;
+  width: 100%;
+  padding: 1rem 0rem;
+  border: 1.5px solid #616161;
+  border-radius: 200px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+.ButtonIcon {
   width: 20px;
   height: 20px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
+}
+
+.ButtonIcon2 {
+  width: 18px;
+  height: 18px;
+  margin-right: 1rem;
 }
 
 @media screen and (min-width: 2500px) {
-  .LabelButton {
-    font-size: 1.6rem;
-  }
-
-  .LabelButtonIcon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .BookInfoButton {
+  .ButtonLight {
     font-size: 26px;
   }
 
-  .BookInfoIcon {
-    width: 26px;
-    height: 26px;
-  }
-
-  .BookButton {
+  .ButtonLight2 {
     font-size: 26px;
   }
 
-  .BookIcon {
-    width: 26px;
-    height: 26px;
+  .ButtonLight3 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .ButtonLight {
+    font-size: 12px;
   }
 
-  .SidebarIcon {
-    width: 26px;
-    height: 26px;
+  .ButtonLight2 {
+    font-size: 12px;
+  }
+
+  .ButtonLight3 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ButtonLight {
+    font-size: 10px;
+    padding: 1rem 3rem;
+  }
+
+  .ButtonLight2 {
+    font-size: 10px;
+    padding: 1rem 3rem;
+  }
+
+  .ButtonLight3 {
+    font-size: 10px;
+    padding: 1rem 3rem;
   }
 }

@@ -1,14 +1,17 @@
-.container {
-  background-color: #f6f6f6;
+.ButtonWrapper {
+  background-color: none;
   margin-top: 12px;
   border-radius: 20px;
   height: fit-content;
-  padding: 2rem 3rem;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
-    0px 1px 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
 }
 
-.container2 {
+.ChCardInfoDivider {
+  border: 1px solid #c2c2c2;
+  margin: 0.5rem 0rem;
+}
+
+.MemberInfoWrapper {
   display: block;
   margin: auto 0rem;
   /* background-color: red; */
@@ -18,153 +21,24 @@
   padding: 1rem 2rem;
 }
 
-.container3 {
-  background-color: none;
-  margin-top: 12px;
-  border-radius: 20px;
-  height: fit-content;
-  padding: 2rem 1rem;
-}
-
-.col {
-  color: #616161;
-  display: block;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.col2 {
-  background-color: rgb(158, 51, 51);
-  color: #616161;
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.col2 span {
-  margin-right: 1rem;
-}
-
-.col3 {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.row {
-  margin-top: 1.2rem;
-}
-
-.row2 {
-  background: none;
-  margin-top: 1.6rem;
-  padding: 1rem 1rem;
-  height: fit-content;
-  border: 1px solid #616161;
-  box-sizing: border-box;
-  border-radius: 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
-    0px 1px 10px rgba(0, 0, 0, 0.2);
-}
-
-.ChTopContent {
-  height: 33px;
-  color: #232526;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.ChCardDescription {
-  font-size: 1.6rem;
-  line-height: 24px;
-}
-
-.ChLink {
-  margin-top: 3rem;
-  color: #0500ff;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-}
-
-.Avatar {
-  width: 65px;
-  height: 65px;
-}
-
-.ChCardBadge {
-  background: none;
-  /* background-color: red; */
-  border: 1px solid #919191;
-  box-sizing: border-box;
-  border-radius: 5px;
-  padding: 0.5rem 2rem;
-}
-
-.ChCardBadgeText {
-  font-size: 1.2rem;
-  color: #616161;
-  margin: 0;
-}
-
-.Chmembers {
-  font-size: 20px;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  /* background-color: green; */
-}
-
-.SidebarIcon {
+.ChCardInfoIcon {
   width: 26px;
   height: 26px;
   color: black;
   /* background-color: yellowgreen; */
 }
 
-.Divider {
-  border: 1px solid #c2c2c2;
-  margin: 0.5rem 0rem;
-}
-/* .button {
-  background: none;
-  font-size: 18px;
-  width: 220px;
-  height: 44px;
-  border-radius: 12px;
+.ChCardInfoMembers {
+  font-size: 20px;
+  margin-left: 2rem;
   margin-right: 2rem;
-}
-.button:hover {
-  border: 2px solid orangered;
-  color: orangered;
+  /* background-color: green; */
 }
 
-.button2 {
-  background: linear-gradient(90deg, #232526 0%, #414345 100%);
-  color: #fafafa;
-  font-weight: 700;
-  font-size: 18px;
-  width: 220px;
-  height: 44px;
-  border-radius: 200px;
-}
-
-.button2:hover {
-  background: #fafafa;
-  color: #232526;
-  font-weight: 700;
-  border: 3px solid #232526;
-  font-size: 18px;
-  width: 220px;
-  height: 44px;
-  border-radius: 200px;
-} */
-
-.AvatarGroup {
-  flex-direction: row;
-  align-items: center;
+.ChCardInfoLink {
+  margin-top: 3rem;
+  color: #0500ff;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
 }

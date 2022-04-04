@@ -6,10 +6,11 @@ const { Text } = Typography;
 const ChemistrySession = ({ chemSessions = 0 }) => {
   const [percent, setPercent] = useState((chemSessions * 100) / 5);
   const [chem, setChem] = useState(chemSessions);
+
   return (
-    <div className={styles.CardStyle}>
+    <div className={styles.ChemistrySessionWrapper}>
       <Row>
-              <Col span={7} className={styles.ProgressCol}>
+        <Col span={6} className={styles.ProgressWrapper}>
           {" "}
           <Progress
             type="circle"
@@ -21,7 +22,7 @@ const ChemistrySession = ({ chemSessions = 0 }) => {
             )}
           />
         </Col>
-        <Col span={17}>
+        <Col span={18} className={styles.progressWrapper2}>
           <Row>
             <Text className={styles.CardTitle}>
               free chemistry sessions done

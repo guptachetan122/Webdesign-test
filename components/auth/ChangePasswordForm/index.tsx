@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { Button, Form, Input } from "antd";
 import { Typography } from "antd";
 import styles from "./ChangePassword.module.css";
-import Link from "next/link";
 import { LockOutlined } from "@ant-design/icons";
-import useForm, { useAppDispatch } from "../../../app/hooks";
+import { useAppDispatch } from "../../../app/hooks";
 
 const { Text } = Typography;
 
@@ -27,7 +26,7 @@ const ChangePasswordForm = () => {
   };
 
   return (
-    <div className={styles.waitlistContainer}>
+    <div className={styles.CpContainer}>
       <Form
         className="form"
         name="basic"
@@ -37,7 +36,7 @@ const ChangePasswordForm = () => {
         form={form}
       >
         <Form.Item
-          className={styles.inputLabel}
+          className={styles.CpInputLabel}
           label="enter old password"
           name="password"
           rules={[
@@ -46,12 +45,12 @@ const ChangePasswordForm = () => {
         >
           <Input
             prefix={<LockOutlined className="site-form-item-icon" />}
-            className={styles.input}
+            className={styles.CpInput}
             placeholder=" enter your password"
           />
         </Form.Item>
         <Form.Item
-          className={styles.inputLabel}
+          className={styles.CpInputLabel}
           label="enter new password"
           name="password1"
           rules={[
@@ -60,12 +59,12 @@ const ChangePasswordForm = () => {
         >
           <Input.Password
             prefix={<LockOutlined className="site-form-item-icon" />}
-            className={styles.input}
+            className={styles.CpInput}
             placeholder=" enter your password"
           />
         </Form.Item>
         <Form.Item
-          className={styles.inputLabel}
+          className={styles.CpInputLabel}
           label="retype new password"
           name="password2"
           rules={[
@@ -77,31 +76,21 @@ const ChangePasswordForm = () => {
         >
           <Input.Password
             prefix={<LockOutlined className="site-form-item-icon" />}
-            className={styles.input}
+            className={styles.CpInput}
             placeholder=" enter your password"
           />
         </Form.Item>
-        <Form.Item className={styles.buttonWrapper}>
+        <Form.Item className={styles.CpButtonWrapper}>
           <Button
             type="primary"
             htmlType="submit"
-            id={styles.buttonPrimary}
+            id={styles.CpButtonPrimary}
             loading={loading}
           >
             update password
           </Button>
         </Form.Item>
       </Form>
-
-      {/* {isError && (
-                                <div className={styles.errorWrapper}>
-                                    <span
-                                        className={`${commonStyles.textCenter} ${commonStyles.highlightedText}`}
-                                    >
-                                        something went wrong! please try again later.
-                                    </span>
-                                </div>
-                            )} */}
     </div>
   );
 };

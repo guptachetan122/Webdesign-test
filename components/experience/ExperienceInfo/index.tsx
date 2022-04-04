@@ -1,55 +1,96 @@
 /* eslint-disable @next/next/no-img-element */
-import { Row, Typography } from "antd";
+import { Col, Row, Typography } from "antd";
 import React from "react";
 import ButtonComponent from "../../common/ButtonComponent";
 import styles from "./ExperienceInfo.module.css";
-import { CalendarIcon as ExperienceInactive } from "@heroicons/react/outline";
+import {
+  CalendarIcon as ExperienceInactive,
+  LocationMarkerIcon,
+} from "@heroicons/react/outline";
+import { CheckCircleFilled, DollarCircleOutlined } from "@ant-design/icons";
 
 const { Text } = Typography;
 
-const ExperienceInfo = () => {
+const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true }) => {
   return (
     <>
-      <div className={styles.cardWrapper}>
-        <Row className={styles.RowBackground}>
-          <ButtonComponent pageName="label" />
+      <div className={styles.ExpInfoWrapper}>
+        <Row className={styles.ExpInfoBackground}>
+          {Name == "online" ? (
+            <button className={styles.ExpInfoLabel}>
+              {" "}
+              <LocationMarkerIcon className={styles.ExpInfoLabelIcon} />
+              online
+            </button>
+          ) : (
+            <button className={styles.ExpInfoLabel}>
+              {" "}
+              <LocationMarkerIcon className={styles.ExpInfoLabelIcon} />
+              offline
+            </button>
+          )}
+          {isPay ? (
+            <button className={styles.ExpInfoLabel}>
+              {" "}
+              <DollarCircleOutlined className={styles.ExpInfoLabelIcon} /> paid
+            </button>
+          ) : null}
+
           <img
             src="/assets/images/exp2.png"
             alt="alt"
             width="100%"
-            className={styles.coverImage}
+            className={styles.ExpInfoCoverImage}
           />
         </Row>
-        <Row className={styles.row}>
+        <Row className={styles.ExpInfoDateWrapper}>
           {" "}
-          <div className={styles.card}>
-            <Row>
-              <Text className={styles.Text}>25 Feb</Text>
-            </Row>
-            <Row>
-              <Text className={styles.Text2}>07:30 PM</Text>
-            </Row>
-          </div>
+          <Col>
+            <div className={styles.ExpInfoDateCard}>
+              <Row>
+                <Text className={styles.ExpInfoDate}>25 Feb</Text>
+              </Row>
+              <Row>
+                <Text className={styles.ExpInfoTime}>07:30 PM</Text>
+              </Row>
+            </div>
+          </Col>
+          <Col className={styles.bookedLabelCol}>
+            {" "}
+            {isBooked ? (
+              <div className={styles.bookedLabelText}>
+                <CheckCircleFilled />
+                {"  "}slot booked
+              </div>
+            ) : null}
+          </Col>
         </Row>
-        <Row className={styles.row2}>
-          <Text className={styles.Text3}>the pow(d)er room</Text>
+
+        <Row className={styles.ExpInfoNameWrapper}>
+          {/* <Text className={styles.ExpInfoName}>the pow(d)er room</Text> */}
+          <Text className={styles.ExpInfoName}>the pow(d)er room</Text>
         </Row>
-        <Row className={styles.row4}>
-          <button className={styles.BookInfoButton}>
-             <ExperienceInactive className={styles.BookInfoIcon} />
-             book slot and pay {" "}
-          </button>
-        </Row>
-        <Row className={styles.row5}>
-          <div className={styles.description}>
+        {isBooked ? (
+          <ButtonComponent Name="Booked" infoPage />
+        ) : isPay ? (
+          <ButtonComponent
+            Name="notBooked"
+            infoPage
+            buttonName="book slot and pay"
+          />
+        ) : (
+          <ButtonComponent Name="notBooked" infoPage buttonName="book slot" />
+        )}
+        <Row className={styles.ExpInfoBody}>
+          <div className={styles.ExpInfoDescription}>
             <Text>clubhouse huddle by sorority sisters</Text>
           </div>
           <div>
-            <div className={styles.heading}>
+            <div className={styles.ExpInfoHeading}>
               <Text>what to expect</Text>
             </div>
 
-            <div className={styles.description}>
+            <div className={styles.ExpInfoDescription}>
               <Text>
                 lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
@@ -58,11 +99,11 @@ const ExperienceInfo = () => {
               </Text>
             </div>
 
-            <div className={styles.heading}>
+            <div className={styles.ExpInfoHeading}>
               <Text>about speaker</Text>
             </div>
 
-            <div className={styles.description}>
+            <div className={styles.ExpInfoDescription}>
               <Text>
                 lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard

@@ -1,4 +1,4 @@
-.cardWrapper {
+.ExpInfoWrapper {
   width: 100%;
   height: fit-content;
   margin-bottom: 3rem;
@@ -6,51 +6,42 @@
   border-radius: 20px;
 }
 
-.cardInfoWrapper {
-  background-color: #fafafa;
-}
-
-.RowBackground {
+.ExpInfoBackground {
+  position: relative;
   border-radius: 20px;
   height: fit-content;
 }
 
-.coverImage{
+.ExpInfoLabel {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  padding: 0.5rem 2rem;
+  background: #ffffff;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 0px;
+}
+
+.ExpInfoLabelIcon {
+  width: 14px;
+  height: 14px;
+  margin-right: 0.5rem;
+}
+
+.ExpInfoCoverImage {
   transform: translateY(-3%);
 }
 
-.row {
+.ExpInfoDateWrapper {
+  display: flex;
   height: 45px;
   margin-bottom: 1rem;
 }
 
-.row2{
-    padding: 0rem 3rem;
-    font-size: 18px;
-    color: #313131;
-}
-
-.row3{
-     padding: 0rem 3rem;
-     font-size: 14px;
-     text-decoration: underline;
-     color: #616161;
-}
-
-
-.row4{
-    /* background-color: greenyellow; */
-    padding: 2rem 3rem;
-    flex-grow : 1;
-    /* border-bottom: 1px solid black; */
-    box-shadow: 0px 8px 8px -1px rgba(0, 0, 0, 0.15);
-    border-radius: 30px;
-}
-
-.row5{
-    padding: 3rem 2rem;
-}
-.card {
+.ExpInfoDateCard {
   background-color: #fafafa;
   padding: 1rem 2rem;
   margin-left: 3rem;
@@ -59,69 +50,88 @@
   transform: translateY(-50%);
 }
 
-.Text {
+.ExpInfoDate {
   font-size: 22px;
   font-weight: 700;
-  color: #F42B4D;
- 
+  color: #f42b4d;
 }
 
-.Text2{
-    font-size: 16px;
-    color: #F42B4D;
+.ExpInfoTime {
+  font-size: 16px;
+  color: #f42b4d;
 }
 
-.heading{
-    font-weight: 700;
-    margin: 1rem 0rem;
-    font-size: 1.6rem;
-}
-
-.description{
-    font-size: 1.6rem;
-}
-
-.BookInfoButton {
-  background: linear-gradient(90deg, #232526 0%, #414345 100%);
-  color: #fafafa;
-  width: 100%;
+.ExpInfoNameWrapper {
+  padding: 0rem 3rem;
   font-size: 18px;
-  padding: 1.5rem 0rem;
-  border: 2px solid #c2c2c2;
-  box-sizing: border-box;
-  border-radius: 200px;
-  cursor: pointer;
+  color: #313131;
+}
+
+.ExpInfoName {
+  font-size: 14px;
+  color: grey;
+}
+
+.ExpInfoBody {
+  padding: 1rem 2rem;
+  padding-bottom: 3rem;
+}
+
+.ExpInfoHeading {
+  font-weight: 700;
+  margin: 1rem 0rem;
+  font-size: 1.6rem;
+}
+
+.ExpInfoDescription {
+  font-size: 1.6rem;
+}
+
+.bookedLabelCol {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 
-.BookInfoIcon {
-  width: 18px;
-  height: 18px;
-  margin: 0rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.bookedLabelText {
+  padding: 0rem 1rem;
+  margin-left: 1rem;
+  background-color: yellowgreen;
+  border: 2px solid yellowgreen;
+  color: #fafafa;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  transform: translateY(-50%);
 }
 
-@media screen and ( min-width : 2500px) {
-  .row2{
-    font-size: 1.5rem;
-  }
-  .row3{
-    font-size: 1.2rem;
+@media screen and (min-width: 2500px) {
+  .ExpInfoDateWrapper {
+    margin-bottom: 2rem;
   }
 
-  .Text{
+  .ExpInfoLabel {
+    font-size: 1.6rem;
+  }
+
+  .ExpInfoLabelIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ExpInfoDate {
     font-size: 2rem;
   }
 
-  .Text2{
+  .ExpInfoTime {
+    font-size: 1.6rem;
+  }
+  .ExpInfoName {
+    font-size: 1.5rem;
+  }
+
+  .bookedLabelText {
     font-size: 1.6rem;
   }
 
-  .row{
-    margin-bottom: 2rem;
-  }
 }
