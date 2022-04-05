@@ -24,31 +24,31 @@ const CreateChModal = () => {
 
   return (
     <>
-      <button className={styles.ChModalTriggerButton} onClick={showModal}>
+      <button className={styles.TriggerButton} onClick={showModal}>
         {" "}
         <PlusOutlined /> create new clubhouse
       </button>
       <Modal
-        className={styles.ChModal}
+        className={styles.Modal}
         centered
         visible={isModalVisible}
         onCancel={handleCancel}
         footer={null}
         width={600}
       >
-        <div className={styles.ChModalTitle}>start a new clubhouse</div>
-        <Text className={styles.ChModalText}>give your clubhouse a name</Text>
+        <div className={styles.Title}>start a new clubhouse</div>
+        <Text className={styles.Text}>give your clubhouse a name</Text>
         <Input
           placeholder="go ahead, give it a cool name"
-          className={styles.ChModalInput}
+          className={styles.Input}
         />
 
-        <Text className={styles.ChModalText}>
+        <Text className={styles.Text}>
           what will this clubhouse talk about?
         </Text>
         <TextArea
           placeholder="6-10 words will be ideal"
-          className={styles.ChModalInput}
+          className={styles.Input}
           rows={4}
         />
 
@@ -60,16 +60,16 @@ const CreateChModal = () => {
         <br />
         <br />
         {value == 1 ? (
-          <Text className={styles.ChRadioText}>any member can join</Text>
+          <Text className={styles.RadioText}>any member can join</Text>
         ) : (
-          <Text className={styles.ChRadioText}>
+          <Text className={styles.RadioText}>
             only invited members or members approved by founder can join
           </Text>
         )}
         <br />
         <br />
-        <div className={styles.ChModalButton}>
-          <button className={styles.ChModalBackButton} onClick={handleCancel}>
+        <div className={styles.Button}>
+          <button className={styles.BackButton} onClick={handleCancel}>
             add members (you have to add min 3)
           </button>
         </div>

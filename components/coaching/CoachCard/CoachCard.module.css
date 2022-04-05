@@ -1,4 +1,4 @@
-.CoachCardContainer {
+.Container {
   margin: 8px 0px;
   padding: 2rem 2rem;
   background-color: #fafafa;
@@ -10,45 +10,45 @@
   cursor: pointer;
 }
 
-.CoachCardContainer:hover {
+.Container:hover {
   box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
   transform: translate3d(0px, -5px, 5px);
 }
 
-.CoachCardAvatarCol {
+.AvatarCol {
   margin-right: 1rem;
 }
 
-.CoachCardAvatar {
+.Avatar {
   height: fit-content;
   width: fit-content;
 }
 
-.CoachCardMiddleCol {
+.MiddleCol {
   padding: 0.5rem 2rem;
 }
 
-.CoachCardRow {
+.Row {
   margin-bottom: 0.5rem;
 }
 
-.CoachCardName {
+.Name {
   font-size: 24px;
   font-weight: bold;
 }
 
-.CoachCardDescription {
+.Description {
   font-size: 20px;
   font-weight: lighter;
 }
 
 /* Coach Card Icon Row starts */
 
-.CoachCardIconRow {
+.IconRow {
   margin-top: 1.5rem;
 }
 
-.CoachCardButton {
+.Button {
   background: none;
   border: none;
   padding: 0;
@@ -59,7 +59,7 @@
   align-items: center;
 }
 
-.CoachCardIcon {
+.Icon {
   width: 20px;
   height: 20px;
   margin-right: 1rem;
@@ -69,40 +69,40 @@
 /* Coach Card Icon Row ends */
 
 @media screen and (min-width: 2500px) {
-  .CoachCardName {
+  .Name {
     font-size: 30px;
   }
 
-  .CoachCardDescription {
+  .Description {
     font-size: 26px;
   }
 
-  .CoachCardIcon {
+  .Icon {
     width: 28px;
     height: 28px;
     margin-right: 1rem;
   }
 
-  .CoachCardButton {
+  .Button {
     font-size: 28px;
   }
 }
 
 @media screen and (max-width:1600px) {
-  .CoachCardName {
+  .Name {
     font-size: 15px;
   }
 
-  .CoachCardDescription {
+  .Description {
     font-size: 13px;
   }
 
-  .CoachCardIcon {
+  .Icon {
     width: 14px;
     height: 14px;
   }
 
-  .CoachCardButton {
+  .Button {
     font-size: 14px;
   }
 }

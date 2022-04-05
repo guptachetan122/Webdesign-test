@@ -1,4 +1,4 @@
-.ButtonCoach {
+.Button {
   background: none;
   width: 100%;
   padding: 1rem 0rem;
@@ -7,7 +7,7 @@
   border-radius: 10px;
 }
 
-.ButtonCoachActive {
+.ButtonActive {
   background: none;
   width: 100%;
   padding: 1rem 0rem;
@@ -16,7 +16,7 @@
   border-radius: 10px;
 }
 
-.SubButtonCoachActive {
+.SubButtonActive {
   background: #f42b4d;
   border: 1px solid;
   border-radius: 5px;
@@ -28,13 +28,13 @@
   color: #fafafa;
 }
 
-.ButtonCoachIcon{
-    color: #F42B4D;
-    font-size: 24px;
+.ButtonIcon {
+  color: #f42b4d;
+  font-size: 24px;
 }
-.AlignItems {
+
+.SubButtonCol {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-

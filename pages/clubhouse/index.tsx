@@ -31,11 +31,14 @@ const Starred = () => {
               <ClubhouseCard isJoined isPinned upcomingHuddle />
               <ClubhouseCard isJoined isPinned />
               <ClubhouseCard isJoined isPinned />
-              <div className={styles.ChLink}>
-                <Link href="/clubhouse/myclubhouses">
-                  view all clubhouses that i’m a part of
-                </Link>
-              </div>
+              <Link href="/clubhouse/myclubhouses">
+                <a>
+                  {" "}
+                  <div className={styles.ChLink}>
+                    view all clubhouses that i’m a part of
+                  </div>
+                </a>
+              </Link>
             </Col>
             <Col span={2}></Col>
           </Row>

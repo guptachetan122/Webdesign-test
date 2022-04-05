@@ -9,20 +9,23 @@ const ClubhouseChat = () => {
   return (
     <>
       <div>ClubhouseChat for clubhouse : {chid}</div>
-      <div className={styles.container}>
+      <div className={styles.Container}>
         <Row>
-          <Col span={2} className={styles.col3}>
+          <Col span={2} className={styles.AvatarCol}>
             {" "}
             <Avatar
               className={styles.Avatar}
               src={"/assets/images/Ragini.png"}
             />
           </Col>
-          <Col span={22} className={styles.container2}> hello </Col>
+          <Col span={22} className={styles.Container2}>
+            {" "}
+            hello{" "}
+          </Col>
         </Row>
-              <Row>
-                  <Col></Col>
-                  <Col></Col>
+        <Row>
+          <Col></Col>
+          <Col></Col>
         </Row>
       </div>
     </>

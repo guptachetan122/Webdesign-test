@@ -1,6 +1,6 @@
 /* Whole Card Styling starts */
 
-.ChCardContainer {
+.Container {
   background-color: #f6f6f6;
   margin: 1.5rem 0rem;
   border-radius: 10px;
@@ -11,26 +11,26 @@
   cursor: pointer;
 }
 
-.ChCardContainer:hover {
+.Container:hover {
   box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
   transform: translate3d(0px, -5px, 5px);
 }
 
 /* Whole Card Styling ends */
 
-.ChCardRow {
+.Row {
   margin: 1rem 0rem;
   padding: 0rem 3rem;
 }
 
 /* Top row styling starts */
-.ChCardTopContent {
+.TopContent {
   color: #232526;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-.ChCardMenuCol {
+.MenuCol {
   color: #616161;
   display: flex;
   justify-content: right;
@@ -43,20 +43,20 @@
   border: none;
 }
 
-.ChCardDropdownIcon {
+.DropdownIcon {
   font-size: 40px;
   color: black;
   cursor: pointer;
 }
 
-.ChCardMenu {
+.Menu {
   padding: 1rem 3rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.ChCardMenuIcon {
+.MenuIcon {
   margin: 0rem 1rem;
   width: 20px;
   height: 20px;
@@ -64,7 +64,7 @@
   color: #616161;
 }
 
-.ChCardBadgeButton {
+.BadgeButton {
   background: none;
   border: 1px solid #919191;
   box-sizing: border-box;
@@ -72,7 +72,7 @@
   padding: 0.5rem 2rem;
 }
 
-.ChCardBadge {
+.Badge {
   font-size: 1.2rem;
   color: #616161;
   margin: 0;
@@ -81,12 +81,12 @@
 /* Top row styling ends */
 
 /* Description on Card Styling starts */
-.ChCardDescriptionRow {
+.DescriptionRow {
   margin: 1.6rem 0rem;
   padding: 0rem 3rem;
 }
 
-.ChCardDescription {
+.Description {
   font-size: 16px;
   line-height: 24px;
 }
@@ -94,29 +94,28 @@
 
 /* Middle Row Styling starts */
 
-.ChCardAvatar {
+.Avatar {
   width: fit-content;
   height: fit-content;
 }
 
-.ChCardNameCol {
+.NameCol {
   padding: 0rem 1.5rem;
-  color: #616161;
   display: flex;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
   justify-content: left;
   align-items: center;
 }
 
-.ChCardName {
+.Name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
   color: #313131;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-.ChCardButtonCol {
+.ButtonCol {
   color: #616161;
   display: flex;
   justify-content: right;
@@ -125,17 +124,17 @@
 /* Middle Row Styling ends */
 
 /* upcoming huddle styling starts */
-.ChCardFooterWrapper {
+.FooterWrapper {
   margin-top: 0.5rem;
   color: #616161;
 }
 
-.ChCardDivider {
+.Divider {
   border: 1px solid #c2c2c2;
   margin: 0.5rem 0rem;
 }
 
-.ChCardFooter {
+.Footer {
   padding: 0rem 3rem;
   font-size: 18px;
   display: flex;
@@ -143,7 +142,7 @@
   align-items: center;
 }
 
-.ChCardFooterIcon {
+.FooterIcon {
   margin-left: 1rem;
   margin-right: 1rem;
   width: 24px;
@@ -153,58 +152,53 @@
 /* upcoming huddle styling ends */
 
 @media screen and (min-width: 2500px) {
-  .ChCardDescription {
+  .Description {
     font-size: 26px;
     line-height: 30px;
   }
 
-  .ChCardTopContent {
+  .TopContent {
     font-size: 35px;
   }
-  .ChCardFooter {
+  .Footer {
     font-size: 28px;
   }
-  .ChCardNameCol {
+  .Name {
     font-size: 30px;
   }
-  .ChCardFooterIcon {
+  .FooterIcon {
     width: 28px;
     height: 28px;
   }
-  .ChCardMenuIcon {
+  .MenuIcon {
     width: 30px;
     height: 30px;
     font-size: 28px;
   }
-  /* .SidebarIcon4 {
-    width: 28px;
-    height: 28px;
-    font-size: 28px;
-  } */
 }
 
 @media screen and (max-width: 1600px) {
-  .ChCardDescription {
+  .Description {
     font-size: 1.6rem;
     line-height: 2.5rem;
   }
 
-  .ChCardTopContent {
+  .TopContent {
     font-size: 20px;
   }
-  .ChCardFooter {
+  .Footer {
     font-size: 15px;
   }
-  .ChCardNameCol {
+  .Name {
     font-size: 15px;
   }
-  .ChCardFooterIcon {
+  .FooterIcon {
     width: 15px;
     height: 15px;
   }
-  .ChCardMenuIcon {
+  .MenuIcon {
     width: 18px;
-  height: 18px;
+    height: 18px;
     font-size: 16px;
   }
 }

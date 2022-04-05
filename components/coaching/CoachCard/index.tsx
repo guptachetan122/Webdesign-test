@@ -13,33 +13,33 @@ const CoachCard = () => {
   return (
     <>
       <Link href="/learn/id" passHref>
-        <div className={styles.CoachCardContainer}>
+        <div className={styles.Container}>
           <Row>
-            <Col span={4} className={styles.CoachCardAvatarCol}>
+            <Col span={4} className={styles.AvatarCol}>
               {" "}
               <Avatar
-                className={styles.CoachCardAvatar}
+                className={styles.Avatar}
                 src={"/assets/images/Ragini.png"}
               />
             </Col>
-            <Col span={18} className={styles.CoachCardMiddleCol}>
-              <Row className={styles.CoachCardRow}>
-                <Text className={styles.CoachCardName}>kavita neelakantan</Text>
+            <Col span={18} className={styles.MiddleCol}>
+              <Row className={styles.Row}>
+                <Text className={styles.Name}>kavita neelakantan</Text>
               </Row>
-              <Row className={styles.CoachCardRow}>
-                <Text className={styles.CoachCardDescription}>
+              <Row className={styles.Row}>
+                <Text className={styles.Description}>
                   executive coach | women’s leadership and growth
                 </Text>
               </Row>
-              <Row className={styles.CoachCardIconRow}>
-                <button className={styles.CoachCardButton}>
-                  <LocationMarkerIcon className={styles.CoachCardIcon} /> delhi
+              <Row className={styles.IconRow}>
+                <button className={styles.Button}>
+                  <LocationMarkerIcon className={styles.Icon} /> delhi
                 </button>
-                <button className={styles.CoachCardButton}>
-                  <ClockIcon className={styles.CoachCardIcon} /> 20+ years
+                <button className={styles.Button}>
+                  <ClockIcon className={styles.Icon} /> 20+ years
                 </button>
-                <button className={styles.CoachCardButton}>
-                  <StarIcon className={styles.CoachCardIcon} /> 4.7
+                <button className={styles.Button}>
+                  <StarIcon className={styles.Icon} /> 4.7
                 </button>
               </Row>
             </Col>

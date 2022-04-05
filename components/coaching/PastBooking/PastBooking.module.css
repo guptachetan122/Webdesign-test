@@ -1,4 +1,4 @@
-.PbContainer {
+.Container {
   margin: 1rem 0rem;
   padding: 2rem 2rem;
   background-color: #fafafa;
@@ -7,38 +7,38 @@
   border-radius: 10px;
 }
 
-.PbAvatarCol {
+.AvatarCol {
   margin-right: 1rem;
 }
 
-.PbAvatar {
+.Avatar {
   height: fit-content;
   width: fit-content;
 }
 
-.PbMiddleCol {
+.MiddleCol {
   padding: 0rem 1rem;
 }
 
-.PbName {
+.Name {
   font-size: 24px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.PbDescription {
+.Description {
   font-size: 18px;
   color: #616161;
   font-weight: 400;
 }
 
-.PbFeeCol {
+.FeeCol {
   display: flex;
   justify-content: right;
   align-items: flex-start;
 }
 
-.PbFeeButton {
+.FeeButton {
   background: none;
   border: none;
   font-weight: 600;
@@ -47,118 +47,117 @@
   align-items: center;
 }
 
-.PbIcon {
+.Icon {
   width: 30px;
   height: 30px;
   margin-right: 0.5rem;
 }
 
-.PbMiddleRow {
+.MiddleRow {
   margin: 2rem 0rem;
   border-radius: 50px;
   border: 1px solid #616161;
 }
 
-.PbTextCol2 {
-  padding: 1rem 3rem;
-}
-
-.PbTextCol {
+.TextCol {
   padding: 1rem 3rem;
   border-right: 1px solid #616161;
 }
 
-.PbHeading {
+.TextCol2 {
+  padding: 1rem 3rem;
+}
+
+.Heading {
   font-size: 16px;
 }
-.PbSubHeading {
+.SubHeading {
   font-size: 18px;
   font-weight: 600;
 }
 
-.PbButtonCol {
+.ButtonCol {
   display: flex;
   justify-content: left;
 }
 
-.PbButtonCol2 {
+.ButtonCol2 {
   display: flex;
   justify-content: right;
 }
 
 @media screen and (min-width: 2500px) {
-  .PbName {
+  .Name {
     font-size: 30px;
     font-weight: 700;
   }
 
-  .PbDescription {
+  .Description {
     font-size: 26px;
     font-weight: 400;
   }
 
-  .PbHeading {
+  .Heading {
     font-size: 26px;
   }
-  .PbSubHeading {
+  .SubHeading {
     font-size: 28px;
     font-weight: 600;
   }
 }
 
 @media screen and (max-width: 1520px) {
-  .PbName {
+  .Name {
     font-size: 15px;
     font-weight: 700;
   }
 
-  .PbDescription {
+  .Description {
     font-size: 13px;
     font-weight: 400;
   }
 
-  .PbHeading {
+  .Heading {
     font-size: 13px;
   }
-  .PbSubHeading {
+  .SubHeading {
     font-size: 14px;
     font-weight: 600;
   }
 
-  .PbTextCol2 {
-  padding: 1rem 2rem;
-}
+  .TextCol2 {
+    padding: 1rem 2rem;
+  }
 
-.PbTextCol {
-  padding: 1rem 2rem;
+  .TextCol {
+    padding: 1rem 2rem;
+  }
 }
-}
-
 
 @media screen and (max-width: 1200px) {
-  .PbName {
+  .Name {
     font-size: 12px;
     font-weight: 700;
   }
 
-  .PbDescription {
+  .Description {
     font-size: 10px;
     font-weight: 400;
   }
 
-  .PbHeading {
+  .Heading {
     font-size: 9px;
   }
-  .PbSubHeading {
+  .SubHeading {
     font-size: 10px;
     font-weight: 600;
   }
-  .PbTextCol2 {
-  padding: 1rem 1rem;
-}
+  .TextCol2 {
+    padding: 1rem 1rem;
+  }
 
-.PbTextCol {
-  padding: 1rem 1rem;
-  border-right: 1px solid #616161;
-}
+  .TextCol {
+    padding: 1rem 1rem;
+    border-right: 1px solid #616161;
+  }
 }

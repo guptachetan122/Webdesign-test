@@ -18,18 +18,18 @@ const ClubhouseModal = () => {
   
   return (
     <>
-      <button className={styles.ChModalTriggerButton} onClick={showModal}>
+      <button className={styles.TriggerButton} onClick={showModal}>
         <QuestionOutlined /> what is a clubhouse
       </button>
       <Modal
-        className={styles.ChModal}
+        className={styles.Modal}
         centered
         visible={isModalVisible}
         onCancel={handleCancel}
         footer={null}
         width={600}
       >
-        <div className={styles.ChModalTitle}> what is a clubhouse ?</div>
+        <div className={styles.Title}> what is a clubhouse ?</div>
         <p>
           clubhouses are micro-communities that help you find your tribe inside
           the larger leap.club community. it’s a great place to meet others and
@@ -59,8 +59,8 @@ const ClubhouseModal = () => {
         <p>
           write to <a>team@leap.club</a>
         </p>
-        <div className={styles.ChModalButton}>
-          <button className={styles.ChModalBackButton} onClick={handleCancel}>
+        <div className={styles.Button}>
+          <button className={styles.BackButton} onClick={handleCancel}>
             back
           </button>
         </div>

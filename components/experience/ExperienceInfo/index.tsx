@@ -14,25 +14,25 @@ const { Text } = Typography;
 const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true }) => {
   return (
     <>
-      <div className={styles.ExpInfoWrapper}>
-        <Row className={styles.ExpInfoBackground}>
+      <div className={styles.Container}>
+        <Row className={styles.Background}>
           {Name == "online" ? (
-            <button className={styles.ExpInfoLabel}>
+            <button className={styles.Label}>
               {" "}
-              <LocationMarkerIcon className={styles.ExpInfoLabelIcon} />
+              <LocationMarkerIcon className={styles.LabelIcon} />
               online
             </button>
           ) : (
-            <button className={styles.ExpInfoLabel}>
+            <button className={styles.Label}>
               {" "}
-              <LocationMarkerIcon className={styles.ExpInfoLabelIcon} />
+              <LocationMarkerIcon className={styles.LabelIcon} />
               offline
             </button>
           )}
           {isPay ? (
-            <button className={styles.ExpInfoLabel}>
+            <button className={styles.Label}>
               {" "}
-              <DollarCircleOutlined className={styles.ExpInfoLabelIcon} /> paid
+              <DollarCircleOutlined className={styles.LabelIcon} /> paid
             </button>
           ) : null}
 
@@ -40,18 +40,18 @@ const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true }) => {
             src="/assets/images/exp2.png"
             alt="alt"
             width="100%"
-            className={styles.ExpInfoCoverImage}
+            className={styles.CoverImage}
           />
         </Row>
-        <Row className={styles.ExpInfoDateWrapper}>
+        <Row className={styles.DateWrapper}>
           {" "}
           <Col>
-            <div className={styles.ExpInfoDateCard}>
+            <div className={styles.DateCard}>
               <Row>
-                <Text className={styles.ExpInfoDate}>25 Feb</Text>
+                <Text className={styles.Date}>25 Feb</Text>
               </Row>
               <Row>
-                <Text className={styles.ExpInfoTime}>07:30 PM</Text>
+                <Text className={styles.Time}>07:30 PM</Text>
               </Row>
             </div>
           </Col>
@@ -66,9 +66,9 @@ const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true }) => {
           </Col>
         </Row>
 
-        <Row className={styles.ExpInfoNameWrapper}>
-          {/* <Text className={styles.ExpInfoName}>the pow(d)er room</Text> */}
-          <Text className={styles.ExpInfoName}>the pow(d)er room</Text>
+        <Row className={styles.NameWrapper}>
+          {/* <Text className={styles.Name}>the pow(d)er room</Text> */}
+          <Text className={styles.Name}>the pow(d)er room</Text>
         </Row>
         {isBooked ? (
           <ButtonComponent Name="Booked" infoPage />
@@ -81,16 +81,16 @@ const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true }) => {
         ) : (
           <ButtonComponent Name="notBooked" infoPage buttonName="book slot" />
         )}
-        <Row className={styles.ExpInfoBody}>
-          <div className={styles.ExpInfoDescription}>
+        <Row className={styles.Body}>
+          <div className={styles.Description}>
             <Text>clubhouse huddle by sorority sisters</Text>
           </div>
           <div>
-            <div className={styles.ExpInfoHeading}>
+            <div className={styles.Heading}>
               <Text>what to expect</Text>
             </div>
 
-            <div className={styles.ExpInfoDescription}>
+            <div className={styles.Description}>
               <Text>
                 lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
@@ -99,11 +99,11 @@ const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true }) => {
               </Text>
             </div>
 
-            <div className={styles.ExpInfoHeading}>
+            <div className={styles.Heading}>
               <Text>about speaker</Text>
             </div>
 
-            <div className={styles.ExpInfoDescription}>
+            <div className={styles.Description}>
               <Text>
                 lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard

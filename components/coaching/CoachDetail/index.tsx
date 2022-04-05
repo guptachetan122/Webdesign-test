@@ -11,35 +11,35 @@ const { Text } = Typography;
 const CoachDetail = () => {
   return (
     <>
-      <div className={styles.CoachCardContainer}>
-        <Row className={styles.CoachCardRow}>
-          <Col span={4} className={styles.CoachCardAvatarCol}>
+      <div className={styles.Container}>
+        <Row className={styles.Row}>
+          <Col span={4} className={styles.AvatarCol}>
             {" "}
             <Avatar
-              className={styles.CoachCardAvatar}
+              className={styles.Avatar}
               src={"/assets/images/Ragini.png"}
             />
           </Col>
-          <Col span={18} className={styles.CoachCardMiddleCol}>
-            <Row className={styles.CoachCardDetailRow}>
-              <Text className={styles.CoachCardName}>kavita neelakantan</Text>
+          <Col span={18} className={styles.DetailCol}>
+            <Row className={styles.DetailRow}>
+              <Text className={styles.Name}>kavita neelakantan</Text>
             </Row>
-            <Row className={styles.CoachCardDetailRow}>
-              <Text className={styles.CoachCardDescription}>
+            <Row className={styles.DetailRow}>
+              <Text className={styles.Description}>
                 executive coach | women’s leadership and growth
               </Text>
             </Row>
-            <Row className={styles.CoachCardDetailRow}>
-              <LinkedinFilled className={styles.CoachCardIcon} />
+            <Row className={styles.DetailRow}>
+              <LinkedinFilled className={styles.Icon} />
             </Row>
           </Col>
         </Row>
-        <Row className={styles.CoachCardRow}>
+        <Row className={styles.Row}>
           <Row>
-            <Text className={styles.CoachDetailTitle}>about coach</Text>
+            <Text className={styles.Title}>about coach</Text>
           </Row>
           <Row>
-            <Text className={styles.CoachCardDescription}>
+            <Text className={styles.Description}>
               lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry standard pecimen book.
               It has survived not only five centuries, but also the leap into
@@ -48,23 +48,23 @@ const CoachDetail = () => {
           </Row>
         </Row>
 
-        <Row className={styles.CoachCardRow}>
-          <Text className={styles.CoachDetailTitle}>top specializations</Text>
+        <Row className={styles.Row}>
+          <Text className={styles.Title}>top specializations</Text>
         </Row>
-        <Row className={styles.CoachCardRow}>
-          <button className={styles.CoachDetailTagButton}>
+        <Row className={styles.Row}>
+          <button className={styles.TagButton}>
             pivot in my career
           </button>
 
-          <button className={styles.CoachDetailTagButton}>
+          <button className={styles.TagButton}>
             build exec presence
           </button>
         </Row>
 
-        <Row className={styles.CoachBookRow}>
-          <Text className={styles.CoachDetailTitle}>book a session</Text>
+        <Row className={styles.BookRow}>
+          <Text className={styles.Title}>book a session</Text>
         </Row>
-        <Row className={styles.CoachCardRow}>
+        <Row className={styles.Row}>
           <ButtonLight name="book a free chemistry session" />
         </Row>
 
@@ -78,11 +78,11 @@ const CoachDetail = () => {
           <ButtonCoach num="10" price="50,000"></ButtonCoach>
         </Row>
 
-        <Row className={styles.CoachDetailBottom}>
+        <Row className={styles.BottomRow}>
           <ButtonDark name="book session" />
         </Row>
-        <Row className={styles.CoachDetailBottom}>
-          <Text className={styles.CoachDetailBottomText}>
+        <Row className={styles.BottomRow}>
+          <Text className={styles.BottomText}>
             price is not inclusive of tax
           </Text>
         </Row>

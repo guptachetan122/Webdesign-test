@@ -1,13 +1,13 @@
-.ScModal {
+.Modal {
   background: #fafafa;
   border-radius: 20px;
 }
 
-.ScButtonWrapper {
+.ButtonWrapper {
   display: flex;
   flex-direction: row-reverse;
 }
-.ScButton {
+.Button {
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
   color: #fafafa;
   font-weight: 700;
@@ -17,17 +17,17 @@
   border-radius: 200px;
   cursor: pointer;
 }
-.ScIcon{
+.Icon{
   width: 24px;
   height: 24px;
 }
 
-.ScModalButtonWrapper {
+.SendButtonWrapper {
   display: flex;
   justify-content: center;
 }
 
-.ScModalButton {
+.SendButton {
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
   color: #fafafa;
   cursor: pointer;

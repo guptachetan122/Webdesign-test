@@ -20,71 +20,67 @@ const ProfileDrawer = () => {
     <>
       <Row>
         <Col span={6}>
-          <div className={styles.DrawerButton} onClick={showDrawer}>
+          <div className={styles.Button} onClick={showDrawer}>
             <CaretDownFilled /> me
           </div>
         </Col>
         <Col span={8}></Col>
         <Col span={8}></Col>
-      </Row>
-
+      </Row>{" "}
       <Drawer
         title=""
-        width={350}
-        closable={false}
+        width={global.window?.innerWidth > 1600 ? 600 : 300}
+        closable={true}
         onClose={onClose}
         visible={visible}
         placement="left"
       >
         {" "}
-        <Row>
-          <Col span={8}>
+        <div>
+          {" "}
+          <Row className={styles.Row}>
             {" "}
             <Avatar
-              className={styles.DrawerAvatar}
+              className={styles.Avatar}
               src={"/assets/images/Ragini.png"}
             />
-          </Col>
-          <Col span={16} className={styles.DrawerCol}>
+          </Row>
+          <Row className={styles.DetailRow}>
             <div>
               <Row>
-                <Text className={styles.DrawerName}>ragini das</Text>
+                <Text className={styles.Name}>ragini das</Text>
               </Row>{" "}
               <Row>
-                <Text className={styles.DrawerLink}>view my profile</Text>
+                <Text className={styles.Link}>view my profile</Text>
               </Row>
             </div>
-          </Col>
-        </Row>
-        <Row className={styles.DrawerMiddle}>
-          <div>
-            <Row className={styles.DrawerMiddleRow}>
-              <Text className={styles.DrawerText}>how to use leap.club</Text>
-            </Row>
-            <Row className={styles.DrawerMiddleRow}>
-              <Text className={styles.DrawerText}>share feedback</Text>
-            </Row>
-            <Row className={styles.DrawerMiddleRow}>
-              {" "}
-              <Text className={styles.DrawerText}>member stories</Text>
-            </Row>
-            <Row className={styles.DrawerMiddleRow}>
-              <Text className={styles.DrawerText}>change password</Text>
-            </Row>
-          </div>
-        </Row>
-        <Row className={styles.DrawerIcon}>
-          <div>
-            <Row className={styles.DrawerIconRow}>
-              <Col>
-                <LogoutIcon className={styles.DrawerIconStyle} />
-              </Col>
-              <Col>
-                <Text className={styles.DrawerText}>logout</Text>
-              </Col>
-            </Row>
-          </div>
-        </Row>
+          </Row>
+          <Row className={styles.Row}>
+            <div>
+              <Row>
+                <Text className={styles.Text}>how to use leap.club</Text>
+              </Row>
+              <Row>
+                <Text className={styles.Text}>share feedback</Text>
+              </Row>
+              <Row>
+                {" "}
+                <Text className={styles.Text}>member stories</Text>
+              </Row>
+              <Row>
+                <Text className={styles.Text}>change password</Text>
+              </Row>
+            </div>
+          </Row>
+          <Row className={styles.Row}>
+            <Col>
+              <LogoutIcon className={styles.IconStyle} />
+            </Col>
+            <Col>
+              <Text className={styles.IconText}>logout</Text>
+            </Col>
+          </Row>
+        </div>
       </Drawer>
     </>
   );

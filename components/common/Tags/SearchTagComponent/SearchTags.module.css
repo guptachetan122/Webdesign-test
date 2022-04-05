@@ -1,8 +1,8 @@
-.searchTagsBody {
+.TagsBody {
   width: 100%;
 }
 
-.searchTagsButton {
+.TagsButton {
   background: none;
   border: 1px solid #616161;
   /* color : #FAFAFA; */
@@ -16,7 +16,7 @@
   border-radius: 5px;
 }
 
-.searchTagsButton2 {
+.TagsButton2 {
   background: none;
   border: 3px solid #313131;
   color: #313131;
@@ -30,12 +30,12 @@
   border-radius: 5px;
 }
 
-.searchTagsLinkWrapper {
+.TagsLinkWrapper {
   display: flex;
   justify-content: center;
 }
 
-.searchTagsLink {
+.TagsLink {
   color: #0500ff;
   text-decoration: underline;
 }

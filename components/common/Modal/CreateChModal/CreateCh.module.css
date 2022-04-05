@@ -1,4 +1,4 @@
-.ChModalTriggerButton {
+.TriggerButton {
   background: none;
   font-size: 18px;
   width: fit-content;
@@ -8,37 +8,37 @@
   cursor: pointer;
 }
 
-.ChModal {
+.Modal {
   height: fit-content;
   background: #fafafa;
   border-radius: 10px;
 }
 
-.ChModalTitle {
+.Title {
   font-size: 24px;
   line-height: 25px;
   font-weight: 800;
   margin-bottom: 3rem;
 }
 
-.ChModalText {
+.Text {
   font-size: 16px;
 }
 
-.ChModalInput {
+.Input {
   margin-bottom: 16px;
 }
 
-.ChRadioText {
+.RadioText {
   font-size: 16px;
 }
 
-.ChModalButton {
+.Button {
   height: 4rem;
   width: 100%;
 }
 
-.ChModalBackButton {
+.BackButton {
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
   color: #fafafa;
   cursor: pointer;
@@ -50,14 +50,14 @@
 }
 
 @media screen and (min-width: 2500px) {
-  .ChModalTriggerButton {
+  .TriggerButton {
     font-size: 28px;
   }
 }
 
 
 @media screen and (max-width: 1400px) {
-  .ChModalTriggerButton {
+  .TriggerButton {
     padding: 1rem 0.5rem;
   }
 }

@@ -1,29 +1,36 @@
-.DrawerButton {
+.Button {
   cursor: pointer;
   font-size: 14px;
   padding: 0rem 0.5rem;
 }
 
-.DrawerAvatar {
-  width: fit-content;
-  height: fit-content;
-}
-
-.DrawerCol {
-  padding: 1rem 1rem;
+.Row {
+  padding: 2rem 1rem;
   display: flex;
   justify-content: left;
   align-items: center;
 }
 
-.DrawerName {
+.Avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.DetailRow {
+  padding: 0rem 1rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.Name {
   font-weight: 600;
   font-size: 25px;
   line-height: 35px;
   color: #333333;
 }
 
-.DrawerLink {
+.Link {
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
@@ -32,71 +39,94 @@
   cursor: pointer;
 }
 
-.DrawerMiddle {
-  padding: 4rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.DrawerMiddleRow {
-  padding: 0rem 3rem;
-  margin: 1rem 0rem;
-  border-bottom: 1px solid #c2c2c2;
+.Text {
+  margin: 0.5rem 0rem;
+  border-bottom: 2px solid #c2c2c2;
   cursor: pointer;
-}
-
-.DrawerText {
   font-size: 20px;
-  line-height: 30px;
-  /* font-weight: 400; */
   color: #333333;
 }
 
-.DrawerIcon {
-  padding: 2rem 1rem;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.DrawerIconRow {
-  padding: 0rem 1rem;
-  margin: 1rem 0rem;
-  cursor: pointer;
-}
-
-.DrawerIconText {
+.IconText {
   font-size: 22px;
-  line-height: 32px;
   color: #333333;
 }
 
-.DrawerIconStyle {
+.IconStyle {
   height: 26px;
   width: 26px;
   margin-right: 1rem;
 }
 
 @media screen and (min-width: 2500px) {
-  .DrawerName {
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 45px;
-    color: #333333;
+  .Avatar {
+    width: 140px;
+    height: 140px;
   }
 
-  .DrawerLink {
+  .Name {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .Text {
+    font-size: 30px;
+  }
+
+  .Link {
     font-weight: 500;
     font-size: 25px;
     line-height: 35px;
-    text-decoration: underline;
-    color: #0500ff;
   }
 
-  .DrawerButton {
-    cursor: pointer;
+  .Button {
     font-size: 24px;
     padding: 0rem 0.5rem;
+  }
+
+  .IconText {
+    font-size: 28px;
+    color: #333333;
+  }
+
+  .IconStyle {
+    height: 30px;
+    width: 30px;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Avatar {
+    width: 75px;
+    height: 75px;
+  }
+
+  .Name {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .Text {
+    font-size: 15px;
+  }
+
+  .Link {
+    font-size: 12px;
+  }
+
+  .Button {
+    font-size: 14px;
+    padding: 0rem 0.5rem;
+  }
+  .IconText {
+    font-size: 14px;
+    color: #333333;
+  }
+
+  .IconStyle {
+    height: 15px;
+    width: 15px;
+    margin-right: 1rem;
   }
 }

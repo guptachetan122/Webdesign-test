@@ -38,11 +38,11 @@ const ClubhouseCardInfo = ({ isJoined = false }) => {
           </Row>
         )}
       </div>
-      <Divider className={styles.ChCardInfoDivider} />
+      <Divider className={styles.InfoDivider} />
       <div className={styles.MemberInfoWrapper}>
         <Row>
-          <ChInactive className={styles.ChCardInfoIcon} />
-          <Text className={styles.ChCardInfoMembers}>121 members</Text>
+          <ChInactive className={styles.InfoIcon} />
+          <Text className={styles.InfoMembers}>121 members</Text>
         </Row>
       </div>
       {n.slice(0, 3).map((i) => {
@@ -61,7 +61,7 @@ const ClubhouseCardInfo = ({ isJoined = false }) => {
           );
         })
       ) : (
-        <div className={styles.ChCardInfoLink} onClick={handleViewAll}>
+        <div className={styles.InfoLink} onClick={handleViewAll}>
           <a>view all members </a>
         </div>
       )}

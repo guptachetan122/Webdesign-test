@@ -10,26 +10,26 @@ const Member = ({pageName = ""}) => {
 
   return (
     <>
-      <Card className={styles.MemberContainer}>
+      <Card className={styles.Container}>
         <Row>
-          <Col span={3} className={styles.MemberAvatarCol}>
+          <Col span={3} className={styles.AvatarCol}>
             {" "}
             <Avatar
-              className={styles.MemberAvatar}
+              className={styles.Avatar}
               src={"/assets/images/Ragini.png"}
             />
           </Col>
-          <Col span={12} className={styles.MemberMiddleCol}>
+          <Col span={12} className={styles.MiddleCol}>
             <Row>
-              <Text className={styles.MemberName}>ragini das</Text>
+              <Text className={styles.Name}>ragini das</Text>
             </Row>
             <Row>
-              <Text className={styles.MemberDescription}>
+              <Text className={styles.Description}>
                 in-house counsel looking for new opportunities
               </Text>
             </Row>
           </Col>
-          <Col span={8} className={styles.MemberButtonWrapper}>
+          <Col span={8} className={styles.ButtonCol}>
             {pageName == "chats" ? (
               <ButtonLight name="reply" />
             ) : pageName == "mysc" ? (

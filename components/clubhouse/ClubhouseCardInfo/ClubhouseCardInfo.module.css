@@ -6,7 +6,7 @@
   padding: 2rem 1rem;
 }
 
-.ChCardInfoDivider {
+.InfoDivider {
   border: 1px solid #c2c2c2;
   margin: 0.5rem 0rem;
 }
@@ -21,21 +21,21 @@
   padding: 1rem 2rem;
 }
 
-.ChCardInfoIcon {
+.InfoIcon {
   width: 26px;
   height: 26px;
   color: black;
   /* background-color: yellowgreen; */
 }
 
-.ChCardInfoMembers {
+.InfoMembers {
   font-size: 20px;
   margin-left: 2rem;
   margin-right: 2rem;
   /* background-color: green; */
 }
 
-.ChCardInfoLink {
+.InfoLink {
   margin-top: 3rem;
   color: #0500ff;
   font-weight: 400;

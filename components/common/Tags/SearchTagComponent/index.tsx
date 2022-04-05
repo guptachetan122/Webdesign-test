@@ -15,15 +15,15 @@ const SearchTags = () => {
     <>
       {viewAll ? (
         <>
-          <div className={styles.searchTagsBody}>
+          <div className={styles.TagsBody}>
             {tagsData.map((tag) => {
               return (
                 <>
                   <button
                     className={
                       tag.checked
-                        ? styles.searchTagsButton2
-                        : styles.searchTagsButton
+                        ? styles.TagsButton2
+                        : styles.TagsButton
                     }
                     key={tag.id}
                     onClick={() => handlecheck(tag)}
@@ -34,22 +34,22 @@ const SearchTags = () => {
               );
             })}
           </div>
-          <div className={styles.searchTagsLinkWrapper}>
-            <a className={styles.searchTagsLink} onClick={handleViewAll}>
+          <div className={styles.TagsLinkWrapper}>
+            <a className={styles.TagsLink} onClick={handleViewAll}>
              ^ close
             </a>
           </div>
         </>
       ) : (
         <>
-          <div className={styles.searchTagsBody}>
+          <div className={styles.TagsBody}>
             {tagsData.slice(0, 4).map((tag) => {
               return (
                 <button
                   className={
                     tag.checked
-                      ? styles.searchTagsButton2
-                      : styles.searchTagsButton
+                      ? styles.TagsButton2
+                      : styles.TagsButton
                   }
                   key={tag.id}
                 >
@@ -57,7 +57,7 @@ const SearchTags = () => {
                 </button>
               );
             })}
-            <a className={styles.searchTagsLink} onClick={handleViewAll}>
+            <a className={styles.TagsLink} onClick={handleViewAll}>
               view all
             </a>
           </div>

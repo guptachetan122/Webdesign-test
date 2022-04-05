@@ -1,4 +1,4 @@
-.ExpTag {
+.Tag {
   background: none;
   border: 1px solid #616161;
   color: #616161;
@@ -9,7 +9,7 @@
   font-size: 16px;
 }
 
-.ExpTagActive {
+.TagActive {
   background: none;
   color: #313131;
   border: 2px solid #313131;
@@ -20,19 +20,19 @@
   font-size: 16px;
   font-weight: 500;
 }
-.ExpTagsWrapper {
+.TagsWrapper {
   margin: 2rem 0rem;
 }
 
 
 @media screen and (min-width: 1920px) {
-  .ExpTag , .ExpTagActive{
+  .Tag , .TagActive{
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 2500px) {
-  .ExpTag , .ExpTagActive{
+  .Tag , .TagActive{
     font-size: 1.6rem;
   }
 }

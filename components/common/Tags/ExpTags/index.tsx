@@ -3,13 +3,13 @@ import styles from './ExpTags.module.css'
 
 const ExpTags = () => {
   return (
-    <div className={styles.ExpTagsWrapper}>
-      <button className={styles.ExpTag}>all</button>
-      <button className={styles.ExpTagActive}>masterclass</button>
-      <button className={styles.ExpTag}>experiences</button>
-      <button className={styles.ExpTag}>clubhouse huddles</button>
-      <button className={styles.ExpTag}>online</button>
-      <button className={styles.ExpTag}>offline</button>
+    <div className={styles.TagsWrapper}>
+      <button className={styles.Tag}>all</button>
+      <button className={styles.TagActive}>masterclass</button>
+      <button className={styles.Tag}>experiences</button>
+      <button className={styles.Tag}>clubhouse huddles</button>
+      <button className={styles.Tag}>online</button>
+      <button className={styles.Tag}>offline</button>
     </div>
   );
 }

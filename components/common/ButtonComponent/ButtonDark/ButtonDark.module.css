@@ -1,4 +1,4 @@
-.ButtonDark {
+.Button {
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
   color: #fafafa;
   font-weight: 500;
@@ -11,20 +11,20 @@
 }
 
 @media screen and (min-width: 2500px) {
-  .ButtonDark {
+  .Button {
     font-size: 26px;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .ButtonDark {
+  .Button {
     font-size: 12px;
     
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .ButtonDark {
+  .Button {
     font-size: 10px;
     padding: 1rem 3rem;
   }

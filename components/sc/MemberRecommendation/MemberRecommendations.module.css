@@ -1,29 +1,29 @@
-.MrContainer {
+.Container {
   border-radius: 20px;
   margin-bottom: 16px;
 }
 
-.MrTitle {
+.Title {
   font-size: 22px;
   font-weight: 700;
 }
 
-.MrSubTitle {
+.SubTitle {
   font-size: 18px;
   font-weight: 400;
 }
 
-.MrIcon {
+.Icon {
   font-size: 30px;
 }
 
 @media screen and (min-width: 2500px) {
-  .MrTitle {
+  .Title {
     font-size: 30px;
     font-weight: 700;
   }
 
-  .MrSubTitle {
+  .SubTitle {
     font-size: 26px;
     font-weight: 400;
   }

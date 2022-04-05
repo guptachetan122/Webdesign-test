@@ -3,7 +3,7 @@
   flex-direction: row-reverse;
 }
 
-.ButtonLight {
+.Button {
   background: none;
   font-size: 18px;
   width: fit-content;
@@ -17,7 +17,7 @@
   /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
 }
 
-.ButtonLight2 {
+.Button2 {
   background: none;
   font-size: 18px;
   padding: 1rem 4rem;
@@ -31,7 +31,7 @@
   /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
 }
 
-.ButtonLight3 {
+.Button3 {
   background: none;
   font-size: 18px;
   width: fit-content;
@@ -46,7 +46,7 @@
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
 }
 
-.ButtonLight4 {
+.Button4 {
   background: none;
   font-size: 18px;
   width: 100%;
@@ -73,45 +73,52 @@
 }
 
 @media screen and (min-width: 2500px) {
-  .ButtonLight {
+  .Button {
     font-size: 26px;
   }
 
-  .ButtonLight2 {
+  .Button2 {
     font-size: 26px;
   }
 
-  .ButtonLight3 {
+  .Button3 {
+    font-size: 26px;
+  }
+
+  .Button4{
     font-size: 26px;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .ButtonLight {
+  .Button {
     font-size: 12px;
   }
 
-  .ButtonLight2 {
+  .Button2 {
     font-size: 12px;
   }
 
-  .ButtonLight3 {
+  .Button3 {
+    font-size: 12px;
+  }
+  .Button4{
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .ButtonLight {
+  .Button {
     font-size: 10px;
     padding: 1rem 3rem;
   }
 
-  .ButtonLight2 {
+  .Button2 {
     font-size: 10px;
     padding: 1rem 3rem;
   }
 
-  .ButtonLight3 {
+  .Button3 {
     font-size: 10px;
     padding: 1rem 3rem;
   }

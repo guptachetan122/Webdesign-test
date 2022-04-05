@@ -1,4 +1,4 @@
-.ExpInfoWrapper {
+.Container {
   width: 100%;
   height: fit-content;
   margin-bottom: 3rem;
@@ -6,13 +6,13 @@
   border-radius: 20px;
 }
 
-.ExpInfoBackground {
+.Background {
   position: relative;
   border-radius: 20px;
   height: fit-content;
 }
 
-.ExpInfoLabel {
+.Label {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -25,23 +25,23 @@
   border: 0px;
 }
 
-.ExpInfoLabelIcon {
+.LabelIcon {
   width: 14px;
   height: 14px;
   margin-right: 0.5rem;
 }
 
-.ExpInfoCoverImage {
+.CoverImage {
   transform: translateY(-3%);
 }
 
-.ExpInfoDateWrapper {
+.DateWrapper {
   display: flex;
   height: 45px;
   margin-bottom: 1rem;
 }
 
-.ExpInfoDateCard {
+.DateCard {
   background-color: #fafafa;
   padding: 1rem 2rem;
   margin-left: 3rem;
@@ -50,40 +50,40 @@
   transform: translateY(-50%);
 }
 
-.ExpInfoDate {
+.Date {
   font-size: 22px;
   font-weight: 700;
   color: #f42b4d;
 }
 
-.ExpInfoTime {
+.Time {
   font-size: 16px;
   color: #f42b4d;
 }
 
-.ExpInfoNameWrapper {
+.NameWrapper {
   padding: 0rem 3rem;
   font-size: 18px;
   color: #313131;
 }
 
-.ExpInfoName {
+.Name {
   font-size: 14px;
   color: grey;
 }
 
-.ExpInfoBody {
+.Body {
   padding: 1rem 2rem;
   padding-bottom: 3rem;
 }
 
-.ExpInfoHeading {
+.Heading {
   font-weight: 700;
   margin: 1rem 0rem;
   font-size: 1.6rem;
 }
 
-.ExpInfoDescription {
+.Description {
   font-size: 1.6rem;
 }
 
@@ -106,27 +106,27 @@
 }
 
 @media screen and (min-width: 2500px) {
-  .ExpInfoDateWrapper {
+  .DateWrapper {
     margin-bottom: 2rem;
   }
 
-  .ExpInfoLabel {
+  .Label {
     font-size: 1.6rem;
   }
 
-  .ExpInfoLabelIcon {
+  .LabelIcon {
     width: 30px;
     height: 30px;
   }
 
-  .ExpInfoDate {
+  .Date {
     font-size: 2rem;
   }
 
-  .ExpInfoTime {
+  .Time {
     font-size: 1.6rem;
   }
-  .ExpInfoName {
+  .Name {
     font-size: 1.5rem;
   }
 

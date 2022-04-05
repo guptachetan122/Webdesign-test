@@ -1,4 +1,4 @@
-.ExpBookedContainer {
+.Container {
   padding: 1rem 1rem;
   margin: 1.5rem 0rem;
   background-color: #fafafa;
@@ -7,34 +7,34 @@
   border-radius: 10px;
 }
 
-.ExpBookedLeftCol {
+.LeftCol {
   border-right: 1px solid #616161;
   padding: 0rem 1rem;
 }
 
-.ExpBookedRightCol {
+.RightCol {
   padding: 0rem 1rem;
 }
 
-.ExpBookedDate {
+.Date {
   font-weight: 700;
   font-size: 22px;
   line-height: 33px;
 }
 
-.ExpBookedTime {
+.Time {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
-.ExpBookedTitle {
+.Title {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
 }
 
-.ExpBookedOwner {
+.Owner {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;

@@ -8,7 +8,7 @@ const ChemistrySession = ({ chemSessions = 0 }) => {
   const [chem, setChem] = useState(chemSessions);
 
   return (
-    <div className={styles.ChemistrySessionWrapper}>
+    <div className={styles.Container}>
       <Row>
         <Col span={6} className={styles.ProgressWrapper}>
           {" "}
@@ -22,14 +22,14 @@ const ChemistrySession = ({ chemSessions = 0 }) => {
             )}
           />
         </Col>
-        <Col span={18} className={styles.progressWrapper2}>
+        <Col span={18} className={styles.Container2}>
           <Row>
-            <Text className={styles.CardTitle}>
+            <Text className={styles.Title}>
               free chemistry sessions done
             </Text>
           </Row>
           <Row>
-            <Text className={styles.CardSubTitle}>
+            <Text className={styles.SubTitle}>
               book free 15 minute sessions with any coach to match your vibe
             </Text>
           </Row>

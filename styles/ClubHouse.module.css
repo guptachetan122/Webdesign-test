@@ -31,7 +31,8 @@
   margin-top: 3rem;
   color: #0500ff;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
+  text-decoration: underline;
   text-align: center;
 }
 
@@ -89,13 +90,37 @@
   }
 
   .ButtonDark {
-  font-size: 30px;
+    font-size: 30px;
+  }
+
+  .ButtonIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    color: #fafafa;
+  }
+
+  .ChLink {
+    font-size: 30px;
+  }
 }
 
-.ButtonIcon {
-  width: 30px;
-  height: 30px;
-  margin-right: 1rem;
-  color: #fafafa;
-}
+@media screen and (max-width: 1600px) {
+  .ChTopText {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .ButtonDark {
+    font-size: 15px;
+  }
+
+  .ButtonIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .ChLink {
+    font-size: 16px;
+  }
 }

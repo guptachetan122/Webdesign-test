@@ -13,17 +13,17 @@ const MemberRecommendations = ({ title = "", subTitle = "" }) => {
   return (
     <>
       
-        <Card className={styles.MrContainer}>
+        <Card className={styles.Container}>
           <Row>
             <Col span={22}>
               <Row>
                 {" "}
-                <Text className={styles.MrTitle}>
+                <Text className={styles.Title}>
                   {title}
                 </Text>
               </Row>
               <Row>
-                <Text className={styles.MrSubTitle}>
+                <Text className={styles.SubTitle}>
                   {subTitle}
                 </Text>
               </Row>
@@ -32,12 +32,12 @@ const MemberRecommendations = ({ title = "", subTitle = "" }) => {
               {isClicked ? (
                 <UpOutlined
                   onClick={handleOpen}
-                  className={styles.MrIcon}
+                  className={styles.Icon}
                 />
               ) : (
                 <DownOutlined
                   onClick={handleOpen}
-                  className={styles.MrIcon}
+                  className={styles.Icon}
                 />
               )}
             </Col>

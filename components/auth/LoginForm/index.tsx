@@ -65,7 +65,7 @@ const LoginForm = () => {
         form={form}
       >
         <Form.Item
-          className={styles.LoginInputLabel}
+          className={styles.InputLabel}
           label="email"
           name="email"
           rules={[
@@ -88,57 +88,57 @@ const LoginForm = () => {
         >
           <Input
             prefix={<UserOutlined className="site-form-item-icon" />}
-            className={styles.LoginInput}
+            className={styles.Input}
             placeholder=" gal@gadot.com"
           />
         </Form.Item>
         <Form.Item
-          className={styles.LoginInputLabel}
+          className={styles.InputLabel}
           label="password"
           name="password"
           rules={[{ required: true, message: "please input your password!" }]}
         >
           <Input.Password
             prefix={<LockOutlined className="site-form-item-icon" />}
-            className={styles.LoginInput}
+            className={styles.Input}
             placeholder=" enter your password"
           />
         </Form.Item>
-        <div className={styles.LoginForgot}>
+        <div className={styles.Forgot}>
           <Link href="/forgotpassword">
-            <a className={styles.LoginForgotLink}>forgot password ?</a>
+            <a className={styles.ForgotLink}>forgot password ?</a>
           </Link>
         </div>
-        <Form.Item className={styles.LoginButtonWrapper}>
+        <Form.Item className={styles.ButtonWrapper}>
           <Button
             type="primary"
             htmlType="submit"
-            id={styles.LoginButton}
+            id={styles.Button}
             loading={loading}
           >
             login
           </Button>
         </Form.Item>
       </Form>
-      <Text className={styles.LoginJoinLink}>
+      <Text className={styles.JoinLink}>
         not a member?
         <a onClick={LeapWebsite} target="_blank">
           join the waitlist{" "}
         </a>
       </Text>
 
-      <div className={styles.LoginBottomTextWrapper}>
-        <Text className={styles.LoginBottomText}>
+      <div className={styles.BottomTextWrapper}>
+        <Text className={styles.BottomText}>
           by logging in you agree to our
-          <Text onClick={Policy} className={styles.LoginBottomLink}>
+          <Text onClick={Policy} className={styles.BottomLink}>
             <a target="_blank">community guidelines</a>
           </Text>
           {" & "}
-          <Text onClick={TermsOfUSe} className={styles.LoginBottomLink}>
+          <Text onClick={TermsOfUSe} className={styles.BottomLink}>
             <a target="_blank">terms of use</a>
           </Text>
           , if you do do not agree, please write to us on
-          <Text onClick={EmailSupport} className={styles.LoginBottomLink}>
+          <Text onClick={EmailSupport} className={styles.BottomLink}>
             <a target="_blank"> members@leap.club</a>
           </Text>
         </Text>

@@ -1,47 +1,47 @@
-.MemberContainer{
+.Container{
   margin: 8px 0px;
   padding:0rem 1rem;
   background-color: #FAFAFA;
   border-radius: 10px;
 }
 
-.MemberAvatarCol{
+.AvatarCol{
     margin-right: 1rem;
     /* background-color: red; */
 }
 
-.MemberAvatar{
+.Avatar{
     height: fit-content;
     width: fit-content;
 }
 
-.MemberMiddleCol{
+.MiddleCol{
     padding: 0rem 2rem;
 }
 
-.MemberName{
+.Name{
     font-size: 20px;
     font-weight: bold;
 }
 
-.MemberDescription{
+.Description{
     font-size : 18px;
     font-weight: lighter;
 }
 
-.MemberButtonWrapper{
+.ButtonCol{
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
 
 @media screen and (min-width: 2500px) {
-  .MemberName {
+  .Name {
     font-size: 30px;
     font-weight: 700;
   }
 
-  .MemberDescription {
+  .Description {
     font-size: 26px;
     font-weight: 400;
   }

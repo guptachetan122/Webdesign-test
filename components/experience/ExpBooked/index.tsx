@@ -5,25 +5,25 @@ const { Text } = Typography;
 
 const ExpBooked = () => {
   return (
-    <div className={styles.ExpBookedContainer}>
+    <div className={styles.Container}>
       <Row>
-        <Col span={4} className={styles.ExpBookedLeftCol}>
+        <Col span={4} className={styles.LeftCol}>
           <Row>
-            <Text className={styles.ExpBookedDate}>25 Feb</Text>
+            <Text className={styles.Date}>25 Feb</Text>
           </Row>
           <Row>
-            <Text className={styles.ExpBookedTime}>07:30 PM</Text>
+            <Text className={styles.Time}>07:30 PM</Text>
           </Row>
         </Col>
-        <Col span={20} className={styles.ExpBookedRightCol}>
+        <Col span={20} className={styles.RightCol}>
           <Row>
             {" "}
-            <Text className={styles.ExpBookedTitle}>
+            <Text className={styles.Title}>
               driving high - performance teams
             </Text>
           </Row>
           <Row>
-            <Text className={styles.ExpBookedOwner}>
+            <Text className={styles.Owner}>
               experience by leap.club
             </Text>
           </Row>

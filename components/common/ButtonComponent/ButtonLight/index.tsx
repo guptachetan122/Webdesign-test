@@ -15,30 +15,30 @@ const ButtonLight = ({ name = "", msgs = "" }) => {
     <>
       {name == "clubhouse" ? (
         <Link href="/clubhouse/id/chat" passHref>
-          <button className={styles.ButtonLight}>
+          <button className={styles.Button}>
             <span style={{ fontWeight: "700" }}>{msgs}</span>
             <Text style={{ marginLeft: "1rem" }}>new messages</Text>
           </button>
         </Link>
       ) : name == "filter and sort" ? (
-        <button className={styles.ButtonLight2}>
+        <button className={styles.Button2}>
           <AdjustmentsIcon className={styles.ButtonIcon2} />
           {name}
         </button>
       ) : name == "mute clubhouse" ? (
-        <button className={styles.ButtonLight3}>
+        <button className={styles.Button3}>
           <VolumeOffIcon className={styles.ButtonIcon} />
           {name}
         </button>
       ) : name == "exit clubhouse" ? (
-        <button className={styles.ButtonLight3}>
+        <button className={styles.Button3}>
           <LogoutIcon className={styles.ButtonIcon} />
           {name}
         </button>
       ) : name == "book a free chemistry session" ? (
-        <button className={styles.ButtonLight4}>{name}</button>
+        <button className={styles.Button4}>{name}</button>
       ) : ( 
-        <button className={styles.ButtonLight2}>{name}</button>
+        <button className={styles.Button2}>{name}</button>
       )}
     </>
   );

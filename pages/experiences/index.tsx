@@ -27,7 +27,7 @@ const Upcoming = () => {
           <Row>
             <Col span={4}></Col>
             <Col span={15}>
-              <div style={{}}>
+              <div>
                 <ExperienceCard viewMore />
                 <ExperienceCard viewMore isBooked/>
                 <ExperienceCard viewMore />

@@ -26,7 +26,7 @@ const ChangePasswordForm = () => {
   };
 
   return (
-    <div className={styles.CpContainer}>
+    <div className={styles.Container}>
       <Form
         className="form"
         name="basic"
@@ -36,7 +36,7 @@ const ChangePasswordForm = () => {
         form={form}
       >
         <Form.Item
-          className={styles.CpInputLabel}
+          className={styles.InputLabel}
           label="enter old password"
           name="password"
           rules={[
@@ -45,12 +45,12 @@ const ChangePasswordForm = () => {
         >
           <Input
             prefix={<LockOutlined className="site-form-item-icon" />}
-            className={styles.CpInput}
+            className={styles.Input}
             placeholder=" enter your password"
           />
         </Form.Item>
         <Form.Item
-          className={styles.CpInputLabel}
+          className={styles.InputLabel}
           label="enter new password"
           name="password1"
           rules={[
@@ -59,12 +59,12 @@ const ChangePasswordForm = () => {
         >
           <Input.Password
             prefix={<LockOutlined className="site-form-item-icon" />}
-            className={styles.CpInput}
+            className={styles.Input}
             placeholder=" enter your password"
           />
         </Form.Item>
         <Form.Item
-          className={styles.CpInputLabel}
+          className={styles.InputLabel}
           label="retype new password"
           name="password2"
           rules={[
@@ -76,15 +76,15 @@ const ChangePasswordForm = () => {
         >
           <Input.Password
             prefix={<LockOutlined className="site-form-item-icon" />}
-            className={styles.CpInput}
+            className={styles.Input}
             placeholder=" enter your password"
           />
         </Form.Item>
-        <Form.Item className={styles.CpButtonWrapper}>
+        <Form.Item className={styles.ButtonWrapper}>
           <Button
             type="primary"
             htmlType="submit"
-            id={styles.CpButtonPrimary}
+            id={styles.ButtonPrimary}
             loading={loading}
           >
             update password

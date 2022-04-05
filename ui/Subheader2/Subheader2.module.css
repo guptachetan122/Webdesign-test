@@ -1,4 +1,4 @@
-.SubheaderWrapper {
+.Container {
   width: 100%;
   /* padding: 0rem 40rem; */
   height: fit-content;
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.SubheaderListItem {
+.ListItem {
   width: fit-content;
   padding: 0rem 1rem;
   height: 6rem;
@@ -21,13 +21,13 @@
   align-items: center;
 }
 
-.SubheaderListItem:hover {
+.ListItem:hover {
   border-bottom-color: #ff4500;
   background-color: white;
   /* background-color: red; */
 }
 
-.SubheaderListItemActive {
+.ListItemActive {
   width: fit-content;
   padding: 0rem 1rem;
   height: 6rem;
@@ -40,47 +40,38 @@
   /* background-color: red; */
 }
 
-.SubheaderListItemActive:hover {
+.ListItemActive:hover {
   border-bottom-color: #ff4500;
   background-color: white;
 }
 
-.SubheaderImg {
+.Img {
   width: 16px;
   height: 16px;
 }
 
 @media screen and (min-width: 2500px) {
-  .SubheaderImg {
+  .Img {
     width: 26px;
     height: 26px;
   }
-  .SubheaderListItemActive {
+  .ListItemActive {
     font-size: 26px;
   }
-  .SubheaderListItem {
+  .ListItem {
     font-size: 26px;
   }
 }
-/*
-@media screen and (max-width:1920px) {
-  .SubheaderListWrapper {
-  width: 100%;
-  padding: 0rem 40rem;
-  height: 6rem;
-  background-color: white;
- 
-}
 
-.SubheaderListWrapper2 {
-  width: 100%;
-  padding: 0rem 30rem;
-  height: 6rem;
-  background-color: white;
- 
+@media screen and (max-width: 1600px) {
+  .Img {
+    width: 13px;
+    height: 13px;
+  }
+  .ListItemActive {
+    font-size: 13px;
+  }
+  .ListItem {
+    font-size: 13px;
+  }
 }
-  
-}
-
-
-*/

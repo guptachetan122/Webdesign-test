@@ -15,32 +15,32 @@ const UpcomingExperienceCard = ({
 }) => {
   return (
     <>
-      <div className={styles.ExpCardWrapper}>
-        <Row className={styles.ExpCardBackground}>
+      <div className={styles.Container}>
+        <Row className={styles.Background}>
           <ButtonComponent Name="label" />
           <img
             src="/assets/images/exp2.png"
             alt="alt"
             width="100%"
-            className={styles.ExpCardCoverImage}
+            className={styles.CoverImage}
           />
         </Row>
-        <Row className={styles.ExpCardRow}>
+        <Row className={styles.Row}>
           {" "}
           <Col>
-            <div className={styles.ExpCardDate}>
+            <div className={styles.DateWrapper}>
               {" "}
               <Row>
-                <Text className={styles.ExpCardText}>25 Feb</Text>
+                <Text className={styles.Date}>25 Feb</Text>
               </Row>
               <Row>
-                <Text className={styles.ExpCardText2}>07:30 PM</Text>
+                <Text className={styles.Time}>07:30 PM</Text>
               </Row>
             </div>
           </Col>
-          <Col className={styles.bookedLabelCol}>
+          <Col className={styles.LabelCol}>
             {isBooked ? (
-              <div className={styles.bookedLabelText}>
+              <div className={styles.LabelText}>
                 <CheckCircleFilled />
                 {"  "}slot booked
               </div>
@@ -48,28 +48,17 @@ const UpcomingExperienceCard = ({
           </Col>
         </Row>
 
-        <Row className={styles.ExpCardRow2}>
+        <Row className={styles.TitleRow}>
           <div>how to effectively make friends and love your job</div>
-          {/* {isBooked ? (
-            <Text className={styles.bookedLabelText}>
-              <CheckCircleFilled />
-              {"  "}slot booked
-            </Text>
-          ) : null} */}
         </Row>
         {viewMore ? (
           <Link href="/experiences/id" passHref>
             <a>
-              <Text className={styles.ExpCardText3}>view details</Text>
+              <Text className={styles.LinkText}>view details</Text>
             </a>
           </Link>
         ) : null}
 
-        {/* {pageName == "masterclass" ? null : isBooked ? (
-          <ButtonComponent Name="Booked" />
-        ) : (
-          <ButtonComponent Name="notBooked" />
-        )} */}
         {isBooked ? (
           <ButtonComponent Name="Booked" infoPage />
         ) : isPay ? (

@@ -17,9 +17,9 @@ const ArchiveVideos = () => {
             <Col span={5}></Col>
             <Col span={14}>
               <div style={{}}>
-                <ArchiveExperienceCard viewMore />
-                <ArchiveExperienceCard viewMore isBooked />
-                <ArchiveExperienceCard viewMore />
+                <ArchiveExperienceCard  />
+                <ArchiveExperienceCard  />
+                <ArchiveExperienceCard  />
               </div>
             </Col>
             <Col span={5}></Col>

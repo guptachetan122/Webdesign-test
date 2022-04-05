@@ -1,4 +1,4 @@
-.LoginContainer {
+.Container {
 	padding: 2rem 2.93rem;    
 	width:100%;
 	margin-top:5rem ;
@@ -7,18 +7,18 @@
     border-radius: 1.063rem;
 }
 
-.LoginInputLabel {
+.InputLabel {
 	margin-left: 2rem;
 	margin-right: 2rem;
 	margin-top: 1rem;
 }
 
-.LoginInputLabel label {
+.InputLabel label {
 	font-size: 1.6rem;
 	font-weight: 500;
 }
 
-.LoginInput {
+.Input {
 	border: 0.063rem solid #c4c4c4;
 	border-radius:0.5008rem;
 	font-family: 'Work Sans';
@@ -27,26 +27,26 @@
 	line-height: 1.8rem;
 }
 
-.LoginForgot {
+.Forgot {
     display: flex;
 	justify-content:right;
 	width: 100%;
 	padding: 0rem 2rem;
 }
 
-.LoginForgotLink{
+.ForgotLink{
 	color: #0500FF;
 	font-size: 1.4rem;
 	text-decoration: underline;
 }
 
-.LoginForgotLink:hover{
+.ForgotLink:hover{
 	color: #0500FF;
 	font-size: 1.4rem;
 	text-decoration: done;
 }
 
-.LoginButtonWrapper {
+.ButtonWrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -55,7 +55,7 @@
 	margin-top: 2rem;
 }
 
-#LoginButton {
+#Button {
 	background: radial-gradient(
 		100% 1267.36% at 0% 50%,
 		#f42b4d 0%,
@@ -73,23 +73,23 @@
 	padding: 1.6rem 2rem;
 }
 
-.LoginJoinLink{
+.JoinLink{
 	font-size: 1.4rem;
 	display: flex;
 	justify-content:center;
 }
-.LoginJoinLink a{
+.JoinLink a{
 	color: #0500FF;
 	text-decoration: underline;
 	margin-left: 0.5rem;
 }
 
-.LoginJoinLink a:hover{
+.JoinLink a:hover{
 	color: #0500FF;
 	text-decoration: done;
 }
 
-.LoginBottomTextWrapper {
+.BottomTextWrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -98,41 +98,41 @@
 	margin-top: 4rem;
 }
 
-.LoginBottomText {
+.BottomText {
 	font-size: 1.2rem;
 	line-height: 20px;
 	text-align: center;
 }
 
-.LoginBottomLink a{
+.BottomLink a{
 	color: #1100ff;
 	text-decoration: underline;
 }
 
-.LoginBottomLink a:hover{
+.BottomLink a:hover{
 	color: #1100ff;
 }
 
 @media screen and (max-width: 820px) {
-	.LoginContainer{
+	.Container{
 		padding: 2rem 1rem;  
 	}
 }
 
 /* 1.6 */
 @media screen and ( min-width : 2500px) {
-    .LoginInputLabel label {
+    .InputLabel label {
 		font-size:2rem;
 	}
 	
-	.LoginInput {
+	.Input {
 		font-size: 2rem;
 	}
-	#LoginButtonPrimary{
+	#ButtonPrimary{
 		font-size: 2.5rem;
 		line-height: 2.8rem;
 	}
-	.LoginBottomText{
+	.BottomText{
 		line-height: 1.4rem;
 	}
 }

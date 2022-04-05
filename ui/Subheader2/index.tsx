@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import styles from "./Subheader2.module.css";
-import Image from "next/image";
 
 interface SubheaderProps {
   SubheaderData: {
@@ -20,15 +19,15 @@ const Subheader2 = ({ SubheaderData }: SubheaderProps) => {
   return (
     <>
       {" "}
-      <div className={styles.SubheaderWrapper}>
+      <div className={styles.Container}>
         {SubheaderData.map((item) => (
           <Button
             type="text"
             key={item.id}
             className={
               Router.pathname == item.link
-                ? styles.SubheaderListItemActive
-                : styles.SubheaderListItem
+                ? styles.ListItemActive
+                : styles.ListItem
             }
           >
             <Link href={item?.link} passHref>
@@ -37,7 +36,7 @@ const Subheader2 = ({ SubheaderData }: SubheaderProps) => {
                   <img
                     src="/assets/images/back-arrow-2.png"
                     alt="back-arrow"
-                    className={styles.SubheaderImg}
+                    className={styles.Img}
                   />{" "}
                   {item.name}
                 </a>

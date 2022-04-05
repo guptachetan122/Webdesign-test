@@ -1,4 +1,4 @@
-.container{
+.Container{
   background-color: #F6F6F6;
   margin-top: 12px;
   border-radius: 20px;
@@ -6,7 +6,7 @@
   padding: 3rem 3rem;
 }
 
-.container2{
+.Container2{
   background-color: #FAFAFA;
   margin-top: 6px;
   border-radius: 10px;
@@ -14,7 +14,7 @@
   padding: 2rem 1rem;
 }
 
-.col3{
+.AvatarCol{
     display: flex;
     flex-direction: column-reverse;
     margin-left: auto;

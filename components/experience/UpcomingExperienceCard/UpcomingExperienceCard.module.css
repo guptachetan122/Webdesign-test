@@ -1,4 +1,4 @@
-.ExpCardWrapper {
+.Container {
   width: 100%;
   height: fit-content;
   margin-bottom: 3rem;
@@ -9,38 +9,31 @@
   transition: all 0.6s ease-in-out;
 }
 
-.ExpCardWrapper:hover {
+.Container:hover {
   box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
   transform: translate3d(0px, -5px, 5px);
 }
 
-.ExpCardBackground {
+.Background {
   height: fit-content;
 }
 
-.ExpCardCoverImage {
+.CoverImage {
   transform: translateY(-3%);
 }
 
-.ExpCardRow {
+.Row {
   height: 45px;
   margin-bottom: 1rem;
 }
 
-.ExpCardRow2 {
+.TitleRow {
   padding: 0rem 3rem;
   font-size: 18px;
   color: #313131;
 }
 
-.ExpCardRow3 {
-  padding: 0rem 3rem;
-  font-size: 14px;
-  text-decoration: underline;
-  color: #616161;
-}
-
-.ExpCardDate {
+.DateWrapper {
   background-color: #fafafa;
   padding: 1rem 2rem;
   margin-left: 3rem;
@@ -49,31 +42,31 @@
   transform: translateY(-50%);
 }
 
-.ExpCardText {
+.Date {
   font-size: 22px;
   font-weight: 700;
   color: #f42b4d;
 }
 
-.ExpCardText2 {
+.Time {
   font-size: 16px;
   color: #f42b4d;
 }
 
-.ExpCardText3 {
+.LinkText {
   padding: 0rem 3rem;
   font-size: 14px;
   text-decoration: underline;
   color: #616161;
 }
 
-.bookedLabelCol {
+.LabelCol {
   display: flex;
   justify-content: right;
   align-items: center;
 }
 
-.bookedLabelText {
+.LabelText {
   padding: 0rem 1rem;
   margin-left: 1rem;
   background-color: yellowgreen;
@@ -86,28 +79,25 @@
 }
 
 @media screen and (min-width: 2500px) {
-  .ExpCardRow {
+  .Row {
     margin-bottom: 2rem;
   }
 
-  .ExpCardRow2 {
+  .TitleRow {
     font-size: 1.5rem;
   }
-  .ExpCardRow3 {
-    font-size: 1.2rem;
-  }
 
-  .ExpCardText {
+  .Date {
     font-size: 2rem;
   }
 
-  .ExpCardText2 {
+  .Time {
     font-size: 1.6rem;
   }
-  .ExpCardText3 {
+  .LinkText {
     font-size: 1.4rem;
   }
-  .bookedLabelText {
+  .LabelText {
     font-size: 1.6rem;
   }
 }
