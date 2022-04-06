@@ -1,5 +1,6 @@
 .Body {
-  padding-bottom: 2rem;
+  min-height: 100vh;
+  padding-bottom: 4rem;
   background-color: #e5e5e5;
 }
 
@@ -46,14 +47,26 @@
 }
 
 .CourseTitle {
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 24px;
-  margin: 2rem 0rem;
 }
 
 .CourseSubTitle {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: #F9511C;
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.CourseDescription {
+  display: flex;
+  justify-content: center;
   color: #616161;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .CourseImage {

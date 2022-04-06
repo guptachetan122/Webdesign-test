@@ -1,7 +1,9 @@
-import { Card, Col, Row } from "antd";
+import { Col, Row, Typography} from "antd";
 import React from "react";
 import Sidebar from "../../ui/Sidebar";
 import styles from "../../styles/Learn.module.css";
+
+const { Text } = Typography;
 
 const courses = () => {
   return (
@@ -16,15 +18,17 @@ const courses = () => {
             <Col span={2}></Col>
             <Col span={20}>
               {" "}
-              <Card className={styles.CourseCardStyle}>
+              <div className={styles.CourseCardStyle}>
                 {" "}
-                <div className={styles.CourseTitle}>cohort based courses</div>
-                <div className={styles.CourseSubTitle}>
-                  coming soon - we hosted 8 creators and sold 100+ seats in
-                  2021. these courses were rated 9+ by our members. we are
-                  excited to relaunch courses in 2022. bigger. bolder.
-                </div>
-              </Card>
+                <Row className={styles.CourseTitle}>cohort based courses</Row>
+                <Row className={styles.CourseSubTitle}>
+                  coming soon...
+                </Row>
+                <Row className={styles.CourseDescription}>
+                  2021 - 8 creators, 100+ learners, avg 9.4 ⭐ rating 2022 -
+                  coming back.bigger.bolder.
+                </Row>
+              </div>
             </Col>
             <Col span={2}></Col>
           </Row>

@@ -1,5 +1,6 @@
 .Body {
-  min-height: 200vh;
+  min-height: 100vh;
+  padding-bottom: 4rem;
   background-color: #e5e5e5;
 }
 
@@ -8,6 +9,6 @@
   justify-content: right;
 }
 
-.MiddleCol{
+.MiddleCol {
   padding-top: 3rem;
 }
