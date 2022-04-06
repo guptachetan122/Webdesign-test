@@ -244,3 +244,13 @@ export const tagsData = [
     checked: false,
   },
 ];
+
+
+export const ExpTagsData = [
+  `all`,
+  `masterclass`,
+  `experiences`,
+  `clubhouse huddles`,
+  `online`,
+  `offline`
+]

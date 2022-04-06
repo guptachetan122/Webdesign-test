@@ -30,6 +30,7 @@
 }
 
 .IconCol{
+  padding-top: 1rem;
   display: flex;
   justify-content: left;
   align-items: flex-start;
