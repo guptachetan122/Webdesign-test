@@ -1,41 +1,48 @@
-.TagsBody {
-  width: 100%;
-}
-
-.TagsButton {
+.Tag {
   background: none;
   border: 1px solid #616161;
-  /* color : #FAFAFA; */
-  color: #313131;
+  color: #616161;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0.5rem 0rem;
+  margin-right: 1rem;
   padding: 0rem 1rem;
-  height: 40px;
-  width: fit-content;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
+  font-size: 16px;
 }
 
-.TagsButton2 {
+.TagActive {
   background: none;
-  border: 3px solid #313131;
   color: #313131;
-  font-weight: 600;
-  padding: 0rem 2rem;
-  height: 40px;
-  width: fit-content;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  border: 2px solid #313131;
+  box-sizing: border-box;
   border-radius: 5px;
+  margin: 0.5rem 0rem;
+  margin-right: 1rem;
+  padding: 0rem 1rem;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.TagsLinkWrapper {
+.TagLinkWrapper {
   display: flex;
   justify-content: center;
 }
 
-.TagsLink {
+.TagLink {
+  cursor: pointer;
   color: #0500ff;
+  font-size: 16px;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1600px) {
+  .Tag , .TagActive, .TagLink {
+    font-size: 13px
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .Tag , .TagActive, .TagLink {
+    font-size: 26px;
+  }
 }

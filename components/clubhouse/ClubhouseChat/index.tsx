@@ -18,7 +18,7 @@ const ClubhouseChat = () => {
               src={"/assets/images/Ragini.png"}
             />
           </Col>
-          <Col span={22} className={styles.Container2}>
+          <Col span={20} className={styles.Container2}>
             {" "}
             hello{" "}
           </Col>

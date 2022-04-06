@@ -1,6 +1,8 @@
 .Container {
+  padding: 2rem 2rem;
+  background-color: #fafafa;
   border-radius: 20px;
-  margin-bottom: 16px;
+  width: 100%;
 }
 
 .Title {
@@ -19,12 +21,27 @@
 
 @media screen and (min-width: 2500px) {
   .Title {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 32px;
   }
 
   .SubTitle {
-    font-size: 26px;
-    font-weight: 400;
+    font-size: 28px;
+  }
+  .Icon {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Title {
+    font-size: 16px;
+  }
+
+  .SubTitle {
+    font-size: 13px;
+  }
+
+  .Icon {
+    font-size: 20px;
   }
 }

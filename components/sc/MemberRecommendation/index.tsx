@@ -5,15 +5,11 @@ import Member from "../Member";
 import styles from "./MemberRecommendations.module.css";
 const { Text } = Typography;
 
-const MemberRecommendations = ({ title = "", subTitle = "" }) => {
-  const [isClicked, setClicked] = useState(false);
-  const handleOpen = () => {
-    setClicked(!isClicked);
-  };
+const MemberRecommendations = ({ title = "", subTitle = "" , isClicked = false}) => {
+
   return (
     <>
-      
-        <Card className={styles.Container}>
+        <div className={styles.Container}>
           <Row>
             <Col span={22}>
               <Row>
@@ -31,27 +27,16 @@ const MemberRecommendations = ({ title = "", subTitle = "" }) => {
             <Col span={2}>
               {isClicked ? (
                 <UpOutlined
-                  onClick={handleOpen}
                   className={styles.Icon}
                 />
               ) : (
                 <DownOutlined
-                  onClick={handleOpen}
                   className={styles.Icon}
                 />
               )}
             </Col>
           </Row>
-        </Card>
-        {isClicked ? (
-          <>
-            <Member  />
-            <Member />
-            <Member />
-            <Member />{" "}
-          </>
-        ) : null}
-     
+        </div>  
     </>
   );
 };

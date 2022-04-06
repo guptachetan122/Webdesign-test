@@ -11,7 +11,7 @@ import {
 import React, { useState } from "react";
 import styles from "./ClubhouseCard.module.css";
 import Link from "next/link";
-import { VolumeOffIcon } from "@heroicons/react/solid";
+import { VolumeOffIcon , DotsHorizontalIcon} from "@heroicons/react/solid";
 import ButtonLight from "../../common/ButtonComponent/ButtonLight";
 import ButtonDark from "../../common/ButtonComponent/ButtonDark";
 import { CalendarIcon as ExperienceInactive } from "@heroicons/react/outline";
@@ -20,6 +20,7 @@ import {
   PushpinFilled,
   RightOutlined,
 } from "@ant-design/icons";
+import { useRouter } from "next/router";
 
 const { Text } = Typography;
 
@@ -35,12 +36,22 @@ const ClubhouseCard = ({
   const [isPin, setPin] = useState(isPinned);
   const [isMute, setMute] = useState(isMuted);
   const [pinnedCh, setPinnedCh] = useState(pinned);
-
-  console.log(pinnedCh);
+  const router = useRouter();
 
   const modalmsg = {
     content: "you can only pin 5 clubhouses",
   };
+
+  function goToChInfo() {
+    {
+      infoPage ? null : router.push("/clubhouse/id");
+    }
+  }
+
+  function goToChChat(e: any) {
+    e.stopPropagation();
+    router.push("/clubhouse/id/chat");
+  }
 
   function onPin() {
     if (pinnedCh < 5 && pinnedCh > 0) {
@@ -61,7 +72,7 @@ const ClubhouseCard = ({
   }
 
   const menu = () => (
-    <Menu style={{ padding: "0" }}>
+    <Menu>
       {isPin ? (
         <Menu.Item key="1" onClick={unPin}>
           <div className={styles.Menu}>
@@ -93,26 +104,22 @@ const ClubhouseCard = ({
 
   return (
     <>
+      {" "}
       <div className={styles.Container}>
         <Row className={styles.Row}>
-          <Col span={20}>
-            <Link href="/clubhouse/id" passHref>
-              <a>
-                <Text className={styles.TopContent}>
-                  simplifying personal finance for women
-                </Text>
-              </a>
-            </Link>
+          <Col span={18} onClick={goToChInfo}>
+            <Text className={styles.TopContent}>
+              simplifying personal finance for women
+            </Text>
+          </Col>
+          <Col span={3} className={styles.IconCol}>
             {isMute ? <VolumeOffIcon className={styles.MenuIcon} /> : null}
             {isPin ? <PushpinFilled className={styles.MenuIcon} /> : null}
           </Col>
-
-          <Col span={4} className={styles.MenuCol}>
+          <Col span={3} className={styles.MenuCol}>
             {isJoined ? (
-              <Dropdown className={styles.Dropdown} overlay={menu}>
-                <button style={{ background: "none" , border : "none"}}>
-                  <EllipsisOutlined className={styles.DropdownIcon} />
-                </button>
+              <Dropdown overlay={menu}>
+                <DotsHorizontalIcon className={styles.DropdownIcon} />
               </Dropdown>
             ) : infoPage ? null : (
               <button className={styles.BadgeButton}>
@@ -120,22 +127,18 @@ const ClubhouseCard = ({
               </button>
             )}
           </Col>
-        </Row>
+        </Row>{" "}
         {isJoined ? null : (
-          <Link href="/clubhouse/id" passHref>
-            <a>
-              <Row className={styles.DescriptionRow}>
-                <Text className={styles.Description}>
-                  women playing sports, bindass, lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has
-                  been the industry&apos;s standard du,dummy text of the
-                  printing and typesetting industry. ...more
-                </Text>
-              </Row>
-            </a>
-          </Link>
+          <Row className={styles.DescriptionRow} onClick={goToChInfo}>
+            <Text className={styles.Description}>
+              women playing sports, bindass, lorem Ipsum is simply dummy text of
+              the printing and typesetting industry. Lorem Ipsum has been the
+              industry&apos;s standard du,dummy text of the printing and
+              typesetting industry.....
+            </Text>
+          </Row>
         )}
-        <Row className={styles.Row}>
+        <Row className={styles.Row} onClick={goToChInfo}>
           <Col span={3}>
             {" "}
             <Avatar
@@ -144,32 +147,29 @@ const ClubhouseCard = ({
             />
           </Col>
 
-          <Col span={10} className={styles.NameCol}>
+          <Col span={11} className={styles.NameCol}>
             <Text className={styles.Name}>ragini das + 121</Text>
           </Col>
 
           <Col span={10} className={styles.ButtonCol}>
             {isJoined ? (
-              <ButtonLight msgs="121" name="clubhouse" />
+              <div onClick={goToChChat}>
+                <ButtonLight msgs="121" name="clubhouse" />
+              </div>
             ) : infoPage ? null : (
               <ButtonDark name="join clubhouse" />
             )}
           </Col>
         </Row>
         {upcomingHuddle ? (
-          <Link href="#">
-            <a>
-              {" "}
-              <Row className={styles.FooterWrapper}>
-                <Divider className={styles.Divider} />
-                <div className={styles.Footer}>
-                  <ExperienceInactive className={styles.FooterIcon} />
-                  <Text>1 upcoming huddle</Text>
-                  <RightOutlined className={styles.FooterIcon} />
-                </div>
-              </Row>
-            </a>
-          </Link>
+          <Row className={styles.FooterWrapper} onClick={goToChInfo}>
+            <Divider className={styles.Divider} />
+            <div className={styles.Footer}>
+              <ExperienceInactive className={styles.FooterIcon} />
+              <Text>1 upcoming huddle</Text>
+              <RightOutlined className={styles.FooterIcon} />
+            </div>
+          </Row>
         ) : null}
       </div>
     </>

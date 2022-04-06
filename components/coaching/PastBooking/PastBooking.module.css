@@ -42,6 +42,7 @@
   background: none;
   border: none;
   font-weight: 600;
+  font-size: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +72,7 @@
 .Heading {
   font-size: 16px;
 }
+
 .SubHeading {
   font-size: 18px;
   font-weight: 600;
@@ -88,13 +90,11 @@
 
 @media screen and (min-width: 2500px) {
   .Name {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 32px;
   }
 
   .Description {
     font-size: 26px;
-    font-weight: 400;
   }
 
   .Heading {
@@ -102,11 +102,14 @@
   }
   .SubHeading {
     font-size: 28px;
-    font-weight: 600;
+  }
+
+  .FeeButton {
+    font-size: 28px;
   }
 }
 
-@media screen and (max-width: 1520px) {
+@media screen and (max-width: 1600px) {
   .Name {
     font-size: 15px;
     font-weight: 700;
@@ -125,6 +128,9 @@
     font-weight: 600;
   }
 
+  .FeeButton {
+    font-size: 16px;
+  }
   .TextCol2 {
     padding: 1rem 2rem;
   }
@@ -151,6 +157,9 @@
   .SubHeading {
     font-size: 10px;
     font-weight: 600;
+  }
+  .FeeButton {
+    font-size: 14px;
   }
   .TextCol2 {
     padding: 1rem 1rem;

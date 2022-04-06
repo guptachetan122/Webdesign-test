@@ -41,7 +41,7 @@ const Coaching = () => {
                   </Link>
                 </Col>
               </Row>
-              <Row className={styles.LearnRow}>
+              <Row>
                 <CoachCard />
               </Row>
               <Row className={styles.LearnRow}>

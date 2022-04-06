@@ -11,6 +11,9 @@
 
 .AvatarCol {
   margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Avatar {
@@ -66,17 +69,70 @@
 
 .BottomText {
   font-size: 12px;
-  line-height: 18px;
   color: #616161;
 }
 
 .TagButton {
   background: none;
+  font-size: 18px;
+  margin: 0.5rem 0rem;
   margin-right: 1rem;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
   border: 1.5px solid #616161;
   color: #616161;
   box-sizing: border-box;
   border-radius: 5px;
 }
 
+@media screen and (min-width: 2500px) {
+  .Name {
+    font-size: 30px;
+  }
+
+  .Description {
+    font-size: 26px;
+  }
+
+  .Title {
+    font-size: 26px;
+  }
+
+  .Icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 1rem;
+  }
+
+  .TagButton {
+    font-size: 28px;
+  }
+  .BottomText {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Name {
+    font-size: 15px;
+  }
+
+  .Description {
+    font-size: 13px;
+  }
+
+  .Title {
+    font-size: 13px;
+  }
+
+  .Icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .TagButton {
+    font-size: 14px;
+  }
+  .BottomText {
+    font-size: 11px;
+  }
+}

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { tagsData } from "../../../../constants/constants";
 import styles from "./SearchTags.module.css";
+import { Typography } from "antd";
+
+const { Text } = Typography;
 
 const SearchTags = () => {
   const [viewAll, setViewAll] = useState(false);
@@ -15,15 +18,15 @@ const SearchTags = () => {
     <>
       {viewAll ? (
         <>
-          <div className={styles.TagsBody}>
+          <div>
             {tagsData.map((tag) => {
               return (
                 <>
                   <button
                     className={
                       tag.checked
-                        ? styles.TagsButton2
-                        : styles.TagsButton
+                        ? styles.TagActive
+                        : styles.Tag
                     }
                     key={tag.id}
                     onClick={() => handlecheck(tag)}
@@ -34,22 +37,22 @@ const SearchTags = () => {
               );
             })}
           </div>
-          <div className={styles.TagsLinkWrapper}>
-            <a className={styles.TagsLink} onClick={handleViewAll}>
+          <div className={styles.TagLinkWrapper}>
+            <Text className={styles.TagLink} onClick={handleViewAll}>
              ^ close
-            </a>
+            </Text>
           </div>
         </>
       ) : (
         <>
-          <div className={styles.TagsBody}>
+          <div>
             {tagsData.slice(0, 4).map((tag) => {
               return (
                 <button
                   className={
                     tag.checked
-                      ? styles.TagsButton2
-                      : styles.TagsButton
+                      ? styles.TagActive
+                      : styles.Tag
                   }
                   key={tag.id}
                 >
@@ -57,9 +60,9 @@ const SearchTags = () => {
                 </button>
               );
             })}
-            <a className={styles.TagsLink} onClick={handleViewAll}>
+            <Text className={styles.TagLink} onClick={handleViewAll}>
               view all
-            </a>
+            </Text>
           </div>
         </>
       )}

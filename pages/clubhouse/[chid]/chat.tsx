@@ -5,6 +5,7 @@ import Sidebar from "../../../ui/Sidebar";
 import styles from "../../../styles/ClubHouse.module.css";
 import { SearchOutlined } from "@ant-design/icons";
 import ClubhouseChat from "../../../components/clubhouse/ClubhouseChat";
+import BackDiv from "../../../components/common/BackDiv";
 
 const { Text } = Typography;
 
@@ -21,8 +22,9 @@ const ClubhouseChatPage = () => {
           <Row>
             <Col span={2}></Col>
             <Col span={20}>
-              <div className={styles.ChBackDiv}>
-                <Text className={styles.ChBackDivText}>
+              <BackDiv />
+              <div>
+                <Text className={styles.ChName}>
                   {" "}
                   simplifying personal finance for women
                 </Text>

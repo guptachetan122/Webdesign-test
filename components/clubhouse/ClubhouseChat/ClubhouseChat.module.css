@@ -8,10 +8,10 @@
 
 .Container2{
   background-color: #FAFAFA;
-  margin-top: 6px;
+  margin: 0rem 1rem;
   border-radius: 10px;
   height: fit-content;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 
 .AvatarCol{

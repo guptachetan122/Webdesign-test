@@ -3,6 +3,7 @@ import React from "react";
 import Sidebar from "../../ui/Sidebar";
 import styles from "../../styles/Experience.module.css";
 import ArchiveExperienceCard from "../../components/experience/ArchiveExperienceCard";
+import UpcomingExperienceCard from "../../components/experience/UpcomingExperienceCard";
 
 const ArchiveVideos = () => {
   return (
@@ -14,15 +15,15 @@ const ArchiveVideos = () => {
         </Col>
         <Col span={12} className={styles.MiddleCol}>
           <Row>
-            <Col span={5}></Col>
-            <Col span={14}>
+            <Col span={4}></Col>
+            <Col span={15}>
               <div style={{}}>
-                <ArchiveExperienceCard  />
-                <ArchiveExperienceCard  />
-                <ArchiveExperienceCard  />
+                <UpcomingExperienceCard isArchived/>
+                <UpcomingExperienceCard isArchived/>
+                <UpcomingExperienceCard isArchived/>
               </div>
             </Col>
-            <Col span={5}></Col>
+            <Col span={4}></Col>
           </Row>
         </Col>
         <Col span={6}></Col>

@@ -6,35 +6,37 @@ import styles from "./ExperienceInfo.module.css";
 import {
   CalendarIcon as ExperienceInactive,
   LocationMarkerIcon,
-} from "@heroicons/react/outline";
+} from "@heroicons/react/solid";
 import { CheckCircleFilled, DollarCircleOutlined } from "@ant-design/icons";
 
 const { Text } = Typography;
 
-const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true }) => {
+const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true , isArchived = false}) => {
   return (
     <>
       <div className={styles.Container}>
         <Row className={styles.Background}>
-          {Name == "online" ? (
-            <button className={styles.Label}>
-              {" "}
-              <LocationMarkerIcon className={styles.LabelIcon} />
-              online
-            </button>
-          ) : (
-            <button className={styles.Label}>
-              {" "}
-              <LocationMarkerIcon className={styles.LabelIcon} />
-              offline
-            </button>
-          )}
-          {isPay ? (
-            <button className={styles.Label}>
-              {" "}
-              <DollarCircleOutlined className={styles.LabelIcon} /> paid
-            </button>
-          ) : null}
+          <div className={styles.LabelDiv}>
+            {Name == "online" ? (
+              <button className={styles.Label}>
+                {" "}
+                <LocationMarkerIcon className={styles.LabelIcon} />
+                online
+              </button>
+            ) : (
+              <button className={styles.Label}>
+                {" "}
+                <LocationMarkerIcon className={styles.LabelIcon} />
+                offline
+              </button>
+            )}
+            {isPay ? (
+              <button className={styles.Label}>
+                {" "}
+                <DollarCircleOutlined className={styles.LabelIcon} /> paid
+              </button>
+            ) : null}
+          </div>
 
           <img
             src="/assets/images/exp2.png"
@@ -66,12 +68,18 @@ const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true }) => {
           </Col>
         </Row>
 
-        <Row className={styles.NameWrapper}>
+        <Row className={styles.NameRow}>
           {/* <Text className={styles.Name}>the pow(d)er room</Text> */}
           <Text className={styles.Name}>the pow(d)er room</Text>
         </Row>
-        {isBooked ? (
-          <ButtonComponent Name="Booked" infoPage />
+        {isArchived ? (
+          <ButtonComponent Name="Masterclass" />
+        ) : isBooked ? (
+          <ButtonComponent
+            Name="Booked"
+            infoPage
+            buttonName="add to calendar"
+          />
         ) : isPay ? (
           <ButtonComponent
             Name="notBooked"
@@ -81,17 +89,20 @@ const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true }) => {
         ) : (
           <ButtonComponent Name="notBooked" infoPage buttonName="book slot" />
         )}
+
         <Row className={styles.Body}>
-          <div className={styles.Description}>
-            <Text>clubhouse huddle by sorority sisters</Text>
+          <div>
+            <Text className={styles.Description}>
+              clubhouse huddle by sorority sisters
+            </Text>
           </div>
           <div>
-            <div className={styles.Heading}>
-              <Text>what to expect</Text>
+            <div>
+              <Text className={styles.Heading}>what to expect</Text>
             </div>
 
-            <div className={styles.Description}>
-              <Text>
+            <div>
+              <Text className={styles.Description}>
                 lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 pecimen book. It has survived not only five centuries, but also
@@ -99,12 +110,12 @@ const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true }) => {
               </Text>
             </div>
 
-            <div className={styles.Heading}>
-              <Text>about speaker</Text>
+            <div>
+              <Text className={styles.Heading}>about speaker</Text>
             </div>
 
-            <div className={styles.Description}>
-              <Text>
+            <div>
+              <Text className={styles.Description}>
                 lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 pecimen book. It has survived not only five centuries, but also

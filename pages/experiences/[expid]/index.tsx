@@ -6,6 +6,7 @@ import React from "react";
 import ExperienceInfo from "../../../components/experience/ExperienceInfo";
 import Sidebar from "../../../ui/Sidebar";
 import styles from "../../../styles/Experience.module.css";
+import BackDiv from "../../../components/common/BackDiv";
 
 const ExperienceDetails = () => {
     const Router = useRouter();
@@ -18,12 +19,13 @@ const ExperienceDetails = () => {
           {" "}
           <Sidebar pageName={"experiences"} />{" "}
         </Col>
-        <Col span={12} className={styles.MiddleCol}>
+        <Col span={12} >
           <Row>
             <Col span={4}></Col>
             <Col span={15}>
+              <BackDiv />
               <div>
-                <ExperienceInfo isPay isBooked/>
+                <ExperienceInfo isBooked/>
               </div>
             </Col>
             <Col span={4}></Col>

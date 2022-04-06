@@ -8,7 +8,9 @@
   font-size: 18px;
   width: fit-content;
   padding: 1rem 2rem;
-  border: 1.5px solid #616161;
+  /* border: 1.5px solid #616161; */
+  border-color: #616161;
+  border-width: 1px;
   border-radius: 200px;
   cursor: pointer;
   display: flex;
@@ -21,7 +23,9 @@
   background: none;
   font-size: 18px;
   padding: 1rem 4rem;
-  border: 1.5px solid #616161;
+  /* border: 1.5px solid #616161; */
+  border-color: #616161;
+  border-width: 1px;
   border-radius: 200px;
   margin-right: 2rem;
   cursor: pointer;
@@ -36,7 +40,9 @@
   font-size: 18px;
   width: fit-content;
   padding: 1rem 2rem;
-  border: 1.5px solid #616161;
+  /* border: 1.5px solid #616161; */
+  border-color: #616161;
+  border-width: 1px;
   border-radius: 200px;
   margin-right: 1rem;
   cursor: pointer;
@@ -51,7 +57,9 @@
   font-size: 18px;
   width: 100%;
   padding: 1rem 0rem;
-  border: 1.5px solid #616161;
+  /* border: 1.5px solid #616161; */
+  border-color: #616161;
+  border-width: 1px;
   border-radius: 200px;
   cursor: pointer;
   display: flex;
@@ -85,25 +93,25 @@
     font-size: 26px;
   }
 
-  .Button4{
+  .Button4 {
     font-size: 26px;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .Button {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .Button2 {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .Button3 {
-    font-size: 12px;
+    font-size: 13px;
   }
-  .Button4{
-    font-size: 12px;
+  .Button4 {
+    font-size: 13px;
   }
 }
 

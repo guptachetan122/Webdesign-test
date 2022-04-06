@@ -1,0 +1,13 @@
+.Header {
+  padding: 0%;
+  font-size: 16px;
+  margin: 1rem 0rem;
+}
+
+.Icon{
+    cursor: pointer;
+}
+
+.Icon:hover{
+    border-bottom: 1.5px solid orangered;
+}

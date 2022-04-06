@@ -1,25 +1,25 @@
 .Body {
   min-height: 200vh;
-  overflow: auto;
   background-color: #e5e5e5;
 }
 
-.Sidebar{
+.Sidebar {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 6rem 0rem;;
+  justify-content: right;
 }
 
-.Sidebar2{
+.Sidebar2 {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   padding-top: 2rem;
 }
 
-.MiddleCol{
+.MiddleCol {
   padding-top: 3rem;
+}
+
+.ContentRow {
+  padding: 0rem 1rem;
 }
 
 .ScInput {
@@ -35,20 +35,47 @@
 }
 
 .ScCard {
-  margin: 2rem 0rem;
+  background-color: #fafafa;
+  margin: 6rem 1rem;
   border-radius: 10px;
-  font-size: 20px;
-  padding: 0rem 1rem;
+  font-size: 14px;
+  padding: 1rem 2rem;
 }
 
 .ScButton {
   background: none;
   font-size: 18px;
-  width: 220px;
-  height: 44px;
+  padding: 1rem 1rem;
   border-radius: 50px;
   margin-top: 2rem;
   margin-right: 2rem;
   border: 1px solid black;
   cursor: pointer;
+}
+
+@media screen and (min-width: 2500px) {
+  .ScButton {
+    font-size: 26px;
+  }
+  .ScCard {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .ScButton {
+    font-size: 14px;
+  }
+  .ScCard {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ScButton {
+    font-size: 11px;
+  }
+  .ScCard {
+    font-size: 10px;
+  }
 }

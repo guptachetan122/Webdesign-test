@@ -29,7 +29,7 @@ const ProfileDrawer = () => {
       </Row>{" "}
       <Drawer
         title=""
-        width={global.window?.innerWidth > 1600 ? 600 : 300}
+        width={global.window?.innerWidth > 1920 ? 500 : 300}
         closable={true}
         onClose={onClose}
         visible={visible}

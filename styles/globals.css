@@ -46,11 +46,11 @@ input[type="password"] {
 }
 
 :root textarea {
-    font-size: 1.4rem;
-  }
+  font-size: 1.4rem;
+}
 
 @media screen and (max-width: 570px) {
-  Input[type="text"] {
+  input[type="text"] {
     font-size: 1.2rem;
   }
 
@@ -66,7 +66,7 @@ input[type="password"] {
   :root {
     font-size: 70%;
   }
-  Input[type="text"] {
+  input[type="text"] {
     font-size: 1.6rem;
   }
 
@@ -83,9 +83,9 @@ input[type="password"] {
   :root {
     font-size: 95%;
   }
-    Input[type="text"] {
+  input[type="text"] {
     font-size: 1.8rem;
-    padding: .5rem .5rem;
+    padding: 0.5rem 0.5rem;
   }
 
   input[type="password"] {
@@ -100,7 +100,7 @@ input[type="password"] {
   :root {
     font-size: 120%;
   }
-    Input[type="text"] {
+  Input[type="text"] {
     font-size: 2rem;
   }
 

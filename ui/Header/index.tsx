@@ -7,17 +7,17 @@ import { useAppDispatch } from "../../app/hooks";
 import { useRouter } from "next/router";
 import Subheader2 from "../Subheader2";
 import {
-  backNavbar,
   clubhouseNavbar,
   coachingNavbar,
-  expbackNavbar,
   experiencesNavbar,
   feedNavbar,
   messageNavbar,
   myNetworkNavbar,
   superconnectionNavbar,
 } from "../../constants/constants";
+import HeadRoom from "react-headroom";
 import ProfileDrawer from "../Drawer";
+import { Sticky, StickyProvider } from "react-stickup";
 
 const { Text } = Typography;
 
@@ -31,6 +31,7 @@ const Header = () => {
   return (
     <>
       <div className={styles.headerWrapper}>
+        {" "}
         <Row className={styles.headerDiv}>
           <Col span={8}>
             <Avatar
@@ -45,7 +46,9 @@ const Header = () => {
               }
               className={styles.profileAvatar}
             />
-            <div><ProfileDrawer /></div>
+            <div>
+              <ProfileDrawer />
+            </div>
           </Col>
 
           <Col span={8} className={styles.headerCol}>
@@ -58,22 +61,14 @@ const Header = () => {
             </Link>
           </Col>
           <Col className={styles.headerIconCol} span={8}>
-            <Badge
-              count={10}
-              size="default"
-              className={styles.headerIconWrapper}
-            >
+            <Badge count={10} size="default" className={styles.headerBadge}>
               <Avatar
                 src="/assets/images/bell.svg"
                 style={{ color: "black" }}
                 className={styles.headerAvatar}
               />
             </Badge>
-            <Badge
-              count={100}
-              size="default"
-              className={styles.headerIconWrapper}
-            >
+            <Badge count={100} size="default" className={styles.headerBadge}>
               <Avatar
                 src="/assets/images/message-circle.svg"
                 style={{ color: "black" }}
@@ -82,41 +77,33 @@ const Header = () => {
             </Badge>
           </Col>
         </Row>
-        <Row>
-          {PATH2 == "[expid]" ? (
-            <div className={styles.subHeader}>
-              <Subheader2 SubheaderData={expbackNavbar} />
-            </div>
-          ) : PATH == "experiences" ? (
-            <div className={styles.subHeader}>
-              <Subheader2 SubheaderData={experiencesNavbar} />
-            </div>
-          ) : PATH2 == "[chid]" ? (
-            <div className={styles.subHeader}>
-              <Subheader2 SubheaderData={backNavbar} />
-            </div>
-          ) : PATH == "clubhouse" ? (
-            <div className={styles.subHeader}>
-              <Subheader2 SubheaderData={clubhouseNavbar} />
-            </div>
-          ) : PATH2 == "messages" ? (
-            <div className={styles.subHeader}>
-              <Subheader2 SubheaderData={messageNavbar} />
-            </div>
-          ) : PATH2 == "mynetwork" ? (
-            <div className={styles.subHeader}>
-              <Subheader2 SubheaderData={myNetworkNavbar} />
-            </div>
-          ) : PATH == "superconnections" ? (
-            <Subheader2 SubheaderData={superconnectionNavbar} />
-          ) : PATH == "learn" ? (
-            <Subheader2 SubheaderData={coachingNavbar} />
-          ) : PATH == "feed" || PATH == ''? (
-            <div className={styles.subHeader}>
-              <Subheader2 SubheaderData={feedNavbar} />
-            </div>
-          ) : null}
-        </Row>
+        <StickyProvider>
+          <Sticky className={styles.subHeaderWrapper}>
+           
+              {PATH2 == "[expid]" ? (
+                <Subheader2 SubheaderData={[]} />
+              ) : PATH == "experiences" ? (
+                <Subheader2 SubheaderData={experiencesNavbar} />
+              ) : PATH2 == "[chid]" ? (
+                <Subheader2 SubheaderData={[]} />
+              ) : PATH == "clubhouse" ? (
+                <Subheader2 SubheaderData={clubhouseNavbar} />
+              ) : PATH2 == "messages" ? (
+                <Subheader2 SubheaderData={messageNavbar} />
+              ) : PATH2 == "mynetwork" ? (
+                <Subheader2 SubheaderData={myNetworkNavbar} />
+              ) : PATH == "superconnections" ? (
+                <Subheader2 SubheaderData={superconnectionNavbar} />
+              ) : PATH2 == "[coachid]" ? (
+                <Subheader2 SubheaderData={[]} />
+              ) : PATH == "learn" ? (
+                <Subheader2 SubheaderData={coachingNavbar} />
+              ) : PATH == "feed" || PATH == "" ? (
+                <Subheader2 SubheaderData={feedNavbar} />
+              ) : null}
+          
+          </Sticky>
+        </StickyProvider>
       </div>
     </>
   );

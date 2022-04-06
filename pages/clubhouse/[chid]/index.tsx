@@ -4,6 +4,7 @@ import React from "react";
 import Sidebar from "../../../ui/Sidebar";
 import styles from "../../../styles/ClubHouse.module.css";
 import ClubhouseCardInfo from "../../../components/clubhouse/ClubhouseCardInfo";
+import BackDiv from "../../../components/common/BackDiv";
 
 const { Text } = Typography;
 
@@ -16,10 +17,11 @@ const ClubhouseInfo = () => {
         <Col span={6} className={styles.Sidebar}>
           <Sidebar pageName={"clubhouse2"} />
         </Col>
-        <Col span={12} className={styles.MiddleCol}>
+        <Col span={12}>
           <Row>
             <Col span={2}></Col>
             <Col span={20}>
+              <BackDiv />
               <ClubhouseCardInfo isJoined/>
             </Col>
             <Col span={2}></Col>

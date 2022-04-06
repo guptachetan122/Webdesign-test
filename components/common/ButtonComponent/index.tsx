@@ -2,8 +2,10 @@
 import React from "react";
 import { CalendarIcon as ExperienceInactive } from "@heroicons/react/outline";
 import styles from "./ButtonComponent.module.css";
-import { Col, Row } from "antd";
+import { Col, Row, Typography} from "antd";
 import { PlusCircleOutlined, YoutubeFilled } from "@ant-design/icons";
+
+const { Text } = Typography;
 
 const Button = ({ Name = "", infoPage = false, buttonName =""}) => {
   return (
@@ -25,7 +27,7 @@ const Button = ({ Name = "", infoPage = false, buttonName =""}) => {
               <button className={styles.BookButton}>
                 {" "}
                 <ExperienceInactive className={styles.BookIcon} />
-                book slot
+                {buttonName}
               </button>
             </Row>
           </>
@@ -46,7 +48,7 @@ const Button = ({ Name = "", infoPage = false, buttonName =""}) => {
             <button className={styles.BookButton}>
               {" "}
               <PlusCircleOutlined className={styles.BookIcon} />
-              add to calendar
+              {buttonName}
             </button>
           </Row>
         )

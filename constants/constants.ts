@@ -1,20 +1,3 @@
-export const backNavbar = [
-  {
-    id: 1,
-    name: "back",
-    link: "/clubhouse",
-  },
-];
-
-export const expbackNavbar = [
-  {
-    id: 1,
-    name: "back",
-    link: "/experiences",
-  },
-];
-
-
 export const feedNavbar = [
   {
     id: 1,
@@ -100,16 +83,11 @@ export const superconnectionNavbar = [
 export const myNetworkNavbar = [
   {
     id: 1,
-    name: `back`,
-    link: "/superconnections",
-  },
-  {
-    id: 2,
     name: "sent",
     link: "/superconnections/mynetwork",
   },
   {
-    id: 3,
+    id: 2,
     name: "received",
     link: "/superconnections/mynetwork/received",
   },

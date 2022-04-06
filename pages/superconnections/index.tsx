@@ -3,17 +3,18 @@ import React from "react";
 import { superconnectionNavbar } from "../../constants/constants";
 import styles from "../../styles/Superconnections.module.css";
 import Subheader from "../../ui/Subheader2";
-import { Card, Col, Input, Row, Switch } from "antd";
+import { Card, Col, Collapse, Input, Row, Switch } from "antd";
 import Sidebar from "../../ui/Sidebar";
 import MemberRecommendations from "../../components/sc/MemberRecommendation";
 import { SearchOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import Head from "next/head";
+import Member from "../../components/sc/Member";
+import MemberCollapse from "../../components/sc/MemberCollapse";
 
 const Recommendations = () => {
-
   function onChange() {
-    console.log('clicked')
+    console.log("clicked");
   }
 
   return (
@@ -33,14 +34,14 @@ const Recommendations = () => {
             <Col span={2}></Col>
             <Col span={20}>
               {" "}
-              <Row>
+              <Row className={styles.ContentRow}>
                 <Input
                   className={styles.ScInput}
                   prefix={<SearchOutlined className={styles.ScIconSize} />}
                   placeholder={`  search member's`}
                 />
               </Row>
-              <Row>
+              <Row className={styles.ContentRow}>
                 <Link href="/superconnections/messages/messagereq" passHref>
                   <button className={styles.ScButton}>
                     5 message requests
@@ -52,43 +53,26 @@ const Recommendations = () => {
                   </button>
                 </Link>
               </Row>
-              <Card className={styles.ScCard}>
-                <Row>
-                  <Col span={22}>receive messages from other members </Col>
-                  <Col span={2}>
-                    {" "}
-                    <Switch defaultChecked onChange={onChange} />
-                  </Col>
-                </Row>
-              </Card>
-              <MemberRecommendations
-                title="trending members 🔥"
-                subTitle="super active members. not all heroes wear capes."
-              />
-              <MemberRecommendations
-                title="members from your city 📍"
-                subTitle="for all those social meetups."
-              />
-              <MemberRecommendations
-                title="members from your organization 💼"
-                subTitle="no office, no problem. say hi on leap!"
-              />
-              <MemberRecommendations
-                title="recent members to superconnect with 🆕"
-                subTitle="make the freshers feel welcome!."
-              />
-              <MemberRecommendations
-                title="members to reconnect with 🕯️"
-                subTitle="rekindle the old love."
-              />
+              <MemberCollapse />
             </Col>
             <Col span={2}></Col>
           </Row>
         </Col>
-        <Col span={6}></Col>
+        <Col span={6}>
+          {" "}
+          <div className={styles.ScCard}>
+            <Row>
+              <Col span={20}>receive messages from other members </Col>
+              <Col span={4}>
+                {" "}
+                <Switch defaultChecked onChange={onChange} />
+              </Col>
+            </Row>
+          </div>
+        </Col>
       </Row>
     </>
   );
-}
+};
 
 export default Recommendations;

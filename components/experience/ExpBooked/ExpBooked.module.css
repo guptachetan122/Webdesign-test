@@ -18,24 +18,76 @@
 
 .Date {
   font-weight: 700;
-  font-size: 22px;
-  line-height: 33px;
+  font-size: 20px;
 }
 
 .Time {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
 }
 
 .Title {
   font-weight: 400;
   font-size: 20px;
-  line-height: 30px;
 }
 
 .Owner {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+}
+
+@media screen and (min-width: 2500px) {
+  .Date {
+    font-size: 30px;
+  }
+
+  .Time {
+    font-size: 26px;
+  }
+
+  .Title {
+    font-size: 30px;
+  }
+
+  .Owner {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Date {
+    font-size: 15px;
+  }
+
+  .Time {
+    font-size: 13px;
+  }
+
+  .Title {
+    font-size: 15px;
+  }
+
+  .Owner {
+    font-size: 13px;
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .Date {
+    font-size: 12px;
+  }
+
+  .Time {
+    font-size: 10px;
+  }
+
+  .Title {
+    font-size: 12px;
+  }
+
+  .Owner {
+    font-size: 10px;
+  }
 }

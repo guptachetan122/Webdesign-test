@@ -5,7 +5,7 @@ import ButtonComponent from "../../common/ButtonComponent";
 import styles from "./ArchiveExperienceCard.module.css";
 const { Text } = Typography;
 
-const ArchiveExperienceCard = ({}) => {
+const ArchiveExperienceCard = () => {
   return (
     <>
       <div className={styles.Container}>
@@ -19,7 +19,7 @@ const ArchiveExperienceCard = ({}) => {
           />
         </Row>
         <Row>
-          <ButtonComponent Name="Masterclass"></ButtonComponent>
+          <ButtonComponent Name="Masterclass"/>
         </Row>
       </div>
     </>

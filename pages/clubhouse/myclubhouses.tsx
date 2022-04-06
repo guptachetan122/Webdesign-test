@@ -38,20 +38,22 @@ const myclubhouses = () => {
             <Col span={2}></Col>
           </Row>
         </Col>
-        <Col span={6}>
-          <div className={styles.ChButtonWrapper}>
-            <Link href="/clubhouse/otherclubhouses" passHref>
-              <button className={styles.ButtonDark}>
-                <ChInactive className={styles.ButtonIcon} />
-                join a clubhouse
-              </button>
-            </Link>
-          </div>
-          <div className={styles.ChButtonWrapper}>
-            <CreateChModal />
-          </div>
-          <div className={styles.ChButtonWrapper}>
-            <ClubhouseModal />
+        <Col span={6} className={styles.SidebarButton}>
+          <div className={styles.ChButtonDiv}>
+            <div className={styles.ChButtonWrapper}>
+              <Link href="/clubhouse/otherclubhouses" passHref>
+                <button className={styles.ButtonDark}>
+                  <ChInactive className={styles.ButtonIcon} />
+                  join a clubhouse
+                </button>
+              </Link>
+            </div>
+            <div className={styles.ChButtonWrapper}>
+              <CreateChModal />
+            </div>
+            <div className={styles.ChButtonWrapper}>
+              <ClubhouseModal />
+            </div>
           </div>
         </Col>
       </Row>

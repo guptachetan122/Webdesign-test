@@ -15,7 +15,33 @@
 }
 
 .Background {
-  height: fit-content;
+  border-radius: 20px;
+  position: relative;
+}
+
+.LabelDiv {
+  position: absolute;
+  z-index: 1;
+  padding: 1rem 3rem;
+  display: flex;
+}
+
+.Label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  padding: 0.5rem 2rem;
+  background: #ffffff;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 0px;
+}
+
+.LabelIcon {
+  width: 14px;
+  height: 14px;
+  margin-right: 0.5rem;
 }
 
 .CoverImage {
@@ -23,12 +49,15 @@
 }
 
 .Row {
-  height: 45px;
+  height: 35px;
   margin-bottom: 1rem;
 }
 
-.TitleRow {
+.NameRow {
   padding: 0rem 3rem;
+}
+
+.Name {
   font-size: 18px;
   color: #313131;
 }
@@ -82,22 +111,79 @@
   .Row {
     margin-bottom: 2rem;
   }
-
-  .TitleRow {
-    font-size: 1.5rem;
-  }
-
   .Date {
-    font-size: 2rem;
+    font-size: 32px;
   }
-
+  .Name {
+    font-size: 28px;
+  }
   .Time {
-    font-size: 1.6rem;
+    font-size: 26px;
+  }
+  .Label{
+    font-size: 24px;
+  }
+  .LabelIcon{
+    width: 24px;
+    height: 24px;
   }
   .LinkText {
-    font-size: 1.4rem;
+    font-size: 24px;
   }
   .LabelText {
-    font-size: 1.6rem;
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Row {
+    margin-bottom: 1.5rem;
+  }
+  .Date {
+    font-size: 27px;
+  }
+  .Name {
+    font-size: 23px;
+  }
+  .Time {
+    font-size: 21px;
+  }
+  .Label{
+    font-size: 20px;
+  }
+  .LabelIcon{
+    width: 20px;
+    height: 20px;
+  }
+  .LinkText {
+    font-size: 19px;
+  }
+  .LabelText {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Date {
+    font-size: 16px;
+  }
+  .Name {
+    font-size: 14px;
+  }
+  .Time {
+    font-size: 13px;
+  }
+  .Label{
+    font-size: 12px;
+  }
+  .LabelIcon{
+    width: 12px;
+    height: 12px;
+  }
+  .LinkText {
+    font-size: 12px;
+  }
+  .LabelText {
+    font-size: 13px;
   }
 }

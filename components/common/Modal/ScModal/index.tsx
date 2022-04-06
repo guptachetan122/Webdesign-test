@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from './ScModal.module.css'
 import { Modal } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';
-import { LightningBoltIcon as ScInactive } from "@heroicons/react/outline";
+import { LightningBoltIcon as ScInactive } from "@heroicons/react/solid";
 
 const ScModal = () => {
 

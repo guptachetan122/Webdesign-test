@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Form, Input } from "antd";
 import { Typography, Space } from "antd";
 import styles from "./Login.module.css";
@@ -9,8 +9,9 @@ import {
   EyeOutlined,
   EyeInvisibleOutlined,
 } from "@ant-design/icons";
-import useForm, { useAppDispatch } from "../../../app/hooks";
+import useForm, { useAppDispatch , useAppSelector} from "../../../app/hooks";
 import { setCredentials } from "./LoginSlice";
+import Router, { useRouter } from "next/router";
 
 const { Text } = Typography;
 
@@ -18,6 +19,10 @@ const LoginForm = () => {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const dispatch = useAppDispatch();
+  const router = useRouter();
+
+  const userdata = useAppSelector((state) => state.loginSlice);
+
   const validateEmail = (email: string) => {
     const regex =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -44,14 +49,25 @@ const LoginForm = () => {
     console.log("Failed:", errorInfo);
   };
 
+  function isAuth(){
+    if (userdata.email == 'team@leap.club' && userdata.password == 'team@leap') {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
   const onFinish = (values: any) => {
     const user = {
       email: values.email.toLowerCase().trim(),
       password: values.password.trim(),
     };
-
-    console.log(user);
     dispatch(setCredentials(user));
+    if (isAuth()) {
+      router.push('/feed');
+    }
+    else {
+    }
   };
 
   return (

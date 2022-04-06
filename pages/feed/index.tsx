@@ -7,6 +7,7 @@ import { feedNavbar } from "../../constants/constants";
 import styles from "../../styles/Feed.module.css";
 import { useFetchPostsQuery } from "../../components/feed/Posts/PostsApi";
 import { SafetyCertificateTwoTone } from "@ant-design/icons";
+import { useSelector } from "react-redux";
 
 const { Text } = Typography;
 
@@ -16,6 +17,7 @@ const PublicFeed = () => {
   const handle = () => {
     setStay(!Stay);
   };
+
   return (
     <>
      
@@ -40,7 +42,7 @@ const PublicFeed = () => {
                       </Card>
                     );
                   })
-                : console.log("logg")}
+                : null}
             </Col>
             <Col span={2}></Col>
           </Row>

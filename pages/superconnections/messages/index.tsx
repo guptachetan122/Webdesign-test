@@ -5,6 +5,7 @@ import { Card, Col, Input, Row, Switch } from "antd";
 import Sidebar from "../../../ui/Sidebar";
 import Member from "../../../components/sc/Member";
 import { SearchOutlined } from "@ant-design/icons";
+import BackDiv from "../../../components/common/BackDiv";
 
 const Chats = () => {
   function onChange() {
@@ -22,6 +23,7 @@ const Chats = () => {
           <Row>
             <Col span={2}></Col>
             <Col span={20}>
+              <BackDiv pageName="chats"/>
               <Input
                 className={styles.ScInput}
                 prefix={<SearchOutlined className={styles.ScIconSize} />}

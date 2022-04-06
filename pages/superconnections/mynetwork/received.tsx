@@ -3,6 +3,7 @@ import React from "react";
 import Member from "../../../components/sc/Member";
 import Sidebar from "../../../ui/Sidebar";
 import styles from "../../../styles/Superconnections.module.css";
+import BackDiv from "../../../components/common/BackDiv";
 
 const RecievedSc = () => {
   return (
@@ -17,6 +18,7 @@ const RecievedSc = () => {
             <Col span={2}></Col>
             <Col span={20}>
               {" "}
+              <BackDiv pageName="mysc"/>
               <Member pageName="mysc" />
               <Member pageName="mysc" />
               <Member pageName="mysc" />

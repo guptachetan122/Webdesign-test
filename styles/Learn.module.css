@@ -1,14 +1,11 @@
 .Body {
-  min-height: 200vh;
-  overflow: auto;
+  padding-bottom: 2rem;
   background-color: #e5e5e5;
 }
 
 .Sidebar {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 6rem 0rem;
+  justify-content: right;
 }
 
 .MiddleCol {
@@ -16,7 +13,7 @@
 }
 
 .LearnRow {
-  padding: 1rem 0rem;
+  margin-bottom: 1rem;
 }
 
 .LearnText {

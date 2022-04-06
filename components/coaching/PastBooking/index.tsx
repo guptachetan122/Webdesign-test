@@ -1,7 +1,6 @@
 import { Avatar, Typography, Card, Row, Col, Modal } from "antd";
 import React, { useState } from "react";
 import styles from "./PastBooking.module.css";
-import { CurrencyRupeeIcon } from "@heroicons/react/outline";
 import ButtonLight from "../../common/ButtonComponent/ButtonLight";
 import ButtonDark from "../../common/ButtonComponent/ButtonDark";
 import Link from "next/link";

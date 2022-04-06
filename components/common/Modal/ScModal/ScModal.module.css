@@ -9,15 +9,17 @@
 }
 .Button {
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  padding: 1rem 2rem;
   color: #fafafa;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
-  width: 220px;
-  height: 44px;
-  border-radius: 200px;
+  border-radius: 20px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.Icon{
+.Icon {
   width: 24px;
   height: 24px;
 }
@@ -37,4 +39,35 @@
   height: 50px;
   border-radius: 200px;
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 2500px) {
+  .Button {
+    font-size: 28px;
+  }
+  .Icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Button {
+    padding: 1rem 1rem;
+    font-size: 14px;
+  }
+  .Icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Button {
+    font-size: 10px;
+  }
+  .Icon {
+    width: 14px;
+    height: 14px;
+  }
 }

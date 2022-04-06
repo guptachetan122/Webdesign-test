@@ -2,6 +2,7 @@ import { Col, Row } from 'antd';
 import React from 'react'
 import Sidebar from '../../../ui/Sidebar';
 import styles from "../../../styles/Superconnections.module.css";
+import BackDiv from '../../../components/common/BackDiv';
 
 const MessageReq = () => {
   return (
@@ -14,7 +15,9 @@ const MessageReq = () => {
         <Col span={12} className={styles.MiddleCol}>
           <Row>
             <Col span={2}></Col>
-            <Col span={20}></Col>
+            <Col span={20}>
+              <BackDiv />
+            </Col>
             <Col span={2}></Col>
           </Row>
         </Col>
