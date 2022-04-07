@@ -1,6 +1,6 @@
 .Button {
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .ButtonWrap {
@@ -98,8 +98,7 @@
   }
 
   .Button {
-    font-size: 24px;
-    padding: 0rem 0.5rem;
+    font-size: 26px;
   }
 
   .IconText {
@@ -135,7 +134,6 @@
 
   .Button {
     font-size: 14px;
-    padding: 0rem 0.5rem;
   }
   .IconText {
     font-size: 15px;

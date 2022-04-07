@@ -110,7 +110,7 @@ const ClubhouseCard = ({
         <Row className={styles.Row}>
           <Col span={18} onClick={goToChInfo}>
             <div className={styles.TopContent}>
-              simplifying personal finance for women in tech
+              simplifying personal finance for women in tech{' '}
               {isMute ? <VolumeOffIcon className={styles.MenuIcon} /> : null}
               {isPin ? <PushpinFilled className={styles.MenuIcon} /> : null}
             </div>

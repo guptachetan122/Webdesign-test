@@ -14,9 +14,9 @@
 
 .AvatarCol{
   padding: 0rem 1rem;
-  width: 100%;
+  width: fit-content;
   display: flex;
-  justify-content: left;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -81,10 +81,6 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .profileAvatar {
-    width: 40px;
-    height: 40px;
-  }
   .headerImageWrapper {
     width: 65px;
     height: 65px;
@@ -92,10 +88,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .headerAvatar {
-    height: 25px;
-    width: 25px;
-  }
   .headerImageWrapper {
     width: 60px;
     height: 60px;

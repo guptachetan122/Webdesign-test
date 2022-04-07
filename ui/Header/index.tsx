@@ -34,7 +34,8 @@ const Header = () => {
         {" "}
         <Row className={styles.headerDiv}>
           <Col span={8}>
-            <Row className={styles.AvatarCol}>
+            {" "}
+            <div className={styles.AvatarCol}>
               {" "}
               <Avatar
                 src={
@@ -47,12 +48,9 @@ const Header = () => {
                   />
                 }
                 className={styles.profileAvatar}
-              />
-            </Row>
-            <Row>
-              {" "}
+              />{" "}
               <ProfileDrawer />
-            </Row>
+            </div>
           </Col>
 
           <Col span={8} className={styles.headerCol}>

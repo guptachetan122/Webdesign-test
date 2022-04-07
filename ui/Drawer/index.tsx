@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CaretDownFilled } from "@ant-design/icons";
-import { Avatar, Col, Drawer, Row, Typography } from "antd";
+import { Avatar, Drawer, Row, Typography } from "antd";
 import styles from "./Drawer.module.css";
 import { LogoutIcon } from "@heroicons/react/outline";
 const { Text } = Typography;
