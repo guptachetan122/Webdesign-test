@@ -28,10 +28,10 @@ const myclubhouses = () => {
                 prefix={<SearchOutlined className={styles.ChIcon} />}
                 placeholder={`  type a clubhouse’s name`}
               />
-              <ClubhouseCard isJoined upcomingHuddle />
+              <ClubhouseCard isJoined upcomingHuddle isFounder/>
               <ClubhouseCard isJoined />
               <ClubhouseCard isJoined upcomingHuddle />
-              <ClubhouseCard isJoined />
+              <ClubhouseCard isJoined isFounder/>
               <ClubhouseCard isJoined upcomingHuddle />
               <ClubhouseCard isJoined />
             </Col>

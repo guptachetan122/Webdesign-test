@@ -10,7 +10,7 @@
 }
 
 .SidebarButton {
-  padding: 6rem 0rem;
+  padding: 6rem 6rem;
 }
 
 .MiddleCol {
@@ -50,18 +50,20 @@
   margin-right: 1rem;
 }
 
-.ChButtonDiv{
+.ChButtonDiv {
   position: sticky;
   top: 8rem;
 }
 .ChButtonWrapper {
-  margin: 2rem 2rem;
+  margin: 2rem 0rem;
+  width: 100%;
 }
 
 .ButtonDark {
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
   color: #fafafa;
   font-size: 18px;
+  width: 100%;
   padding: 1rem 2rem;
   border-radius: 200px;
   cursor: pointer;

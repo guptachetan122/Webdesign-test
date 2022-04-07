@@ -139,28 +139,6 @@
   .Row {
     margin-bottom: 1.5rem;
   }
-  .Date {
-    font-size: 27px;
-  }
-  .Name {
-    font-size: 23px;
-  }
-  .Time {
-    font-size: 21px;
-  }
-  .Label{
-    font-size: 20px;
-  }
-  .LabelIcon{
-    width: 20px;
-    height: 20px;
-  }
-  .LinkText {
-    font-size: 19px;
-  }
-  .LabelText {
-    font-size: 21px;
-  }
 }
 
 @media screen and (max-width: 1600px) {

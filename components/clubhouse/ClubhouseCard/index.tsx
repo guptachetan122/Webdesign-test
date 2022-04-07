@@ -45,7 +45,7 @@ const ClubhouseCard = ({
 
   function goToChInfo() {
     {
-      infoPage ? null : router.push("/clubhouse/id");
+      infoPage ? null : router.push("/experiences/id");
     }
   }
 
@@ -110,7 +110,7 @@ const ClubhouseCard = ({
         <Row className={styles.Row}>
           <Col span={18} onClick={goToChInfo}>
             <div className={styles.TopContent}>
-              simplifying personal finance for women in tech{' '}
+              simplifying personal finance for women in tech &ensp;
               {isMute ? <VolumeOffIcon className={styles.MenuIcon} /> : null}
               {isPin ? <PushpinFilled className={styles.MenuIcon} /> : null}
             </div>

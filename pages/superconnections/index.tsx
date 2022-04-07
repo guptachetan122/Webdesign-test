@@ -11,6 +11,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Member from "../../components/sc/Member";
 import MemberCollapse from "../../components/sc/MemberCollapse";
+import ButtonDark from "../../components/common/ButtonComponent/ButtonDark";
 
 const Recommendations = () => {
   function onChange() {
@@ -43,7 +44,7 @@ const Recommendations = () => {
               </Row>
               <Row className={styles.ContentRow}>
                 <Link href="/superconnections/messages/messagereq" passHref>
-                  <button className={styles.ScButton}>
+                  <button className={styles.ScButtonDark}>
                     5 message requests
                   </button>
                 </Link>
@@ -58,7 +59,7 @@ const Recommendations = () => {
             <Col span={2}></Col>
           </Row>
         </Col>
-        <Col span={6}>
+        <Col span={6} className={styles.ThirdCol}>
           {" "}
           <div className={styles.ScCard}>
             <Row>
