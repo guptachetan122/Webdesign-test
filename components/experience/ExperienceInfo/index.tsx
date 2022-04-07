@@ -11,7 +11,12 @@ import { CheckCircleFilled, DollarCircleOutlined } from "@ant-design/icons";
 
 const { Text } = Typography;
 
-const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true , isArchived = false}) => {
+const ExperienceInfo = ({
+  isPay = false,
+  Name = "",
+  isBooked = true,
+  isArchived = false,
+}) => {
   return (
     <>
       <div className={styles.Container}>
@@ -92,35 +97,26 @@ const ExperienceInfo = ({ isPay = false, Name = "", isBooked = true , isArchived
 
         <Row className={styles.Body}>
           <div>
-            <Text className={styles.Description}>
+            <div className={styles.Description}>
               clubhouse huddle by sorority sisters
-            </Text>
-          </div>
-          <div>
-            <div>
-              <Text className={styles.Heading}>what to expect</Text>
             </div>
 
-            <div>
-              <Text className={styles.Description}>
-                lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                pecimen book. It has survived not only five centuries, but also
-                the leap into electronic{" "}
-              </Text>
+            <div className={styles.Heading}>what to expect</div>
+
+            <div className={styles.Description}>
+              lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry&apos;s standard
+              pecimen book. It has survived not only five centuries, but also
+              the leap into electronic{" "}
             </div>
 
-            <div>
-              <Text className={styles.Heading}>about speaker</Text>
-            </div>
+            <div className={styles.Heading}>about speaker</div>
 
-            <div>
-              <Text className={styles.Description}>
-                lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                pecimen book. It has survived not only five centuries, but also
-                the leap into electronic{" "}
-              </Text>
+            <div className={styles.Description}>
+              lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry&apos;s standard
+              pecimen book. It has survived not only five centuries, but also
+              the leap into electronic{" "}
             </div>
           </div>
         </Row>
