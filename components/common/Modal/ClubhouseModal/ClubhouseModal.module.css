@@ -14,15 +14,14 @@
 }
 
 .Title {
-  font-size: 24px;
-  line-height: 25px;
-  font-weight: 800;
-  margin-bottom: 3rem;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-.Modal p {
+.Description {
   font-size: 16px;
-  line-height: 25px;
+  margin-bottom: 1rem;
 }
 
 .Button {
@@ -36,8 +35,8 @@
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  width: 180px;
-  height: 50px;
+  width: 100%;
+  padding: 0.5rem 0rem;
   border-radius: 200px;
   margin-top: 1rem;
 }
@@ -46,16 +45,37 @@
   .TriggerButton {
     font-size: 30px;
   }
+  .Title {
+    font-size: 32px;
+  }
+
+  .Description {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 1600px) {
   .TriggerButton {
     font-size: 15px;
   }
+  .Title {
+    font-size: 16px;
+  }
+
+  .Description {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
   .TriggerButton {
     padding: 1rem 0.5rem;
+  }
+  .Title {
+    font-size: 14px;
+  }
+
+  .Description {
+    font-size: 11px;
   }
 }

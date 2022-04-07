@@ -1,28 +1,25 @@
-import React, { useState } from 'react'
-import styles from './ScModal.module.css'
-import { Modal } from 'antd';
-import TextArea from 'antd/lib/input/TextArea';
+import React, { useState } from "react";
+import styles from "./ScModal.module.css";
+import { Modal } from "antd";
+import TextArea from "antd/lib/input/TextArea";
 import { LightningBoltIcon as ScInactive } from "@heroicons/react/solid";
 
 const ScModal = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
-    const [isModalVisible, setIsModalVisible] = useState(false);
-
-    const showModal = () => {
-      setIsModalVisible(true);
-    };
-
-    const handleCancel = () => {
-      setIsModalVisible(false);
+  const showModal = () => {
+    setIsModalVisible(true);
   };
-  
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
   return (
     <>
-      <div className={styles.ButtonWrapper}>
-        <button className={styles.Button} onClick={showModal}>
-          superconnect < ScInactive className={styles.Icon}/>
-        </button>
-      </div>
+      <button className={styles.Button} onClick={showModal}>
+        superconnect <ScInactive className={styles.Icon} />
+      </button>
 
       <Modal
         visible={isModalVisible}
@@ -53,6 +50,6 @@ const ScModal = () => {
       </Modal>
     </>
   );
-}
+};
 
-export default ScModal
+export default ScModal;

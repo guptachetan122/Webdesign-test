@@ -96,16 +96,11 @@ export const myNetworkNavbar = [
 export const messageNavbar = [
   {
     id: 1,
-    name: "back",
-    link: "/superconnections",
-  },
-  {
-    id: 2,
     name: "chats",
     link: "/superconnections/messages",
   },
   {
-    id: 3,
+    id: 2,
     name: "message requests",
     link: "/superconnections/messages/messagereq",
   },

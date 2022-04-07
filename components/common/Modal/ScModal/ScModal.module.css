@@ -3,10 +3,6 @@
   border-radius: 20px;
 }
 
-.ButtonWrapper {
-  display: flex;
-  flex-direction: row-reverse;
-}
 .Button {
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
   padding: 1rem 2rem;
