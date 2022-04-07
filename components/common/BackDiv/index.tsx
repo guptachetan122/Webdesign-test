@@ -1,5 +1,5 @@
 import { ArrowLeftOutlined } from "@ant-design/icons";
-import { Col, PageHeader, Row , Typography} from "antd";
+import {Typography} from "antd";
 import { useRouter } from "next/router";
 import React from "react";
 import styles from "./BackDiv.module.css";

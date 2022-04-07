@@ -1,4 +1,4 @@
-import { Avatar, Col, Divider, Row, Typography } from "antd";
+import { Divider, Row, Typography } from "antd";
 import React, { useState } from "react";
 import styles from "./ClubhouseCardInfo.module.css";
 import { UserGroupIcon as ChInactive } from "@heroicons/react/solid";

@@ -2,7 +2,6 @@ import { Col, Row } from "antd";
 import React from "react";
 import Sidebar from "../../ui/Sidebar";
 import styles from "../../styles/Experience.module.css";
-import ArchiveExperienceCard from "../../components/experience/ArchiveExperienceCard";
 import UpcomingExperienceCard from "../../components/experience/UpcomingExperienceCard";
 
 const ArchiveVideos = () => {

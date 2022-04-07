@@ -1,5 +1,5 @@
-import { Avatar, Typography, Card, Row, Col, Modal } from "antd";
-import React, { useState } from "react";
+import { Avatar, Typography, Row, Col } from "antd";
+import React from "react";
 import styles from "./CoachCard.module.css";
 import {
   LocationMarkerIcon,

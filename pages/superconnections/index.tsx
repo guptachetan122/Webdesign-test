@@ -1,17 +1,12 @@
 // this page is Recommendations.tsx
 import React from "react";
-import { superconnectionNavbar } from "../../constants/constants";
 import styles from "../../styles/Superconnections.module.css";
-import Subheader from "../../ui/Subheader2";
-import { Card, Col, Collapse, Input, Row, Switch } from "antd";
+import { Col, Input, Row, Switch } from "antd";
 import Sidebar from "../../ui/Sidebar";
-import MemberRecommendations from "../../components/sc/MemberRecommendation";
 import { SearchOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import Head from "next/head";
-import Member from "../../components/sc/Member";
 import MemberCollapse from "../../components/sc/MemberCollapse";
-import ButtonDark from "../../components/common/ButtonComponent/ButtonDark";
 
 const Recommendations = () => {
   function onChange() {

@@ -1,13 +1,8 @@
 import { Card, Col, Row, Typography } from "antd";
 import React, { useState } from "react";
-import ExperienceCard from "../../components/experience/UpcomingExperienceCard";
 import Sidebar from "../../ui/Sidebar";
-import Subheader from "../../ui/Subheader2";
-import { feedNavbar } from "../../constants/constants";
 import styles from "../../styles/Feed.module.css";
 import { useFetchPostsQuery } from "../../components/feed/Posts/PostsApi";
-import { SafetyCertificateTwoTone } from "@ant-design/icons";
-import { useSelector } from "react-redux";
 
 const { Text } = Typography;
 
@@ -33,8 +28,6 @@ const PublicFeed = () => {
               <h1>FEED UI</h1>
               {data && Stay
                 ? data.map((val) => {
-                    console.log(val.id);
-                    console.log(val.email);
                     return (
                       <Card key={val.id}>
                         <Text>My name is </Text>

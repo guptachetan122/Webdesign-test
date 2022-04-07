@@ -1,7 +1,6 @@
 import { DownOutlined, UpOutlined } from "@ant-design/icons";
 import { Typography, Card, Row, Col } from "antd";
-import React, { useState } from "react";
-import Member from "../Member";
+import React from "react";
 import styles from "./MemberRecommendations.module.css";
 const { Text } = Typography;
 

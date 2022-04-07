@@ -23,12 +23,9 @@ interface SubheaderProps {
 
 const ButtonCoach = ({ PackageData }: PackageProps) => {
   const id = PackageData.filter((a) => a.popular == true)[0]?._id;
-  console.log(id);
-  const [isActive, setActive] = useState(false);
   const [val, setVal] = useState(id);
 
   function clicked(idReceived: string) {
-    console.log(id);
     if (val == idReceived) {
       return;
     } else {

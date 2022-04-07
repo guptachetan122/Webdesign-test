@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { LinkedinFilled } from "@ant-design/icons";
 import {
   Avatar,
   Typography,
-  Card,
   Row,
   Col,
-  Modal,
-  Divider,
-  Radio,
+  Divider
 } from "antd";
 import ButtonCoach from "../../common/ButtonComponent/ButtonCoach";
 import ButtonDark from "../../common/ButtonComponent/ButtonDark";

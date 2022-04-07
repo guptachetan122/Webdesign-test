@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form, Input } from "antd";
-import { Typography, Space } from "antd";
+import { Typography } from "antd";
 import styles from "./ForgotPassword.module.css";
 import Link from "next/link";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";

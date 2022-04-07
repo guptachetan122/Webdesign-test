@@ -4,7 +4,7 @@ import React from "react";
 import ButtonComponent from "../../common/ButtonComponent";
 import styles from "./UpcomingExperienceCard.module.css";
 import Link from "next/link";
-import { CheckCircleFilled, DollarCircleOutlined } from "@ant-design/icons";
+import { CheckCircleFilled} from "@ant-design/icons";
 import { LocationMarkerIcon , VideoCameraIcon , CurrencyRupeeIcon} from "@heroicons/react/outline";
 
 const { Text } = Typography;

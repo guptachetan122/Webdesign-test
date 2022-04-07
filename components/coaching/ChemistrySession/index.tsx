@@ -1,4 +1,4 @@
-import { Card, Col, Progress, Row, Typography } from "antd";
+import {  Col, Progress, Row, Typography } from "antd";
 import React, { useState } from "react";
 import styles from "./ChemistrySession.module.css";
 const { Text } = Typography;

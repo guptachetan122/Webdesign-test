@@ -6,8 +6,6 @@ import styles from "./LabelButton.module.css";
 const LabelButton = ({ Name = "", pay = false }) => {
   return (
     <>
-      
-        
     </>
   );
 };

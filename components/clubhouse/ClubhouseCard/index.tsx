@@ -10,7 +10,6 @@ import {
 } from "antd";
 import React, { useState } from "react";
 import styles from "./ClubhouseCard.module.css";
-import Link from "next/link";
 import { VolumeOffIcon, DotsHorizontalIcon } from "@heroicons/react/solid";
 import ButtonLight from "../../common/ButtonComponent/ButtonLight";
 import ButtonDark from "../../common/ButtonComponent/ButtonDark";

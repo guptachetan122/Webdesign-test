@@ -1,12 +1,9 @@
 import { Col, Row } from "antd";
 import React from "react";
 import Sidebar from "../../ui/Sidebar";
-import Subheader from "../../ui/Subheader2";
-import { feedNavbar } from "../../constants/constants";
 import styles from "../../styles/Feed.module.css";
 
 const MentionsFeed = () => {
-  console.log("logg");
   return (
     <>
       <Row className={styles.Body}>

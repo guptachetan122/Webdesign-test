@@ -11,7 +11,6 @@ import styles from "../../styles/Learn.module.css";
 const { Text } = Typography;
 
 const Coaching = () => {
-  console.log("logg");
   return (
     <>
       <Row className={styles.Body}>

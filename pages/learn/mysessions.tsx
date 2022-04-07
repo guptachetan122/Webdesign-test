@@ -6,7 +6,6 @@ import PastBooking from "../../components/coaching/PastBooking";
 const { Text } = Typography;
 
 const MySessions = () => {
-  console.log("logg");
   return (
     <>
       <Row className={styles.Body}>
