@@ -1,26 +1,43 @@
 .Button {
   cursor: pointer;
   font-size: 14px;
-  padding: 0rem 0.5rem;
+}
+
+.ButtonWrap {
+  cursor: pointer;
+  background: none;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Row {
   padding: 2rem 1rem;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.SubRow {
+  padding: 0rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DetailRow {
+  padding: 0rem 1rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .Avatar {
   width: 100px;
   height: 100px;
-}
-
-.DetailRow {
-  padding: 0rem 1rem;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  cursor: pointer;
 }
 
 .Name {
@@ -28,6 +45,7 @@
   font-size: 25px;
   line-height: 35px;
   color: #333333;
+  cursor: pointer;
 }
 
 .Link {
@@ -48,7 +66,7 @@
 }
 
 .IconText {
-  font-size: 22px;
+  font-size: 26px;
   color: #333333;
 }
 
@@ -85,7 +103,7 @@
   }
 
   .IconText {
-    font-size: 28px;
+    font-size: 30px;
     color: #333333;
   }
 
@@ -120,7 +138,7 @@
     padding: 0rem 0.5rem;
   }
   .IconText {
-    font-size: 14px;
+    font-size: 15px;
     color: #333333;
   }
 

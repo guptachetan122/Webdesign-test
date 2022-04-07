@@ -16,7 +16,7 @@ const ChemistrySession = ({ chemSessions = 0 }) => {
             type="circle"
             percent={percent}
             strokeColor="#F42B4D"
-            strokeWidth={12}
+            strokeWidth={10}
             format={() => (
               <Text className={styles.ProgressStyle}>{chem}/5</Text>
             )}

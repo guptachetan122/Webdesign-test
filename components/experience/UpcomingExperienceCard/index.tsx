@@ -5,7 +5,7 @@ import ButtonComponent from "../../common/ButtonComponent";
 import styles from "./UpcomingExperienceCard.module.css";
 import Link from "next/link";
 import { CheckCircleFilled, DollarCircleOutlined } from "@ant-design/icons";
-import { LocationMarkerIcon } from "@heroicons/react/solid";
+import { LocationMarkerIcon , VideoCameraIcon , CurrencyRupeeIcon} from "@heroicons/react/outline";
 
 const { Text } = Typography;
 
@@ -24,7 +24,7 @@ const UpcomingExperienceCard = ({
             {Name == "online" ? (
               <button className={styles.Label}>
                 {" "}
-                <LocationMarkerIcon className={styles.LabelIcon} />
+                <VideoCameraIcon className={styles.LabelIcon} />
                 online
               </button>
             ) : (
@@ -37,7 +37,7 @@ const UpcomingExperienceCard = ({
             {isPay ? (
               <button className={styles.Label}>
                 {" "}
-                <DollarCircleOutlined className={styles.LabelIcon} /> paid
+                <CurrencyRupeeIcon className={styles.LabelIcon} /> paid
               </button>
             ) : null}
           </div>

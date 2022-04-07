@@ -1,7 +1,7 @@
 .Button {
   background: none;
   width: 100%;
-  padding: 1rem 0rem;
+  padding: 1rem 1rem;
   margin: 0.5rem 0rem;
   border: 1.5px solid #616161;
   border-radius: 10px;
@@ -11,7 +11,7 @@
 .ButtonActive {
   background: none;
   width: 100%;
-  padding: 1rem 0rem;
+  padding: 1rem 1rem;
   margin: 0.5rem 0rem;
   border: 2px solid #f42b4d;
   border-radius: 10px;

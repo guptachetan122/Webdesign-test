@@ -11,7 +11,7 @@
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
   padding: 1rem 2rem;
   color: #fafafa;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   border-radius: 20px;
   cursor: pointer;
@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 1600px) {
   .Button {
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
     font-size: 14px;
   }
   .Icon {

@@ -27,7 +27,7 @@ const Starred = () => {
                 heart your favourite clubhouses to pin them here!
               </Text>
               <ClubhouseCard isJoined isPinned upcomingHuddle />
-              <ClubhouseCard isJoined isPinned />
+              <ClubhouseCard isJoined isPinned isFounder/>
               <ClubhouseCard isJoined isPinned upcomingHuddle />
               <ClubhouseCard isJoined isPinned />
               <ClubhouseCard isJoined isPinned />

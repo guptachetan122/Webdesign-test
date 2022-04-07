@@ -11,7 +11,7 @@ import {
 import React, { useState } from "react";
 import styles from "./ClubhouseCard.module.css";
 import Link from "next/link";
-import { VolumeOffIcon , DotsHorizontalIcon} from "@heroicons/react/solid";
+import { VolumeOffIcon, DotsHorizontalIcon } from "@heroicons/react/solid";
 import ButtonLight from "../../common/ButtonComponent/ButtonLight";
 import ButtonDark from "../../common/ButtonComponent/ButtonDark";
 import { CalendarIcon as ExperienceInactive } from "@heroicons/react/outline";
@@ -25,6 +25,7 @@ import { useRouter } from "next/router";
 const { Text } = Typography;
 
 const ClubhouseCard = ({
+  isFounder = false,
   isJoined = false,
   isPinned = false,
   isMuted = false,
@@ -108,15 +109,14 @@ const ClubhouseCard = ({
       <div className={styles.Container}>
         <Row className={styles.Row}>
           <Col span={18} onClick={goToChInfo}>
-            <Text className={styles.TopContent}>
-              simplifying personal finance for women
-            </Text>
+            <div className={styles.TopContent}>
+              simplifying personal finance for women in tech
+              {isMute ? <VolumeOffIcon className={styles.MenuIcon} /> : null}
+              {isPin ? <PushpinFilled className={styles.MenuIcon} /> : null}
+            </div>
           </Col>
-          <Col span={3} className={styles.IconCol}>
-            {isMute ? <VolumeOffIcon className={styles.MenuIcon} /> : null}
-            {isPin ? <PushpinFilled className={styles.MenuIcon} /> : null}
-          </Col>
-          <Col span={3} className={styles.MenuCol}>
+
+          <Col span={6} className={styles.MenuCol}>
             {isJoined ? (
               <Dropdown overlay={menu}>
                 <DotsHorizontalIcon className={styles.DropdownIcon} />
@@ -128,6 +128,19 @@ const ClubhouseCard = ({
             )}
           </Col>
         </Row>{" "}
+        {isFounder ? (
+          <Row className={styles.Row}>
+            <Col span={8} className={styles.PendingWrap}>
+              <Text className={styles.PendingText}>5 pending requests</Text>
+            </Col>
+            <Col span={8}></Col>
+            <Col span={8} className={styles.PendingButton}>
+              <button className={styles.BadgeButton}>
+                <h6 className={styles.Badge}>Founder</h6>
+              </button>
+            </Col>
+          </Row>
+        ) : null}
         {isJoined ? null : (
           <Row className={styles.DescriptionRow} onClick={goToChInfo}>
             <Text className={styles.Description}>
@@ -166,7 +179,7 @@ const ClubhouseCard = ({
             <Divider className={styles.Divider} />
             <div className={styles.Footer}>
               <ExperienceInactive className={styles.FooterIcon} />
-              <Text>1 upcoming huddle</Text>
+              1 upcoming huddle
               <RightOutlined className={styles.FooterIcon} />
             </div>
           </Row>

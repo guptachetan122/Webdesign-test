@@ -18,18 +18,13 @@ const ProfileDrawer = () => {
 
   return (
     <>
-      <Row>
-        <Col span={6}>
-          <div className={styles.Button} onClick={showDrawer}>
-            <CaretDownFilled /> me
-          </div>
-        </Col>
-        <Col span={8}></Col>
-        <Col span={8}></Col>
-      </Row>{" "}
+      <div className={styles.Button} onClick={showDrawer}>
+        <CaretDownFilled /> me
+      </div>
+
       <Drawer
         title=""
-        width={global.window?.innerWidth > 1920 ? 500 : 300}
+        width={global.window?.innerWidth > 1600 ? 400 : 300}
         closable={true}
         onClose={onClose}
         visible={visible}
@@ -57,28 +52,27 @@ const ProfileDrawer = () => {
           </Row>
           <Row className={styles.Row}>
             <div>
-              <Row>
+              <Row className={styles.SubRow}>
                 <Text className={styles.Text}>how to use leap.club</Text>
               </Row>
-              <Row>
+              <Row className={styles.SubRow}>
                 <Text className={styles.Text}>share feedback</Text>
               </Row>
-              <Row>
+              <Row className={styles.SubRow}>
                 {" "}
                 <Text className={styles.Text}>member stories</Text>
               </Row>
-              <Row>
+              <Row className={styles.SubRow}>
                 <Text className={styles.Text}>change password</Text>
               </Row>
             </div>
           </Row>
           <Row className={styles.Row}>
-            <Col>
+            <button className={styles.ButtonWrap}>
+              {" "}
               <LogoutIcon className={styles.IconStyle} />
-            </Col>
-            <Col>
               <Text className={styles.IconText}>logout</Text>
-            </Col>
+            </button>
           </Row>
         </div>
       </Drawer>

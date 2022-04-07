@@ -16,7 +16,7 @@
 
 .ListItem {
   padding: 0rem 3rem;
-  font-size: 22px;
+  font-size: 20px;
   margin: 0rem rem;
   display: flex;
   flex-direction: column-reverse;
@@ -31,7 +31,7 @@
 
 .ListItemActive {
   padding: 0rem 3rem;
-  font-size: 22px;
+  font-size: 20px;
   margin: 0rem 0rem;
   display: flex;
   flex-direction: column-reverse;
@@ -56,10 +56,10 @@
     height: 32px;
   }
   .ListItemActive {
-    font-size: 32px;
+    font-size: 30px;
   }
   .ListItem {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 

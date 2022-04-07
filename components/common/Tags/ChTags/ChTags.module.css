@@ -4,7 +4,7 @@
   color: #616161;
   box-sizing: border-box;
   border-radius: 5px;
-  margin: 0.5rem 0rem;
+  margin-top:0.75rem;;
   margin-right: 1rem;
   padding: 0rem 1rem;
   font-size: 16px;
@@ -16,33 +16,40 @@
   border: 2px solid #313131;
   box-sizing: border-box;
   border-radius: 5px;
-  margin: 0.5rem 0rem;
-  margin-right: 1rem;
+  margin-top:0.75rem;
+  margin-right: 0.75rem;
   padding: 0rem 1rem;
   font-size: 16px;
   font-weight: 500;
 }
 
-.TagLinkWrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.TagLink {
+.TagView{
   cursor: pointer;
   color: #0500ff;
+  margin-top: 1rem;
   font-size: 16px;
   text-decoration: underline;
 }
 
+.TagLink {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: #0500ff;
+  margin-top: 1rem;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+
 @media screen and (max-width: 1600px) {
-  .Tag , .TagActive, .TagLink {
+  .Tag , .TagActive, .TagLink, .TagView {
     font-size: 13px
   }
 }
 
 @media screen and (min-width: 2500px) {
-  .Tag , .TagActive, .TagLink {
+  .Tag , .TagActive, .TagLink, .TagView {
     font-size: 26px;
   }
 }

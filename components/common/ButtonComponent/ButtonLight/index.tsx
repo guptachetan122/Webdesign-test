@@ -17,7 +17,7 @@ const ButtonLight = ({ name = "", msgs = "" }) => {
         <Link href="/clubhouse/id/chat" passHref>
           <button className={styles.Button}>
             <span style={{ fontWeight: "700" }}>{msgs}</span>
-            <Text style={{ marginLeft: "1rem" }}>new messages</Text>
+            <div style={{ marginLeft: "1rem" }}>new messages</div>
           </button>
         </Link>
       ) : name == "filter and sort" ? (

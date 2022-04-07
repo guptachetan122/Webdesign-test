@@ -34,21 +34,25 @@ const Header = () => {
         {" "}
         <Row className={styles.headerDiv}>
           <Col span={8}>
-            <Avatar
-              src={
-                <Image
-                  src="/assets/images/Ragini.png"
-                  alt="profile picture"
-                  width="100%"
-                  height="100%"
-                  objectFit="contain"
-                />
-              }
-              className={styles.profileAvatar}
-            />
-            <div>
+            <Row className={styles.AvatarCol}>
+              {" "}
+              <Avatar
+                src={
+                  <Image
+                    src="/assets/images/Ragini.png"
+                    alt="profile picture"
+                    width="100%"
+                    height="100%"
+                    objectFit="contain"
+                  />
+                }
+                className={styles.profileAvatar}
+              />
+            </Row>
+            <Row>
+              {" "}
               <ProfileDrawer />
-            </div>
+            </Row>
           </Col>
 
           <Col span={8} className={styles.headerCol}>
@@ -79,29 +83,27 @@ const Header = () => {
         </Row>
         <StickyProvider>
           <Sticky className={styles.subHeaderWrapper}>
-           
-              {PATH2 == "[expid]" ? (
-                <Subheader2 SubheaderData={[]} />
-              ) : PATH == "experiences" ? (
-                <Subheader2 SubheaderData={experiencesNavbar} />
-              ) : PATH2 == "[chid]" ? (
-                <Subheader2 SubheaderData={[]} />
-              ) : PATH == "clubhouse" ? (
-                <Subheader2 SubheaderData={clubhouseNavbar} />
-              ) : PATH2 == "messages" ? (
-                <Subheader2 SubheaderData={messageNavbar} />
-              ) : PATH2 == "mynetwork" ? (
-                <Subheader2 SubheaderData={myNetworkNavbar} />
-              ) : PATH == "superconnections" ? (
-                <Subheader2 SubheaderData={superconnectionNavbar} />
-              ) : PATH2 == "[coachid]" ? (
-                <Subheader2 SubheaderData={[]} />
-              ) : PATH == "learn" ? (
-                <Subheader2 SubheaderData={coachingNavbar} />
-              ) : PATH == "feed" || PATH == "" ? (
-                <Subheader2 SubheaderData={feedNavbar} />
-              ) : null}
-          
+            {PATH2 == "[expid]" ? (
+              <Subheader2 SubheaderData={[]} />
+            ) : PATH == "experiences" ? (
+              <Subheader2 SubheaderData={experiencesNavbar} />
+            ) : PATH2 == "[chid]" ? (
+              <Subheader2 SubheaderData={[]} />
+            ) : PATH == "clubhouse" ? (
+              <Subheader2 SubheaderData={clubhouseNavbar} />
+            ) : PATH2 == "messages" ? (
+              <Subheader2 SubheaderData={messageNavbar} />
+            ) : PATH2 == "mynetwork" ? (
+              <Subheader2 SubheaderData={myNetworkNavbar} />
+            ) : PATH == "superconnections" ? (
+              <Subheader2 SubheaderData={superconnectionNavbar} />
+            ) : PATH2 == "[coachid]" ? (
+              <Subheader2 SubheaderData={[]} />
+            ) : PATH == "learn" ? (
+              <Subheader2 SubheaderData={coachingNavbar} />
+            ) : PATH == "feed" || PATH == "" ? (
+              <Subheader2 SubheaderData={feedNavbar} />
+            ) : null}
           </Sticky>
         </StickyProvider>
       </div>

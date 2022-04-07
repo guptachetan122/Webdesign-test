@@ -163,86 +163,22 @@ export const sidebarItems = [
 ];
 
 export const tagsData = [
-  {
-    id: 1,
-    name: "all",
-    checked: true,
-  },
-  {
-    id: 2,
-    name: "fun",
-    checked: false,
-  },
-  {
-    id: 3,
-    name: "entrepreneurs",
-    checked: false,
-  },
-  {
-    id: 4,
-    name: "health & wellness",
-    checked: false,
-  },
-  {
-    id: 5,
-    name: "all1",
-    checked: false,
-  },
-  {
-    id: 6,
-    name: "fun1",
-    checked: false,
-  },
-  {
-    id: 7,
-    name: "entrepreneurs1",
-    checked: false,
-  },
-  {
-    id: 8,
-    name: "health & wellness1",
-    checked: false,
-  },
-  {
-    id: 9,
-    name: "all2",
-    checked: false,
-  },
-  {
-    id: 10,
-    name: "fun2",
-    checked: false,
-  },
-  {
-    id: 11,
-    name: "entrepreneurs2",
-    checked: false,
-  },
-  {
-    id: 12,
-    name: "health & wellness2",
-    checked: false,
-  },
-  {
-    id: 13,
-    name: "all3",
-    checked: false,
-  },
-  {
-    id: 14,
-    name: "fun3",
-    checked: false,
-  },
-  {
-    id: 15,
-    name: "entrepreneurs3",
-    checked: false,
-  },
-  {
-    id: 16,
-    name: "health & wellness3",
-    checked: false,
-  },
+  `all`,
+  `fun`,
+  `entrepreneurs`,
+  `health & wellness`,
+  `all1`,
+  `fun1`,
+  `entrepreneurs1`,
+  `health & wellness21`,
+  `all2`,
+  `fun2`,
+  `entrepreneurs3`,
+  `health & wellness3`,
+  `all3`,
+  `fun3`,
+  `entrepreneurs2`,
+  `health & wellness2`,
 ];
 
 
@@ -252,5 +188,36 @@ export const ExpTagsData = [
   `experiences`,
   `clubhouse huddles`,
   `online`,
-  `offline`
-]
+  `offline`,
+];
+
+export const Packages = [
+  {
+    cost: 5000,
+    popular: false,
+    preTaxCost: 5000,
+    sessionCount: 1,
+    _id: "1",
+  },
+  {
+    cost: 15000,
+    popular: true,
+    preTaxCost: 15000,
+    sessionCount: 3,
+    _id: "2",
+  },
+  {
+    cost: 25000,
+    popular: false,
+    preTaxCost: 25000,
+    sessionCount: 5,
+    _id: "3",
+  },
+  {
+    cost: 50000,
+    popular: false,
+    preTaxCost: 50000,
+    sessionCount: 10,
+    _id: "4",
+  }
+];

@@ -1,18 +1,24 @@
 import React, { useState } from "react";
 import { LinkedinFilled } from "@ant-design/icons";
-import { Avatar, Typography, Card, Row, Col, Modal, Divider, Radio } from "antd";
+import {
+  Avatar,
+  Typography,
+  Card,
+  Row,
+  Col,
+  Modal,
+  Divider,
+  Radio,
+} from "antd";
 import ButtonCoach from "../../common/ButtonComponent/ButtonCoach";
 import ButtonDark from "../../common/ButtonComponent/ButtonDark";
 import ButtonLight from "../../common/ButtonComponent/ButtonLight";
 import styles from "./CoachDetail.module.css";
+import { Packages } from "../../../constants/constants";
 
 const { Text } = Typography;
 
 const CoachDetail = () => {
-  const [isActive , setActive] = useState(false)
-  function onSelect() {
-    
-  }
 
   return (
     <>
@@ -67,20 +73,19 @@ const CoachDetail = () => {
           <ButtonLight name="book a free chemistry session" />
         </Row>
         <Divider style={{ borderWidth: 2, borderColor: "#919191" }}>or</Divider>{" "}
+        {/* {Packages?.map((item) => (
+          <div key={item?._id} id={item?._id} onClick={clicked}>
+            <ButtonCoach
+              num={item?.sessionCount}
+              price={item?.cost}
+              isPopular={item?.popular}
+              isActive={val == item?._id || item?.popular ? true : false}
+            />
+          </div>
+        ))} */}
         <div>
-          <Row>
-            <ButtonCoach num="1" price="5,000" />
-          </Row>{" "}
-          <Row>
-            {" "}
-            <ButtonCoach num="3" price="15,000" />
-          </Row>
-          <Row>
-            <ButtonCoach num="5" price="25,000" />
-          </Row>
-          <Row>
-            <ButtonCoach num="10" price="50,000" />
-          </Row>
+          {" "}
+            <ButtonCoach PackageData={Packages} />
         </div>
         <Row className={styles.BottomRow}>
           <ButtonDark name="book session" />

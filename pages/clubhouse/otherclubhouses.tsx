@@ -5,7 +5,7 @@ import ClubhouseCard from '../../components/clubhouse/ClubhouseCard';
 import Sidebar from '../../ui/Sidebar';
 import styles from "../../styles/ClubHouse.module.css";
 import { Tag } from "antd";
-import SearchTagComponent from '../../components/common/Tags/SearchTagComponent';
+import SearchTagComponent from '../../components/common/Tags/ChTags';
 const { CheckableTag } = Tag;
 
 const Otherclubhouses = () => {
