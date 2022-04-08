@@ -19,7 +19,7 @@ const Starred = () => {
               {" "}
               <ClubhouseCard isJoined isPinned upcomingHuddle isFounder />
               <ClubhouseCard isJoined isPinned isFounder />
-              <ClubhouseCard isJoined isPinned upcomingHuddle />
+              <ClubhouseCard isJoined isPinned upcomingHuddle isFounder/>
               <ClubhouseCard isJoined isPinned isFounder />
               <ClubhouseCard isJoined isPinned isFounder />
             </Col>

@@ -1,22 +1,13 @@
 .Container {
   margin-bottom: 0.5rem;
-  padding: 0rem 1rem;
+  padding: 1rem 2rem;
   background-color: #fafafa;
   border-radius: 10px;
-}
-
-.AvatarCol {
-  margin-right: 0.5rem;
-  /* background-color: red; */
 }
 
 .Avatar {
   height: fit-content;
   width: fit-content;
-}
-
-.MiddleCol {
-  padding: 0rem 2rem;
 }
 
 .Name {
@@ -30,7 +21,6 @@
 }
 
 .ButtonCol {
-  /* background-color: blue; */
   display: flex;
   justify-content: right;
   align-items: center;

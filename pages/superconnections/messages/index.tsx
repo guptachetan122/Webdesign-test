@@ -40,8 +40,8 @@ const Chats = () => {
         <Col span={6} className={styles.ThirdCol}>
           <div className={styles.ScCard}>
             <Row>
-              <Col span={20}>receive messages from other members </Col>
-              <Col span={4}>
+              <Col span={21}>receive messages from other members </Col>
+              <Col span={3}>
                 {" "}
                 <Switch defaultChecked onChange={onChange} />
               </Col>
@@ -50,11 +50,11 @@ const Chats = () => {
 
           <Row>
             {" "}
-            <Card style={{ width: "100%", fontSize: "14px" }}>
+            <div className={styles.ScCard}>
               messages from new superconnections appear here till you reply to
               them, your posts will now appear in their private feed. once you
               reply to them, their posts will appear in your private feed too.
-            </Card>
+            </div>
           </Row>
         </Col>
       </Row>

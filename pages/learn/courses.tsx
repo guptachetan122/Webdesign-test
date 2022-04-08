@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import { Col, Row, Typography } from "antd";
 import React from "react";
 import Sidebar from "../../ui/Sidebar";
@@ -20,18 +22,20 @@ const courses = () => {
               {" "}
               <div className={styles.CourseCardStyle}>
                 {" "}
+                <Row className={styles.CourseImageWrap}><img src="/assets/images/paper-plane.png" alt="course image" className={styles.CourseImage}/></Row>
                 <Row className={styles.CourseTitle}>cohort based courses</Row>
                 <Row className={styles.CourseSubTitle}>coming soon...</Row>
-                <Row>
-                  <Col span={4}></Col>
-                  <Col span={16} className={styles.CourseDescription}>
+                <Row className={styles.CourseDescriptionRow}>
+                  {" "}
+                  <div className={styles.CourseDescription}>
                     {" "}
-                    2021 - 8 creators, 100+ learners, avg 9.4 ⭐ rating 2022 -
-                    coming back.
+                    2021 - 8 creators, 100+ learners, avg 9.4⭐ rating
+                  </div>
+                  <div className={styles.CourseDescription}>
+                    2022 - coming back.
                     <span style={{ fontWeight: "500" }}> bigger</span>.
                     <span style={{ fontWeight: "700" }}> bolder</span>.
-                  </Col>
-                  <Col span={4}></Col>
+                  </div>
                 </Row>
               </div>
             </Col>

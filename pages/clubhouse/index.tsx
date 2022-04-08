@@ -24,7 +24,7 @@ const Starred = () => {
             <Col span={20}>
               {" "}
               <Text className={styles.ChTopText}>
-                heart your favourite clubhouses to pin them here!
+                your pinned clubhouses appear here!
               </Text>
               <ClubhouseCard isJoined isPinned upcomingHuddle />
               <ClubhouseCard isJoined isPinned isFounder/>
@@ -50,8 +50,7 @@ const Starred = () => {
             <div className={styles.ChButtonWrapper}>
               <Link href="/clubhouse/otherclubhouses" passHref>
                 <button className={styles.ButtonDark}>
-                  <ChInactive className={styles.ButtonIcon} />
-                  join a clubhouse
+                  <ChInactive className={styles.ButtonIcon} />{' '}join a clubhouse
                 </button>
               </Link>
             </div>

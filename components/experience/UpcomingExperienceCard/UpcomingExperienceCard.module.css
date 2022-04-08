@@ -59,6 +59,7 @@
 
 .Name {
   font-size: 18px;
+  font-weight: 700;
   color: #313131;
 }
 
@@ -114,16 +115,19 @@
   .Date {
     font-size: 32px;
   }
+  .NameRow {
+    padding-top: 1rem;
+  }
   .Name {
     font-size: 28px;
   }
   .Time {
     font-size: 26px;
   }
-  .Label{
+  .Label {
     font-size: 24px;
   }
-  .LabelIcon{
+  .LabelIcon {
     width: 24px;
     height: 24px;
   }
@@ -136,8 +140,8 @@
 }
 
 @media screen and (min-width: 1920px) {
-  .Row {
-    margin-bottom: 1.5rem;
+  .NameRow {
+    padding-top: 0.5rem;
   }
 }
 
@@ -151,10 +155,10 @@
   .Time {
     font-size: 13px;
   }
-  .Label{
+  .Label {
     font-size: 12px;
   }
-  .LabelIcon{
+  .LabelIcon {
     width: 12px;
     height: 12px;
   }

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   Avatar,
   Col,
@@ -7,6 +8,8 @@ import {
   Modal,
   Row,
   Typography,
+  notification,
+  Alert,
 } from "antd";
 import React, { useState } from "react";
 import styles from "./ClubhouseCard.module.css";
@@ -48,22 +51,23 @@ const ClubhouseCard = ({
     }
   }
 
-   function goToExpInfo(e:any) {
-     {
-       e.stopPropagation();
-       router.push("/experiences/id");
-     }
-   }
+  function goToExpInfo(e: any) {
+    {
+      e.stopPropagation();
+      router.push("/experiences/id");
+    }
+  }
 
   function goToChChat(e: any) {
     e.stopPropagation();
     router.push("/clubhouse/id/chat");
   }
 
-  function onPin() {
+  function onPin(ChName :string) {
     if (pinnedCh < 5 && pinnedCh > 0) {
       setPin(true);
       setPinnedCh(pinnedCh + 1);
+     
     } else {
       Modal.info(modalmsg);
     }
@@ -78,59 +82,90 @@ const ClubhouseCard = ({
     setMute(!isMute);
   }
 
-
-  const menu = () => {
-   return (
-     <Menu >
-       {isPin ? (
-         <Menu.Item key="1" onClick={unPin} className={styles.Menu}>
-           <div>
-             <PushpinFilled className={styles.MenuIcon} /> unpin clubhouse
-           </div>
-         </Menu.Item>
-       ) : (
-         <Menu.Item key="1" onClick={onPin} className={styles.Menu}>
-           <div>
-             <PushpinFilled className={styles.MenuIcon} /> pin clubhouse
-           </div>
-         </Menu.Item>
-       )}
-       {isMute ? (
-         <Menu.Item key="2" onClick={onMute} className={styles.Menu}>
-           <div>
-             <VolumeOffIcon className={styles.MenuIcon} /> unmute clubhouse
-           </div>
-         </Menu.Item>
-       ) : (
-         <Menu.Item key="2" onClick={onMute}>
-           <div className={styles.Menu}>
-             <VolumeOffIcon className={styles.MenuIcon} /> mute clubhouse
-           </div>
-         </Menu.Item>
-       )}
-     </Menu>
-   );
+  const menu = (ChName : string) => {
+    return (
+      <Menu className={styles.MenuWrap}>
+        {isPin ? (
+          <Menu.Item key="1" onClick={unPin} className={styles.Menu}>
+            <div>
+              <img
+                src="/assets/images/pin-black.png"
+                alt="unpin image"
+                className={styles.MenuIcon}
+              />{" "}
+              unpin clubhouse
+            </div>
+          </Menu.Item>
+        ) : (
+          <Menu.Item key="1" onClick={() => onPin(ChName)} className={styles.Menu}>
+            <div>
+              <img
+                src="/assets/images/pin-black.png"
+                alt="pin image"
+                className={styles.MenuIcon}
+              />{" "}
+              pin clubhouse
+            </div>
+          </Menu.Item>
+        )}
+        {isMute ? (
+          <Menu.Item key="2" onClick={onMute} className={styles.Menu}>
+            <div>
+              <img
+                src="/assets/images/unmute-black.png"
+                alt="unmute image"
+                className={styles.MenuIcon}
+              />{" "}
+              unmute clubhouse
+            </div>
+          </Menu.Item>
+        ) : (
+          <Menu.Item key="2" onClick={onMute} className={styles.Menu}>
+            <img
+              src="/assets/images/mute-black.png"
+              alt="mute image"
+              className={styles.MenuIcon}
+            />{" "}
+            mute clubhouse
+          </Menu.Item>
+        )}
+      </Menu>
+    );
   };
 
   return (
     <>
       {" "}
-      <div className={styles.Container} onClick={goToChInfo}>
+      <div className={styles.Container}>
         <Row className={styles.Row}>
           <Col span={18} onClick={goToChInfo}>
             <div className={styles.TopContent}>
               simplifying personal finance for women in tech &ensp;
-              {isMute ? <VolumeOffIcon className={styles.MenuIcon} /> : null}
-              {isPin ? <PushpinFilled className={styles.MenuIcon} /> : null}
+              {isMute ? (
+                <img
+                  src="/assets/images/mute-grey.png"
+                  alt="mute image"
+                  className={styles.MenuIcon}
+                />
+              ) : null}
+              {isPin ? (
+                <img
+                  src="/assets/images/pin-grey.png"
+                  alt="pin image"
+                  className={styles.MenuIcon}
+                />
+              ) : null}
             </div>
           </Col>
 
-          <Col
-            span={6}
-            className={styles.MenuCol}
-          >
+          <Col span={6} className={styles.MenuCol}>
             {isJoined ? (
-              <Dropdown overlay={menu} trigger={["click"]}>
+              <Dropdown
+                overlay={() =>
+                  menu("simplifying personal finance for women in tech")
+                }
+                trigger={["click"]}
+              >
                 <DotsHorizontalIcon
                   className={styles.DropdownIcon}
                   onClick={(e) => e.stopPropagation()}

@@ -86,7 +86,6 @@
   border-color: #313131;
   border-width: 1px;
   border-radius: 200px;
-  margin-right: 1rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -143,7 +142,7 @@
     font-size: 13px;
   }
   .Button5 {
-    font-size: 26px;
+    font-size: 13px;
   }
 }
 

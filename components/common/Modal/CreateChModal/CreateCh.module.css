@@ -1,6 +1,7 @@
 .TriggerButton {
   background: none;
   font-size: 18px;
+  border-width: 1px;
   width: 100%;
   padding: 1rem 2rem;
   border-radius: 200px;
@@ -62,6 +63,6 @@
 
 @media screen and (max-width: 1400px) {
   .TriggerButton {
-    padding: 1rem 0.5rem;
+    font-size: 13px;
   }
 }

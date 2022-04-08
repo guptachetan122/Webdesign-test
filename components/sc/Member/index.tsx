@@ -10,7 +10,7 @@ const Member = ({pageName = ""}) => {
 
   return (
     <>
-      <Card className={styles.Container}>
+      <div className={styles.Container}>
         <Row>
           <Col span={3} className={styles.AvatarCol}>
             {" "}
@@ -19,17 +19,19 @@ const Member = ({pageName = ""}) => {
               src={"/assets/images/Ragini.png"}
             />
           </Col>
-          <Col span={12} className={styles.MiddleCol}>
+          <Col span={1}></Col>
+          <Col span={10} className={styles.MiddleCol}>
             <Row>
-              <Text className={styles.Name}>ragini das</Text>
+              <div className={styles.Name}>ragini das</div>
             </Row>
             <Row>
-              <Text className={styles.Description}>
+              <div className={styles.Description}>
                 in-house counsel looking for new opportunities
-              </Text>
+              </div>
             </Row>
           </Col>
-          <Col span={8} className={styles.ButtonCol}>
+          <Col span={1}></Col>
+          <Col span={9} className={styles.ButtonCol}>
             {pageName == "chats" ? (
               <ButtonLight name="reply" />
             ) : pageName == "mysc" ? (
@@ -39,7 +41,7 @@ const Member = ({pageName = ""}) => {
             )}
           </Col>
         </Row>
-      </Card>
+      </div>
     </>
   );
 };

@@ -24,7 +24,7 @@ export const feedNavbar = [
 export const clubhouseNavbar = [
   {
     id: 1,
-    name: "starred",
+    name: "pinned",
     link: "/clubhouse",
   },
   {

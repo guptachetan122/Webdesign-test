@@ -10,6 +10,7 @@
 
 .Container2{
   padding: 0rem 3rem;
+  margin:auto 0;
 }
 
 .ProgressWrapper {
@@ -18,11 +19,16 @@
   align-items: center;
 }
 
-.ProgressStyle {
+.ProgressStyle{
+  width: 120px;
+}
+
+.ProgressText {
   font-size: 32px;
   font-weight: 700;
   color: #313131;
 }
+
 
 .Title {
   color: #313131;
@@ -39,7 +45,7 @@
 
 
 @media screen and (min-width: 2500px) {
-  .ProgressStyle {
+  .ProgressText {
     font-size: 36px;
   }
 
@@ -53,7 +59,7 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .ProgressStyle {
+  .ProgressText {
     font-size: 18px;
   }
 
@@ -67,7 +73,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .ProgressStyle {
+  .ProgressText {
     font-size: 15px;
   }
 

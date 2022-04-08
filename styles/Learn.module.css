@@ -42,8 +42,18 @@
 .CourseCardStyle {
   background: none;
   border: none;
-  padding: 2rem 5rem;
+  padding: 2rem 0rem;
   margin-top: 5rem;
+}
+
+.CourseImageWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.CourseImage {
+  width: 100px;
+  height: 100px;
 }
 
 .CourseTitle {
@@ -58,20 +68,24 @@
   display: flex;
   justify-content: center;
   font-weight: 700;
-  color: #F9511C;
+  color: #f9511c;
   font-size: 26px;
   margin-bottom: 2rem;
   /* background-color: #0500ff; */
 }
 
+.CourseDescriptionRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .CourseDescription {
+  text-align: center;
   color: #616161;
   font-size: 20px;
   /* background-color: #0500ff; */
-}
-
-.CourseImage {
-  transform: rotate(90deg);
 }
 
 @media screen and (min-width: 2500px) {
@@ -82,18 +96,18 @@
   .LearnBookingLink {
     font-size: 30px;
   }
-
+  .CourseImage {
+    width: 125px;
+    height: 125px;
+  }
   .CourseTitle {
-    font-weight: 700;
     font-size: 36px;
   }
-
   .CourseSubTitle {
-    color: #616161;
     font-size: 36px;
   }
 
-  .CourseDescription{
+  .CourseDescription {
     font-size: 30px;
   }
 }
@@ -102,21 +116,21 @@
   .LearnText {
     font-size: 16px;
   }
-
   .LearnBookingLink {
     font-size: 15px;
   }
-   .CourseTitle {
+  .CourseImage {
+    width: 75px;
+    height: 75px;
+  }
+  .CourseTitle {
     font-weight: 700;
     font-size: 18px;
   }
-
   .CourseSubTitle {
-    color: #616161;
     font-size: 18px;
   }
-
-  .CourseDescription{
-    font-size: 10px;
+  .CourseDescription {
+    font-size: 15px;
   }
 }

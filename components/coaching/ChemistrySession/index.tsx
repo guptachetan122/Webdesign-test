@@ -17,21 +17,22 @@ const ChemistrySession = ({ chemSessions = 0 }) => {
             percent={percent}
             strokeColor="#F42B4D"
             strokeWidth={10}
+            className={styles.ProgressStyle}
             format={() => (
-              <Text className={styles.ProgressStyle}>{chem}/5</Text>
+              <Text className={styles.ProgressText}>{chem}/5</Text>
             )}
           />
         </Col>
         <Col span={18} className={styles.Container2}>
           <Row>
-            <Text className={styles.Title}>
+            <div className={styles.Title}>
               free chemistry sessions done
-            </Text>
+            </div>
           </Row>
           <Row>
-            <Text className={styles.SubTitle}>
+            <div className={styles.SubTitle}>
               book free 15 minute sessions with any coach to match your vibe
-            </Text>
+            </div>
           </Row>
         </Col>
       </Row>

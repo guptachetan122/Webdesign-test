@@ -4,9 +4,10 @@ import React from "react";
 import ButtonComponent from "../../common/ButtonComponent";
 import styles from "./ExperienceInfo.module.css";
 import {
-  CalendarIcon as ExperienceInactive,
   LocationMarkerIcon,
-} from "@heroicons/react/solid";
+  VideoCameraIcon,
+  CurrencyRupeeIcon
+} from "@heroicons/react/outline";
 import { CheckCircleFilled, DollarCircleOutlined } from "@ant-design/icons";
 
 const { Text } = Typography;
@@ -25,7 +26,7 @@ const ExperienceInfo = ({
             {Name == "online" ? (
               <button className={styles.Label}>
                 {" "}
-                <LocationMarkerIcon className={styles.LabelIcon} />
+                <VideoCameraIcon className={styles.LabelIcon} />
                 online
               </button>
             ) : (
@@ -38,7 +39,7 @@ const ExperienceInfo = ({
             {isPay ? (
               <button className={styles.Label}>
                 {" "}
-                <DollarCircleOutlined className={styles.LabelIcon} /> paid
+                <CurrencyRupeeIcon className={styles.LabelIcon} /> paid
               </button>
             ) : null}
           </div>
