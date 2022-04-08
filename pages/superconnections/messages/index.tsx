@@ -40,8 +40,8 @@ const Chats = () => {
         <Col span={6} className={styles.ThirdCol}>
           <div className={styles.ScCard}>
             <Row>
-              <Col span={21}>receive messages from other members </Col>
-              <Col span={3}>
+              <Col span={20}>receive messages from other members </Col>
+              <Col span={4}>
                 {" "}
                 <Switch defaultChecked onChange={onChange} />
               </Col>
