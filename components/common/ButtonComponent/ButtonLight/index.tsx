@@ -37,7 +37,9 @@ const ButtonLight = ({ name = "", msgs = "" }) => {
         </button>
       ) : name == "book a free chemistry session" ? (
         <button className={styles.Button4}>{name}</button>
-      ) : ( 
+      ) : name == "chat" || name == "reply" ?( 
+        <button className={styles.Button5}>{name}</button>
+      ): ( 
         <button className={styles.Button2}>{name}</button>
       )}
     </>

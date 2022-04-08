@@ -1,16 +1,16 @@
 import { Radio } from "antd";
 import React, { useState } from "react";
-import { ExpTagsData } from "../../../../constants/constants";
+import { ExpTags } from "../../../../constants/constants";
 import styles from "./ExpTags.module.css";
 
-const ExpTags = () => {
+const ExperiencesTags = () => {
   // let initialArray = [""];
   const [isClicked, setClicked] = useState(false);
   const [array, setArray] = useState(["all"]);
 
   function clicked(item: string) {
-    if (array.includes(item)) {
-      setArray(array.filter((a) => a !== item));
+    if (array?.includes(item)) {
+      setArray(array?.filter((a) => a !== item));
     } else {
       setArray((initialarray) => [...initialarray, item]);
     }
@@ -18,10 +18,10 @@ const ExpTags = () => {
 
   return (
     <div className={styles.TagsWrapper}>
-      {ExpTagsData?.map((item) => {
+      {ExpTags?.map((item) => {
         return (
           <button
-            className={array.includes(item) ? styles.TagActive : styles.Tag}
+            className={array?.includes(item) ? styles.TagActive : styles.Tag}
             key={item}
             onClick={() => clicked(item)}
           >
@@ -33,4 +33,4 @@ const ExpTags = () => {
   );
 };
 
-export default ExpTags;
+export default ExperiencesTags;

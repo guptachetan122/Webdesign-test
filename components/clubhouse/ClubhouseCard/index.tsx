@@ -44,9 +44,16 @@ const ClubhouseCard = ({
 
   function goToChInfo() {
     {
-      infoPage ? null : router.push("/experiences/id");
+      infoPage ? null : router.push("/clubhouse/id");
     }
   }
+
+   function goToExpInfo(e:any) {
+     {
+       e.stopPropagation();
+       router.push("/experiences/id");
+     }
+   }
 
   function goToChChat(e: any) {
     e.stopPropagation();
@@ -71,41 +78,44 @@ const ClubhouseCard = ({
     setMute(!isMute);
   }
 
-  const menu = () => (
-    <Menu>
-      {isPin ? (
-        <Menu.Item key="1" onClick={unPin}>
-          <div className={styles.Menu}>
-            <PushpinFilled className={styles.MenuIcon} /> unpin clubhouse
-          </div>
-        </Menu.Item>
-      ) : (
-        <Menu.Item key="1" onClick={onPin}>
-          <div className={styles.Menu}>
-            <PushpinFilled className={styles.MenuIcon} /> pin clubhouse
-          </div>
-        </Menu.Item>
-      )}
-      {isMute ? (
-        <Menu.Item key="2" onClick={onMute}>
-          <div className={styles.Menu}>
-            <VolumeOffIcon className={styles.MenuIcon} /> unmute clubhouse
-          </div>
-        </Menu.Item>
-      ) : (
-        <Menu.Item key="2" onClick={onMute}>
-          <div className={styles.Menu}>
-            <VolumeOffIcon className={styles.MenuIcon} /> mute clubhouse
-          </div>
-        </Menu.Item>
-      )}
-    </Menu>
-  );
+
+  const menu = () => {
+   return (
+     <Menu >
+       {isPin ? (
+         <Menu.Item key="1" onClick={unPin} className={styles.Menu}>
+           <div>
+             <PushpinFilled className={styles.MenuIcon} /> unpin clubhouse
+           </div>
+         </Menu.Item>
+       ) : (
+         <Menu.Item key="1" onClick={onPin} className={styles.Menu}>
+           <div>
+             <PushpinFilled className={styles.MenuIcon} /> pin clubhouse
+           </div>
+         </Menu.Item>
+       )}
+       {isMute ? (
+         <Menu.Item key="2" onClick={onMute} className={styles.Menu}>
+           <div>
+             <VolumeOffIcon className={styles.MenuIcon} /> unmute clubhouse
+           </div>
+         </Menu.Item>
+       ) : (
+         <Menu.Item key="2" onClick={onMute}>
+           <div className={styles.Menu}>
+             <VolumeOffIcon className={styles.MenuIcon} /> mute clubhouse
+           </div>
+         </Menu.Item>
+       )}
+     </Menu>
+   );
+  };
 
   return (
     <>
       {" "}
-      <div className={styles.Container}>
+      <div className={styles.Container} onClick={goToChInfo}>
         <Row className={styles.Row}>
           <Col span={18} onClick={goToChInfo}>
             <div className={styles.TopContent}>
@@ -115,10 +125,16 @@ const ClubhouseCard = ({
             </div>
           </Col>
 
-          <Col span={6} className={styles.MenuCol}>
+          <Col
+            span={6}
+            className={styles.MenuCol}
+          >
             {isJoined ? (
-              <Dropdown overlay={menu}>
-                <DotsHorizontalIcon className={styles.DropdownIcon} />
+              <Dropdown overlay={menu} trigger={["click"]}>
+                <DotsHorizontalIcon
+                  className={styles.DropdownIcon}
+                  onClick={(e) => e.stopPropagation()}
+                />
               </Dropdown>
             ) : infoPage ? null : (
               <button className={styles.BadgeButton}>
@@ -132,7 +148,7 @@ const ClubhouseCard = ({
             <Col span={8} className={styles.PendingWrap}>
               <Text className={styles.PendingText}>5 pending requests</Text>
             </Col>
-            <Col span={8}></Col>
+            <Col span={8} onClick={goToChInfo}></Col>
             <Col span={8} className={styles.PendingButton}>
               <button className={styles.BadgeButton}>
                 <h6 className={styles.Badge}>Founder</h6>
@@ -174,7 +190,7 @@ const ClubhouseCard = ({
           </Col>
         </Row>
         {upcomingHuddle ? (
-          <Row className={styles.FooterWrapper} onClick={goToChInfo}>
+          <Row className={styles.FooterWrapper} onClick={goToExpInfo}>
             <Divider className={styles.Divider} />
             <div className={styles.Footer}>
               <ExperienceInactive className={styles.FooterIcon} />

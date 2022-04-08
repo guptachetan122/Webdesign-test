@@ -157,27 +157,25 @@ export const sidebarItems = [
   },
 ];
 
-export const tagsData = [
-  `all`,
-  `fun`,
-  `entrepreneurs`,
-  `health & wellness`,
-  `all1`,
-  `fun1`,
-  `entrepreneurs1`,
-  `health & wellness21`,
-  `all2`,
-  `fun2`,
-  `entrepreneurs3`,
-  `health & wellness3`,
-  `all3`,
-  `fun3`,
-  `entrepreneurs2`,
-  `health & wellness2`,
+export const ChTags = [
+  "all",
+  "fun",
+  "entrepreneurs",
+  "health & wellness",
+  "technology",
+  "groups",
+  "food & drinks",
+  "investing & finance",
+  "professional",
+  "gender",
+  "cities",
+  "career growth",
+  "self-growth",
+  "sales & marketing",
 ];
 
 
-export const ExpTagsData = [
+export const ExpTags = [
   `all`,
   `masterclass`,
   `experiences`,

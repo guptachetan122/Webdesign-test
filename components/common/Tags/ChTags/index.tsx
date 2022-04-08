@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import { tagsData } from "../../../../constants/constants";
+import { ChTags } from "../../../../constants/constants";
 import styles from "./ChTags.module.css";
 import { Typography } from "antd";
 
 const { Text } = Typography;
 
-const ChTags = () => {
+const ClubhouseTags = () => {
   const [viewAll, setViewAll] = useState(false);
-  const [array, setArray] = useState(["all"]);
   const [val, setVal] = useState("all");
 
   const handleViewAll = () => {
@@ -26,7 +25,7 @@ const ChTags = () => {
     <>
       {viewAll ? (
         <div>
-          {tagsData.map((tag) => {
+          {ChTags?.map((tag) => {
             return (
               <button
                 className={val == tag ? styles.TagActive : styles.Tag}
@@ -43,7 +42,7 @@ const ChTags = () => {
         </div>
       ) : (
         <div>
-          {tagsData.slice(0, 4).map((tag) => {
+          {ChTags?.slice(0, 4).map((tag) => {
             return (
               <button
                 className={val == tag ? styles.TagActive : styles.Tag}
@@ -63,4 +62,4 @@ const ChTags = () => {
   );
 };
 
-export default ChTags;
+export default ClubhouseTags;
