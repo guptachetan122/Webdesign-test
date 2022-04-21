@@ -72,16 +72,13 @@ const Header = () => {
           </Col>
           <Col className={styles.headerIconCol} span={8}>
             <Badge count={10} size="default" className={styles.headerBadge}>
-              <Dropdown
-                overlay={menu}
-                placement="bottomLeft"
-              >
+              
                 <Avatar
                   src="/assets/images/bell.svg"
                   style={{ color: "black" }}
                   className={styles.headerAvatar}
                 />
-              </Dropdown>
+             
             </Badge>
             <Badge count={100} size="default" className={styles.headerBadge}>
               <Avatar
