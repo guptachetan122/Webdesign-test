@@ -62,13 +62,13 @@ const Header = () => {
           </Col>
 
           <Col span={8} className={styles.headerCol}>
-            <Link href="/" passHref>
+           
               <img
                 src="/assets/images/image3.png"
                 alt="leap club logo"
                 className={styles.headerImageWrapper}
               />
-            </Link>
+           
           </Col>
           <Col className={styles.headerIconCol} span={8}>
             <Badge count={10} size="default" className={styles.headerBadge}>
