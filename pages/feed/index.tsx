@@ -2,7 +2,6 @@ import { Card, Carousel, Col, Input, Row, Typography } from "antd";
 import React, { useState } from "react";
 import Sidebar from "../../ui/Sidebar";
 import styles from "../../styles/Feed.module.css";
-import { SearchOutlined } from "@ant-design/icons";
 import FeedInput from "../../components/feed/FeedInput";
 import FeedCard from "../../components/feed/FeedCard";
 
