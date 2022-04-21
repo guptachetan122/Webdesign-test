@@ -23,22 +23,19 @@ const { TextArea } = Input;
 const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
   const [makeComment, setMakeComment] = useState(false);
   const [viewComments, setViewComments] = useState(false);
+  const [viewAllComments, setViewAllComments] = useState(false);
   const [changeBookmark, setBookmark] = useState(false);
   const [changeLike, setLike] = useState(false);
 
-  const handleComment = () => {
-    setMakeComment(!makeComment);
-  };
+  const handleComment = () => setMakeComment(!makeComment);
 
-  const handleComments = () => {
-    setViewComments(!viewComments);
-  };
-  const handleBookmark = () => {
-    setBookmark(!changeBookmark);
-  };
-  const handleLike = () => {
-    setLike(!changeLike);
-  };
+  const handleComments = () => setViewComments(!viewComments);
+
+  const handleBookmark = () => setBookmark(!changeBookmark);
+
+  const handleLike = () => setLike(!changeLike);
+
+  const handleAllComments = () => setViewAllComments(!viewAllComments);
 
   const menu = () => {
     return isLoggedIn ? (
@@ -84,7 +81,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
     <>
       <div className={styles.Container}>
         <Row className={styles.Row}>
-          <Col span={14} className={styles.MiddleColumn}>
+          <Col span={18} className={styles.MiddleColumn}>
             <div>
               <Avatar
                 className={styles.Avatar}
@@ -101,7 +98,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
               </div>
             </div>
           </Col>
-          <Col span={10} className={styles.ButtonColumn}>
+          <Col span={6} className={styles.ButtonColumn}>
             {isConnect ? <ButtonLight name="chat" /> : <ScModal />}
           </Col>
         </Row>
@@ -147,7 +144,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
             ) : (
               <HeartLight className={styles.CtaIcon} />
             )}
-            live
+            like
           </Col>
           <Col span={8} className={styles.CtaColumn} onClick={handleComment}>
             <ChatAltIcon className={styles.CtaIcon} />
@@ -174,13 +171,13 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
         </Row>
         {makeComment || viewComments ? (
           <Row className={styles.TextAreaRow}>
-            <Col span={2}>
-              <Avatar
-                className={styles.CommentAvatar}
-                src={"/assets/images/Ragini.png"}
-              />
-            </Col>
-            <Col span={22} className={styles.TextAreaColumn}>
+            <Col span={24} className={styles.TextAreaColumn}>
+              <div>
+                <Avatar
+                  className={styles.CommentAvatar}
+                  src={"/assets/images/Ragini.png"}
+                />
+              </div>
               <TextArea
                 placeholder=" add a comment.."
                 autoSize
@@ -200,8 +197,35 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
             />
             <Row className={styles.Row}>
               <FeedComment />
-              <FeedComment />
-              <FeedComment isConnect />
+              {viewAllComments ? (
+                <>
+                  <FeedComment />
+                  <FeedComment isConnect />
+                  <div
+                    style={{
+                      width: "100%",
+                      textAlign: "center",
+                      cursor: "pointer",
+                      textDecoration: "underline",
+                    }}
+                    onClick={handleAllComments}
+                  >
+                    view less comments
+                  </div>
+                </>
+              ) : (
+                <div
+                  style={{
+                    width: "100%",
+                    textAlign: "center",
+                    cursor: "pointer",
+                    textDecoration: "underline",
+                  }}
+                  onClick={handleAllComments}
+                >
+                  view all comments
+                </div>
+              )}
             </Row>
           </>
         ) : null}

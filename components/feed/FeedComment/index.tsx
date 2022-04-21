@@ -12,9 +12,14 @@ import TextArea from "antd/lib/input/TextArea";
 
 const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
   const [makeComment, setMakeComment] = useState(false);
+  const [viewAll, setViewAll] = useState(false);
 
   const handleComment = () => {
     setMakeComment(!makeComment);
+  };
+
+  const viewAllReplies = () => {
+    setViewAll(!viewAll);
   };
 
   const menu = () => {
@@ -90,8 +95,16 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
               </div>
               <div className={styles.SubText}>
                 {" "}
-                <FeatherIcon icon="corner-down-right" className={styles.MenuIcon}/>
-                <div onClick={handleComment}>reply</div>
+                {/* <pre>
+                  <FeatherIcon
+                    icon="corner-down-right"
+                    className={styles.MenuIcon}
+                  />
+                </pre> */}
+                <pre>like |</pre>
+                <pre onClick={handleComment}> reply |</pre>
+                <pre onClick={viewAllReplies}> view all replies</pre>
+                <pre> . 3 replies</pre>
               </div>
             </div>
           </Col>
@@ -124,13 +137,13 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
               <Col span={2}></Col>
               <Col span={22}>
                 <Row className={styles.TextAreaRow}>
-                  <Col span={2}>
-                    <Avatar
-                      className={styles.Avatar}
-                      src={"/assets/images/Ragini.png"}
-                    />
-                  </Col>
-                  <Col span={22} className={styles.TextAreaColumn}>
+                  <Col span={24} className={styles.TextAreaColumn}>
+                    <div>
+                      <Avatar
+                        className={styles.CommentAvatar}
+                        src={"/assets/images/Ragini.png"}
+                      />
+                    </div>
                     <TextArea
                       placeholder=" add a comment.."
                       autoSize
@@ -142,6 +155,7 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
             </Row>
           </>
         ) : null}
+
         <Row>
           <Col span={2} className={styles.DividerCol}>
             {/* <Divider
@@ -155,8 +169,12 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
           </Col>
           <Col span={22}>
             <FeedReply />
-            <FeedReply isConnect />
-            <FeedReply />
+            {viewAll ? (
+              <>
+                <FeedReply isConnect />
+                <FeedReply />
+              </>
+            ) : null}
           </Col>
         </Row>
       </div>

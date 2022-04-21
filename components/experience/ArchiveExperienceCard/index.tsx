@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Row, Typography } from "antd";
 import React from "react";
-import ButtonComponent from "../../common/Button/ButtonExperiences";
+import ButtonExperiences from "../../common/Button/ButtonExperiences";
 import styles from "./ArchiveExperienceCard.module.css";
 const { Text } = Typography;
 
@@ -10,7 +10,7 @@ const ArchiveExperienceCard = () => {
     <>
       <div className={styles.Container}>
         <Row className={styles.Background}>
-          <ButtonComponent Name="label" />
+          <ButtonExperiences Name="label" />
           <img
             src="/assets/images/exp2.png"
             alt="alt"
@@ -19,7 +19,7 @@ const ArchiveExperienceCard = () => {
           />
         </Row>
         <Row>
-          <ButtonComponent Name="Masterclass"/>
+          <ButtonExperiences Name="Masterclass"/>
         </Row>
       </div>
     </>

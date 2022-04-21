@@ -59,7 +59,7 @@ const ButtonExperiences = ({ Name = "", infoPage = false, buttonName =""}) => {
           <Col span={12} className={styles.BookedCol}>
             <button className={styles.BookButton}>
               {" "}
-              <img src="/assets/images/spotify.png" alt="spotify icon" className={styles.BookIcon} />
+              <img src="/assets/images/spotify.svg" alt="spotify icon" className={styles.BookIcon} />
               listen
             </button>
           </Col>

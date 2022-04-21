@@ -79,6 +79,17 @@ const FeedReply = ({ isConnect = false, isLoggedIn = false }) => {
                   her as she is in the field for sometime now!
                 </SeeMore>
               </div>
+              <div className={styles.SubText}>
+                {" "}
+                {/* <pre>
+                  <FeatherIcon
+                    icon="corner-down-right"
+                    className={styles.MenuIcon}
+                  />
+                </pre> */}
+                <pre>like  |</pre>
+                <pre>  reply</pre>
+              </div>
             </div>
           </Col>
           <Col span={6} className={styles.ThirdCol}>

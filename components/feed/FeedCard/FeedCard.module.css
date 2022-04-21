@@ -74,14 +74,16 @@
 .TextAreaColumn {
   /* background-color: #313131; */
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   padding: 0rem 1rem;
 }
 
 .TextArea {
+  width: 100%;
   border-radius: 20px;
   padding: 0.5rem 1rem;
+  margin: 0rem 1rem;
 }
 
 .DetailWrapper {
@@ -228,7 +230,7 @@
     height: 3rem;
   }
   .Avatar {
-    height: 9em;
+    height: 9rem;
     width: 9rem;
   }
   .CommentAvatar {

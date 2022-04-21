@@ -20,6 +20,15 @@
   padding: 1rem 0rem;
 }
 
+.SubText {
+  font-size: 12px;
+  margin: 0.5rem 0rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
 .Row {
   background-color: #f2f2f2;
   margin-bottom: 2rem;
