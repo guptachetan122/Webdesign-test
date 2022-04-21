@@ -18,13 +18,13 @@
 }
 
 .LearnText {
-  font-size: 22px;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #313131;
 }
 
 .LearnBookingLink {
-  font-size: 20px;
+  font-size: 1.8rem;
   color: #0500ff;
   text-decoration: underline;
 }
@@ -90,11 +90,11 @@
 
 @media screen and (min-width: 2500px) {
   .LearnText {
-    font-size: 32px;
+    font-size: 2.2rem;
   }
 
   .LearnBookingLink {
-    font-size: 30px;
+    font-size: 2.2rem;
   }
   .CourseImage {
     width: 125px;
@@ -114,10 +114,10 @@
 
 @media screen and (max-width: 1600px) {
   .LearnText {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   .LearnBookingLink {
-    font-size: 15px;
+    font-size: 1.6rem;
   }
   .CourseImage {
     width: 75px;
@@ -134,3 +134,14 @@
     font-size: 15px;
   }
 }
+
+
+@media screen and (max-width: 1600px) {
+  .LearnText {
+    font-size: 1.4rem;
+  }
+  .LearnBookingLink {
+    font-size: 1.4rem;
+  }
+}
+
