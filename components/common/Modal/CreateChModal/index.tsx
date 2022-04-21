@@ -54,21 +54,25 @@ const CreateChModal = () => {
 
         <br />
         <Radio.Group onChange={onChangeValue} defaultValue="1">
-          <Radio.Button value="1">public</Radio.Button>
-          <Radio.Button value="2">private</Radio.Button>
+          <Radio.Button className={styles.RadioButton} value="1">
+            public
+          </Radio.Button>
+          <Radio.Button className={styles.RadioButton} value="2">
+            private
+          </Radio.Button>
         </Radio.Group>
         <br />
-        <br />
+
         {value == 1 ? (
-          <Text className={styles.RadioText}>any member can join</Text>
+          <Text className={styles.Text}>any member can join</Text>
         ) : (
-          <Text className={styles.RadioText}>
+          <Text className={styles.Text}>
             only invited members or members approved by founder can join
           </Text>
         )}
         <br />
         <br />
-        <div className={styles.Button}>
+        <div>
           <button className={styles.BackButton} onClick={handleCancel}>
             add members (you have to add min 3)
           </button>

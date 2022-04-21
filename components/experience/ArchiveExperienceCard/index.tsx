@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Row, Typography } from "antd";
 import React from "react";
-import ButtonComponent from "../../common/ButtonComponent";
+import ButtonComponent from "../../common/Button/ButtonExperiences";
 import styles from "./ArchiveExperienceCard.module.css";
 const { Text } = Typography;
 

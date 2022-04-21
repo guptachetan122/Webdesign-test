@@ -1,0 +1,33 @@
+.PostText {
+  font-size: 1.6rem;
+  color: #313131;
+}
+
+.ReadMore {
+  color: #313131;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 2500px) {
+  .PostText {
+    font-size: 2rem;
+  }
+  
+  /* .Avatar {
+    max-height: 120px;
+    max-width: 120px;
+  } */
+}
+
+@media screen and (max-width: 1600px) {
+  .PostText {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .PostText {
+    font-size: 1.2rem;
+  }
+}

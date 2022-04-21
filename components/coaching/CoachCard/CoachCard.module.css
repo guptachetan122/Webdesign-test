@@ -15,44 +15,42 @@
   transform: translate3d(0px, -5px, 5px);
 }
 
-.AvatarCol {
-  margin-right: 1rem;
-}
-
 .Avatar {
-  height: fit-content;
-  width: fit-content;
+  height: 10rem;
+  width: 10rem;
 }
 
-.MiddleCol {
+.MiddleColumn {
   padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .Row {
-  margin-bottom: 0.5rem;
+  margin: 0rem 2rem;
 }
 
 .Name {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .Description {
-  font-size: 20px;
-  font-weight: lighter;
+  font-size: 1.8rem;
 }
 
 /* Coach Card Icon Row starts */
 
 .IconRow {
-  margin-top: 1.5rem;
+  margin: 0rem 2rem;
 }
 
 .Button {
   background: none;
   border: none;
   padding: 0;
-  font-size: 20px;
+  font-size: 1.6rem;
   margin-right: 1.5rem;
   display: flex;
   justify-content: center;
@@ -60,8 +58,8 @@
 }
 
 .Icon {
-  width: 20px;
-  height: 20px;
+  width: 1.6rem;
+  height: 1.6rem;
   margin-right: 1rem;
   color: #616161;
 }
@@ -70,39 +68,70 @@
 
 @media screen and (min-width: 2500px) {
   .Name {
-    font-size: 30px;
+    font-size: 2.4rem;
   }
 
   .Description {
-    font-size: 26px;
+    font-size: 2.2rem;
   }
 
   .Icon {
-    width: 28px;
-    height: 28px;
+    width: 2rem;
+    height: 2rem;
     margin-right: 1rem;
   }
 
   .Button {
-    font-size: 28px;
+    font-size: 2rem;
+  }
+  .Avatar {
+    height: 11rem;
+    width: 11rem;
   }
 }
 
-@media screen and (max-width:1600px) {
+@media screen and (max-width: 1600px) {
   .Name {
-    font-size: 15px;
+    font-size: 1.8rem;
   }
 
   .Description {
-    font-size: 13px;
+    font-size: 1.6rem;
   }
 
   .Icon {
-    width: 14px;
-    height: 14px;
+    width: 1.4rem;
+    height: 1.4rem;
   }
 
   .Button {
-    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  .Avatar {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Name {
+    font-size: 1.6rem;
+  }
+
+  .Description {
+    font-size: 1.4rem;
+  }
+
+  .Icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .Button {
+    font-size: 1.2rem;
+  }
+  .Avatar {
+    height: 8rem;
+    width: 8rem;
   }
 }

@@ -1,0 +1,51 @@
+.Container {
+  background-color: #fafafa;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin: 1rem 0rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Input {
+  width: 100%;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0rem;
+  cursor: pointer;
+  background: none;
+  /* border: 1px solid #616161; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.InputIcon {
+  width: 25px;
+  height: 25px;
+  margin-right: 1rem;
+  color: #c2c2c2;
+}
+
+.InputTabWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.InputTab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #313131;
+  font-size: 14px;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.InputTabIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+  color: #616161;
+}

@@ -5,9 +5,12 @@
 
 .ButtonWrap {
   cursor: pointer;
-  background: none;
+  /* background: none; */
+  background: radial-gradient(100% 1267.36% at 0% 50%, #F42B4D 0%, #FA541A 100%);
+  border: none;
+  color: #FAFAFA;
   padding: 1rem 3rem;
-  border-radius: 20px;
+  border-radius: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +70,7 @@
 
 .IconText {
   font-size: 26px;
-  color: #333333;
+  color: #FAFAFA;
 }
 
 .IconStyle {
@@ -103,7 +106,6 @@
 
   .IconText {
     font-size: 30px;
-    color: #333333;
   }
 
   .IconStyle {
@@ -137,7 +139,6 @@
   }
   .IconText {
     font-size: 15px;
-    color: #333333;
   }
 
   .IconStyle {

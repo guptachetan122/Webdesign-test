@@ -3,7 +3,7 @@ import React from "react";
 import Sidebar from "../../../ui/Sidebar";
 import styles from "../../../styles/Learn.module.css";
 import CoachDetail from "../../../components/coaching/CoachDetail";
-import BackDiv from "../../../components/common/BackDiv";
+import BackHeader from "../../../components/common/BackHeader";
 
 const CoachDetailPage = () => {
   return (
@@ -17,7 +17,7 @@ const CoachDetailPage = () => {
           <Row>
             <Col span={4}></Col>
             <Col span={16}>
-              <BackDiv />
+              <BackHeader />
               <CoachDetail />
             </Col>
             <Col span={2}></Col>

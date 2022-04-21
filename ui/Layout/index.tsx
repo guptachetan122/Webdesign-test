@@ -1,6 +1,6 @@
 import React, { ReactChildren, ReactChild } from "react";
 import Header from "../Header";
-import { Row, Col, BackTop, Layout } from "antd";
+import { BackTop } from "antd";
 import styles from "./Layout.module.css";
 import { useRouter } from "next/router";
 import { ArrowUpOutlined } from "@ant-design/icons";

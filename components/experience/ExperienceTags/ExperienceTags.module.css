@@ -1,0 +1,46 @@
+.Tag {
+  background: none;
+  border: 1px solid #616161;
+  color: #616161;
+  border-radius: 5px;
+  margin-right:1rem;
+  margin-top:0.75rem;
+  padding: 0rem 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.TagActive {
+  background: none;
+  color: #313131;
+  border: 2px solid #313131;
+  border-radius: 5px;
+  margin-right: 0.75rem;
+  margin-top:0.75rem;
+  padding: 0rem 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.TagsWrapper {
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .Tag , .TagActive{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Tag , .TagActive{
+    font-size: 1.4rem
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .Tag , .TagActive{
+    font-size: 2rem;
+  }
+}

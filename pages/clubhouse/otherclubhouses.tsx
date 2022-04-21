@@ -3,9 +3,9 @@ import { Col, Input, Row } from 'antd';
 import React, { useState } from 'react'
 import ClubhouseCard from '../../components/clubhouse/ClubhouseCard';
 import Sidebar from '../../ui/Sidebar';
-import styles from "../../styles/ClubHouse.module.css";
+import styles from "../../styles/Clubhouse.module.css";
 import { Tag } from "antd";
-import SearchTagComponent from '../../components/common/Tags/ChTags';
+import ClubhouseTags from '../../components/clubhouse/ClubhouseTags';
 const { CheckableTag } = Tag;
 
 const Otherclubhouses = () => {
@@ -22,7 +22,7 @@ const Otherclubhouses = () => {
           <Row>
             <Col span={2}></Col>
             <Col span={20}>
-              <SearchTagComponent />
+              <ClubhouseTags />
               <Input
                 className={styles.ChInput}
                 prefix={<SearchOutlined className={styles.ChIcon} />}

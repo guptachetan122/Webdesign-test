@@ -6,7 +6,7 @@ import React from "react";
 import ExperienceInfo from "../../../components/experience/ExperienceInfo";
 import Sidebar from "../../../ui/Sidebar";
 import styles from "../../../styles/Experience.module.css";
-import BackDiv from "../../../components/common/BackDiv";
+import BackHeader from "../../../components/common/BackHeader";
 
 const ExperienceDetails = () => {
     const Router = useRouter();
@@ -23,7 +23,7 @@ const ExperienceDetails = () => {
           <Row>
             <Col span={4}></Col>
             <Col span={15}>
-              <BackDiv />
+              <BackHeader />
               <div>
                 <ExperienceInfo isBooked/>
               </div>

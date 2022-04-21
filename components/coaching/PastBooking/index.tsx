@@ -1,9 +1,10 @@
 import { Avatar, Typography, Row, Col} from "antd";
 import React from "react";
 import styles from "./PastBooking.module.css";
-import ButtonLight from "../../common/ButtonComponent/ButtonLight";
-import ButtonDark from "../../common/ButtonComponent/ButtonDark";
+import ButtonLight from "../../common/Button/ButtonLight";
+import ButtonDark from "../../common/Button/ButtonDark";
 import Link from "next/link";
+
 const { Text } = Typography;
 
 const PastBooking = () => {
@@ -11,27 +12,27 @@ const PastBooking = () => {
     <>
       <div className={styles.Container}>
         <Row>
-          <Col span={4} className={styles.AvatarCol}>
-            {" "}
-            <Avatar
-              className={styles.Avatar}
-              src={"/assets/images/Ragini.png"}
-            />
-          </Col>
-          <Col span={14} className={styles.MiddleCol}>
-            <Row>
-              <Link href="/learn/id" passHref>
-                <Text className={styles.Name}>kavita neelakantan</Text>
-              </Link>
-            </Row>
-            <Row>
-              <Text className={styles.Description}>3 sessions</Text>
-            </Row>
+          <Col span={18} className={styles.MiddleCol}>
+            <div>
+              <Avatar
+                className={styles.Avatar}
+                src={"/assets/images/Ragini.png"}
+              />
+            </div>
+            <div>
+              {" "}
+              <div className={styles.NameRow}>
+                <Link href="/learn/id" passHref>
+                  <div className={styles.Name}>kavita neelakantan</div>
+                </Link>
+              </div>
+              <div className={styles.NameRow}>
+                <div className={styles.Description}>3 sessions</div>
+              </div>
+            </div>
           </Col>
           <Col span={5} className={styles.FeeCol}>
-            <button className={styles.FeeButton}>
-              ₹15000
-            </button>
+            <button className={styles.FeeButton}>₹15000</button>
           </Col>
         </Row>
         <Row className={styles.MiddleRow}>

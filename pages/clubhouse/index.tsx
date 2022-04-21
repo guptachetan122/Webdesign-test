@@ -6,7 +6,7 @@ import React from "react";
 import ClubhouseCard from "../../components/clubhouse/ClubhouseCard";
 import ClubhouseModal from "../../components/common/Modal/ClubhouseModal";
 import Sidebar from "../../ui/Sidebar";
-import styles from "../../styles/ClubHouse.module.css";
+import styles from "../../styles/Clubhouse.module.css";
 import { UserGroupIcon as ChInactive } from "@heroicons/react/outline";
 import CreateChModal from "../../components/common/Modal/CreateChModal";
 

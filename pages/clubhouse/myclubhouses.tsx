@@ -5,7 +5,7 @@ import ClubhouseCard from "../../components/clubhouse/ClubhouseCard";
 import ClubhouseModal from "../../components/common/Modal/ClubhouseModal";
 import CreateChModal from "../../components/common/Modal/CreateChModal";
 import Sidebar from "../../ui/Sidebar";
-import styles from "../../styles/ClubHouse.module.css";
+import styles from "../../styles/Clubhouse.module.css";
 import { UserGroupIcon as ChInactive } from "@heroicons/react/outline";
 import Link from "next/link";
 

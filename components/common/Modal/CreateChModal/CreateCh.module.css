@@ -1,7 +1,7 @@
 .TriggerButton {
   background: none;
-  font-size: 18px;
-  border-width: 1px;
+  font-size: 1.6rem;
+  border-width: 2px;
   width: 100%;
   padding: 1rem 2rem;
   border-radius: 200px;
@@ -15,54 +15,66 @@
 }
 
 .Title {
-  font-size: 24px;
-  line-height: 25px;
-  font-weight: 800;
-  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.Text {
-  font-size: 16px;
+.Text, .RadioButton {
+  font-size: 1.6rem;
 }
+
 
 .Input {
-  margin-bottom: 16px;
-}
-
-.RadioText {
-  font-size: 16px;
-}
-
-.Button {
-  height: 4rem;
-  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .BackButton {
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
   color: #fafafa;
   cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 0.5rem 0rem;
   width: 100%;
-  height: 100%;
   border-radius: 200px;
 }
 
 @media screen and (min-width: 2500px) {
   .TriggerButton {
-    font-size: 30px;
+    font-size: 2rem;
+  }
+  .Title {
+    font-size: 2.4rem;
+  }
+
+  .Text, .RadioButton,.BackButton {
+    font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .TriggerButton {
-    font-size: 15px;
+    font-size: 1.4rem;
+  }
+  .Title {
+    font-size: 1.8rem;
+  }
+
+  .Text, .RadioButton,.BackButton {
+    font-size: 1.4rem;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1280px) {
   .TriggerButton {
-    font-size: 13px;
+    font-size: 1.2rem;
+  }
+  .Title {
+    font-size: 1.6rem;
+  }
+
+  .Text, .RadioButton,.BackButton {
+    font-size: 1.2rem;
   }
 }

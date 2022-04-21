@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Button, Form, Input } from "antd";
-import { Typography, Space } from "antd";
+import { Formik } from "formik";
+import { Typography, Space, Button as LoginButton, Form, Input} from "antd";
 import styles from "./Login.module.css";
+import { loginSchema } from "../../../schema";
 import Link from "next/link";
 import {
   UserOutlined,
@@ -9,9 +10,11 @@ import {
   EyeOutlined,
   EyeInvisibleOutlined,
 } from "@ant-design/icons";
-import useForm, { useAppDispatch , useAppSelector} from "../../../app/hooks";
+import useForm, { useAppDispatch, useAppSelector } from "../../../app/hooks";
 import { setCredentials } from "./LoginSlice";
 import Router, { useRouter } from "next/router";
+import ButtonLight from "../../common/Button/ButtonLight";
+
 
 const { Text } = Typography;
 
@@ -49,11 +52,13 @@ const LoginForm = () => {
     console.log("Failed:", errorInfo);
   };
 
-  function isAuth(){
-    if (userdata.email == 'team@leap.club' && userdata.password == 'team@leap') {
+  function isAuth() {
+    if (
+      userdata.email == "team@leap.club" &&
+      userdata.password == "team@leap"
+    ) {
       return true;
-    }
-    else {
+    } else {
       return false;
     }
   }
@@ -64,9 +69,20 @@ const LoginForm = () => {
     };
     dispatch(setCredentials(user));
     if (isAuth()) {
-      router.push('/feed');
+      router.push("/feed");
+    } else {
     }
-    else {
+  };
+
+  const handleLogin = (values: any) => {
+    const user = {
+      email: values.email.toLowerCase().trim(),
+      password: values.password.trim(),
+    };
+    dispatch(setCredentials(user));
+    if (isAuth()) {
+      router.push("/feed");
+    } else {
     }
   };
 
@@ -126,16 +142,17 @@ const LoginForm = () => {
           </Link>
         </div>
         <Form.Item className={styles.ButtonWrapper}>
-          <Button
+          <LoginButton
             type="primary"
             htmlType="submit"
             id={styles.Button}
             loading={loading}
           >
             login
-          </Button>
+          </LoginButton>
         </Form.Item>
       </Form>
+
       <Text className={styles.JoinLink}>
         not a member?
         <a onClick={LeapWebsite} target="_blank">
@@ -145,7 +162,7 @@ const LoginForm = () => {
 
       <div className={styles.BottomTextWrapper}>
         <Text className={styles.BottomText}>
-          by logging in you agree to our
+          by logging in you agree to our{" "}
           <Text onClick={Policy} className={styles.BottomLink}>
             <a target="_blank">community guidelines</a>
           </Text>
@@ -153,9 +170,9 @@ const LoginForm = () => {
           <Text onClick={TermsOfUSe} className={styles.BottomLink}>
             <a target="_blank">terms of use</a>
           </Text>
-          , if you do do not agree, please write to us on
+          , if you do do not agree, please write to us on{" "}
           <Text onClick={EmailSupport} className={styles.BottomLink}>
-            <a target="_blank"> members@leap.club</a>
+            <a target="_blank">members@leap.club</a>
           </Text>
         </Text>
       </div>

@@ -1,18 +1,21 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
 import { setupListeners } from '@reduxjs/toolkit/query';
 import loginReducer from '../components/auth/LoginForm/LoginSlice'
-import { postsApi } from '../components/feed/Posts/PostsApi'
+import { baseApi } from './baseAPI';
 
 export function makeStore() {
-	return configureStore({
+  return configureStore({
     reducer: {
+      [baseApi.reducerPath]: baseApi.reducer,
       loginSlice: loginReducer,
-      [postsApi.reducerPath]: postsApi.reducer,
     },
     middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware().concat(postsApi.middleware),
+      getDefaultMiddleware({ serializableCheck: false }).concat(
+        baseApi.middleware
+      ),
   });
 }
+
 const store = makeStore()
 
 setupListeners(store.dispatch);

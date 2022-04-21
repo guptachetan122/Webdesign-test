@@ -41,7 +41,6 @@
 
 .ForgotLink:hover{
 	color: #0500FF;
-	font-size: 1.4rem;
 	text-decoration: done;
 }
 
@@ -64,7 +63,6 @@
 	border-radius: 10rem;
 	font-weight: 600;
 	font-size: 1.8rem;
-	line-height: 2rem;
 	text-align: center;
 	height: 100%;
 	color: #ffffff;
@@ -98,8 +96,7 @@
 }
 
 .BottomText {
-	font-size: 1.2rem;
-	line-height: 20px;
+	font-size: 1.4rem;
 	text-align: center;
 }
 
@@ -123,15 +120,10 @@
     .InputLabel label {
 		font-size:2rem;
 	}
-	
 	.Input {
 		font-size: 2rem;
 	}
-	#ButtonPrimary{
-		font-size: 2.5rem;
-		line-height: 2.8rem;
-	}
-	.BottomText{
-		line-height: 1.4rem;
+	#Button{
+		font-size: 2rem;
 	}
 }

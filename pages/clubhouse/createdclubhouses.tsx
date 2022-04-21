@@ -2,7 +2,7 @@ import { Col, Row, Typography } from "antd";
 import React from "react";
 import ClubhouseCard from "../../components/clubhouse/ClubhouseCard";
 import Sidebar from "../../ui/Sidebar";
-import styles from "../../styles/ClubHouse.module.css";
+import styles from "../../styles/Clubhouse.module.css";
 
 const { Text } = Typography;
 const Starred = () => {

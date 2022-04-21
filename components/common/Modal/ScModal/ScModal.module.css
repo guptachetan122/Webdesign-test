@@ -5,19 +5,24 @@
 
 .Button {
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  border: none;
   padding: 1rem 2rem;
   color: #fafafa;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.6rem;
   border-radius: 200px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
 }
+
 .Icon {
-  width: 24px;
-  height: 24px;
+  width: 1.6rem;
+  height: 1.6rem;
+  /* margin-left: 1rem; */
 }
 
 .SendButtonWrapper {
@@ -39,31 +44,30 @@
 
 @media screen and (min-width: 2500px) {
   .Button {
-    font-size: 28px;
+    font-size: 2rem;
   }
   .Icon {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .Button {
-    padding: 1rem 1.5rem;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .Icon {
-    width: 18px;
-    height: 18px;
+    width: 1.4rem;
+    height: 1.4rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .Button {
-    font-size: 10px;
+    font-size: 1.2rem;
   }
   .Icon {
-    width: 14px;
-    height: 14px;
+    width: 1.2rem;
+    height: 1.2rem;
   }
 }

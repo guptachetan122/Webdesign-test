@@ -6,12 +6,12 @@
 }
 
 .Title {
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .SubTitle {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
@@ -21,11 +21,11 @@
 
 @media screen and (min-width: 2500px) {
   .Title {
-    font-size: 32px;
+    font-size: 2.4rem;
   }
 
   .SubTitle {
-    font-size: 28px;
+    font-size: 2.2rem;
   }
   .Icon {
     font-size: 35px;
@@ -34,14 +34,29 @@
 
 @media screen and (max-width: 1600px) {
   .Title {
-    font-size: 16px;
+    font-size: 1.8rem;
   }
 
   .SubTitle {
-    font-size: 13px;
+    font-size: 1.6rem;
   }
 
   .Icon {
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .Title {
+    font-size: 1.6rem;
+  }
+
+  .SubTitle {
+    font-size: 1.4rem;
+  }
+
+  .Icon {
+    font-size: 20px;
+  }
+}
+

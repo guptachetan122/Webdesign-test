@@ -7,11 +7,11 @@ import {
   Col,
   Divider
 } from "antd";
-import ButtonCoach from "../../common/ButtonComponent/ButtonCoach";
-import ButtonDark from "../../common/ButtonComponent/ButtonDark";
-import ButtonLight from "../../common/ButtonComponent/ButtonLight";
+import CoachPackages from "../CoachPackages";
+import ButtonDark from "../../common/Button/ButtonDark";
+import ButtonLight from "../../common/Button/ButtonLight";
 import styles from "./CoachDetail.module.css";
-import { Packages } from "../../../constants/constants";
+import { Packages } from "../../../constants";
 
 const { Text } = Typography;
 
@@ -21,38 +21,40 @@ const CoachDetail = () => {
     <>
       <div className={styles.Container}>
         <Row className={styles.Row}>
-          <Col span={6} className={styles.AvatarCol}>
-            {" "}
-            <Avatar
-              className={styles.Avatar}
-              src={"/assets/images/Ragini.png"}
-            />
-          </Col>
-          <Col span={16} className={styles.DetailCol}>
-            <Row className={styles.DetailRow}>
-              <Text className={styles.Name}>kavita neelakantan</Text>
-            </Row>
-            <Row className={styles.DetailRow}>
-              <Text className={styles.Description}>
-                executive coach | women’s leadership and growth
-              </Text>
-            </Row>
-            <Row className={styles.DetailRow}>
-              <LinkedinFilled className={styles.Icon} />
-            </Row>
+          <Col className={styles.DetailColumn}>
+            <div>
+              <Avatar
+                className={styles.Avatar}
+                src={"/assets/images/Ragini.png"}
+              />
+            </div>
+            <div>
+              {" "}
+              <div className={styles.DetailRow}>
+                <div className={styles.Name}>kavita neelakantan</div>
+              </div>
+              <div className={styles.DetailRow}>
+                <div className={styles.Description}>
+                  executive coach | women’s leadership and growth
+                </div>
+              </div>
+              <div className={styles.DetailRow}>
+                <LinkedinFilled className={styles.Icon} />
+              </div>
+            </div>
           </Col>
         </Row>
         <Row className={styles.Row}>
           <Row>
-            <Text className={styles.Title}>about coach</Text>
+            <div className={styles.Title}>about coach</div>
           </Row>
           <Row>
-            <Text className={styles.Description}>
+            <div className={styles.SubTitle}>
               lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry standard pecimen book.
               It has survived not only five centuries, but also the leap into
               electronic
-            </Text>
+            </div>
           </Row>
         </Row>
         <Row className={styles.Row}>
@@ -60,7 +62,6 @@ const CoachDetail = () => {
         </Row>
         <Row className={styles.Row}>
           <button className={styles.TagButton}>pivot in my career</button>
-
           <button className={styles.TagButton}>build exec presence</button>
         </Row>
         <Row className={styles.BookRow}>
@@ -70,19 +71,9 @@ const CoachDetail = () => {
           <ButtonLight name="book a free chemistry session" />
         </Row>
         <Divider style={{ borderWidth: 2, borderColor: "#919191" }}>or</Divider>{" "}
-        {/* {Packages?.map((item) => (
-          <div key={item?._id} id={item?._id} onClick={clicked}>
-            <ButtonCoach
-              num={item?.sessionCount}
-              price={item?.cost}
-              isPopular={item?.popular}
-              isActive={val == item?._id || item?.popular ? true : false}
-            />
-          </div>
-        ))} */}
         <div>
           {" "}
-            <ButtonCoach PackageData={Packages} />
+          <CoachPackages PackageData={Packages} />
         </div>
         <Row className={styles.BottomRow}>
           <ButtonDark name="book session" />

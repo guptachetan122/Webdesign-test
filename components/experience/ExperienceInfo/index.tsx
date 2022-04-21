@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Col, Row, Typography } from "antd";
 import React from "react";
-import ButtonComponent from "../../common/ButtonComponent";
+import ButtonExperiences from "../../common/Button/ButtonExperiences";
 import styles from "./ExperienceInfo.module.css";
 import {
   LocationMarkerIcon,
@@ -79,23 +79,23 @@ const ExperienceInfo = ({
           <Text className={styles.Name}>the pow(d)er room</Text>
         </Row>
         {isArchived ? (
-          <ButtonComponent Name="Masterclass" />
+          <ButtonExperiences Name="Masterclass" />
         ) : isBooked ? (
-          <ButtonComponent
+          <ButtonExperiences
             Name="Booked"
             infoPage
             buttonName="add to calendar"
           />
         ) : isPay ? (
-          <ButtonComponent
+          <ButtonExperiences
             Name="notBooked"
             infoPage
             buttonName="book slot and pay"
           />
         ) : (
-          <ButtonComponent Name="notBooked" infoPage buttonName="book slot" />
+          <ButtonExperiences Name="notBooked" infoPage buttonName="book slot" />
         )}
-
+        
         <Row className={styles.Body}>
           <div>
             <div className={styles.Description}>

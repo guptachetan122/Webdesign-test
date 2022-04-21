@@ -2,13 +2,13 @@ import { useRouter } from "next/router";
 import { Col, Row, Typography } from "antd";
 import React from "react";
 import Sidebar from "../../../ui/Sidebar";
-import styles from "../../../styles/ClubHouse.module.css";
-import ClubhouseCardInfo from "../../../components/clubhouse/ClubhouseCardInfo";
-import BackDiv from "../../../components/common/BackDiv";
+import styles from "../../../styles/Clubhouse.module.css";
+import ClubhouseDetail from "../../../components/clubhouse/ClubhouseDetail";
+import BackHeader from "../../../components/common/BackHeader";
 
 const { Text } = Typography;
 
-const ClubhouseInfo = () => {
+const ClubhouseDetailPage = () => {
   const Router = useRouter();
   const { chid } = Router.query;
   return (
@@ -21,8 +21,8 @@ const ClubhouseInfo = () => {
           <Row>
             <Col span={2}></Col>
             <Col span={20}>
-              <BackDiv />
-              <ClubhouseCardInfo isJoined/>
+              <BackHeader />
+              <ClubhouseDetail isJoined/>
             </Col>
             <Col span={2}></Col>
           </Row>
@@ -33,4 +33,4 @@ const ClubhouseInfo = () => {
   );
 };
 
-export default ClubhouseInfo;
+export default ClubhouseDetailPage;

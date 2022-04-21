@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import { Row, Col, Badge, Typography, Avatar } from "antd";
+import { Row, Col, Badge, Typography, Avatar, Menu, Dropdown } from "antd";
 import Image from "next/image";
 import styles from "./Header.module.css";
 import Link from "next/link";
 import { useAppDispatch } from "../../app/hooks";
 import { useRouter } from "next/router";
-import Subheader2 from "../Subheader2";
+import Subheader from "../Subheader";
 import {
   clubhouseNavbar,
   coachingNavbar,
@@ -14,8 +14,7 @@ import {
   messageNavbar,
   myNetworkNavbar,
   superconnectionNavbar,
-} from "../../constants/constants";
-import HeadRoom from "react-headroom";
+} from "../../constants";
 import ProfileDrawer from "../Drawer";
 import { Sticky, StickyProvider } from "react-stickup";
 
@@ -26,7 +25,16 @@ const Header = () => {
   const Router = useRouter();
   const PATH = Router.pathname.split("/")[1];
   const PATH2 = Router.pathname.split("/")[2];
-  console.log(PATH2);
+  const n = [1, 2, 3, 4, 5, 6];
+  const menu = () => {
+    return (
+      <Menu className={styles.MenuWrapper}>
+        {n.map((i) => (
+          <Menu.Item key={i} className={styles.Menu}></Menu.Item>
+        ))}
+      </Menu>
+    );
+  };
 
   return (
     <>
@@ -64,11 +72,16 @@ const Header = () => {
           </Col>
           <Col className={styles.headerIconCol} span={8}>
             <Badge count={10} size="default" className={styles.headerBadge}>
-              <Avatar
-                src="/assets/images/bell.svg"
-                style={{ color: "black" }}
-                className={styles.headerAvatar}
-              />
+              <Dropdown
+                overlay={menu}
+                placement="bottomLeft"
+              >
+                <Avatar
+                  src="/assets/images/bell.svg"
+                  style={{ color: "black" }}
+                  className={styles.headerAvatar}
+                />
+              </Dropdown>
             </Badge>
             <Badge count={100} size="default" className={styles.headerBadge}>
               <Avatar
@@ -82,25 +95,25 @@ const Header = () => {
         <StickyProvider>
           <Sticky className={styles.subHeaderWrapper}>
             {PATH2 == "[expid]" ? (
-              <Subheader2 SubheaderData={[]} />
+              <Subheader SubheaderData={[]} />
             ) : PATH == "experiences" ? (
-              <Subheader2 SubheaderData={experiencesNavbar} />
+              <Subheader SubheaderData={experiencesNavbar} />
             ) : PATH2 == "[chid]" ? (
-              <Subheader2 SubheaderData={[]} />
+              <Subheader SubheaderData={[]} />
             ) : PATH == "clubhouse" ? (
-              <Subheader2 SubheaderData={clubhouseNavbar} />
+              <Subheader SubheaderData={clubhouseNavbar} />
             ) : PATH2 == "messages" ? (
-              <Subheader2 SubheaderData={messageNavbar} />
+              <Subheader SubheaderData={messageNavbar} />
             ) : PATH2 == "mynetwork" ? (
-              <Subheader2 SubheaderData={myNetworkNavbar} />
+              <Subheader SubheaderData={myNetworkNavbar} />
             ) : PATH == "superconnections" ? (
-              <Subheader2 SubheaderData={superconnectionNavbar} />
+              <Subheader SubheaderData={superconnectionNavbar} />
             ) : PATH2 == "[coachid]" ? (
-              <Subheader2 SubheaderData={[]} />
+              <Subheader SubheaderData={[]} />
             ) : PATH == "learn" ? (
-              <Subheader2 SubheaderData={coachingNavbar} />
+              <Subheader SubheaderData={coachingNavbar} />
             ) : PATH == "feed" || PATH == "" ? (
-              <Subheader2 SubheaderData={feedNavbar} />
+              <Subheader SubheaderData={feedNavbar} />
             ) : null}
           </Sticky>
         </StickyProvider>

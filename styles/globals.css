@@ -47,67 +47,71 @@ input[type="password"] {
 
 :root textarea {
   font-size: 1.4rem;
+  line-height: 1.6rem;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 1600px) {
   input[type="text"] {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
   }
 
   input[type="password"] {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
   }
   :root textarea {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  :root {
-    font-size: 70%;
-  }
   input[type="text"] {
     font-size: 1.6rem;
+    line-height: 1.8rem;
   }
 
   input[type="password"] {
     font-size: 1.6rem;
-  }
+    line-height: 1.8rem;
 
+  }
   :root textarea {
     font-size: 1.6rem;
+    line-height: 1.8rem;
+
   }
 }
 
 @media screen and (min-width: 2500px) {
-  :root {
-    font-size: 95%;
-  }
   input[type="text"] {
     font-size: 1.8rem;
-    padding: 0.5rem 0.5rem;
+    line-height: 2rem;
   }
 
   input[type="password"] {
     font-size: 1.8rem;
+    line-height: 2rem;
   }
   :root textarea {
     font-size: 1.8rem;
+    line-height: 2rem;
   }
 }
 
 @media screen and (min-width: 3600px) {
-  :root {
-    font-size: 120%;
-  }
   Input[type="text"] {
     font-size: 2rem;
+    line-height: 2.2rem;
   }
 
   input[type="password"] {
     font-size: 2rem;
+    line-height: 2.2rem;
   }
   :root textarea {
     font-size: 2rem;
+    line-height: 2.2rem;
   }
 }

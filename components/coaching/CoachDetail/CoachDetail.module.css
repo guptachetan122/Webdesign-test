@@ -9,20 +9,15 @@
   cursor: pointer;
 }
 
-.AvatarCol {
-  margin-right: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .Avatar {
-  height: fit-content;
-  width: fit-content;
+  height: 10rem;
+  width: 10rem;
 }
 
-.DetailCol {
-  padding: 0rem 2rem;
+.DetailColumn {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .Row {
@@ -35,21 +30,20 @@
 }
 
 .DetailRow {
-  margin-bottom: 0.25rem;
+  padding: 0rem 2rem;
 }
 
 .Name {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .Description {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 1.8rem;
 }
 
 .Icon {
-  font-size: 24px;
+  font-size: 1.8rem;
   margin-right: 1rem;
   color: #0b86ca;
 }
@@ -57,7 +51,12 @@
 .Title {
   color: #313131;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.SubTitle {
+  color: #313131;
+  font-size: 1.6rem;
 }
 
 .BottomRow {
@@ -68,13 +67,13 @@
 }
 
 .BottomText {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #616161;
 }
 
 .TagButton {
   background: none;
-  font-size: 18px;
+  font-size: 1.6rem;
   margin: 0.5rem 0rem;
   margin-right: 1rem;
   padding: 0.5rem 2rem;
@@ -86,53 +85,100 @@
 
 @media screen and (min-width: 2500px) {
   .Name {
-    font-size: 30px;
+    font-size: 2.4rem;
   }
 
   .Description {
-    font-size: 26px;
+    font-size: 2.2rem;
   }
 
   .Title {
-    font-size: 26px;
+    font-size: 2.2rem;
+  }
+
+  .SubTitle {
+    font-size: 2rem;
   }
 
   .Icon {
-    width: 28px;
-    height: 28px;
-    margin-right: 1rem;
+    font-size: 2.2rem;
   }
 
   .TagButton {
-    font-size: 28px;
+    font-size: 2rem;
   }
   .BottomText {
-    font-size: 22px;
+    font-size: 1.6rem;
+  }
+
+  .Avatar {
+    height: 11rem;
+    width: 11rem;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .Name {
-    font-size: 15px;
+    font-size: 1.8rem;
   }
 
   .Description {
-    font-size: 13px;
+    font-size: 1.6rem;
   }
 
   .Title {
-    font-size: 13px;
+    font-size: 1.6rem;
+  }
+
+  .SubTitle {
+    font-size: 1.4rem;
   }
 
   .Icon {
-    width: 14px;
-    height: 14px;
+    font-size: 1.6rem;
   }
 
   .TagButton {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .BottomText {
-    font-size: 11px;
+    font-size: 1rem;
+  }
+  .Avatar {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Name {
+    font-size: 1.6rem;
+  }
+
+  .Description {
+    font-size: 1.4rem;
+  }
+
+  .Title {
+    font-size: 1.4rem;
+  }
+
+  .SubTitle {
+    font-size: 1.2rem;
+  }
+
+  .Icon {
+    font-size: 1.4rem;
+  }
+
+  .TagButton {
+    font-size: 1.2rem;
+  }
+  .BottomText {
+    font-size: 0.8rem;
+  }
+  .Avatar {
+    height: 8rem;
+    width: 8rem;
   }
 }

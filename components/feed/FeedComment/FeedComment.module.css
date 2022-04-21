@@ -1,0 +1,208 @@
+.Container {
+  background-color: #fafafa;
+  width: 100%;
+  border: none;
+}
+
+.MiddleColumn {
+  padding: 0rem 1.5rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.TextWrapper {
+  padding: 1rem 0rem;
+}
+
+.Row {
+  background-color: #f2f2f2;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  padding: 1rem 1rem;
+  border: 1px solid #313131;
+}
+
+.Avatar {
+  height: 6rem;
+  width: 6rem;
+}
+
+.DetailWrapper {
+  padding: 0rem 1rem;
+}
+.Name {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.Description {
+  font-size: 1.2rem;
+}
+
+.SubText {
+  font-size: 12px;
+  margin: 0.5rem 0rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.CommentAvatar {
+  height: 6rem;
+  width: 6rem;
+}
+
+.TextAreaRow {
+  /* background-color: #313131; */
+  padding-bottom: 1rem;
+  margin: 1rem 0rem;
+}
+
+.TextAreaColumn {
+  /* background-color: #313131; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+.TextArea {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.ThirdCol {
+  display: flex;
+  justify-content: right;
+}
+
+.ButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* .ButtonCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+} */
+
+.DropdownWrapper {
+  color: #616161;
+  display: flex;
+  justify-content: right;
+}
+
+.Menu {
+  padding: 1.5rem 4rem;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.MenuWrap {
+  padding: 0%;
+  border-radius: 10px;
+}
+
+.MenuIcon {
+  margin-right: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  color: #616161;
+  /* background-color: aquamarine; */
+}
+
+.DropdownIcon {
+  width: 4rem;
+  height: 4rem;
+  color: #616161;
+  cursor: pointer;
+  /* background-color: rgb(15, 140, 249); */
+}
+
+@media screen and (min-width: 2500px) {
+  .Name {
+    font-size: 2rem;
+  }
+
+  .Description,
+  .SubText {
+    font-size: 1.6rem;
+  }
+
+  .MenuIcon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .DropdownIcon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .Menu {
+    font-size: 2rem;
+  }
+
+  .Avatar {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .MiddleColumn {
+    padding: 0rem 2rem;
+  }
+
+  .Name {
+    font-size: 1.4rem;
+  }
+
+  .Description,
+  .SubText {
+    font-size: 1rem;
+  }
+  .Menu {
+    font-size: 1.4rem;
+  }
+  .MenuIcon {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .DropdownIcon {
+    width: 3rem;
+    height: 3rem;
+  }
+  .Avatar {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Name {
+    font-size: 1.2rem;
+  }
+
+  .Description,
+  .SubText {
+    font-size: 0.8rem;
+  }
+  .Menu {
+    font-size: 1.2rem;
+  }
+  .MenuIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .Avatar {
+    height: 4rem;
+    width: 4rem;
+  }
+}

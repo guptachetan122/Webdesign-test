@@ -1,35 +1,38 @@
-.SubheaderWrapper {
-  position: fixed;
+.Container {
   width: 100%;
-  padding: 0rem 50rem;
-  height: 6rem;
-  background-color: white;
-  z-index: 2;
+  padding-top: 2rem;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #FAFAFA;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.SubheaderListItem {
-  width: fit-content;
-  padding: 0rem 1rem;
-  height: 6rem;
-  font-size: 1.6rem;
-  margin: 0rem 2rem;
+.ContainerWrapper {
+  z-index: 3;
+}
+
+.ListItem {
+  padding: 0rem 3rem;
+  font-size: 1.8rem;
+  margin: 0rem rem;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
 
-.SubheaderListItem:hover {
-  border-bottom-color: red;
-  background-color: white;
+.ListItem:hover {
+  border-bottom-color: #ff4500;
+  background-color: #FAFAFA;
   /* background-color: red; */
 }
 
-.SubheaderListItemActive {
-  width: fit-content;
-  padding: 0rem 1rem;
-  height: 6rem;
-  font-size: 1.6rem;
-  margin: 0rem 2rem;
+.ListItemActive {
+  padding: 0rem 3rem;
+  font-size: 1.8rem;
+  margin: 0rem 0rem;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -37,43 +40,34 @@
   /* background-color: red; */
 }
 
-.SubheaderListItemActive:hover {
+.ListItemActive:hover {
   border-bottom-color: #ff4500;
-  background-color: white;
-}
-/*
-
-@media screen and (min-width:1200px) {
-  .SubheaderListWrapper {
-  padding: 0rem 20rem;
+  background-color: #FAFAFA;
 }
 
-.SubheaderListWrapper2 {
-  padding: 0rem 15rem;
-}
-  
-}
-*/
-@media screen and (max-width:1500px) {
-  .SubheaderListWrapper {
-  width: 100%;
-  padding: 0rem 20rem;
-  height: 6rem;
-  background-color: white;
- 
-}
-}
-/*
-
-.SubheaderListWrapper2 {
-  width: 100%;
-  padding: 0rem 30rem;
-  height: 6rem;
-  background-color: white;
- 
-}
-  
+@media screen and (min-width: 2500px) {
+  .ListItemActive {
+    font-size: 2.2rem;
+  }
+  .ListItem {
+    font-size: 2.2rem;
+  }
 }
 
+@media screen and (max-width: 1600px) {
+  .ListItemActive {
+    font-size: 1.6rem;
+  }
+  .ListItem {
+    font-size: 1.6rem;
+  }
+}
 
-*/
+@media screen and (max-width: 1280px) {
+  .ListItemActive {
+    font-size: 1.4rem;
+  }
+  .ListItem {
+    font-size: 1.4rem;
+  }
+}

@@ -6,18 +6,16 @@
 }
 
 .Avatar {
-  height: fit-content;
-  width: fit-content;
+  width: 6rem;
+  height: 6rem;
 }
 
-.Name {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.Description {
-  font-size: 18px;
-  font-weight: lighter;
+.NameColumn {
+  color: #616161;
+  font-weight: 400;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .ButtonCol {
@@ -25,27 +23,58 @@
   justify-content: right;
   align-items: center;
 }
+.DetailWrapper{
+  margin: 0rem 1.5rem;
+}
+
+.Name {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.Description {
+  font-size: 1.4rem;
+}
 
 @media screen and (min-width: 2500px) {
   .Name {
-    font-size: 30px;
+    font-size: 2rem;
   }
 
   .Description {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
   .Avatar {
-    max-height: 120px;
-    max-width: 120px;
+    width: 7rem;
+    height: 7rem;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .Name {
-    font-size: 15px;
+    font-size: 1.4rem;
   }
 
   .Description {
-    font-size: 13px;
+    font-size: 1.2rem;
   }
+  .Avatar {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Name {
+    font-size: 1.2rem;
+  }
+
+  .Description {
+    font-size: 1rem;
+  }
+
+  /* .Avatar {
+    width: 4rem;
+    height: 4rem;
+  } */
 }

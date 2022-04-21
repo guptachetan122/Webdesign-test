@@ -1,0 +1,167 @@
+.ButtonWrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Button {
+  background: none;
+  font-size: 1.6rem;
+  color: #616161;
+  padding: 1rem 2rem;
+  /* border: 1.5px solid #616161; */
+  border-color: #616161;
+  border-width: 1px;
+  border-radius: 200px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transition: all 0.6s ease-in-out; */
+  /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
+}
+
+.Button2 {
+  background: none;
+  font-size: 1.6rem;
+  color: #616161;
+  padding: 1rem 4rem;
+  /* border: 1.5px solid #616161; */
+  border-color: #616161;
+  border-width: 1px;
+  border-radius: 200px;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
+}
+
+/* .Button:hover{
+  color: #FAFAFA;
+  background-color:#FA541A;
+  border: 1.5px solid #FA541A;
+} */
+
+.Button3 {
+  background: none;
+  font-size: 1.6rem;
+  color: #616161;
+  padding: 1rem 2rem;
+  /* border: 1.5px solid #616161; */
+  border-color: #616161;
+  border-width: 1px;
+  border-radius: 200px;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+.Button4 {
+  background: none;
+  font-size: 1.6rem;
+  color: #616161;
+  width: 100%;
+  padding: 1rem 2rem;
+  /* border: 1.5px solid #616161; */
+  border-color: #616161;
+  border-width: 1px;
+  border-radius: 200px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+.Button5 {
+  background: none;
+  font-size: 1.6rem;
+  color: #616161;
+  padding: 1rem 2rem;
+  border: 1px solid #919191;
+  /* border-color: #919191;
+  border-width: 1px; */
+  border-radius: 200px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
+}
+
+.ButtonIcon {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+
+.ButtonIcon2 {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+
+.ButtonIcon3 {
+  width: 1.6rem;
+  height: 1.6rem;
+  /* margin-left: 1rem; */
+}
+
+@media screen and (min-width: 2500px) {
+  .Button, .Button2, .Button3, .Button4, .Button5 {
+    font-size: 2rem;
+  }
+
+  .ButtonIcon,
+  .ButtonIcon2,
+  .ButtonIcon3 {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+   .Button, .Button2, .Button3, .Button4, .Button5 {
+    font-size: 1.4rem;
+  }
+
+  .ButtonIcon,
+  .ButtonIcon2,
+  .ButtonIcon3 {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Button,
+  .Button4 {
+    font-size: 1.2rem;
+  }
+
+  .Button2 {
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+  }
+
+  .Button3 {
+    font-size: 1.2rem;
+  }
+  .Button5 {
+    font-size: 1.2rem;
+    padding: 0.5rem 3rem;
+  }
+  
+  .ButtonIcon,
+  .ButtonIcon2,
+  .ButtonIcon3 {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}

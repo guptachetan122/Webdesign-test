@@ -4,7 +4,7 @@ import { Modal } from "antd";
 import TextArea from "antd/lib/input/TextArea";
 import { LightningBoltIcon as ScInactive } from "@heroicons/react/solid";
 
-const ScModal = () => {
+const ScModal = ({onlyIcon = false}) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const showModal = () => {
@@ -17,9 +17,16 @@ const ScModal = () => {
 
   return (
     <>
-      <button className={styles.Button} onClick={showModal}>
-        superconnect <ScInactive className={styles.Icon} />
-      </button>
+      {onlyIcon ? (
+        <button className={styles.Button} onClick={showModal}>
+          <ScInactive className={styles.Icon} />
+        </button>
+      ) : (
+        <button className={styles.Button} onClick={showModal}>
+          superconnect&nbsp;
+          <ScInactive className={styles.Icon} />
+        </button>
+      )}
 
       <Modal
         visible={isModalVisible}

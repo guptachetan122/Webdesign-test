@@ -1,0 +1,31 @@
+.Button {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  border: none;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 1rem 4rem;
+  border-radius: 200px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 2500px) {
+  .Button {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Button {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Button {
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+  }
+}

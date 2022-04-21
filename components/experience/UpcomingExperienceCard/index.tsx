@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Col, Row, Typography } from "antd";
 import React from "react";
-import ButtonComponent from "../../common/ButtonComponent";
+import ButtonComponent from "../../common/Button/ButtonExperiences";
 import styles from "./UpcomingExperienceCard.module.css";
 import Link from "next/link";
 import { CheckCircleFilled} from "@ant-design/icons";

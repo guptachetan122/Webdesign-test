@@ -7,27 +7,29 @@
   border-radius: 10px;
 }
 
-.AvatarCol {
-  margin-right: 1rem;
-}
-
 .Avatar {
-  height: fit-content;
-  width: fit-content;
+  height: 10rem;
+  width: 10rem;
 }
 
 .MiddleCol {
-  padding: 0rem 1rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.NameRow {
+  padding: 0rem 2rem;
 }
 
 .Name {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
 }
 
 .Description {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #616161;
   font-weight: 400;
 }
@@ -35,14 +37,14 @@
 .FeeCol {
   display: flex;
   justify-content: right;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .FeeButton {
   background: none;
   border: none;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,20 +63,20 @@
 }
 
 .TextCol {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border-right: 1px solid #616161;
 }
 
 .TextCol2 {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
 }
 
 .Heading {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .SubHeading {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
@@ -90,83 +92,74 @@
 
 @media screen and (min-width: 2500px) {
   .Name {
-    font-size: 32px;
+    font-size: 2.4rem;
   }
 
   .Description {
-    font-size: 26px;
+    font-size: 2.2rem;
   }
 
   .Heading {
-    font-size: 26px;
+    font-size: 2rem;
   }
   .SubHeading {
-    font-size: 28px;
+    font-size: 2.2rem;
   }
 
   .FeeButton {
-    font-size: 28px;
+    font-size: 2.4rem;
+  }
+  .Avatar {
+    height: 11rem;
+    width: 11rem;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .Name {
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 1.8rem;
   }
 
   .Description {
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 1.6rem;
   }
 
   .Heading {
-    font-size: 13px;
+    font-size: 1.4rem;
   }
   .SubHeading {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 1.6rem;
   }
 
   .FeeButton {
-    font-size: 16px;
+    font-size: 1.8rem;
   }
-  .TextCol2 {
-    padding: 1rem 2rem;
-  }
-
-  .TextCol {
-    padding: 1rem 2rem;
+  .Avatar {
+    height: 9rem;
+    width: 9rem;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .Name {
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 1.6rem;
   }
 
   .Description {
-    font-size: 10px;
-    font-weight: 400;
+    font-size: 1.4rem;
   }
 
   .Heading {
-    font-size: 9px;
+    font-size: 1.2rem;
   }
   .SubHeading {
-    font-size: 10px;
-    font-weight: 600;
+    font-size: 1.4rem;
   }
   .FeeButton {
-    font-size: 14px;
+    font-size: 1.6rem;
   }
-  .TextCol2 {
-    padding: 1rem 1rem;
-  }
-
-  .TextCol {
-    padding: 1rem 1rem;
-    border-right: 1px solid #616161;
+  .Avatar {
+    height: 8rem;
+    width: 8rem;
   }
 }

@@ -2,15 +2,20 @@
 
 import { Col, Row, Typography } from "antd";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import ChemistrySession from "../../components/coaching/ChemistrySession";
 import CoachCard from "../../components/coaching/CoachCard";
-import ButtonLight from "../../components/common/ButtonComponent/ButtonLight";
+import ButtonLight from "../../components/common/Button/ButtonLight";
 import Sidebar from "../../ui/Sidebar";
 import styles from "../../styles/Learn.module.css";
+
 const { Text } = Typography;
 
 const Coaching = () => {
+
+  const [selectedFilter, setSelectedFilter] = useState("all");
+  const [selectedSort, setSelectedSort] = useState("alphabetical");
+  
   return (
     <>
       <Row className={styles.Body}>

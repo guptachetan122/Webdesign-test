@@ -3,14 +3,16 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12),
     0px 1px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 2rem 3rem;
+  padding: 4rem 3rem;
   margin-bottom: 1rem;
   width: 100%;
 }
 
-.Container2{
-  padding: 0rem 3rem;
-  margin:auto 0;
+.MiddleColumn {
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .ProgressWrapper {
@@ -20,68 +22,69 @@
 }
 
 .ProgressStyle{
-  width: 120px;
+  width: fit-content;
 }
 
 .ProgressText {
-  font-size: 32px;
+  font-size: 2.4rem;
   font-weight: 700;
   color: #313131;
 }
 
+.Row {
+  margin: 0rem 2rem;
+}
 
 .Title {
   color: #313131;
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 700;
-  margin: 0.5rem 1rem;
 }
 
 .SubTitle {
   color: #616161;
-  font-size: 20px;
-  margin: 0.5rem 1rem;
+  font-size: 1.8rem;
 }
 
 
 @media screen and (min-width: 2500px) {
   .ProgressText {
-    font-size: 36px;
+    font-size: 2.8rem;
   }
 
   .Title {
-    font-size: 28px;
+    font-size: 2.4rem;
   }
 
   .SubTitle {
-    font-size: 24px;
+    font-size: 2.2rem;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .ProgressText {
-    font-size: 18px;
+    font-size: 2.2rem;
   }
 
   .Title {
-    font-size: 14px;
+    font-size: 1.8rem;
   }
 
   .SubTitle {
-    font-size: 12px;
+    font-size: 1.6rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .ProgressText {
-    font-size: 15px;
+    font-size: 2rem;
   }
 
   .Title {
-    font-size: 11px;
+    font-size: 1.6rem;
   }
 
   .SubTitle {
-    font-size: 10px;
+    font-size: 1.4rem;
   }
 }
