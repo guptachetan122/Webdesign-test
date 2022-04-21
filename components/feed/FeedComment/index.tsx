@@ -102,8 +102,7 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
                   />
                 </pre> */}
                 <pre>like |</pre>
-                <pre onClick={handleComment}> reply |</pre>
-                <pre onClick={viewAllReplies}> view all replies</pre>
+                <pre onClick={handleComment}> reply</pre>
                 <pre> . 3 replies</pre>
               </div>
             </div>
@@ -155,7 +154,20 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
             </Row>
           </>
         ) : null}
-
+        <Row style={{ margin: "1rem 0rem" }}>
+          <Col span={2}></Col>
+          <Col>
+            {viewAll ? null : (
+              <div
+                onClick={viewAllReplies}
+                style={{ cursor: "pointer", textDecoration: "underline" }}
+              >
+                {" "}
+                view all replies
+              </div>
+            )}
+          </Col>
+        </Row>
         <Row>
           <Col span={2} className={styles.DividerCol}>
             {/* <Divider
@@ -168,13 +180,13 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
             /> */}
           </Col>
           <Col span={22}>
-            <FeedReply />
             {viewAll ? (
               <>
                 <FeedReply isConnect />
                 <FeedReply />
               </>
             ) : null}
+            <FeedReply />
           </Col>
         </Row>
       </div>
