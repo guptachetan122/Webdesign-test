@@ -201,7 +201,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
                 <>
                   <FeedComment />
                   <FeedComment isConnect />
-                  <div
+                  {/* <div
                     style={{
                       width: "100%",
                       textAlign: "center",
@@ -211,7 +211,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
                     onClick={handleAllComments}
                   >
                     view less comments
-                  </div>
+                  </div> */}
                 </>
               ) : (
                 <div
