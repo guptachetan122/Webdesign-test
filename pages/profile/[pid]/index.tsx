@@ -2,16 +2,11 @@ import { Card, Carousel, Col, Input, Row, Typography } from "antd";
 import React, { useState } from "react";
 import Sidebar from "../../../ui/Sidebar";
 import styles from "../../../styles/Feed.module.css";
-import { useFetchPostsQuery } from "../../../components/feed/Posts/PostsApi";
-import { SearchOutlined } from "@ant-design/icons";
-import FeedInput from "../../../components/feed/FeedInput";
-import FeedCard from "../../../components/feed/FeedCard";
 import BackHeader from "../../../components/common/BackHeader";
 
 const { Text } = Typography;
 
 const Profile = () => {
-  const { data, isSuccess, isFetching } = useFetchPostsQuery();
   const [Stay, setStay] = useState(false);
   const handle = () => {
     setStay(!Stay);
