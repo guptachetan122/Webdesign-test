@@ -1,0 +1,11 @@
+.Modal{
+    overflow-y: initial !important;
+    /* background-color: aquamarine; */
+}
+
+.Modal_body{
+    max-height: 60vh;
+    /* background-color: yellow; */
+    overscroll-behavior: contain !important;
+    overflow-y: auto;    
+}

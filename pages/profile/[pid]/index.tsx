@@ -16,7 +16,7 @@ const Profile = () => {
     <>
       <Row className={styles.Body}>
         <Col span={6} className={styles.Sidebar}>
-          <Sidebar pageName={"feed"} />{" "}
+          {/* <Sidebar pageName={"feed"} />{" "} */}
         </Col>
 
         <Col span={12} className={styles.MiddleCol}>

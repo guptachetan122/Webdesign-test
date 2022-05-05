@@ -33,6 +33,10 @@ const Member = ({pageName = ""}) => {
             <ButtonLight name="reply" />
           ) : pageName == "mysc" ? (
             <ButtonLight name="chat" />
+          ) : pageName == "likeChat" ? (
+            <ButtonLight name="chat" onlyIcon />
+          ) : pageName == "likeSc" ? (
+            <ScModal onlyIcon/>
           ) : (
             <ScModal />
           )}

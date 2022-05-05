@@ -16,6 +16,7 @@ const ClubhouseModal = () => {
      setIsModalVisible(false);
   };
   
+  
   return (
     <>
       <button className={styles.TriggerButton} onClick={showModal}>

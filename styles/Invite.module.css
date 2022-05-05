@@ -1,0 +1,157 @@
+.Body {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  background-color: #e5e5e5;
+  overscroll-behavior: contain !important;
+}
+
+.Sidebar {
+  display: flex;
+  justify-content: right;
+}
+
+.MiddleCol {
+  padding-top: 3rem;
+}
+
+.CardColumn {
+  display: flex;
+  flex-direction: row;
+}
+
+.ProgressWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ProgressStyle {
+  width: fit-content;
+}
+
+.ProgressText {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #313131;
+}
+
+.Card {
+  margin: 1rem 0rem;
+}
+
+.Row {
+  margin: 1rem 2rem;
+}
+
+.ProgressWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.ButtonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Button {
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  color: #fafafa;
+  font-weight: 500;
+  border-radius: 100px;
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Icon {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  color: rgb(86, 241, 86);
+}
+
+.ShareIcon {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+.Title {
+  margin: 1rem 2rem;
+  color: #313131;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subTitle {
+  margin: 1rem 2rem;
+  color: #616161;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 2500px) {
+  .ProgressText {
+    font-size: 2.8rem;
+  }
+
+  .Title {
+    font-size: 2.4rem;
+  }
+
+  .subTitle {
+    font-size: 2rem;
+  }
+
+  .Icon,
+  .ShareIcon {
+    font-size: 2.2rem;
+  }
+  .Button {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .ProgressText {
+    font-size: 2.2rem;
+  }
+
+  .Title {
+    font-size: 1.8rem;
+  }
+
+  .subTitle {
+    font-size: 1.4rem;
+  }
+  .Icon,
+  .ShareIcon {
+    font-size: 1.6rem;
+  }
+  .Button {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .ProgressText {
+    font-size: 2rem;
+  }
+
+  .Title {
+    font-size: 1.6rem;
+  }
+
+  .subTitle {
+    font-size: 1.2rem;
+  }
+  .Icon,
+  .ShareIcon {
+    font-size: 1.4rem;
+  }
+  .Button {
+    font-size: 1.2rem;
+  }
+}

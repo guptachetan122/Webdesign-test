@@ -1,5 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import { Row, Col, Badge, Typography, Avatar, Menu, Dropdown } from "antd";
+import {
+  Row,
+  Col,
+  Badge,
+  Typography,
+  Avatar,
+  Menu,
+  Dropdown,
+  Card,
+} from "antd";
 import Image from "next/image";
 import styles from "./Header.module.css";
 import Link from "next/link";
@@ -25,12 +34,19 @@ const Header = () => {
   const Router = useRouter();
   const PATH = Router.pathname.split("/")[1];
   const PATH2 = Router.pathname.split("/")[2];
-  const n = [1, 2, 3, 4, 5, 6];
+
+  const n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const menu = () => {
     return (
       <Menu className={styles.MenuWrapper}>
         {n.map((i) => (
-          <Menu.Item key={i} className={styles.Menu}></Menu.Item>
+          <Menu.Item key={i} className={styles.Menu}>
+            <Row className={styles.MenuText}>
+              you&apos;ve got a new superconnect in sushruta basak! tap to meet
+              her
+            </Row>
+            <Row className={styles.MenuSubText}>7 hours ago</Row>
+          </Menu.Item>
         ))}
       </Menu>
     );
@@ -58,28 +74,29 @@ const Header = () => {
                 className={styles.profileAvatar}
               />{" "}
               <ProfileDrawer />
+              <div>+ invite</div>
             </div>
           </Col>
 
           <Col span={8} className={styles.headerCol}>
-           
+            <Link href="/feed" passHref>
               <img
                 src="/assets/images/image3.png"
                 alt="leap club logo"
                 className={styles.headerImageWrapper}
               />
-           
+            </Link>
           </Col>
           <Col className={styles.headerIconCol} span={8}>
-            <Badge count={10} size="default" className={styles.headerBadge}>
-              
+            <Dropdown overlay={menu} placement="bottomLeft" arrow>
+              <Badge count={10} size="default" className={styles.headerBadge}>
                 <Avatar
                   src="/assets/images/bell.svg"
                   style={{ color: "black" }}
                   className={styles.headerAvatar}
                 />
-             
-            </Badge>
+              </Badge>
+            </Dropdown>
             <Badge count={100} size="default" className={styles.headerBadge}>
               <Avatar
                 src="/assets/images/message-circle.svg"

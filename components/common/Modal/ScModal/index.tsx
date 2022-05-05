@@ -36,7 +36,7 @@ const ScModal = ({onlyIcon = false}) => {
         className={styles.Modal}
       >
         <p>
-          great! you are now connected with{" "}
+          great! now you will be superconnected with{" "}
           <span style={{ fontWeight: "700" }}>ragini das</span>.
         </p>
         <p>

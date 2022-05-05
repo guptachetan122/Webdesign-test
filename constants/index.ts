@@ -136,31 +136,26 @@ export const sidebarItems = [
     id: 1,
     name: "feed",
     link: "/feed",
-    pathname: "feed",
   },
   {
     id: 2,
     name: "clubhouse",
     link: "/clubhouse",
-    pathname: "clubhouse",
   },
   {
     id: 3,
     name: "superconnections",
     link: "/superconnections",
-    pathname: "superconnections",
   },
   {
     id: 4,
     name: "experiences",
     link: "/experiences",
-    pathname: "experiences",
   },
   {
     id: 5,
     name: "learn",
     link: "/learn",
-    pathname: "learn",
   },
 ];
 

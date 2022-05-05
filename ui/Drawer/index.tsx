@@ -3,6 +3,7 @@ import { CaretDownFilled } from "@ant-design/icons";
 import { Avatar, Drawer, Row, Typography } from "antd";
 import styles from "./Drawer.module.css";
 import { LogoutIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 const { Text } = Typography;
 
 const ProfileDrawer = () => {
@@ -24,9 +25,7 @@ const ProfileDrawer = () => {
 
       <Drawer
         title=""
-        width={
-          global.window?.innerWidth > 2500 ? 600 : 350
-        }
+        width={global.window?.innerWidth > 2500 ? 600 : 350}
         closable={true}
         onClose={onClose}
         visible={visible}
@@ -46,9 +45,13 @@ const ProfileDrawer = () => {
             <div>
               <Row>
                 <Text className={styles.Name}>ragini das</Text>
-              </Row>{" "}
+              </Row>
               <Row>
-                <Text className={styles.Link}>view my profile</Text>
+                <Link href="/profile/id" passHref>
+                  <Text onClick={onClose} className={styles.Link}>
+                    view my profile
+                  </Text>
+                </Link>
               </Row>
             </div>
           </Row>

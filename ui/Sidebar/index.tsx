@@ -26,32 +26,32 @@ const Sidebar = ({ pageName }: SidebarProps) => {
 
     switch (pathName) {
       case "feed":
-        return PATH == pathName ? (
+        return pathName == PATH ? (
           <FeedActive className={styles.SidebarIconActive} />
         ) : (
           <FeedInactive className={styles.SidebarIcon} />
         );
 
       case "clubhouse":
-        return PATH == pathName ? (
+        return pathName == PATH ? (
           <ChActive className={styles.SidebarIconActive} />
         ) : (
           <ChInactive className={styles.SidebarIcon} />
         );
       case "superconnections":
-        return PATH == pathName ? (
+        return pathName == PATH ? (
           <ScActive className={styles.SidebarIconActive} />
         ) : (
           <ScInactive className={styles.SidebarIcon} />
         );
       case "experiences":
-        return PATH == pathName ? (
+        return pathName == PATH ? (
           <ExperienceActive className={styles.SidebarIconActive} />
         ) : (
           <ExperienceInactive className={styles.SidebarIcon} />
         );
       case "learn":
-        return PATH == pathName ? (
+        return pathName == PATH ? (
           <LearnActive className={styles.SidebarIconActive} />
         ) : (
           <LearnInactive className={styles.SidebarIcon} />
@@ -63,26 +63,26 @@ const Sidebar = ({ pageName }: SidebarProps) => {
 
   return (
     <>
-        <div className={styles.SidebarCardStyle}>
-          {sidebarItems.map((val) => (
-            <ul key={val.id} className={styles.SidebarList}>
-              <li
-                className={
-                  Router.pathname.split("/")[1] == val.pathname
-                    ? styles.SidebarListItemActive
-                    : styles.SidebarListItem
-                }
-                onClick={() => {
-                  Router.push(`${val.link}`);
-                }}
-              >
-                {" "}
-                <SwitchIcon pathName={val.pathname} />
-                <Text>{val.name}</Text>
-              </li>
-            </ul>
-          ))}
-        </div>
+      <div className={styles.SidebarCardStyle}>
+        {sidebarItems.map((val) => (
+          <ul key={val.id} className={styles.SidebarList}>
+            <li
+              className={
+                Router.pathname.split("/")[1] == val.name
+                  ? styles.SidebarListItemActive
+                  : styles.SidebarListItem
+              }
+              onClick={() => {
+                Router.push(`${val.link}`);
+              }}
+            >
+              {" "}
+              <SwitchIcon pathName={val.name} />
+              <Text>{val.name}</Text>
+            </li>
+          </ul>
+        ))}
+      </div>
     </>
   );
 };

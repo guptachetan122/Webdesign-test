@@ -6,7 +6,7 @@ import styles from "./BackHeader.module.css";
 
 const { Text } = Typography;
 
-const BackDiv = ({ pageName = "" }) => {
+const BackHeader = ({ pageName = "" }) => {
   const router = useRouter();
   function goBack() {
     {
@@ -29,4 +29,4 @@ const BackDiv = ({ pageName = "" }) => {
   );
 };
 
-export default BackDiv;
+export default BackHeader;

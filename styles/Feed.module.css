@@ -2,6 +2,7 @@
   min-height: 100vh;
   padding-bottom: 4rem;
   background-color: #e5e5e5;
+  overscroll-behavior: contain !important;
 }
 
 .Sidebar {

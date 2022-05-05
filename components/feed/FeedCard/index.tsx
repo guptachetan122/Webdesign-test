@@ -17,6 +17,7 @@ import SeeMore from "../../common/SeeMore";
 import FeedComment from "../FeedComment";
 import styles from "./FeedCard.module.css";
 import { Input } from "antd";
+import LikesModal from "../../common/Modal/LikesModal";
 
 const { TextArea } = Input;
 
@@ -129,7 +130,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
         </Row>
         <Row className={styles.Row}>
           <Col span={12}>
-            <div className={styles.PostSubText}>100 likes</div>
+            <div className={styles.PostSubText}><LikesModal num={100}/></div>
           </Col>
           <Col span={12}>
             <div className={styles.PostSubText2} onClick={handleComments}>
