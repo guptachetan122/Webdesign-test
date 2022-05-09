@@ -82,13 +82,13 @@
 
 .ButtonColumn {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
-.ButtonColumn2 {
+/* .ButtonColumn2 {
   display: flex;
-  justify-content: right;
-}
+  justify-content: center;
+} */
 
 @media screen and (min-width: 2500px) {
   .Name {

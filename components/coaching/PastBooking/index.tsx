@@ -66,7 +66,7 @@ const PastBooking = () => {
             {" "}
             <ButtonLight name="rate coach" />
           </Col>
-          <Col span={12} className={styles.ButtonColumn2}>
+          <Col span={12} className={styles.ButtonColumn}>
             {" "}
             <ButtonDark name="book session" />
           </Col>

@@ -31,6 +31,7 @@
   align-items: center;
   cursor: pointer;
   padding: 0.5rem 0rem;
+  font-size: 1.4rem;
 }
 
 .DropdownColumn {
@@ -176,7 +177,7 @@
     font-size: 2.2rem;
   }
 
-  .Description {
+  .Description,.Likes,.Comments,.CtaColumn {
     font-size: 1.8rem;
   }
   .MenuIcon {
@@ -210,7 +211,7 @@
     font-size: 1.6rem;
   }
 
-  .Description {
+  .Description,.Likes,.Comments,.CtaColumn {
     font-size: 1.2rem;
   }
   .MenuItem {
@@ -244,7 +245,7 @@
     font-size: 1.4rem;
   }
 
-  .Description {
+  .Description,.Likes,.Comments,.CtaColumn {
     font-size: 1rem;
   }
 

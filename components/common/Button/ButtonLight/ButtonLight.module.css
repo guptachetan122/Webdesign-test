@@ -37,6 +37,23 @@
   /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
 }
 
+.rateButton {
+  background: none;
+  font-size: 1.6rem;
+  color: #616161;
+  padding: 1rem 4rem;
+  /* border: 1.5px solid #616161; */
+  border-color: #616161;
+  border-width: 1px;
+  border-radius: 200px;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
+}
+
 .MuteButton {
   background: none;
   font-size: 1.6rem;
@@ -135,7 +152,7 @@
 }
 
 @media screen and (min-width: 2500px) {
-  .ChButton, .FilterButton, .MuteButton, .ChemButton, .ChatButton {
+  .ChButton, .FilterButton,.rateButton, .MuteButton, .ChemButton, .ChatButton {
     font-size: 2rem;
   }
 
@@ -148,7 +165,7 @@
 }
 
 @media screen and (max-width: 1600px) {
-   .ChButton, .FilterButton, .MuteButton, .ChemButton, .ChatButton {
+   .ChButton, .FilterButton,.rateButton, .MuteButton, .ChemButton, .ChatButton {
     font-size: 1.4rem;
   }
 
@@ -181,7 +198,7 @@
   
   .MuteIcon,
   .FilterIcon,
-  .ChatIcon {
+  .ChatIcon,.rateButton {
     width: 1.2rem;
     height: 1.2rem;
   }
