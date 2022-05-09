@@ -11,7 +11,7 @@ const Member = ({pageName = ""}) => {
   return (
     <>
       <Row className={styles.Container}>
-        <Col span={14} className={styles.NameColumn}>
+        <Col span={14} className={styles.DetailColumn}>
           <div>
             <Avatar
               className={styles.Avatar}
@@ -28,7 +28,7 @@ const Member = ({pageName = ""}) => {
           </div>
         </Col>
         <Col span={1}></Col>
-        <Col span={9} className={styles.ButtonCol}>
+        <Col span={9} className={styles.ButtonColumn}>
           {pageName == "chats" ? (
             <ButtonLight name="reply" />
           ) : pageName == "mysc" ? (

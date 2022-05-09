@@ -10,7 +10,7 @@
   height: 6rem;
 }
 
-.NameColumn {
+.DetailColumn {
   color: #616161;
   font-weight: 400;
   display: flex;
@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.ButtonCol {
+.ButtonColumn {
   display: flex;
   justify-content: right;
   align-items: center;
@@ -73,8 +73,8 @@
     font-size: 1rem;
   }
 
-  /* .Avatar {
+  .Avatar {
     width: 4rem;
     height: 4rem;
-  } */
+  }
 }

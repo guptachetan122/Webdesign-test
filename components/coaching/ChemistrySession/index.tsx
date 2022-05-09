@@ -10,7 +10,7 @@ const ChemistrySession = ({ chemSessions = 0 }) => {
   return (
     <div className={styles.Container}>
       <Row>
-        <Col className={styles.MiddleColumn}>
+        <Col className={styles.Column}>
           <div>
             <Progress
               type="circle"

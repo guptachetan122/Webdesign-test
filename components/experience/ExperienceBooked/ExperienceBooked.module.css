@@ -7,12 +7,12 @@
   border-radius: 10px;
 }
 
-.LeftCol {
+.Column1 {
   border-right: 1px solid #616161;
   padding: 0rem 1rem;
 }
 
-.RightCol {
+.Column2 {
   padding: 0rem 1rem;
 }
 
@@ -31,7 +31,7 @@
   font-size: 20px;
 }
 
-.Owner {
+.Host {
   font-weight: 400;
   font-size: 16px;
 }
@@ -49,7 +49,7 @@
     font-size: 30px;
   }
 
-  .Owner {
+  .Host {
     font-size: 26px;
   }
 }
@@ -67,7 +67,7 @@
     font-size: 15px;
   }
 
-  .Owner {
+  .Host {
     font-size: 13px;
   }
 }
@@ -87,7 +87,7 @@
     font-size: 12px;
   }
 
-  .Owner {
+  .Host {
     font-size: 10px;
   }
 }

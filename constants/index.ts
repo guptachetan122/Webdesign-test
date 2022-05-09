@@ -185,6 +185,21 @@ export const ExpTags = [
   `offline`,
 ];
 
+export const Filters = [
+  `all`,
+  `bengaluru`,
+  `delhi ncr`,
+  `mumbai`,
+  `other`,
+];
+
+export const Sorts = [
+  `alphabetical`,
+  `price: low to high`,
+  `price: high to low`,
+];
+
+
 export const Packages = [
   {
     cost: 5000,
@@ -215,3 +230,67 @@ export const Packages = [
     _id: "4",
   },
 ];
+
+export const companies = [
+  `airbnb`,
+  "zomato",
+  "netflix",
+  "google",
+  "cred",
+  "apple",
+  "bumble",
+  "dropbox",
+];
+
+export type ChList = {
+  name: string;
+  channel_url: string;
+  is_public: string;
+};
+export const ProfileDetail = {
+  headline: "agency partnerships manager at google. ",
+  image: "/assets/images/Ragini.png",
+  name: "mahalaxmi krishnamoorthy",
+  industryTags: [
+    "internet and tech",
+    "young leaders",
+    "sales, marketing and partnerships",
+  ],
+  city: "netherlands",
+  connected: true,
+  connectionsCount: 500,
+  goals: [],
+  experience: "",
+  leader: "michelle obama",
+  currentCompany: "zomato",
+  companyAdmire: ["netflix", "airbnb", "bumble"],
+  undergrad: "DTU, delhi",
+  postgrad: "Jai hind",
+  topSkills: [
+    "sales, marketing and partnerships",
+    "brand & marketing",
+    "sports",
+  ],
+  hobbies: ["food & cooking, cocktails & wine, travel"],
+  introduction:
+    "changing the 0-1 journey for new product, and building a company in the ed-tech space since the past 5 years.",
+  featuredLinks: [],
+  chList: [
+    "all",
+    "fun",
+    "entrepreneurs",
+    "health & wellness",
+    "technology",
+    "groups",
+    "food & drinks",
+    "investing & finance",
+    "professional",
+    "gender",
+    "cities",
+    "career growth",
+    "self-growth",
+    "sales & marketing",
+  ],
+  previousWorkExperience: [],
+};
+

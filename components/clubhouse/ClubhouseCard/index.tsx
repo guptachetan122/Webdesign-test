@@ -56,10 +56,7 @@ const ClubhouseCard = ({
     if (pinnedCh < 5 && pinnedCh > 0) {
       setPin(true);
       setPinnedCh(pinnedCh + 1);
-      toast(<PinMsg />, {
-        position: "top-center",
-        width : "fit-content",
-      });
+      
     } else {
       toast(<MaxMsg />, {
         position: "top-center",
@@ -70,9 +67,6 @@ const ClubhouseCard = ({
   function unPin() {
     setPin(false);
     setPinnedCh(pinnedCh - 1);
-    toast(<UnpinMsg />, {
-      position: "top-center",
-    });
   }
 
   function onMute() {
@@ -208,7 +202,7 @@ const ClubhouseCard = ({
         <Row className={styles.Row} onClick={goToChInfo}>
           {/* <Col span={3}> </Col> */}
 
-          <Col span={14} className={styles.NameColumn}>
+          <Col span={14} className={styles.AvatarColumn}>
             <Avatar
               className={styles.Avatar}
               src={"/assets/images/Ragini.png"}
@@ -227,7 +221,7 @@ const ClubhouseCard = ({
           </Col>
         </Row>
         {upcomingHuddle ? (
-          <Row className={styles.FooterWrapper} onClick={goToExpInfo}>
+          <Row className={styles.FooterRow} onClick={goToExpInfo}>
             {/* <Divider className={styles.Divider} /> */}
             <div className={styles.Footer}>
               <ExperienceInactive className={styles.FooterIcon} />

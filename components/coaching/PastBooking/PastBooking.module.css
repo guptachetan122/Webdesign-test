@@ -12,13 +12,13 @@
   width: 10rem;
 }
 
-.MiddleCol {
+.DetailColumn {
   display: flex;
   justify-content: left;
   align-items: center;
 }
 
-.NameRow {
+.NameWrapper {
   padding: 0rem 2rem;
 }
 
@@ -34,7 +34,7 @@
   font-weight: 400;
 }
 
-.FeeCol {
+.FeeColumn {
   display: flex;
   justify-content: right;
   align-items: center;
@@ -56,18 +56,18 @@
   margin-right: 0.5rem;
 }
 
-.MiddleRow {
+.Row {
   margin: 2rem 0rem;
   border-radius: 50px;
   border: 1px solid #616161;
 }
 
-.TextCol {
+.DetailColumn {
   padding: 1rem 2rem;
   border-right: 1px solid #616161;
 }
 
-.TextCol2 {
+.DetailColumn2 {
   padding: 1rem 2rem;
 }
 
@@ -80,12 +80,12 @@
   font-weight: 600;
 }
 
-.ButtonCol {
+.ButtonColumn {
   display: flex;
   justify-content: left;
 }
 
-.ButtonCol2 {
+.ButtonColumn2 {
   display: flex;
   justify-content: right;
 }

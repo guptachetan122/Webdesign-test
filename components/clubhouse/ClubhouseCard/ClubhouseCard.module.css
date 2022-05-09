@@ -128,17 +128,16 @@
 /* Description on Card Styling ends */
 
 /* Middle Row Styling starts */
-
-.Avatar {
-  width: 6rem;
-  height: 6rem;
-}
-
-.NameColumn {
+.AvatarColumn {
   /* padding: 0rem 1rem; */
   display: flex;
   justify-content: left;
   align-items: center;
+}
+
+.Avatar {
+  width: 6rem;
+  height: 6rem;
 }
 
 .Name {
@@ -157,7 +156,7 @@
 /* Middle Row Styling ends */
 
 /* upcoming huddle styling starts */
-.FooterWrapper {
+.FooterRow {
   border-top: 2px solid #c2c2c2;
   margin-top: 1rem;
 }

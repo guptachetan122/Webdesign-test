@@ -59,10 +59,9 @@ const Invite = ({ referrals = 3 }) => {
                               {chem}/5
                             </Text>
                           )}
-                                              />
-                                              <div>referrals used</div>
+                        />
+                        <div>referrals used</div>
                       </div>
-                      
                     </div>
                     <div className={styles.ButtonWrapper}>
                       <div>

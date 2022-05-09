@@ -21,19 +21,19 @@
   align-items: center;
 }
 
-.InputIcon {
+.Icon {
   width: 25px;
   height: 25px;
   margin-right: 1rem;
   color: #c2c2c2;
 }
 
-.InputTabWrapper {
+.TabWrapper {
   display: flex;
   flex-direction: row;
 }
 
-.InputTab {
+.Tab {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@
   cursor: pointer;
 }
 
-.InputTabIcon {
+.TabIcon {
   width: 24px;
   height: 24px;
   margin-right: 1rem;

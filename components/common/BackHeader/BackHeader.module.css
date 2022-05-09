@@ -4,11 +4,11 @@
   margin: 1.5rem 0rem;
 }
 
-.Icon{
+.Text{
     cursor: pointer;
 }
 
-.Icon:hover{
+.Text:hover{
     border-bottom: 1.5px solid orangered;
 }
 

@@ -6,12 +6,12 @@
   padding: 2rem 1rem;
 }
 
-.InfoDivider {
+.Divider {
   border: 1px solid #c2c2c2;
   margin: 0.5rem 0rem;
 }
 
-.MemberInfoWrapper {
+.MemberWrapper {
   display: block;
   margin: auto 0rem;
   /* background-color: red; */
@@ -21,21 +21,21 @@
   padding: 1rem 2rem;
 }
 
-.InfoIcon {
+.MemberIcon {
   width: 26px;
   height: 26px;
   color: black;
   /* background-color: yellowgreen; */
 }
 
-.InfoMembers {
+.Members {
   font-size: 20px;
   margin-left: 2rem;
   margin-right: 2rem;
   /* background-color: green; */
 }
 
-.InfoLink {
+.Link {
   margin-top: 3rem;
   color: #0500ff;
   text-decoration: underline;
@@ -45,31 +45,31 @@
 }
 
 @media screen and (min-width: 2500px) {
-  .InfoIcon {
+  .MemberIcon {
     width: 36px;
     height: 36px;
   }
 
-  .InfoMembers {
+  .Members {
     font-size: 30px;
   }
 
-  .InfoLink {
+  .Link {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .InfoIcon {
+  .MemberIcon {
     width: 18px;
     height: 18px;
   }
 
-  .InfoMembers {
+  .Members {
     font-size: 15px;
   }
 
-  .InfoLink {
+  .Link {
     font-size: 15px;
   }
 }

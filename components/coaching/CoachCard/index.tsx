@@ -15,7 +15,7 @@ const CoachCard = () => {
       <Link href="/learn/id" passHref>
         <div className={styles.Container}>
           <Row>
-            <Col className={styles.MiddleColumn}>
+            <Col className={styles.Column}>
               <div>
                 <Avatar
                   className={styles.Avatar}

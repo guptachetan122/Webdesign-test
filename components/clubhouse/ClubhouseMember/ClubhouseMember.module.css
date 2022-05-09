@@ -10,7 +10,7 @@
     0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-.NameColumn {
+.DetailColumn {
   color: #616161;
   display: block;
   font-weight: 400;
@@ -24,7 +24,7 @@
   height: 6rem;
 }
 
-.NameWrapper{
+.DetailWrapper{
   margin: 0rem 1.5rem;
 }
 

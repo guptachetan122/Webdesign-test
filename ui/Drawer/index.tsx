@@ -73,10 +73,10 @@ const ProfileDrawer = () => {
             </div>
           </Row>
           <Row className={styles.Row}>
-            <button className={styles.ButtonWrap}>
+            <button className={styles.Logout}>
               {" "}
-              <LogoutIcon className={styles.IconStyle} />
-              <div className={styles.IconText}>logout</div>
+              <LogoutIcon className={styles.LogoutIcon} />
+              <div className={styles.LogoutText}>logout</div>
             </button>
           </Row>
         </div>

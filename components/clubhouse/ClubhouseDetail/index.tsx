@@ -28,8 +28,8 @@ const ClubhouseDetail = ({ isJoined = false }) => {
         {isJoin ? (
           <>
             <Row>
-                <ButtonLight name="mute clubhouse" />
-                <ButtonLight name="exit clubhouse" />
+              <ButtonLight name="mute clubhouse" />
+              <ButtonLight name="exit clubhouse" />
             </Row>
           </>
         ) : (
@@ -38,17 +38,17 @@ const ClubhouseDetail = ({ isJoined = false }) => {
           </Row>
         )}
       </div>
-      <Divider className={styles.InfoDivider} />
-      <div className={styles.MemberInfoWrapper}>
+      <Divider className={styles.Divider} />
+      <div className={styles.MemberWrapper}>
         <Row>
-          <ChInactive className={styles.InfoIcon} />
-          <Text className={styles.InfoMembers}>121 members</Text>
+          <ChInactive className={styles.MemberIcon} />
+          <Text className={styles.Members}>121 members</Text>
         </Row>
       </div>
       {n.slice(0, 3).map((i) => {
         return (
           <>
-           <ClubhouseMember />
+            <ClubhouseMember />
           </>
         );
       })}
@@ -56,13 +56,13 @@ const ClubhouseDetail = ({ isJoined = false }) => {
         n.slice(3).map((i) => {
           return (
             <>
-             <ClubhouseMember />
+              <ClubhouseMember />
             </>
           );
         })
       ) : (
-        <div className={styles.InfoLink} onClick={handleViewAll}>
-          view all members 
+        <div className={styles.Link} onClick={handleViewAll}>
+          view all members
         </div>
       )}
     </>

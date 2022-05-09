@@ -4,7 +4,7 @@
   border: none;
 }
 
-.MiddleColumn {
+.DetailColumn {
   padding: 0rem 1.5rem;
   display: flex;
   justify-content: left;
@@ -78,7 +78,6 @@
   margin: 0rem 1rem;
 }
 
-
 .ThirdCol {
   display: flex;
   justify-content: right;
@@ -101,7 +100,7 @@
   justify-content: right;
 }
 
-.Menu {
+.MenuItem {
   padding: 1.5rem 4rem;
   border-radius: 10px;
   font-size: 1.6rem;
@@ -110,7 +109,7 @@
   align-items: center;
 }
 
-.MenuWrap {
+.Menu {
   padding: 0%;
   border-radius: 10px;
 }
@@ -151,7 +150,7 @@
     height: 5rem;
   }
 
-  .Menu {
+  .MenuItem {
     font-size: 2rem;
   }
 
@@ -162,7 +161,7 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .MiddleColumn {
+  .DetailColumn {
     padding: 0rem 2rem;
   }
 
@@ -174,7 +173,7 @@
   .SubText {
     font-size: 1rem;
   }
-  .Menu {
+  .MenuItem {
     font-size: 1.4rem;
   }
   .MenuIcon {
@@ -200,7 +199,7 @@
   .SubText {
     font-size: 0.8rem;
   }
-  .Menu {
+  .MenuItem {
     font-size: 1.2rem;
   }
   .MenuIcon {

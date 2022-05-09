@@ -8,7 +8,7 @@
     0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-.MiddleColumn {
+.DetailColumn {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -33,7 +33,7 @@
   padding: 0.5rem 0rem;
 }
 
-.CtaColumn2 {
+.DropdownColumn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +99,7 @@
   font-size: 1.4rem;
 }
 
-.CoverImage {
+.Image {
   width: 100%;
   height: 100%;
   object-fit: fill;
@@ -111,14 +111,14 @@
   align-items: center;
 }
 
-.PostSubText {
+.Likes {
   font-size: 1.4rem;
   color: #616161;
   text-decoration: underline;
   cursor: pointer;
 }
 
-.PostSubText2 {
+.Comments {
   font-size: 1.4rem;
   color: #616161;
   text-decoration: underline;
@@ -142,17 +142,17 @@
 }
 
 .Menu {
+  padding: 0%;
+  border-radius: 10px;
+}
+
+.MenuItem {
   padding: 1.5rem 4rem;
   border-radius: 10px;
   font-size: 18px;
   display: flex;
   justify-content: left;
   align-items: center;
-}
-
-.MenuWrap {
-  padding: 0%;
-  border-radius: 10px;
 }
 
 .MenuIcon {
@@ -192,7 +192,7 @@
     width: 5rem;
     height: 5rem;
   }
-  .Menu {
+  .MenuItem {
     font-size: 28px;
   }
   .Avatar {
@@ -213,7 +213,7 @@
   .Description {
     font-size: 1.2rem;
   }
-  .Menu {
+  .MenuItem {
     font-size: 14px;
   }
   .MenuIcon {
@@ -248,7 +248,7 @@
     font-size: 1rem;
   }
 
-  .Menu {
+  .MenuItem {
     font-size: 14px;
   }
 

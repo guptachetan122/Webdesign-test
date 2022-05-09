@@ -1,7 +1,7 @@
 .Body {
   min-height: 100vh;
   padding-bottom: 4rem;
-  background-color: #e5e5e5;
+  background-color: #f3f2ef;
 }
 
 .Sidebar {
@@ -63,7 +63,8 @@
 }
 
 .ButtonDark {
-  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  background: radial-gradient(100% 1267.36% at 0% 50%, #F42B4D 0%, #FA541A 100%);
+  border: none;
   color: #fafafa;
   font-size: 1.6rem;
   width: 100%;

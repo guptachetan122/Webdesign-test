@@ -8,16 +8,10 @@
   width: 100%;
 }
 
-.MiddleColumn {
+.Column {
   padding: 0.5rem 2rem;
   display: flex;
   justify-content: left;
-  align-items: center;
-}
-
-.ProgressWrapper {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 

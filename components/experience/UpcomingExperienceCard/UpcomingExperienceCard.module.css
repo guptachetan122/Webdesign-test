@@ -19,7 +19,12 @@
   position: relative;
 }
 
-.LabelDiv {
+.DateRow {
+  height: 35px;
+  margin-bottom: 1rem;
+}
+
+.LabelWrapper {
   position: absolute;
   z-index: 1;
   padding: 1rem 3rem;
@@ -44,17 +49,17 @@
   margin-right: 0.5rem;
 }
 
-.CoverImage {
+.Image {
   transform: translateY(-3%);
 }
 
-.Row {
-  height: 35px;
-  margin-bottom: 1rem;
+.NameColumn {
+  padding-left: 3rem;
 }
 
-.NameRow {
-  padding: 0rem 3rem;
+.DetailColumn {
+  display: flex;
+  justify-content: right;
 }
 
 .Name {
@@ -75,22 +80,27 @@
 .Date {
   font-size: 2rem;
   font-weight: 700;
-  color: #f42b4d;
+  color: #FA541A;
 }
 
 .Time {
   font-size: 1.6rem;
-  color: #f42b4d;
+  color: #FA541A;
 }
 
-.LinkText {
-  padding: 0rem 3rem;
+.Link {
+  font-weight: 500;
+  padding: 0.5rem 2rem;
   font-size: 1.6rem;
-  text-decoration: underline;
-  color: #616161;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  text-decoration: none;
+  /* color: #313131; */
+  background: radial-gradient(100% 1267.36% at 0% 50%, #F42B4D 0%, #FA541A 100%);
+  color: #fafafa;
 }
 
-.LabelCol {
+.LabelColumn {
   display: flex;
   justify-content: right;
   align-items: center;
@@ -109,7 +119,7 @@
 }
 
 @media screen and (min-width: 2500px) {
-  .Row {
+  .DateRow {
     margin-bottom: 2rem;
   }
   .Date {
@@ -131,7 +141,7 @@
     width: 2rem;
     height: 2rem;
   }
-  .LinkText {
+  .Link {
     font-size: 2rem;
   }
   .LabelText {
@@ -162,7 +172,7 @@
     width: 1.4rem;
     height: 1.4rem;
   }
-  .LinkText {
+  .Link {
     font-size: 1.4rem;
   }
   .LabelText {
@@ -187,7 +197,7 @@
     width: 1.2rem;
     height: 1.2rem;
   }
-  .LinkText {
+  .Link {
     font-size: 1.2rem;
   }
   .LabelText {

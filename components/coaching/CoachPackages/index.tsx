@@ -30,20 +30,20 @@ const CoachPackages = ({ PackageData }: PackageProps) => {
       {PackageData?.map((item) => {
         return (
           <div
-            className={val == item?._id ? styles.ButtonActive : styles.Button}
+            className={val == item?._id ? styles.PackageActive : styles.Package}
             key={item._id}
             onClick={() => clicked(item?._id)}
           >
             <Row>
               <Col span={3}>
                 {val == item?._id ? (
-                  <CheckCircleOutlined className={styles.ButtonIcon} />
+                  <CheckCircleOutlined className={styles.PackageIcon} />
                 ) : null}
               </Col>
               <Col span={6}>{item?.sessionCount} session</Col>
               <Col span={8}>
                 {item.popular ? (
-                  <button className={styles.SubButtonActive}>
+                  <button className={styles.Badge}>
                     most popular
                   </button>
                 ) : null}

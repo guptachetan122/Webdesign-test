@@ -13,20 +13,20 @@ const ButtonExperiences = ({ Name = "", infoPage = false, buttonName =""}) => {
       {Name == "notBooked" ? (
         infoPage ? (
           <>
-            <Row className={styles.ButtonWrapper}>
-              <button className={styles.BookButtonDark}>
+            <Row className={styles.Row}>
+              <button className={styles.ButtonDark}>
                 {" "}
-                <ExperienceInactive className={styles.BookIcon} />
+                <ExperienceInactive className={styles.Icon} />
                 {buttonName}
               </button>
             </Row>
           </>
         ) : (
           <>
-            <Row className={styles.ButtonWrapper}>
-              <button className={styles.BookButton}>
+            <Row className={styles.Row}>
+              <button className={styles.Button}>
                 {" "}
-                <ExperienceInactive className={styles.BookIcon} />
+                <ExperienceInactive className={styles.Icon} />
                 {buttonName}
               </button>
             </Row>
@@ -36,18 +36,18 @@ const ButtonExperiences = ({ Name = "", infoPage = false, buttonName =""}) => {
 
       {Name == "Booked" ? (
         infoPage ? (
-          <Row className={styles.ButtonWrapper}>
-            <button className={styles.BookButtonDark}>
+          <Row className={styles.Row}>
+            <button className={styles.ButtonDark}>
               {" "}
-              <PlusCircleOutlined className={styles.BookIcon} />
+              <PlusCircleOutlined className={styles.Icon} />
               add to calendar
             </button>
           </Row>
         ) : (
-          <Row className={styles.ButtonWrapper}>
-            <button className={styles.BookButton}>
+          <Row className={styles.Row}>
+            <button className={styles.Button}>
               {" "}
-              <PlusCircleOutlined className={styles.BookIcon} />
+              <PlusCircleOutlined className={styles.Icon} />
               {buttonName}
             </button>
           </Row>
@@ -55,16 +55,16 @@ const ButtonExperiences = ({ Name = "", infoPage = false, buttonName =""}) => {
       ) : null}
 
       {Name == "Masterclass" ? (
-        <Row className={styles.ButtonWrapper}>
-          <Col span={12} className={styles.BookedCol}>
-            <button className={styles.BookButton}>
+        <Row className={styles.Row}>
+          <Col span={12} className={styles.Column}>
+            <button className={styles.Button}>
               {" "}
-              <img src="/assets/images/spotify.svg" alt="spotify icon" className={styles.BookIcon} />
+              <img src="/assets/images/spotify.svg" alt="spotify icon" className={styles.Icon} />
               listen
             </button>
           </Col>
-          <Col span={12} className={styles.BookedCol}>
-            <button className={styles.BookButton}>
+          <Col span={12} className={styles.Column}>
+            <button className={styles.Button}>
               {" "}
               <YoutubeFilled className={styles.youtubeIcon} />
               watch

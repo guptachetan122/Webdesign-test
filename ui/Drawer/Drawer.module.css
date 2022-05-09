@@ -3,7 +3,7 @@
   font-size: 16px;
 }
 
-.ButtonWrap {
+.Logout {
   cursor: pointer;
   /* background: none; */
   background: radial-gradient(100% 1267.36% at 0% 50%, #F42B4D 0%, #FA541A 100%);
@@ -68,12 +68,12 @@
   color: #333333;
 }
 
-.IconText {
+.LogoutText {
   font-size: 26px;
   color: #FAFAFA;
 }
 
-.IconStyle {
+.LogoutIcon {
   height: 26px;
   width: 26px;
   margin-right: 1rem;
@@ -104,11 +104,11 @@
     font-size: 26px;
   }
 
-  .IconText {
+  .LogoutText {
     font-size: 30px;
   }
 
-  .IconStyle {
+  .LogoutIcon {
     height: 30px;
     width: 30px;
     margin-right: 1rem;
@@ -137,11 +137,11 @@
   .Button {
     font-size: 14px;
   }
-  .IconText {
+  .LogoutText {
     font-size: 15px;
   }
 
-  .IconStyle {
+  .LogoutIcon {
     height: 15px;
     width: 15px;
     margin-right: 1rem;

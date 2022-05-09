@@ -15,7 +15,7 @@ const ArchiveExperienceCard = () => {
             src="/assets/images/exp2.png"
             alt="alt"
             width="100%"
-            className={styles.CoverImage}
+            className={styles.Image}
           />
         </Row>
         <Row>

@@ -50,6 +50,10 @@ input[type="password"] {
   line-height: 1.6rem;
 }
 
+.ant-switch-checked{
+  background-color: rgb(72, 240, 72);
+}
+
 @media screen and (max-width: 1600px) {
   input[type="text"] {
     font-size: 1.4rem;

@@ -35,12 +35,12 @@ const Header = () => {
   const PATH = Router.pathname.split("/")[1];
   const PATH2 = Router.pathname.split("/")[2];
 
-  const n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const n = [1, 2, 3, 4, 5];
   const menu = () => {
     return (
-      <Menu className={styles.MenuWrapper}>
+      <Menu className={styles.Menu}>
         {n.map((i) => (
-          <Menu.Item key={i} className={styles.Menu}>
+          <Menu.Item key={i} className={styles.MenuItem}>
             <Row className={styles.MenuText}>
               you&apos;ve got a new superconnect in sushruta basak! tap to meet
               her
@@ -48,18 +48,19 @@ const Header = () => {
             <Row className={styles.MenuSubText}>7 hours ago</Row>
           </Menu.Item>
         ))}
+        <Menu.Item className={styles.ViewAllText}>view all notifications</Menu.Item>
       </Menu>
     );
   };
 
   return (
     <>
-      <div className={styles.headerWrapper}>
+      <div className={styles.HeaderWrapper}>
         {" "}
-        <Row className={styles.headerDiv}>
-          <Col span={8}>
+        <Row className={styles.HeaderRow}>
+          <Col span={8} className={styles.ProfileColumn}>
             {" "}
-            <div className={styles.AvatarCol}>
+            <div className={styles.AvatarColumn}>
               {" "}
               <Avatar
                 src={
@@ -71,43 +72,47 @@ const Header = () => {
                     objectFit="contain"
                   />
                 }
-                className={styles.profileAvatar}
+                className={styles.ProfileAvatar}
               />{" "}
               <ProfileDrawer />
-              <div>+ invite</div>
             </div>
+            <Link href="/invite" passHref>
+              <div className={styles.Invite}>invite</div>
+            </Link>
           </Col>
 
-          <Col span={8} className={styles.headerCol}>
+          <Col span={8} className={styles.LogoColumn}>
             <Link href="/feed" passHref>
               <img
                 src="/assets/images/image3.png"
                 alt="leap club logo"
-                className={styles.headerImageWrapper}
+                className={styles.LogoImage}
               />
             </Link>
           </Col>
-          <Col className={styles.headerIconCol} span={8}>
+
+          <Col className={styles.IconColumn} span={8}>
             <Dropdown overlay={menu} placement="bottomLeft" arrow>
-              <Badge count={10} size="default" className={styles.headerBadge}>
+              <Badge count={10} size="default" className={styles.Badge}>
                 <Avatar
                   src="/assets/images/bell.svg"
                   style={{ color: "black" }}
-                  className={styles.headerAvatar}
+                  className={styles.IconAvatar}
                 />
               </Badge>
             </Dropdown>
-            <Badge count={100} size="default" className={styles.headerBadge}>
+            <Badge count={100} size="default" className={styles.Badge}>
               <Avatar
                 src="/assets/images/message-circle.svg"
                 style={{ color: "black" }}
-                className={styles.headerAvatar}
+                className={styles.IconAvatar}
               />
             </Badge>
           </Col>
         </Row>
+
         <StickyProvider>
-          <Sticky className={styles.subHeaderWrapper}>
+          <Sticky className={styles.Sticky}>
             {PATH2 == "[expid]" ? (
               <Subheader SubheaderData={[]} />
             ) : PATH == "experiences" ? (

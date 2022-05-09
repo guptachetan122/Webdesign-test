@@ -43,7 +43,10 @@ const Chats = () => {
               <Col span={20}>receive messages from other members </Col>
               <Col span={4}>
                 {" "}
-                <Switch defaultChecked onChange={onChange} />
+                <Switch
+                  defaultChecked
+                  onChange={onChange}
+                />
               </Col>
             </Row>
           </div>

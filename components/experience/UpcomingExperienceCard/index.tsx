@@ -1,11 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import { Col, Row, Typography } from "antd";
 import React from "react";
-import ButtonComponent from "../../common/Button/ButtonExperiences";
+import ButtonExperiences from "../../common/Button/ButtonExperiences";
 import styles from "./UpcomingExperienceCard.module.css";
 import Link from "next/link";
-import { CheckCircleFilled} from "@ant-design/icons";
-import { LocationMarkerIcon , VideoCameraIcon , CurrencyRupeeIcon} from "@heroicons/react/outline";
+import { ArrowRightOutlined, CheckCircleFilled } from "@ant-design/icons";
+import {
+  LocationMarkerIcon,
+  VideoCameraIcon,
+  CurrencyRupeeIcon,
+} from "@heroicons/react/outline";
 
 const { Text } = Typography;
 
@@ -14,13 +18,13 @@ const UpcomingExperienceCard = ({
   isBooked = false,
   isPay = false,
   isArchived = false,
-  Name = ""
+  Name = "",
 }) => {
   return (
     <>
       <div className={styles.Container}>
         <Row className={styles.Background}>
-          <div className={styles.LabelDiv}>
+          <div className={styles.LabelWrapper}>
             {Name == "online" ? (
               <button className={styles.Label}>
                 {" "}
@@ -45,11 +49,11 @@ const UpcomingExperienceCard = ({
             src="/assets/images/exp2.png"
             alt="alt"
             width="100%"
-            className={styles.CoverImage}
+            className={styles.Image}
           />
         </Row>
         {isArchived ? null : (
-          <Row className={styles.Row}>
+          <Row className={styles.DateRow}>
             {" "}
             <Col>
               <div className={styles.DateWrapper}>
@@ -62,7 +66,7 @@ const UpcomingExperienceCard = ({
                 </Row>
               </div>
             </Col>
-            <Col className={styles.LabelCol}>
+            <Col className={styles.LabelColumn}>
               {isBooked ? (
                 <div className={styles.LabelText}>
                   <CheckCircleFilled />
@@ -72,25 +76,35 @@ const UpcomingExperienceCard = ({
             </Col>
           </Row>
         )}
-
-        <Row className={styles.NameRow}>
-          <Text className={styles.Name}>the pow(d)er room</Text>
+        <Row>
+          <Col span={12} className={styles.NameColumn}>
+            {" "}
+            <div>
+              <Text className={styles.Name}>the pow(d)er room</Text>
+            </div>
+          </Col>
+          <Col span={12} className={styles.DetailColumn}>
+            <div>
+              <Link href="/experiences/id" passHref>
+                <a>
+                  <Text className={styles.Link}>
+                    view details{"  "}
+                    <ArrowRightOutlined />
+                  </Text>
+                </a>
+              </Link>
+            </div>
+          </Col>
         </Row>
 
-        <Link href="/experiences/id" passHref>
-          <a>
-            <Text className={styles.LinkText}>view details</Text>
-          </a>
-        </Link>
-
         {isArchived ? (
-          <ButtonComponent Name="Masterclass" />
+          <ButtonExperiences Name="Masterclass" />
         ) : isBooked ? (
-          <ButtonComponent Name="Booked" buttonName="add to calendar" />
+          <ButtonExperiences Name="Booked" buttonName="add to calendar" />
         ) : isPay ? (
-          <ButtonComponent Name="notBooked" buttonName="book slot and pay" />
+          <ButtonExperiences Name="notBooked" buttonName="book slot and pay" />
         ) : (
-          <ButtonComponent Name="notBooked" buttonName="book slot" />
+          <ButtonExperiences Name="notBooked" buttonName="book slot" />
         )}
       </div>
     </>

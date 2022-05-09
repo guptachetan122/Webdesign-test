@@ -22,7 +22,7 @@ const BackHeader = ({ pageName = "" }) => {
 
   return (
     <div className={styles.Header}>
-      <Text className={styles.Icon} onClick={goBack}>
+      <Text className={styles.Text} onClick={goBack}>
         <ArrowLeftOutlined /> back
       </Text>
     </div>

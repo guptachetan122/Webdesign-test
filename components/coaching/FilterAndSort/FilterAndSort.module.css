@@ -1,0 +1,112 @@
+.Card {
+  margin: 1rem 0rem;
+  padding: 2rem 4rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.6s ease-in-out;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.Tag {
+  background: none;
+  color: #616161;
+  border-radius: 5px;
+  margin-top:0.75rem;;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.TagActive {
+  background: none;
+  font-weight: 500;
+  color: #FA541A;
+  border-radius: 5px;
+  margin-top:0.75rem;
+  margin-right: 0.75rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.Title {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.Row {
+  margin: 0.5rem 0rem;
+}
+
+.Collapse {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+.Button {
+  padding: 0.5rem 2rem;
+  border-radius: 200px;
+  font-size: 1.6rem;
+  border: 1px solid #313131;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Button2 {
+  background: radial-gradient(100% 1267.36% at 0% 50%, #F42B4D 0%, #FA541A 100%);
+  color: #fafafa;
+  padding: 0.5rem 2rem;
+  border-radius: 200px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .Tag , .TagActive, .TagLink, .TagView {
+    font-size: 1.2rem
+  }
+  .Title {
+    font-size: 1.4rem;
+  }
+  .Button,
+  .Button2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Tag , .TagActive, .TagLink, .TagView {
+    font-size: 1.4rem;
+  }
+  .Title {
+    font-size: 1.6rem;
+  }
+  .Button,
+  .Button2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .Tag , .TagActive, .TagLink, .TagView {
+    font-size: 2rem;
+  }
+  .Title {
+    font-size: 2.2rem;
+  }
+  .Button,
+  .Button2 {
+    font-size: 2rem;
+  }
+}

@@ -1,4 +1,4 @@
-.Menu {
+.MenuItem {
   padding: 2rem 2rem;
   margin-bottom: 1rem;
   border-radius: 10px;
@@ -17,7 +17,7 @@
   font-size: 1.2rem;
 }
 
-.MenuWrapper {
+.Menu {
   padding: 1rem 1rem;
   border-radius: 20px;
   border: 1px solid #616161;
@@ -25,21 +25,22 @@
   max-height: 500px;
 }
 
-.headerDiv {
+.HeaderRow {
   height: fit-content;
   background-color: #fafafa;
   padding: 0.5rem 12rem 0.5rem 12rem;
+  border-bottom: 3px solid #fa541a;
 }
 
-.subHeaderWrapper {
+.Sticky {
   z-index: 3;
 }
 
-.headerWrapper {
+.HeaderWrapper {
   width: 100%;
 }
 
-.AvatarCol {
+.AvatarColumn {
   padding: 0rem 1rem;
   width: fit-content;
   display: flex;
@@ -47,106 +48,127 @@
   align-items: center;
 }
 
-.profileAvatar {
+.ProfileAvatar {
   width: 50px;
   height: 50px;
 }
 
-.headerCol {
+.LogoColumn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.headerImageWrapper {
+.ProfileColumn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.LogoImage {
   width: 75px;
   height: 75px;
   cursor: pointer;
 }
 
-.headerIconCol {
+.IconColumn {
   padding: 2rem 0rem;
   display: flex;
   justify-content: right;
   align-items: right;
 }
 
-.headerBadge {
+.Badge {
   margin-right: 4rem;
   cursor: pointer;
 }
 
-.headerAvatar {
+.IconAvatar {
   height: 30px;
   width: 30px;
 }
 
+.Invite {
+  background: radial-gradient(
+    100% 1267.36% at 0% 50%,
+    #f42b4d 0%,
+    #fa541a 100%
+  );
+  color: #fafafa;
+  border-radius: 200px;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1920px) {
-  .profileAvatar {
+  .ProfileAvatar {
     width: 75px;
     height: 75px;
   }
-  .headerImageWrapper {
+  .LogoImage {
     width: 100px;
     height: 100px;
   }
 }
 
 @media screen and (min-width: 2500px) {
-  .headerAvatar {
+  .IconAvatar {
     height: 60px;
     width: 60px;
   }
-  .headerImageWrapper {
+  .LogoImage {
     width: 125px;
     height: 125px;
   }
-  .profileAvatar {
+  .ProfileAvatar {
     width: 100px;
     height: 100px;
   }
 
-  .MenuText {
+  .MenuText,
+  .Invite {
     font-size: 2rem;
   }
 
   .MenuSubText {
     font-size: 1.6rem;
   }
-  .MenuWrapper {
+  .Menu {
     max-height: 600px;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .headerImageWrapper {
+  .LogoImage {
     width: 65px;
     height: 65px;
   }
-  .MenuText {
+  .MenuText,
+  .Invite {
     font-size: 1.4rem;
   }
   .MenuSubText {
     font-size: 1rem;
   }
-  .MenuWrapper {
+  .Menu {
     max-height: 400px;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  .headerImageWrapper {
+  .LogoImage {
     width: 60px;
     height: 60px;
   }
-  .MenuText {
+  .MenuText,
+  .Invite {
     font-size: 1.2rem;
   }
 
   .MenuSubText {
     font-size: 0.8rem;
   }
-  .MenuWrapper {
+  .Menu {
     max-height: 300px;
   }
 }

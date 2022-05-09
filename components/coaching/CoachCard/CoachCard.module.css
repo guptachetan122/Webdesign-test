@@ -20,7 +20,7 @@
   width: 10rem;
 }
 
-.MiddleColumn {
+.Column {
   padding: 0.5rem 2rem;
   display: flex;
   justify-content: left;

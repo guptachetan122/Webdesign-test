@@ -6,7 +6,7 @@ import styles from './ClubhouseModal.module.css'
 
 const ClubhouseModal = () => {
   
-   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
    const showModal = () => {
      setIsModalVisible(true);

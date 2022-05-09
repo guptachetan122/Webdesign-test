@@ -4,16 +4,11 @@
   border: none;
 }
 
-.MiddleColumn {
+.DetailColumn {
   padding: 0rem 1.5rem;
   display: flex;
   justify-content: left;
   align-items: center;
-}
-
-.DividerCol {
-  display: flex;
-  justify-content: center;
 }
 
 .TextWrapper {
@@ -42,7 +37,7 @@
   width: 6rem;
 }
 
-.DetailWrapper{
+.DetailWrapper {
   padding: 0rem 1rem;
 }
 .Name {
@@ -60,17 +55,17 @@
   cursor: pointer;
 }
 
-.ThirdCol{
+.CtaColumn {
   display: flex;
   justify-content: right;
 }
 
-.ButtonWrapper{
+.CtaWrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-/* .ButtonCol {
+/* .CtaCol {
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -82,7 +77,15 @@
   justify-content: right;
 }
 
-.Menu {
+.DropdownIcon {
+  width: 40px;
+  height: 40px;
+  color: #616161;
+  cursor: pointer;
+  /* background-color: rgb(15, 140, 249); */
+}
+
+.MenuItem {
   padding: 1.5rem 4rem;
   border-radius: 10px;
   font-size: 18px;
@@ -91,7 +94,7 @@
   align-items: center;
 }
 
-.MenuWrap {
+.Menu {
   padding: 0%;
   border-radius: 10px;
 }
@@ -103,13 +106,6 @@
   color: #616161;
   /* background-color: aquamarine; */
 }
-.DropdownIcon {
-  width: 40px;
-  height: 40px;
-  color: #616161;
-  cursor: pointer;
-  /* background-color: rgb(15, 140, 249); */
-}
 
 @media screen and (min-width: 2500px) {
   .Name {
@@ -120,17 +116,21 @@
   .SubText {
     font-size: 1.6rem;
   }
+
   .MenuIcon {
     width: 28px;
     height: 28px;
   }
+
   .DropdownIcon {
     width: 50px;
     height: 50px;
   }
-  .Menu {
+
+  .MenuItem {
     font-size: 28px;
   }
+
   .Avatar {
     height: 7rem;
     width: 7rem;
@@ -138,7 +138,7 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .MiddleColumn{
+  .DetailColumn {
     padding: 0rem 2rem;
   }
 
@@ -150,7 +150,7 @@
   .SubText {
     font-size: 1rem;
   }
-  .Menu {
+  .MenuItem {
     font-size: 14px;
   }
   .MenuIcon {
@@ -176,7 +176,7 @@
   .SubText {
     font-size: 0.8rem;
   }
-  .Menu {
+  .MenuItem {
     font-size: 14px;
   }
   .MenuIcon {

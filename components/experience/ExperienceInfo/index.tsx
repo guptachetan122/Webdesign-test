@@ -22,7 +22,7 @@ const ExperienceInfo = ({
     <>
       <div className={styles.Container}>
         <Row className={styles.Background}>
-          <div className={styles.LabelDiv}>
+          <div className={styles.LabelWrapper}>
             {Name == "online" ? (
               <button className={styles.Label}>
                 {" "}
@@ -48,13 +48,13 @@ const ExperienceInfo = ({
             src="/assets/images/exp2.png"
             alt="alt"
             width="100%"
-            className={styles.CoverImage}
+            className={styles.Image}
           />
         </Row>
-        <Row className={styles.DateWrapper}>
+        <Row className={styles.DateRow}>
           {" "}
           <Col>
-            <div className={styles.DateCard}>
+            <div className={styles.DateWrapper}>
               <Row>
                 <Text className={styles.Date}>25 Feb</Text>
               </Row>
@@ -63,10 +63,10 @@ const ExperienceInfo = ({
               </Row>
             </div>
           </Col>
-          <Col className={styles.bookedLabelCol}>
+          <Col className={styles.LabelColumn}>
             {" "}
             {isBooked ? (
-              <div className={styles.bookedLabelText}>
+              <div className={styles.LabelText}>
                 <CheckCircleFilled />
                 {"  "}slot booked
               </div>
@@ -98,13 +98,13 @@ const ExperienceInfo = ({
         
         <Row className={styles.Body}>
           <div>
-            <div className={styles.Description}>
+            <div className={styles.SubHeading}>
               clubhouse huddle by sorority sisters
             </div>
 
             <div className={styles.Heading}>what to expect</div>
 
-            <div className={styles.Description}>
+            <div className={styles.SubHeading}>
               lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard
               pecimen book. It has survived not only five centuries, but also
@@ -113,7 +113,7 @@ const ExperienceInfo = ({
 
             <div className={styles.Heading}>about speaker</div>
 
-            <div className={styles.Description}>
+            <div className={styles.SubHeading}>
               lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard
               pecimen book. It has survived not only five centuries, but also

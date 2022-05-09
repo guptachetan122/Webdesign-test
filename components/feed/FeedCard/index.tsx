@@ -40,8 +40,8 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
 
   const menu = () => {
     return isLoggedIn ? (
-      <Menu className={styles.MenuWrap}>
-        <Menu.Item key="1" className={styles.Menu}>
+      <Menu className={styles.Menu}>
+        <Menu.Item key="1" className={styles.MenuItem}>
           <div>
             <img
               src="/assets/images/pin-black.png"
@@ -51,7 +51,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
             delete post
           </div>
         </Menu.Item>
-        <Menu.Item key="2" className={styles.Menu}>
+        <Menu.Item key="2" className={styles.MenuItem}>
           <div>
             <img
               src="/assets/images/mute-black.png"
@@ -64,7 +64,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
       </Menu>
     ) : (
       <Menu className={styles.MenuWrap}>
-        <Menu.Item key="1" className={styles.Menu}>
+        <Menu.Item key="1" className={styles.MenuItem}>
           <div>
             <img
               src="/assets/images/pin-black.png"
@@ -82,7 +82,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
     <>
       <div className={styles.Container}>
         <Row className={styles.Row}>
-          <Col span={18} className={styles.MiddleColumn}>
+          <Col span={18} className={styles.DetailColumn}>
             <div>
               <Avatar
                 className={styles.Avatar}
@@ -99,6 +99,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
               </div>
             </div>
           </Col>
+          
           <Col span={6} className={styles.ButtonColumn}>
             {isConnect ? <ButtonLight name="chat" /> : <ScModal />}
           </Col>
@@ -125,15 +126,15 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
           <img
             src="/assets/images/Feed-bkg.png"
             alt="feed bkg"
-            className={styles.CoverImage}
+            className={styles.Image}
           />
         </Row>
         <Row className={styles.Row}>
           <Col span={12}>
-            <div className={styles.PostSubText}><LikesModal num={100}/></div>
+            <div className={styles.Likes}><LikesModal num={100}/></div>
           </Col>
           <Col span={12}>
-            <div className={styles.PostSubText2} onClick={handleComments}>
+            <div className={styles.Comments} onClick={handleComments}>
               200 comments
             </div>
           </Col>
@@ -147,10 +148,12 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
             )}
             like
           </Col>
+
           <Col span={8} className={styles.CtaColumn} onClick={handleComment}>
             <ChatAltIcon className={styles.CtaIcon} />
             comment
           </Col>
+
           <Col span={4} className={styles.CtaColumn} onClick={handleBookmark}>
             {changeBookmark ? (
               <BookmarkDark className={styles.CtaIcon} />
@@ -158,7 +161,8 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
               <BookmarkLight className={styles.CtaIcon} />
             )}
           </Col>
-          <Col span={4} className={styles.CtaColumn2}>
+
+          <Col span={4} className={styles.DropdownColumn}>
             <Dropdown
               overlay={menu}
               // trigger={["click"]}
@@ -170,6 +174,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
             </Dropdown>
           </Col>
         </Row>
+
         {makeComment || viewComments ? (
           <Row className={styles.TextAreaRow}>
             <Col span={24} className={styles.TextAreaColumn}>
@@ -187,6 +192,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
             </Col>
           </Row>
         ) : null}
+
         {viewComments ? (
           <>
             <Divider
@@ -230,6 +236,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
             </Row>
           </>
         ) : null}
+
       </div>
     </>
   );

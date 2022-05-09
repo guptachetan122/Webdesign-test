@@ -12,23 +12,18 @@ const FeedInput = () => {
   return (
     <div className={styles.Container}>
       <button className={styles.Input}>
-        <PencilAltIcon className={styles.InputIcon} />
+        <PencilAltIcon className={styles.Icon} />
         <div>create a new post or poll</div>
       </button>
-      {/* <Input
-        className={styles.Input}
-        prefix={<PencilAltIcon className={styles.InputIcon} />}
-        placeholder={`create a new post or poll`}
-      /> */}
-      <div className={styles.InputTabWrapper}>
-        <div className={styles.InputTab}>
-          <PhotographIcon className={styles.InputTabIcon} /> photo
+      <div className={styles.TabWrapper}>
+        <div className={styles.Tab}>
+          <PhotographIcon className={styles.TabIcon} /> photo
         </div>
-        <div className={styles.InputTab}>
-          <VideoCameraIcon className={styles.InputTabIcon} /> video
+        <div className={styles.Tab}>
+          <VideoCameraIcon className={styles.TabIcon} /> video
         </div>
-        <div className={styles.InputTab}>
-          <ChartBarIcon className={styles.InputTabIcon} /> poll
+        <div className={styles.Tab}>
+          <ChartBarIcon className={styles.TabIcon} /> poll
         </div>
       </div>
     </div>

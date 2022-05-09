@@ -1,11 +1,8 @@
 .TriggerButton {
   background: none;
-  border-width: 1px;
+  border: none;
   font-size: 1.6rem;
   width: 100%;
-  padding: 1rem 2rem;
-  border-radius: 200px;
-  margin-right: 2rem;
   cursor: pointer;
 }
 

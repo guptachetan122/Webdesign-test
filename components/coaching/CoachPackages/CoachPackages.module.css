@@ -1,4 +1,4 @@
-.Button {
+.Package {
   background: none;
   font-size: 1.6rem;
   width: 100%;
@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 
-.ButtonActive {
+.PackageActive {
   background: none;
   font-size: 1.6rem;
   width: 100%;
@@ -20,7 +20,7 @@
   cursor: pointer;
 }
 
-.SubButtonActive {
+.Badge {
   background: #f42b4d;
   border: 1px solid;
   border-radius: 5px;
@@ -32,67 +32,67 @@
   color: #fafafa;
 }
 
-.ButtonIcon {
+.PackageIcon {
   color: #f42b4d;
   font-size: 2rem;
 }
 
-.SubButtonCol {
+.SubPackageCol {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 @media screen and (min-width: 2500px) {
-  .Button {
+  .Package {
     font-size: 2rem;
   }
 
-  .ButtonActive {
+  .PackageActive {
     font-size: 2rem;
   }
 
-  .SubButtonActive {
+  .Badge {
     font-size: 1.6rem;
   }
 
-  .ButtonIcon {
+  .PackageIcon {
     font-size: 2.4rem;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .Button {
+  .Package {
     font-size: 1.4rem;
   }
 
-  .ButtonActive {
+  .PackageActive {
     font-size: 1.4rem;
   }
 
-  .SubButtonActive {
+  .Badge {
     font-size: 1rem;
   }
 
-  .ButtonIcon {
+  .PackageIcon {
     font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  .Button {
+  .Package {
     font-size: 1.2rem;
   }
 
-  .ButtonActive {
+  .PackageActive {
     font-size: 1.2rem;
   }
 
-  .SubButtonActive {
+  .Badge {
     font-size: 0.8rem;
   }
 
-  .ButtonIcon {
+  .PackageIcon {
     font-size: 1.6rem;
   }
 }

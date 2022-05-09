@@ -10,8 +10,8 @@ import SeeMore from "../../common/SeeMore";
 const FeedReply = ({ isConnect = false, isLoggedIn = false }) => {
   const menu = () => {
     return isLoggedIn ? (
-      <Menu className={styles.MenuWrap}>
-        <Menu.Item key="1" className={styles.Menu}>
+      <Menu className={styles.Menu}>
+        <Menu.Item key="1" className={styles.MenuItem}>
           <div>
             <img
               src="/assets/images/pin-black.png"
@@ -21,7 +21,7 @@ const FeedReply = ({ isConnect = false, isLoggedIn = false }) => {
             delete post
           </div>
         </Menu.Item>
-        <Menu.Item key="2" className={styles.Menu}>
+        <Menu.Item key="2" className={styles.MenuItem}>
           <div>
             <img
               src="/assets/images/mute-black.png"
@@ -33,8 +33,8 @@ const FeedReply = ({ isConnect = false, isLoggedIn = false }) => {
         </Menu.Item>
       </Menu>
     ) : (
-      <Menu className={styles.MenuWrap}>
-        <Menu.Item key="1" className={styles.Menu}>
+      <Menu className={styles.Menu}>
+        <Menu.Item key="1" className={styles.MenuItem}>
           <div>
             <img
               src="/assets/images/pin-black.png"
@@ -60,7 +60,7 @@ const FeedReply = ({ isConnect = false, isLoggedIn = false }) => {
               />
             </div>
           </Col>
-          <Col span={16} className={styles.MiddleColumn}>
+          <Col span={16} className={styles.DetailColumn}>
             <div>
               <div>
                 <div className={styles.Name}>janvi biyani</div>
@@ -92,8 +92,8 @@ const FeedReply = ({ isConnect = false, isLoggedIn = false }) => {
               </div>
             </div>
           </Col>
-          <Col span={6} className={styles.ThirdCol}>
-            <div className={styles.ButtonWrapper}>
+          <Col span={6} className={styles.CtaColumn}>
+            <div className={styles.CtaWrapper}>
               <div>
                 {isConnect ? (
                   <ButtonLight name="chat" onlyIcon />

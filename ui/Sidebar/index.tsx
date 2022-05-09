@@ -27,34 +27,34 @@ const Sidebar = ({ pageName }: SidebarProps) => {
     switch (pathName) {
       case "feed":
         return pathName == PATH ? (
-          <FeedActive className={styles.SidebarIconActive} />
+          <FeedActive className={styles.IconActive} />
         ) : (
-          <FeedInactive className={styles.SidebarIcon} />
+          <FeedInactive className={styles.Icon} />
         );
 
       case "clubhouse":
         return pathName == PATH ? (
-          <ChActive className={styles.SidebarIconActive} />
+          <ChActive className={styles.IconActive} />
         ) : (
-          <ChInactive className={styles.SidebarIcon} />
+          <ChInactive className={styles.Icon} />
         );
       case "superconnections":
         return pathName == PATH ? (
-          <ScActive className={styles.SidebarIconActive} />
+          <ScActive className={styles.IconActive} />
         ) : (
-          <ScInactive className={styles.SidebarIcon} />
+          <ScInactive className={styles.Icon} />
         );
       case "experiences":
         return pathName == PATH ? (
-          <ExperienceActive className={styles.SidebarIconActive} />
+          <ExperienceActive className={styles.IconActive} />
         ) : (
-          <ExperienceInactive className={styles.SidebarIcon} />
+          <ExperienceInactive className={styles.Icon} />
         );
       case "learn":
         return pathName == PATH ? (
-          <LearnActive className={styles.SidebarIconActive} />
+          <LearnActive className={styles.IconActive} />
         ) : (
-          <LearnInactive className={styles.SidebarIcon} />
+          <LearnInactive className={styles.Icon} />
         );
       default:
         return null;
@@ -63,14 +63,14 @@ const Sidebar = ({ pageName }: SidebarProps) => {
 
   return (
     <>
-      <div className={styles.SidebarCardStyle}>
+      <div className={styles.Container}>
         {sidebarItems.map((val) => (
-          <ul key={val.id} className={styles.SidebarList}>
+          <ul key={val.id} className={styles.List}>
             <li
               className={
                 Router.pathname.split("/")[1] == val.name
-                  ? styles.SidebarListItemActive
-                  : styles.SidebarListItem
+                  ? styles.ListItemActive
+                  : styles.ListItem
               }
               onClick={() => {
                 Router.push(`${val.link}`);

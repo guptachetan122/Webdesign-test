@@ -24,8 +24,8 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
 
   const menu = () => {
     return isLoggedIn ? (
-      <Menu className={styles.MenuWrap}>
-        <Menu.Item key="1" className={styles.Menu}>
+      <Menu className={styles.Menu}>
+        <Menu.Item key="1" className={styles.MenuItem}>
           <div>
             <img
               src="/assets/images/pin-black.png"
@@ -35,7 +35,7 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
             delete post
           </div>
         </Menu.Item>
-        <Menu.Item key="2" className={styles.Menu}>
+        <Menu.Item key="2" className={styles.MenuItem}>
           <div>
             <img
               src="/assets/images/mute-black.png"
@@ -47,8 +47,8 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
         </Menu.Item>
       </Menu>
     ) : (
-      <Menu className={styles.MenuWrap}>
-        <Menu.Item key="1" className={styles.Menu}>
+      <Menu className={styles.Menu}>
+        <Menu.Item key="1" className={styles.MenuItem}>
           <div>
             <img
               src="/assets/images/pin-black.png"
@@ -74,7 +74,7 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
               />
             </div>
           </Col>
-          <Col span={16} className={styles.MiddleColumn}>
+          <Col span={16} className={styles.DetailColumn}>
             <div>
               <div>
                 <div className={styles.Name}>janvi biyani</div>
@@ -116,6 +116,7 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
                   <ScModal onlyIcon />
                 )}
               </div>
+
               <div className={styles.DropdownWrapper}>
                 <Dropdown
                   overlay={menu}
@@ -154,6 +155,7 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
             </Row>
           </>
         ) : null}
+
         <Row style={{ margin: "1rem 0rem" }}>
           <Col span={2}></Col>
           <Col>
@@ -169,16 +171,7 @@ const FeedComment = ({ isConnect = false, isLoggedIn = false }) => {
           </Col>
         </Row>
         <Row>
-          <Col span={2} className={styles.DividerCol}>
-            {/* <Divider
-              type="vertical"
-              style={{
-                height: "100%",
-                borderWidth: "2px",
-                borderColor: "orangered",
-              }}
-            /> */}
-          </Col>
+          <Col span={2}></Col>
           <Col span={22}>
             {viewAll ? (
               <>

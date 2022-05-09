@@ -1,6 +1,6 @@
 // this page is 1-1 coaching
 
-import { Col, Row, Typography } from "antd";
+import { Card, Col, Collapse, Dropdown, Menu, Row, Typography } from "antd";
 import Link from "next/link";
 import React, { useState } from "react";
 import ChemistrySession from "../../components/coaching/ChemistrySession";
@@ -8,14 +8,24 @@ import CoachCard from "../../components/coaching/CoachCard";
 import ButtonLight from "../../components/common/Button/ButtonLight";
 import Sidebar from "../../ui/Sidebar";
 import styles from "../../styles/Learn.module.css";
+import { AdjustmentsIcon } from "@heroicons/react/solid";
+import FilterAndSort from "../../components/coaching/FilterAndSort";
+import { truncate } from "fs";
 
 const { Text } = Typography;
+const { Panel } = Collapse;
 
 const Coaching = () => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = (e: any) => {
+    e.preventDefault();
+    setOpen(false);
+  };
 
-  const [selectedFilter, setSelectedFilter] = useState("all");
-  const [selectedSort, setSelectedSort] = useState("alphabetical");
-  
+  const handleCollapse = (e: any) => {
+    setOpen(!open);
+  };
+
   return (
     <>
       <Row className={styles.Body}>
@@ -53,8 +63,36 @@ const Coaching = () => {
                   handpicked top executive and wellness coaches for you
                 </Text>
               </Row>
+
               <Row className={styles.LearnRow}>
-                <ButtonLight name="filter and sort" />
+                {/* <Collapse
+                  activeKey={open ? '1' : ''}
+                  onChange={handleCollapse}
+                  className={styles.Collapse}
+                  ghost
+                  destroyInactivePanel
+                >
+                  <Panel
+                    header={<ButtonLight name="filter and sort" />}
+                    key="1"
+                    showArrow={false}
+                  >
+                    <Card className={styles.Card}>
+                      <FilterAndSort />
+                      <br />
+                      <Row>
+                        <div
+                          className={styles.PanelButton}
+                          onClick={handleOpen}
+                        >
+                          clear
+                        </div>
+                        <div className={styles.PanelButton2}>apply</div>
+                      </Row>
+                    </Card>
+                  </Panel>
+                </Collapse> */}
+                <FilterAndSort />
               </Row>
               <Row className={styles.LearnRow}>
                 <CoachCard />

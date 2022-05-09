@@ -7,63 +7,95 @@ import {
   VolumeOffIcon,
   LogoutIcon,
 } from "@heroicons/react/outline";
-import { Typography } from "antd";
+import { Dropdown, Menu, Row, Typography } from "antd";
 
 const { Text } = Typography;
 
 const ButtonLight = ({ name = "", msgs = "", onlyIcon = false }) => {
+  const n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const menu = () => {
+    return (
+      <Menu className={styles.MenuWrapper}>
+        {n.map((i) => (
+          <Menu.Item key={i} className={styles.Menu}>
+            <Row className={styles.MenuText}>
+              you&apos;ve got a new superconnect in sushruta basak! tap to meet
+              her
+            </Row>
+            <Row className={styles.MenuSubText}>7 hours ago</Row>
+          </Menu.Item>
+        ))}
+      </Menu>
+    );
+  };
+
   return (
     <>
       {name == "clubhouse" ? (
         <Link href="/clubhouse/id/chat" passHref>
-          <button className={styles.Button}>
+          <button className={styles.ChButton}>
             <span style={{ fontWeight: "700" }}>{msgs}</span>
             <div style={{ marginLeft: "0.5rem" }}>new messages</div>
           </button>
         </Link>
-      ) : name == "filter and sort" ? (
-        <button className={styles.Button2}>
-          <AdjustmentsIcon className={styles.ButtonIcon2} />
+      ) : null}
+
+      {name == "filter and sort" ? (
+        <div className={styles.FilterButtonWrapper}>
+          <button className={styles.FilterButton}>
+            <AdjustmentsIcon className={styles.FilterIcon} />
+            {name}
+          </button>
+        </div>
+      ) : null}
+
+      {name == "mute clubhouse" ? (
+        <button className={styles.MuteButton}>
+          <VolumeOffIcon className={styles.MuteIcon} />
           {name}
         </button>
-      ) : name == "mute clubhouse" ? (
-        <button className={styles.Button3}>
-          <VolumeOffIcon className={styles.ButtonIcon} />
+      ) : null}
+
+      {name == "exit clubhouse" ? (
+        <button className={styles.MuteButton}>
+          <LogoutIcon className={styles.MuteIcon} />
           {name}
         </button>
-      ) : name == "exit clubhouse" ? (
-        <button className={styles.Button3}>
-          <LogoutIcon className={styles.ButtonIcon} />
-          {name}
-        </button>
-      ) : name == "book a free chemistry session" ? (
-        <button className={styles.Button4}>{name}</button>
-      ) : name == "chat" || name == "reply" ? (
+      ) : null}
+
+      {name == "book a free chemistry session" ? (
+        <button className={styles.ChemButton}>{name}</button>
+      ) : null}
+
+      {name == "chat" || name == "reply" ? (
         onlyIcon ? (
-          <button className={styles.Button5}>
+          <button className={styles.ChatButton}>
             <img
               src="assets/images/chat.png"
               alt="chat icon"
-              className={styles.ButtonIcon3}
+              className={styles.ChatIcon}
             />
           </button>
         ) : (
-          <button className={styles.Button5}>
+          <button className={styles.ChatButton}>
             {name}&nbsp;
             <img
               src="/assets/images/chat.png"
               alt="chat icon"
-              className={styles.ButtonIcon3}
+              className={styles.ChatIcon}
             />
           </button>
         )
-      ) : name == "got it!" || name == "cool!" ? (
-        <button className={styles.Button5}>
-          {name}
-        </button>
-      ) : (
-        <button className={styles.Button2}>{name}</button>
-      )}
+      ) : null}
+
+      {name == "got it!" || name == "cool!" ? (
+        <button className={styles.ChatButton}>{name}</button>
+      ) : null}
+      {
+        (name == "" ? (
+          <button className={styles.FilterButton}>{name}</button>
+        ) : null)
+      }
     </>
   );
 };

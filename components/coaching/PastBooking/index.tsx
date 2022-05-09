@@ -12,7 +12,7 @@ const PastBooking = () => {
     <>
       <div className={styles.Container}>
         <Row>
-          <Col span={18} className={styles.MiddleCol}>
+          <Col span={18} className={styles.DetailColumn}>
             <div>
               <Avatar
                 className={styles.Avatar}
@@ -21,22 +21,22 @@ const PastBooking = () => {
             </div>
             <div>
               {" "}
-              <div className={styles.NameRow}>
+              <div className={styles.NameWrapper}>
                 <Link href="/learn/id" passHref>
                   <div className={styles.Name}>kavita neelakantan</div>
                 </Link>
               </div>
-              <div className={styles.NameRow}>
+              <div className={styles.NameWrapper}>
                 <div className={styles.Description}>3 sessions</div>
               </div>
             </div>
           </Col>
-          <Col span={5} className={styles.FeeCol}>
+          <Col span={5} className={styles.FeeColumn}>
             <button className={styles.FeeButton}>₹15000</button>
           </Col>
         </Row>
-        <Row className={styles.MiddleRow}>
-          <Col span={8} className={styles.TextCol}>
+        <Row className={styles.Row}>
+          <Col span={8} className={styles.DetailColumn}>
             <Row>
               <Text className={styles.Heading}>date</Text>
             </Row>
@@ -44,7 +44,7 @@ const PastBooking = () => {
               <Text className={styles.SubHeading}>25 feb 2022</Text>
             </Row>
           </Col>
-          <Col span={8} className={styles.TextCol}>
+          <Col span={8} className={styles.DetailColumn}>
             <Row>
               <Text className={styles.Heading}>booking id</Text>
             </Row>
@@ -52,7 +52,7 @@ const PastBooking = () => {
               <Text className={styles.SubHeading}>123</Text>
             </Row>
           </Col>
-          <Col span={8} className={styles.TextCol2}>
+          <Col span={8} className={styles.DetailColumn2}>
             <Row>
               <Text className={styles.Heading}>payment id</Text>
             </Row>
@@ -62,11 +62,11 @@ const PastBooking = () => {
           </Col>
         </Row>
         <Row>
-          <Col span={12} className={styles.ButtonCol}>
+          <Col span={12} className={styles.ButtonColumn}>
             {" "}
             <ButtonLight name="rate coach" />
           </Col>
-          <Col span={12} className={styles.ButtonCol2}>
+          <Col span={12} className={styles.ButtonColumn2}>
             {" "}
             <ButtonDark name="book session" />
           </Col>

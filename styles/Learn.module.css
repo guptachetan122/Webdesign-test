@@ -1,7 +1,7 @@
 .Body {
   min-height: 100vh;
   padding-bottom: 4rem;
-  background-color: #e5e5e5;
+  background-color: #f3f2ef;
 }
 
 .Sidebar {
@@ -60,7 +60,7 @@
   display: flex;
   justify-content: center;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 2.6rem;
   /* background-color: #0500ff; */
 }
 
@@ -69,7 +69,7 @@
   justify-content: center;
   font-weight: 700;
   color: #f9511c;
-  font-size: 26px;
+  font-size: 2.6rem;
   margin-bottom: 2rem;
   /* background-color: #0500ff; */
 }
@@ -84,8 +84,19 @@
 .CourseDescription {
   text-align: center;
   color: #616161;
-  font-size: 20px;
+  font-size: 2rem;
   /* background-color: #0500ff; */
+}
+
+.Collapse {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+.PanelTitle {
+  font-weight: 600;
+  font-size: 1.8rem;
 }
 
 @media screen and (min-width: 2500px) {
@@ -101,14 +112,18 @@
     height: 125px;
   }
   .CourseTitle {
-    font-size: 36px;
+    font-size: 3rem;
   }
   .CourseSubTitle {
-    font-size: 36px;
+    font-size: 3rem;
   }
-
   .CourseDescription {
-    font-size: 30px;
+    font-size: 2.4rem;
+  }
+  
+  .PanelButton,
+  .PanelButton2 {
+    font-size: 2rem;
   }
 }
 
@@ -124,24 +139,38 @@
     height: 75px;
   }
   .CourseTitle {
-    font-weight: 700;
-    font-size: 18px;
+    font-size: 2.4rem;
   }
   .CourseSubTitle {
-    font-size: 18px;
+    font-size: 2.4rem;
   }
   .CourseDescription {
-    font-size: 15px;
+    font-size: 2rem;
+  }
+  .PanelButton,
+  .PanelButton2 {
+    font-size: 1.4rem;
   }
 }
 
-
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1280px) {
   .LearnText {
     font-size: 1.4rem;
   }
   .LearnBookingLink {
     font-size: 1.4rem;
   }
+  .CourseTitle {
+    font-size: 2.2rem;
+  }
+  .CourseSubTitle {
+    font-size: 2.2rem;
+  }
+  .CourseDescription {
+    font-size: 1.8rem;
+  }
+  .PanelButton,
+  .PanelButton2 {
+    font-size: 1.2rem;
+  }
 }
-

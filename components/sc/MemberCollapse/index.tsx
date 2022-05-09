@@ -26,7 +26,6 @@ const MemberCollapse = () => {
           }
           showArrow={false}
           key="1"
-          className={styles.Panel}
         >
           {" "}
           <Member />

@@ -1,4 +1,4 @@
-.SidebarCardStyle {
+.Container {
   position: sticky;
   top: 8rem;
   height: min-content;
@@ -10,7 +10,7 @@
     0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-.SidebarList {
+.List {
   margin: 0%;
   list-style: none;
   padding: 0rem 0.5rem;
@@ -20,7 +20,7 @@
   flex-direction: row;
 }
 
-.SidebarListItem {
+.ListItem {
   padding: 0rem 1rem;
   margin: 0.5rem 0rem;
   width: 100%;
@@ -32,7 +32,7 @@
   /* background-color: red; */
 }
 
-.SidebarListItemActive {
+.ListItemActive {
   padding: 0rem 1rem;
   margin: 0.5rem 0rem;
   width: 100%;
@@ -44,62 +44,62 @@
   /* background-color: red; */
 }
 
-.SidebarIcon {
+.Icon {
   width: 1.8rem;
   height: 1.8rem;
   margin-right: 1rem;
   /* background-color: rgb(43, 242, 159); */
 }
 
-.SidebarIconActive {
+.IconActive {
   width: 1.8rem;
   height: 1.8rem;
   margin-right: 1rem;
 }
 
 @media screen and (min-width: 2500px) {
-  .SidebarList {
+  .List {
     font-size: 2.2rem;
   }
 
-  .SidebarIcon {
+  .Icon {
     width: 2.2rem;
     height: 2.2rem;
   }
 
-  .SidebarIconActive {
+  .IconActive {
     width: 2.2rem;
     height: 2.2rem;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .SidebarList {
+  .List {
     font-size: 1.6rem;
   }
 
-  .SidebarIcon {
+  .Icon {
     width: 1.6rem;
     height: 1.6rem;
   }
 
-  .SidebarIconActive {
+  .IconActive {
     width: 1.6rem;
     height: 1.6rem;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  .SidebarList {
+  .List {
     font-size: 1.4rem;
   }
 
-  .SidebarIcon {
+  .Icon {
     width: 1.4rem;
     height: 1.4rem;
   }
 
-  .SidebarIconActive {
+  .IconActive {
     width: 1.4rem;
     height: 1.4rem;
   }

@@ -36,7 +36,7 @@ const ClubhouseTags = () => {
               </button>
             );
           })}
-          <div className={styles.TagLink} onClick={handleViewAll}>
+          <div className={styles.Close} onClick={handleViewAll}>
             ^ close
           </div>
         </div>
@@ -53,7 +53,7 @@ const ClubhouseTags = () => {
               </button>
             );
           })}
-          <Text className={styles.TagView} onClick={handleViewAll}>
+          <Text className={styles.ViewAll} onClick={handleViewAll}>
             view all
           </Text>
         </div>

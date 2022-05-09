@@ -61,8 +61,8 @@ const CoachDetail = () => {
           <Text className={styles.Title}>top specializations</Text>
         </Row>
         <Row className={styles.Row}>
-          <button className={styles.TagButton}>pivot in my career</button>
-          <button className={styles.TagButton}>build exec presence</button>
+          <button className={styles.Tag}>pivot in my career</button>
+          <button className={styles.Tag}>build exec presence</button>
         </Row>
         <Row className={styles.BookRow}>
           <Text className={styles.Title}>book a session</Text>
@@ -75,11 +75,11 @@ const CoachDetail = () => {
           {" "}
           <CoachPackages PackageData={Packages} />
         </div>
-        <Row className={styles.BottomRow}>
+        <Row className={styles.FooterRow}>
           <ButtonDark name="book session" />
         </Row>
-        <Row className={styles.BottomRow}>
-          <Text className={styles.BottomText}>
+        <Row className={styles.FooterRow}>
+          <Text className={styles.FooterText}>
             price is not inclusive of tax
           </Text>
         </Row>

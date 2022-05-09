@@ -3,7 +3,7 @@
   flex-direction: row-reverse;
 }
 
-.Button {
+.ChButton {
   background: none;
   font-size: 1.6rem;
   color: #616161;
@@ -20,7 +20,7 @@
   /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
 }
 
-.Button2 {
+.FilterButton {
   background: none;
   font-size: 1.6rem;
   color: #616161;
@@ -37,13 +37,7 @@
   /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
 }
 
-/* .Button:hover{
-  color: #FAFAFA;
-  background-color:#FA541A;
-  border: 1.5px solid #FA541A;
-} */
-
-.Button3 {
+.MuteButton {
   background: none;
   font-size: 1.6rem;
   color: #616161;
@@ -60,7 +54,7 @@
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
 }
 
-.Button4 {
+.ChemButton {
   background: none;
   font-size: 1.6rem;
   color: #616161;
@@ -77,7 +71,7 @@
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
 }
 
-.Button5 {
+.ChatButton {
   background: none;
   font-size: 1.6rem;
   color: #616161;
@@ -95,72 +89,99 @@
   /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15); */
 }
 
-.ButtonIcon {
+.MuteIcon {
   width: 1.6rem;
   height: 1.6rem;
   margin-right: 1rem;
 }
 
-.ButtonIcon2 {
+.FilterIcon {
   width: 1.6rem;
   height: 1.6rem;
   margin-right: 1rem;
 }
 
-.ButtonIcon3 {
+.ChatIcon {
   width: 1.6rem;
   height: 1.6rem;
   /* margin-left: 1rem; */
 }
 
+.Menu {
+  padding: 2rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 1px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.MenuText {
+  font-size: 1.6rem;
+}
+
+.MenuSubText {
+  font-size: 1.2rem;
+}
+
+.MenuWrapper {
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #616161;
+  overflow-y: scroll;
+  max-height: 500px;
+}
+
 @media screen and (min-width: 2500px) {
-  .Button, .Button2, .Button3, .Button4, .Button5 {
+  .ChButton, .FilterButton, .MuteButton, .ChemButton, .ChatButton {
     font-size: 2rem;
   }
 
-  .ButtonIcon,
-  .ButtonIcon2,
-  .ButtonIcon3 {
+  .MuteIcon,
+  .FilterIcon,
+  .ChatIcon {
     width: 2rem;
     height: 2rem;
   }
 }
 
 @media screen and (max-width: 1600px) {
-   .Button, .Button2, .Button3, .Button4, .Button5 {
+   .ChButton, .FilterButton, .MuteButton, .ChemButton, .ChatButton {
     font-size: 1.4rem;
   }
 
-  .ButtonIcon,
-  .ButtonIcon2,
-  .ButtonIcon3 {
+  .MuteIcon,
+  .FilterIcon,
+  .ChatIcon {
     width: 1.4rem;
     height: 1.4rem;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  .Button,
-  .Button4 {
+  .ChButton,
+  .ChemButton {
     font-size: 1.2rem;
   }
 
-  .Button2 {
+  .FilterButton {
     font-size: 1.2rem;
     padding: 1rem 3rem;
   }
 
-  .Button3 {
+  .MuteButton {
     font-size: 1.2rem;
   }
-  .Button5 {
+  .ChatButton {
     font-size: 1.2rem;
     /* padding: 0.5rem 3rem; */
   }
   
-  .ButtonIcon,
-  .ButtonIcon2,
-  .ButtonIcon3 {
+  .MuteIcon,
+  .FilterIcon,
+  .ChatIcon {
     width: 1.2rem;
     height: 1.2rem;
   }
