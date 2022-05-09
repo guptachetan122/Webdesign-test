@@ -31,7 +31,7 @@
   align-items: center;
   cursor: pointer;
   padding: 0.5rem 0rem;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .DropdownColumn {
@@ -113,14 +113,14 @@
 }
 
 .Likes {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #616161;
   text-decoration: underline;
   cursor: pointer;
 }
 
 .Comments {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #616161;
   text-decoration: underline;
   cursor: pointer;
@@ -173,11 +173,11 @@
 }
 
 @media screen and (min-width: 2500px) {
-  .Name {
+  .Name,.Likes,.Comments,.CtaColumn  {
     font-size: 2.2rem;
   }
 
-  .Description,.Likes,.Comments,.CtaColumn {
+  .Description {
     font-size: 1.8rem;
   }
   .MenuIcon {
@@ -207,11 +207,11 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .Name {
+  .Name,.Likes,.Comments,.CtaColumn  {
     font-size: 1.6rem;
   }
 
-  .Description,.Likes,.Comments,.CtaColumn {
+  .Description {
     font-size: 1.2rem;
   }
   .MenuItem {
@@ -241,11 +241,11 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .Name {
+  .Name,.Likes,.Comments,.CtaColumn  {
     font-size: 1.4rem;
   }
 
-  .Description,.Likes,.Comments,.CtaColumn {
+  .Description{
     font-size: 1rem;
   }
 
