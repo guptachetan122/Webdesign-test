@@ -36,7 +36,7 @@ const PastBooking = () => {
           </Col>
         </Row>
         <Row className={styles.Row}>
-          <Col span={8} className={styles.DetailColumn}>
+          <Col span={8} className={styles.Column}>
             <Row>
               <Text className={styles.Heading}>date</Text>
             </Row>
@@ -44,7 +44,7 @@ const PastBooking = () => {
               <Text className={styles.SubHeading}>25 feb 2022</Text>
             </Row>
           </Col>
-          <Col span={8} className={styles.DetailColumn}>
+          <Col span={8} className={styles.Column}>
             <Row>
               <Text className={styles.Heading}>booking id</Text>
             </Row>
@@ -52,7 +52,7 @@ const PastBooking = () => {
               <Text className={styles.SubHeading}>123</Text>
             </Row>
           </Col>
-          <Col span={8} className={styles.DetailColumn2}>
+          <Col span={8} className={styles.Column2}>
             <Row>
               <Text className={styles.Heading}>payment id</Text>
             </Row>
