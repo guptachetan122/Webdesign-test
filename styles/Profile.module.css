@@ -3,11 +3,18 @@
   padding-bottom: 4rem;
   background-color: #f3f2ef;
   overscroll-behavior: contain !important;
+  display: flex;
+  flex-direction: row;
+}
+
+.Sticky{
+ top: 3rem;
 }
 
 .Sidebar {
+  padding: 0rem 2rem;
   display: flex;
-  justify-content: right;
+  flex-direction: column;
 }
 
 .MiddleColumn {

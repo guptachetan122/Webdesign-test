@@ -185,20 +185,13 @@ export const ExpTags = [
   `offline`,
 ];
 
-export const Filters = [
-  `all`,
-  `bengaluru`,
-  `delhi ncr`,
-  `mumbai`,
-  `other`,
-];
+export const Filters = [`all`, `bengaluru`, `delhi ncr`, `mumbai`, `other`];
 
 export const Sorts = [
   `alphabetical`,
   `price: low to high`,
   `price: high to low`,
 ];
-
 
 export const Packages = [
   {
@@ -232,7 +225,7 @@ export const Packages = [
 ];
 
 export const companies = [
-  `airbnb`,
+  "airbnb",
   "zomato",
   "netflix",
   "google",
@@ -240,41 +233,36 @@ export const companies = [
   "apple",
   "bumble",
   "dropbox",
+  "sony",
+  "leap.club",
+  "nike",
+  "paytm",
+  "amazon",
+  "samsung",
 ];
 
-export type ChList = {
-  name: string;
-  channel_url: string;
-  is_public: string;
-};
 export const ProfileDetail = {
   headline: "agency partnerships manager at google. ",
   image: "/assets/images/Ragini.png",
   name: "mahalaxmi krishnamoorthy",
   industryTags: [
-    "internet and tech",
-    "young leaders",
-    "sales, marketing and partnerships",
+    "internet & tech",
+    "product & tech",
+    "sales & marketing, partnerships",
   ],
   city: "netherlands",
   connected: true,
   connectionsCount: 500,
-  goals: [],
   experience: "",
   leader: "michelle obama",
   currentCompany: "zomato",
   companyAdmire: ["netflix", "airbnb", "bumble"],
   undergrad: "DTU, delhi",
   postgrad: "Jai hind",
-  topSkills: [
-    "sales, marketing and partnerships",
-    "brand & marketing",
-    "sports",
-  ],
-  hobbies: ["food & cooking, cocktails & wine, travel"],
+  topSkills: ["data analytics", "brand & marketing", "operations"],
+  hobbies: "food & cooking, cocktails & wine, travel",
   introduction:
     "changing the 0-1 journey for new product, and building a company in the ed-tech space since the past 5 years.",
-  featuredLinks: [],
   chList: [
     "all",
     "fun",
@@ -291,6 +279,114 @@ export const ProfileDetail = {
     "self-growth",
     "sales & marketing",
   ],
-  previousWorkExperience: [],
 };
 
+export const searchFilterTags = {
+  industryTags: [
+    "advertising & marketing",
+    "design",
+    "e-commerce",
+    "education, edtech",
+    "f&b",
+    "fmcg",
+    "founders",
+    "health & wellness",
+    "hospitality",
+    "hr, recruitment",
+    "internet & tech",
+    "law",
+    "looking for investors, co-founders, advisors",
+    "looking for mentors",
+    "media",
+    "operations",
+    "pr, communications",
+    "product & tech",
+    "retail",
+    "sales & marketing, partnerships",
+    "social impact",
+    "strategy & consulting",
+    "telecom",
+    "vc & fin services",
+  ],
+  skillTags: [
+    "strategy",
+    "data analytics",
+    "sales & business development",
+    "brand & marketing",
+    "team management",
+    "the 0-1 journey/new business",
+    "content creation & communication",
+    "design",
+    "digital marketing",
+    "sports/sports management",
+    "operations",
+    "startups",
+    "project management",
+    "finance and accounting",
+  ],
+  workExperienceTags: [
+    "0 - 3 years",
+    "3 - 6 years",
+    "6 - 9 years",
+    "9 - 12 years",
+    "12 - 15 years",
+    "15 - 18 years",
+    "18 years and above",
+  ],
+  cityTags: ["gurgaon", "mumbai", "bangalore", "global", "remote", "other"],
+};
+
+export const prompts = [
+  {
+    title: "a life goal of mine",
+    value: "",
+  },
+  {
+    title: "apparently, my life’s soundtrack is",
+    value: "",
+  },
+  {
+    title: "biggest risk i’ve taken",
+    value: "",
+  },
+  {
+    title: "give me travel tips for",
+    value: "",
+  },
+  {
+    title: "most spontaneous thing i’ve done",
+    value: "",
+  },
+  {
+    title: "my most controversial opinion is",
+    value: "",
+  },
+  {
+    title: "never have i ever",
+    value: "",
+  },
+  {
+    title: "two truths and a lie",
+    value: "",
+  },
+  {
+    title: "what i order for the table",
+    value: "",
+  },
+  {
+    title: "superconnect with me for...",
+    value: "",
+  },
+  {
+    title: "i feel empowered when...",
+    value: "",
+  },
+  {
+    title: "a passion project i am working on now is...",
+    value: "",
+  },
+  {
+    title: "i am confused about...",
+    value: "",
+  },
+];

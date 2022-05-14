@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { Col, Row, Typography } from "antd";
 import React from "react";
-import Sidebar from "../../../ui/Sidebar";
+import Sidebar from "../../../components/Layout/Sidebar";
 import styles from "../../../styles/Clubhouse.module.css";
 import ClubhouseDetail from "../../../components/clubhouse/ClubhouseDetail";
 import BackHeader from "../../../components/common/BackHeader";

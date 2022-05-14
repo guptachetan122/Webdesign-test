@@ -81,8 +81,10 @@
 }
 
 .ButtonColumn {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  /* background-color: #616161; */
 }
 
 /* .ButtonColumn2 {

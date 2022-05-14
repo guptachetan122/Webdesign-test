@@ -29,7 +29,7 @@ body {
 }
 
 a {
-  /* color: inherit; */
+  color: inherit;
   text-decoration: none;
 }
 
@@ -38,84 +38,92 @@ a {
 }
 
 Input[type="text"] {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 input[type="password"] {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 :root textarea {
-  font-size: 1.4rem;
-  line-height: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
-.ant-switch-checked{
+.ant-switch-checked {
   background-color: rgb(72, 240, 72);
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  font-size: inherit;
+  color: currentColor;
 }
 
 @media screen and (max-width: 1600px) {
   input[type="text"] {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
   }
 
   input[type="password"] {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
   }
   :root textarea {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1280px) {
   input[type="text"] {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
   }
 
   input[type="password"] {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-
+    font-size: 1.4rem;
+    line-height: 1.6rem;
   }
   :root textarea {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-
+    font-size: 1.4rem;
+    line-height: 1.6rem;
   }
 }
 
 @media screen and (min-width: 2500px) {
   input[type="text"] {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
   }
 
   input[type="password"] {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
   }
   :root textarea {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
   }
 }
 
 @media screen and (min-width: 3600px) {
   Input[type="text"] {
-    font-size: 2rem;
-    line-height: 2.2rem;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
   }
 
   input[type="password"] {
-    font-size: 2rem;
-    line-height: 2.2rem;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
   }
   :root textarea {
-    font-size: 2rem;
-    line-height: 2.2rem;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
   }
 }

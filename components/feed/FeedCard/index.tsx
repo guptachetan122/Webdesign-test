@@ -12,12 +12,12 @@ import {
 import { Avatar, Col, Divider, Dropdown, Menu, Row } from "antd";
 import React, { useState } from "react";
 import ButtonLight from "../../common/Button/ButtonLight";
-import ScModal from "../../common/Modal/ScModal";
+import ScModal from "../../sc/ScModal";
 import SeeMore from "../../common/SeeMore";
 import FeedComment from "../FeedComment";
 import styles from "./FeedCard.module.css";
 import { Input } from "antd";
-import LikesModal from "../../common/Modal/LikesModal";
+import LikesModal from "../LikesModal";
 
 const { TextArea } = Input;
 

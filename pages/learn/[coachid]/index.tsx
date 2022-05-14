@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import React from "react";
-import Sidebar from "../../../ui/Sidebar";
+import Sidebar from "../../../components/Layout/Sidebar";
 import styles from "../../../styles/Learn.module.css";
 import CoachDetail from "../../../components/coaching/CoachDetail";
 import BackHeader from "../../../components/common/BackHeader";

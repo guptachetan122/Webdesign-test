@@ -183,7 +183,7 @@
     font-size: 1.2rem;
   }
 
-  .FilterButton {
+  .FilterButton,.rateButton  {
     font-size: 1.2rem;
     padding: 1rem 3rem;
   }
@@ -198,7 +198,7 @@
   
   .MuteIcon,
   .FilterIcon,
-  .ChatIcon,.rateButton {
+  .ChatIcon{
     width: 1.2rem;
     height: 1.2rem;
   }

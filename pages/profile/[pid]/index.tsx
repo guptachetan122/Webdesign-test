@@ -1,29 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
 import { Avatar, Card, Carousel, Col, Input, Row, Typography } from "antd";
 import React, { useState } from "react";
-import Sidebar from "../../../ui/Sidebar";
+import Sidebar from "../../../components/Layout/Sidebar";
 import styles from "../../../styles/Profile.module.css";
 import BackHeader from "../../../components/common/BackHeader";
 import Image from "next/image";
-import { Briefcase, Calendar, Edit3, MapPin, Zap } from "react-feather";
-import { ChTags, companies, ExpTags } from "../../../constants";
+import {
+  ChTags,
+  companies,
+  ExpTags,
+  searchFilterTags,
+} from "../../../constants";
 import { ProfileDetail } from "../../../constants";
-import IntroModal from "../../../components/common/Modal/ProfileModals";
+import TextCard from "../../../components/Profile/TextCard";
+import TagsCard from "../../../components/Profile/TagsCard";
+import AllJoinedChCard from "../../../components/Profile/AllJoinedChCard";
+import ProfileInfo from "../../../components/Profile/ProfileInfo";
+import Prompts from "../../../components/Profile/Prompts";
 
 const { Text } = Typography;
 
 const Profile = () => {
-  const [Stay, setStay] = useState(false);
-  const [seeAll, setSeeAll] = useState(false);
 
-  const handleViewAll = () => {
-    setSeeAll(!seeAll);
-  };
-
-  const handle = () => {
-    setStay(!Stay);
-  };
-
+  const {name, headline, city, currentCompany : work, connectionsCount : connects} = ProfileDetail;
   return (
     <>
       <Row className={styles.Body}>
@@ -36,303 +35,57 @@ const Profile = () => {
             <Col span={2}></Col>
             <Col span={20}>
               <BackHeader />
-              <div className={styles.Card}>
-                <Row>
-                  <Col span={22} className={styles.MainColumn}>
-                    <div>
-                      <Avatar
-                        src={
-                          <img
-                            src={ProfileDetail?.image}
-                            alt="profile picture"
-                          />
-                        }
-                        className={styles.profileAvatar}
-                      />
-                    </div>
-                    <div>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.Name}>
-                          {ProfileDetail?.name}
-                        </Text>
-                      </Row>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.Description}>
-                          {ProfileDetail?.headline}{" "}
-                        </Text>
-                      </Row>
-                      <div>
-                        <Row className={styles.DetailRow}>
-                          <Text className={styles.SubDescription}>
-                            <Briefcase className={styles.ProfileIcon} />
-                            {ProfileDetail?.currentCompany}
-                          </Text>
-                          <Text className={styles.SubDescription}>
-                            <MapPin className={styles.ProfileIcon} /> the hague,
-                            {ProfileDetail?.city}
-                          </Text>
-                        </Row>
-                        <Row className={styles.DetailRow}>
-                          <Text className={styles.SubDescription}>
-                            <Calendar className={styles.ProfileIcon} />
-                            member since, aug 2021
-                          </Text>
-                        </Row>
-                        <Row className={styles.DetailRow}>
-                          <Text className={styles.SubDescription}>
-                            <Zap className={styles.ProfileIcon} />
-                            {ProfileDetail?.connectionsCount}+ superconnects
-                          </Text>
-                        </Row>
-                      </div>
-                    </div>
-                  </Col>
-                  <Col span={2}>
-                    <Edit3 />
-                  </Col>
-                </Row>
-              </div>
-              <div className={styles.Card}>
-                <Row>
-                  <Col span={22} className={styles.MainColumn}>
-                    <div>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.Name}>Introduction</Text>
-                      </Row>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.SubDescription}>
-                          {ProfileDetail?.introduction}{" "}
-                        </Text>
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col span={2}>
-                    <IntroModal />
-                  </Col>
-                </Row>
-              </div>
-              <div className={styles.Card}>
-                <Row>
-                  <Col span={22} className={styles.MainColumn}>
-                    <div>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.Name}>
-                          my social interests and hobbies
-                        </Text>
-                      </Row>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.SubDescription}>
-                          {ProfileDetail?.hobbies}{" "}
-                        </Text>
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col span={2}>
-                    <Edit3 />
-                  </Col>
-                </Row>
-              </div>
-              <div className={styles.Card}>
-                <Row>
-                  <Col span={22} className={styles.MainColumn}>
-                    <div>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.Name}>my hero</Text>
-                      </Row>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.SubDescription}>
-                          {ProfileDetail?.leader}{" "}
-                        </Text>
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col span={2}>
-                    <Edit3 />
-                  </Col>
-                </Row>
-              </div>
 
-              <div className={styles.Card}>
-                <Row>
-                  <Col span={22} className={styles.MainColumn}>
-                    <div className={styles.Wrapper}>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.Name}>
-                          clubhouses i&apos;m a part of
-                        </Text>
-                      </Row>
-                      <Row className={styles.DetailRow}>
-                        {!seeAll ? (
-                          <>
-                            {ProfileDetail?.chList?.slice(0, 3).map((item) => {
-                              return (
-                                <>
-                                  <Row className={styles.ChRow}>
-                                    <Text
-                                      key={item}
-                                      className={styles.SubDescription}
-                                    >
-                                      {item}
-                                    </Text>
-                                  </Row>
-                                </>
-                              );
-                            })}
-                            <div
-                              className={styles.SeeAll}
-                              onClick={handleViewAll}
-                            >
-                              see all
-                            </div>
-                          </>
-                        ) : (
-                          <>
-                            {" "}
-                            {ProfileDetail?.chList?.map((item) => {
-                              return (
-                                <>
-                                  <Row className={styles.ChRow}>
-                                    <Text
-                                      key={item}
-                                      className={styles.SubDescription}
-                                    >
-                                      {item}
-                                    </Text>
-                                  </Row>
-                                </>
-                              );
-                            })}
-                            <div
-                              className={styles.SeeAll}
-                              onClick={handleViewAll}
-                            >
-                              see less
-                            </div>
-                          </>
-                        )}
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col span={2}>
-                    <Edit3 />
-                  </Col>
-                </Row>
-              </div>
+              <ProfileInfo name={name} headline={headline} work={work} city={city} connects={connects} />
 
-              <div className={styles.Card}>
-                <Row>
-                  <Col span={22} className={styles.MainColumn}>
-                    <div>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.Name}>companies i admire</Text>
-                      </Row>
-                      <Row className={styles.DetailRow}>
-                        {ProfileDetail?.companyAdmire.map((item) => {
-                          return (
-                            <>
-                              <button className={styles.TagButton}>
-                                {item}{" "}
-                              </button>
-                            </>
-                          );
-                        })}
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col span={2}>
-                    <Edit3 />
-                  </Col>
-                </Row>
-              </div>
+              <TextCard
+                Title="introduction"
+                Input={ProfileDetail?.introduction}
+              />
 
-              <div className={styles.Card}>
-                <Row>
-                  <Col span={22} className={styles.MainColumn}>
-                    <div>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.Name}>tags and industries</Text>
-                      </Row>
-                      <Row className={styles.DetailRow}>
-                        {ProfileDetail?.industryTags.map((item) => {
-                          return (
-                            <>
-                              <button className={styles.TagButton}>
-                                {item}{" "}
-                              </button>
-                            </>
-                          );
-                        })}
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col span={2}>
-                    <Edit3 />
-                  </Col>
-                </Row>
-              </div>
+              <Prompts />
+              {/* <Prompts2 /> */}
+              
+              <TextCard
+                Title="my social interests and hobbies"
+                Input={ProfileDetail?.hobbies}
+              />
 
-              <div className={styles.Card}>
-                <Row>
-                  <Col span={22} className={styles.MainColumn}>
-                    <div>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.Name}>top skill sets</Text>
-                      </Row>
-                      <Row className={styles.DetailRow}>
-                        {ProfileDetail?.topSkills.map((item) => {
-                          return (
-                            <>
-                              <button className={styles.TagButton}>
-                                {item}{" "}
-                              </button>
-                            </>
-                          );
-                        })}
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col span={2}>
-                    <Edit3 />
-                  </Col>
-                </Row>
-              </div>
+              <TextCard Title="my hero" Input={ProfileDetail?.leader} />
 
-              <div className={styles.Card}>
-                <Row>
-                  <Col span={22} className={styles.MainColumn2}>
-                    <div className={styles.Wrapper}>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.Name}>grad school</Text>
-                      </Row>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.SubDescription}>
-                          {ProfileDetail?.postgrad}{" "}
-                        </Text>
-                      </Row>
-                    </div>
-                    <br />
-                    <div className={styles.Wrapper}>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.Name}>college</Text>
-                      </Row>
-                      <Row className={styles.DetailRow}>
-                        <Text className={styles.SubDescription}>
-                          {ProfileDetail?.undergrad}{" "}
-                        </Text>
-                      </Row>
-                    </div>
-                  </Col>
-                  <Col span={2}>
-                    <Edit3 />
-                  </Col>
-                </Row>
-              </div>
+              <AllJoinedChCard />
+
+              <TagsCard
+                Title="companies i admire"
+                ProfileArray={ProfileDetail?.companyAdmire}
+                ModalArray={companies}
+              />
+
+              <TagsCard
+                Title="tags and industries"
+                ProfileArray={ProfileDetail?.industryTags}
+                ModalArray={searchFilterTags?.industryTags}
+                industryTags
+              />
+
+              <TagsCard
+                Title="top skills"
+                ProfileArray={ProfileDetail?.topSkills}
+                ModalArray={searchFilterTags?.skillTags}
+              />
+
+              <TextCard
+                Title="grad school"
+                Title2="college"
+                Input={ProfileDetail?.postgrad}
+                Input2={ProfileDetail?.undergrad}
+              />
             </Col>
             <Col span={2}></Col>
           </Row>
         </Col>
 
-        <Col span={6}>{/* <button onClick={handle}>Click</button> */}</Col>
+        <Col span={6}></Col>
       </Row>
     </>
   );

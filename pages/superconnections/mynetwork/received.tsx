@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import React from "react";
 import Member from "../../../components/sc/Member";
-import Sidebar from "../../../ui/Sidebar";
+import Sidebar from "../../../components/Layout/Sidebar";
 import styles from "../../../styles/Superconnections.module.css";
 import BackHeader from "../../../components/common/BackHeader";
 

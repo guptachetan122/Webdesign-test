@@ -88,7 +88,7 @@ const UpcomingExperienceCard = ({
               <Link href="/experiences/id" passHref>
                 <a>
                   <Text className={styles.Link}>
-                    view details{"  "}
+                    {/* view details{"  "} */}
                     <ArrowRightOutlined />
                   </Text>
                 </a>

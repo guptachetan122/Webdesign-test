@@ -4,7 +4,7 @@ import { Col, Row } from "antd";
 import { useRouter } from "next/router";
 import React from "react";
 import ExperienceInfo from "../../../components/experience/ExperienceInfo";
-import Sidebar from "../../../ui/Sidebar";
+import Sidebar from "../../../components/Layout/Sidebar";
 import styles from "../../../styles/Experience.module.css";
 import BackHeader from "../../../components/common/BackHeader";
 

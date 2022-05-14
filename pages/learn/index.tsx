@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import ChemistrySession from "../../components/coaching/ChemistrySession";
 import CoachCard from "../../components/coaching/CoachCard";
 import ButtonLight from "../../components/common/Button/ButtonLight";
-import Sidebar from "../../ui/Sidebar";
+import Sidebar from "../../components/Layout/Sidebar";
 import styles from "../../styles/Learn.module.css";
 import { AdjustmentsIcon } from "@heroicons/react/solid";
 import FilterAndSort from "../../components/coaching/FilterAndSort";

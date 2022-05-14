@@ -62,14 +62,10 @@ const PastBooking = () => {
           </Col>
         </Row>
         <Row>
-          <Col span={12} className={styles.ButtonColumn}>
-            {" "}
+          <div className={styles.ButtonColumn}>
             <ButtonLight name="rate coach" />
-          </Col>
-          <Col span={12} className={styles.ButtonColumn}>
-            {" "}
             <ButtonDark name="book session" />
-          </Col>
+          </div>
         </Row>
       </div>
     </>

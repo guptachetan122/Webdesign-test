@@ -1,0 +1,128 @@
+.InitialContainer{
+  width: 100%;
+  padding-top: 1rem;
+  background: #fafafa;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.InitialItem {
+  padding: 0.5rem 3rem;
+  color: #FA541A;
+  font-size: 1.8rem;
+  margin: 0rem 0rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  cursor:pointer;
+  
+}
+
+.InitialItem:hover {
+  color: #FA541A;
+  border-bottom: 5px solid #FA541A;
+  background: none;
+  /* background-color: red; */
+}
+
+.InitialItemActive {
+  padding: 0.5rem 3rem;
+  color: #FA541A;
+  font-size: 1.8rem;
+  margin: 0rem 0rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-bottom: 5px solid #FA541A;
+  cursor:pointer;
+  /* background-color: red; */
+}
+
+.InitialItemActive:hover {
+  /* border-bottom-color: #ff4500; */
+  color: #FA541A;
+  border-bottom-color: #FA541A;
+  background: none;
+}
+
+
+.Container {
+  width: 100%;
+  padding-top: 1rem;
+  /* padding-bottom: 2rem; */
+  background: radial-gradient(100% 1267.36% at 0% 50%, #F42B4D 0%, #FA541A 100%);
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0s;
+}
+
+.Item {
+  padding: 0.5rem 3rem;
+  color: #fafafa;
+  font-size: 1.8rem;
+  margin: 0rem 0rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  cursor:pointer;
+}
+
+.Item:hover {
+  color: #fafafa;
+  border-bottom: 5px solid #fafafa;
+  background: none;
+  /* background-color: red; */
+}
+
+.ItemActive {
+  padding: 0.5rem 3rem;
+  color: #fafafa;
+  font-size: 1.8rem;
+  margin: 0rem 0rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-bottom: 5px solid #fafafa;
+  cursor:pointer;
+  /* background-color: red; */
+}
+
+.ItemActive:hover {
+  /* border-bottom-color: #ff4500; */
+  color: #fafafa;
+  border-bottom-color: #fafafa;
+  background: none;
+}
+
+@media screen and (min-width: 2500px) {
+  .ItemActive,.InitialItemActive {
+    font-size: 2.2rem;
+  }
+  .Item,.InitialItem{
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .ItemActive,.InitialItemActive {
+    font-size: 1.6rem;
+  }
+  .Item,.InitialItem {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .ItemActive,.InitialItemActive {
+    font-size: 1.4rem;
+  }
+  .Item,.InitialItem {
+    font-size: 1.4rem;
+  }
+}

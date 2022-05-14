@@ -4,7 +4,7 @@ import { Col, Layout, Row } from "antd";
 import React from "react";
 import ExperienceCard from "../../components/experience/UpcomingExperienceCard";
 import ExperienceTags from "../../components/experience/ExperienceTags";
-import Sidebar from "../../ui/Sidebar";
+import Sidebar from "../../components/Layout/Sidebar";
 import styles from "../../styles/Experience.module.css";
 
 const Upcoming = () => {

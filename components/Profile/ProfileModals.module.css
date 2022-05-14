@@ -13,10 +13,16 @@
   overflow: hidden !important;
 }
 
+.Wrapper {
+  padding: 4rem 2rem;
+}
+
 .Title {
+  width: 100%;
+  padding: 0.5rem 1rem;
   font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .Description {
@@ -24,21 +30,49 @@
   margin-bottom: 1rem;
 }
 
-.Button {
+.ButtonWrapper {
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 
-.BackButton {
-  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+.Button {
+  /* background: linear-gradient(90deg, #232526 0%, #414345 100%); */
+  background: none;
+  border: 1px solid #919191;
+  color: #919191;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 1rem 4rem;
+  border-radius: 200px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.GradientButton {
+  background: radial-gradient(100% 1267.36% at 0% 50%, #F42B4D 0%, #FA541A 100%);
+  border: none;
   color: #fafafa;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  width: 100%;
-  padding: 0.5rem 0rem;
+  padding: 1rem 4rem;
   border-radius: 200px;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.removeButton {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  border: none;
+  color: #fafafa;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 1rem 4rem;
+  border-radius: 200px;
+  margin-top: 2rem;
+  margin-left: 1rem;
 }
 
 @media screen and (min-width: 2500px) {
@@ -46,7 +80,7 @@
     font-size: 2rem;
   }
   .Title {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
 
   .Description {
@@ -59,7 +93,7 @@
     font-size: 1.4rem;
   }
   .Title {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .Description {
@@ -72,7 +106,7 @@
     font-size: 1.2rem;
   }
   .Title {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .Description {

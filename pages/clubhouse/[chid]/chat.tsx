@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { Col, Input, Row, Typography } from "antd";
 import React from "react";
-import Sidebar from "../../../ui/Sidebar";
+import Sidebar from "../../../components/Layout/Sidebar";
 import styles from "../../../styles/Clubhouse.module.css";
 import { SearchOutlined } from "@ant-design/icons";
 import ClubhouseChat from "../../../components/clubhouse/ClubhouseChat";

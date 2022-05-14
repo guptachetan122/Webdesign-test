@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "../../styles/Superconnections.module.css";
 import { Col, Input, Row, Switch } from "antd";
-import Sidebar from "../../ui/Sidebar";
+import Sidebar from "../../components/Layout/Sidebar";
 import { SearchOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import Head from "next/head";

@@ -2,7 +2,7 @@ import { Typography } from "antd";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import styles from "./Sidebar.module.css";
-import { sidebarItems } from "../../constants";
+import { sidebarItems } from "../../../constants";
 import { AcademicCapIcon as LearnActive } from "@heroicons/react/solid";
 import { AcademicCapIcon as LearnInactive } from "@heroicons/react/outline";
 import { RssIcon as FeedInactive } from "@heroicons/react/outline";

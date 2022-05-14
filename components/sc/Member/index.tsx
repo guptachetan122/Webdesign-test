@@ -1,7 +1,7 @@
 import { Avatar, Typography, Card, Row, Col } from "antd";
 import React from "react";
 import styles from "./Member.module.css";
-import ScModal from "../../common/Modal/ScModal";
+import ScModal from "../ScModal";
 import ButtonLight from "../../common/Button/ButtonLight";
 const { Text } = Typography;
 

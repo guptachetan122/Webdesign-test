@@ -2,7 +2,7 @@
 import React from "react";
 import { Avatar, Col, Divider, Dropdown, Menu, Row } from "antd";
 import ButtonLight from "../../common/Button/ButtonLight";
-import ScModal from "../../common/Modal/ScModal";
+import ScModal from "../../sc/ScModal";
 import styles from "./FeedReply.module.css";
 import { DotsHorizontalIcon } from "@heroicons/react/solid";
 import SeeMore from "../../common/SeeMore";

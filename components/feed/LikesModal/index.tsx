@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Modal, Button, Typography } from "antd";
 import styles from "./LikesModal.module.css";
-import Member from "../../../sc/Member";
+import Member from "../../sc/Member";
 import {
   disableBodyScroll,
   enableBodyScroll,

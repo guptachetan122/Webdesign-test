@@ -1,5 +1,5 @@
 import React, { ReactChildren, ReactChild } from "react";
-import Header from "../Header";
+import Header from "./Header";
 import { BackTop } from "antd";
 import styles from "./Layout.module.css";
 import { useRouter } from "next/router";

@@ -2,7 +2,7 @@ import { SearchOutlined } from '@ant-design/icons';
 import { Col, Input, Row } from 'antd';
 import React, { useState } from 'react'
 import ClubhouseCard from '../../components/clubhouse/ClubhouseCard';
-import Sidebar from '../../ui/Sidebar';
+import Sidebar from '../../components/Layout/Sidebar';
 import styles from "../../styles/Clubhouse.module.css";
 import { Tag } from "antd";
 import ClubhouseTags from '../../components/clubhouse/ClubhouseTags';

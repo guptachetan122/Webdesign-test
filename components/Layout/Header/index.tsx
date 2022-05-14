@@ -12,7 +12,7 @@ import {
 import Image from "next/image";
 import styles from "./Header.module.css";
 import Link from "next/link";
-import { useAppDispatch } from "../../app/hooks";
+import { useAppDispatch } from "../../../app/hooks";
 import { useRouter } from "next/router";
 import Subheader from "../Subheader";
 import {
@@ -23,7 +23,7 @@ import {
   messageNavbar,
   myNetworkNavbar,
   superconnectionNavbar,
-} from "../../constants";
+} from "../../../constants";
 import ProfileDrawer from "../Drawer";
 import { Sticky, StickyProvider } from "react-stickup";
 

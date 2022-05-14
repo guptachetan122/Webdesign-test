@@ -1,0 +1,158 @@
+.Card {
+  background-color: #fafafa;
+  margin: 1.5rem 0rem;
+  border-radius: 10px;
+  padding: 1rem 0rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profileAvatar {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #f42b4d;
+  border-radius: 40px;
+}
+
+.MainColumn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.MainColumn2 {
+  padding: 1rem 3rem;
+}
+
+.Wrapper {
+  width: 100%;
+}
+
+.DetailRow {
+  margin: 1rem 0rem;
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.PromptsRow {
+  width: 100%;
+}
+
+.ChRow {
+  width: 100%;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid #313131;
+}
+
+.Name {
+  font-size: 1.8rem;
+  color: #313131;
+  font-weight: 700;
+  
+}
+
+.Description {
+  font-size: 1.6rem;
+  color: #616161;
+  
+}
+
+.SubDescription {
+  font-size: 1.4rem;
+  color: #616161;
+  margin-right: 2rem;
+  /* display: flex;
+  justify-content: left;
+  align-items: center; */
+  
+}
+
+.TagButton {
+  width: 80%;
+  background: none;
+  border: 1px solid #616161;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
+  margin: 0.5rem 0rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.TagButtonActive {
+  width: 80%;
+  background: none;
+  color: orangered;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
+  margin: 0.5rem 0rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.ProfileIcon {
+  height: 1.4rem;
+  width: 1.4rem;
+  margin-right: 0.5rem;
+}
+
+.EditIcon {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.SeeAll {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: #fa541a;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  text-decoration: underline;
+}
+
+#TextArea {
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #919191;
+  box-shadow: none;
+}
+
+.EditPromptText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background: #fafafa;
+  padding: 0.5rem 2rem;
+  margin-top: 1.5rem;
+  border: 1px solid #313131;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.item {
+  position: relative;
+  /* padding-top:20px; */
+  /* display:inline-block; */
+  padding: 0%;
+  margin: 0%;
+}
+.notify_badge {
+  position: absolute;
+  margin: 0%;
+  padding: 0%;
+  right: -5%;
+  top: -55%;
+}
+
+.notify_badge_style {
+  /* text-align: center; */
+  color: #313131;
+}

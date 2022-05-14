@@ -1,0 +1,78 @@
+.Card {
+  background-color: #fafafa;
+  margin: 1.5rem 0rem;
+  border-radius: 10px;
+  padding: 1rem 0rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.TopRow{
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.Row {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.MainColumn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.Splide {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+}
+
+.PromptsWrapper {
+  width: 80%;
+  padding: 3rem 2rem;
+  margin: 2rem 2rem;
+  background-color: #ececec;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.Title {
+  font-size: 1.8rem;
+  color: #313131;
+  font-weight: 700;
+}
+
+.Description {
+  font-size: 1.6rem;
+  color: #616161;
+}
+
+#PromptsArrow {
+  /* top: '0%'; */
+  min-height: "100%";
+  background-color: orange;
+  color: "#313131";
+}
+
+.TriggerButton {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.EditIcon {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+

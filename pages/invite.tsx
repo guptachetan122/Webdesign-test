@@ -3,7 +3,7 @@ import { Card, Carousel, Col, Input, Progress, Row, Typography } from "antd";
 import React, { useState } from "react";
 import BackHeader from "../components/common/BackHeader";
 import styles from "../styles/Invite.module.css";
-import Sidebar from "../ui/Sidebar";
+import Sidebar from "../components/Layout/Sidebar";
 
 const { Text } = Typography;
 

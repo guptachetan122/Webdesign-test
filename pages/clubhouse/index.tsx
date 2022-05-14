@@ -4,11 +4,11 @@ import { Col, Row, Typography } from "antd";
 import Link from "next/link";
 import React from "react";
 import ClubhouseCard from "../../components/clubhouse/ClubhouseCard";
-import ClubhouseModal from "../../components/common/Modal/ClubhouseModal";
-import Sidebar from "../../ui/Sidebar";
+import ClubhouseModal from "../../components/clubhouse/Modals/ClubhouseModal";
+import Sidebar from "../../components/Layout/Sidebar";
 import styles from "../../styles/Clubhouse.module.css";
 import { UserGroupIcon as ChInactive } from "@heroicons/react/outline";
-import CreateChModal from "../../components/common/Modal/CreateChModal";
+import CreateChModal from "../../components/clubhouse/Modals/CreateChModal";
 
 const { Text } = Typography;
 const Starred = () => {

@@ -1,6 +1,6 @@
 import { Card, Carousel, Col, Input, Row, Typography } from "antd";
 import React, { useState } from "react";
-import Sidebar from "../../ui/Sidebar";
+import Sidebar from "../../components/Layout/Sidebar";
 import styles from "../../styles/Feed.module.css";
 import FeedInput from "../../components/feed/FeedInput";
 import FeedCard from "../../components/feed/FeedCard";

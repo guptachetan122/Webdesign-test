@@ -91,6 +91,7 @@ const ButtonLight = ({ name = "", msgs = "", onlyIcon = false }) => {
       {name == "got it!" || name == "cool!" ? (
         <button className={styles.ChatButton}>{name}</button>
       ) : null}
+
       {name == "rate coach" ? (
         <button className={styles.rateButton}>{name}</button>
       ) : (

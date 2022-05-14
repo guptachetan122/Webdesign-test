@@ -1,6 +1,6 @@
 import { Col, Row, Typography } from "antd";
 import React from "react";
-import Sidebar from "../../ui/Sidebar";
+import Sidebar from "../../components/Layout/Sidebar";
 import styles from "../../styles/Learn.module.css";
 import PastBooking from "../../components/coaching/PastBooking";
 const { Text } = Typography;
