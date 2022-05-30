@@ -7,6 +7,7 @@ import store  from "../app/store";
 import { logout, setCredentials } from "../components/auth/authSlice";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+// console.log(BASE_URL)
 
 const server = axios.create({
   baseURL: `${BASE_URL}`,

@@ -31,11 +31,10 @@ const ProfileDrawer = () => {
         visible={visible}
         placement="left"
       >
-        {" "}
         <div>
-          {" "}
+
           <Row className={styles.Row}>
-            {" "}
+  
             <Avatar
               className={styles.Avatar}
               src={"/assets/images/Ragini.png"}
@@ -48,9 +47,9 @@ const ProfileDrawer = () => {
               </Row>
               <Row>
                 <Link href="/profile/id" passHref>
-                  <Text onClick={onClose} className={styles.Link}>
+                  <a onClick={onClose} className={styles.Link}>
                     view my profile
-                  </Text>
+                  </a>
                 </Link>
               </Row>
             </div>
@@ -64,7 +63,6 @@ const ProfileDrawer = () => {
                 <Text className={styles.Text}>share feedback</Text>
               </Row>
               <Row className={styles.SubRow}>
-                {" "}
                 <Text className={styles.Text}>member stories</Text>
               </Row>
               <Row className={styles.SubRow}>

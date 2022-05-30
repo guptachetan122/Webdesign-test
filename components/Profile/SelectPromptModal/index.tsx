@@ -1,6 +1,6 @@
 import { Col, Modal, Row, Typography } from "antd";
 import React, { useState } from "react";
-import styles from "../Profile.module.css";
+import styles from "./SelectPromptModal.module.css";
 import modalStyles from "../ProfileModals.module.css";
 import { prompts } from "../../../constants";
 import { useMediaQuery } from "../../../utils/useMediaQuery";
@@ -15,6 +15,15 @@ const SelectPrompts = ({ editMode = false }) => {
   const [width] = useMediaQuery();
 
   const promptsData = useAppSelector((state) => state.promptSlice);
+  let length = 0;
+  const calLength = () => {
+    promptsData.map((item) => {
+      if (item.description != "") {
+        length++;
+      }
+    });
+    return length;
+  };
 
   const showModal = () => {
     setIsModalVisible(true);
@@ -25,7 +34,11 @@ const SelectPrompts = ({ editMode = false }) => {
   };
 
   const handleUpdate = () => {
-    setIsModalVisible(false);
+    if (calLength() < 3) {
+      alert("select min 3 prompts");
+    } else {
+      setIsModalVisible(false);
+    }
   };
 
   return (
@@ -49,19 +62,19 @@ const SelectPrompts = ({ editMode = false }) => {
         footer={null}
       >
         <div>
-          <Row className={styles.DetailRow}>
-            <Text className={styles.Name}>going good!</Text>
+          <Row className={modalStyles.DetailRow}>
+            <Text className={modalStyles.Title}>going good!</Text>
           </Row>
-          <Row className={styles.DetailRow}>
-            <Text className={styles.Description}>
-              add upto 3 prompts to your profile,
-              <br /> break the ice and invite some great conversations your way!
+          <Row className={modalStyles.DetailRow}>
+            <Text className={modalStyles.Description}>
+              add minimum 3 prompts to your profile,
+              <br />break the ice and invite some great conversations your way!
             </Text>
           </Row>
-          <Row className={styles.DetailRow}>
+          <Row className={modalStyles.DetailRow}>
             {promptsData?.map((item) => {
               return (
-                <Row className={styles.PromptsRow} key={item.title}>
+                <Row className={modalStyles.PromptsRow} key={item.title}>
                   <button
                     className={
                       item?.description != ""
@@ -87,7 +100,11 @@ const SelectPrompts = ({ editMode = false }) => {
               </button> */}
 
               <button
-                className={modalStyles.GradientButton}
+                className={
+                  calLength() < 4
+                    ? modalStyles.GradientButtonBlur
+                    : modalStyles.GradientButton
+                }
                 onClick={handleUpdate}
               >
                 update

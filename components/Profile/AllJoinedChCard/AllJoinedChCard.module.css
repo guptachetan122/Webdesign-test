@@ -10,7 +10,7 @@
 .MainColumn {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
+  align-items: center;
   padding: 1rem 3rem;
 }
 
@@ -28,38 +28,35 @@
   width: 100%;
 }
 
-.PromptsRow {
+.ChRow {
   width: 100%;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid #313131;
 }
 
 .Name {
   font-size: 1.8rem;
   color: #313131;
   font-weight: 700;
-  /* white-space:pre */
-  white-space: pre-wrap;
+  
 }
 
-.Description {
+.SubDescription {
   font-size: 1.4rem;
   color: #616161;
   margin-right: 2rem;
   /* display: flex;
   justify-content: left;
   align-items: center; */
-  white-space: pre-wrap;
 }
 
-.EditIcon {
-  margin-top: 1rem;
+.SeeAll {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
+  color: #fa541a;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  text-decoration: underline;
 }
-
-#TextArea {
-  border-radius: 20px;
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
-  border: 1px solid #919191;
-  box-shadow: none;
-}
-

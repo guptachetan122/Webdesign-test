@@ -7,10 +7,17 @@
     0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
+.profileAvatar {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #f42b4d;
+  border-radius: 40px;
+}
+
 .MainColumn {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
+  align-items: center;
   padding: 1rem 3rem;
 }
 
@@ -32,22 +39,39 @@
   width: 100%;
 }
 
+.ChRow {
+  width: 100%;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid #313131;
+}
+
 .Name {
   font-size: 1.8rem;
   color: #313131;
   font-weight: 700;
-  /* white-space:pre */
-  white-space: pre-wrap;
+  
 }
 
 .Description {
+  font-size: 1.6rem;
+  color: #616161;
+  
+}
+
+.SubDescription {
   font-size: 1.4rem;
   color: #616161;
   margin-right: 2rem;
   /* display: flex;
   justify-content: left;
   align-items: center; */
-  white-space: pre-wrap;
+  
+}
+
+.ProfileIcon {
+  height: 1.4rem;
+  width: 1.4rem;
+  margin-right: 0.5rem;
 }
 
 .EditIcon {
@@ -61,5 +85,10 @@
   margin-bottom: 1rem;
   border: 1px solid #919191;
   box-shadow: none;
+}
+
+.EditPromptText {
+  display: flex;
+  justify-content: space-between;
 }
 

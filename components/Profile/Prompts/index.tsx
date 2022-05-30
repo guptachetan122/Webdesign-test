@@ -24,9 +24,9 @@ const Prompts = () => {
     return length;
   };
   console.log(promptsData);
-  return calLength() < 1 ? (
+  return (
     <>
-      <div className={styles.Card}>
+      <div className={calLength() < 3 ? styles.Card : styles.Card2}>
         <Row className={styles.TopRow}>
           <div className={styles.Title}>Know me better</div>
         </Row>
@@ -34,8 +34,16 @@ const Prompts = () => {
           <Row justify="center" align="middle">
             <div className={styles.PromptsWrapper}>
               <Row justify="center">
-                members would love to know you better and we have added prompts
-                to enable that. show us your fun side.
+                <p>
+                  members would love to know you better and we have added
+                  prompts to enable that. show us your fun side.
+                  <br />
+                  <br />
+                  <span className={styles.minPrompts}>
+                    answer minimum of 3 prompts{" "}
+                  </span>
+                  to show all prompts on your profile
+                </p>
               </Row>
               <Row justify="center" align="middle">
                 {/* <button className={styles.button}>+ answer prompts</button> */}
@@ -45,51 +53,53 @@ const Prompts = () => {
           </Row>
         </div>
       </div>
-    </>
-  ) : (
-    <div className={styles.Card}>
-      <Row>
-        <Col span={22} className={styles.MainColumn}>
-          <div>
-            <Row className={styles.Row}>
-              <Text className={styles.Title}>Know me better</Text>
-            </Row>
-          </div>
-        </Col>
-        <Col span={2}>
-          {/* <div className={styles.TriggerButton} onClick={showModal}>
+
+      <div className={calLength() < 3 ? styles.Card2 : styles.Card}>
+        <Row>
+          <Col span={22} className={styles.MainColumn}>
+            <div>
+              <Row className={styles.Row}>
+                <Text className={styles.Title}>Know me better</Text>
+              </Row>
+            </div>
+          </Col>
+          <Col span={2}>
+            {/* <div className={styles.TriggerButton} onClick={showModal}>
             <Edit3 className={styles.EditIcon} />
           </div> */}
-          <SelectPrompts editMode />
-        </Col>
-      </Row>
-      <Row justify="center">
-        <Splide
-          aria-label="My Favorite Images"
-          options={{
-            rewind: true,
-            // width: 800,
-            // gap: "1rem",
-            type: "slide",
-          }}
-        >
-          {promptsData?.map((item) => {
-            return item.description != "" ? (
-              <SplideSlide key={item.title} className={styles.Splide}>
-                <div className={styles.PromptsWrapper}>
-                  <Row className={styles.Row}>
-                    <div className={styles.Title}>{item.title}</div>
-                  </Row>
-                  <Row className={styles.Row}>
-                    <div className={styles.Description}>{item.description}</div>
-                  </Row>
-                </div>
-              </SplideSlide>
-            ) : null;
-          })}
-        </Splide>
-      </Row>
-    </div>
+            <SelectPrompts editMode />
+          </Col>
+        </Row>
+        <Row justify="center">
+          <Splide
+            aria-label="My Favorite Images"
+            options={{
+              rewind: true,
+              // width: 800,
+              // gap: "1rem",
+              type: "slide",
+            }}
+          >
+            {promptsData?.map((item) => {
+              return item.description != "" ? (
+                <SplideSlide key={item.title} className={styles.Splide}>
+                  <div className={styles.PromptsWrapper}>
+                    <Row className={styles.Row}>
+                      <div className={styles.Title}>{item.title}</div>
+                    </Row>
+                    <Row className={styles.Row}>
+                      <div className={styles.Description}>
+                        {item.description}
+                      </div>
+                    </Row>
+                  </div>
+                </SplideSlide>
+              ) : null;
+            })}
+          </Splide>
+        </Row>
+      </div>
+    </>
   );
 };
 

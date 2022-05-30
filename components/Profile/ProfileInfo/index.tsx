@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import { Avatar, Col, Input, Modal, Row, Typography } from "antd";
-import styles from "../Profile.module.css";
+import styles from "./ProfileInfo.module.css";
 import modalStyles from "../ProfileModals.module.css";
 import { companies, ProfileDetail, searchFilterTags } from "../../../constants";
 import { Briefcase, Calendar, Edit3, MapPin, Zap } from "react-feather";

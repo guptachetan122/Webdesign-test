@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Col, Row, Typography } from "antd";
-import styles from "../Profile.module.css";
+import styles from "./AllJoinedChCard.module.css";
 import { ProfileDetail } from "../../../constants";
 
 const { Text } = Typography;

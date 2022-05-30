@@ -1,0 +1,33 @@
+.EditPromptText {
+  display: flex;
+  justify-content: space-between;
+}
+
+#TextArea {
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #919191;
+  box-shadow: none;
+}
+
+.item {
+  position: relative;
+  /* padding-top:20px; */
+  /* display:inline-block; */
+  padding: 0%;
+  margin: 0%;
+}
+
+.notify_badge {
+  position: absolute;
+  margin: 0%;
+  padding: 0%;
+  right: -5%;
+  top: -55%;
+}
+
+.notify_badge_style {
+  /* text-align: center; */
+  color: #313131;
+}

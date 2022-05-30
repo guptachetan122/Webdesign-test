@@ -5,6 +5,7 @@ import modalStyles from "../ProfileModals.module.css";
 import { companies, ProfileDetail, searchFilterTags } from "../../../constants";
 import { Edit3 } from "react-feather";
 import TextArea from "antd/lib/input/TextArea";
+import { useMediaQuery } from "../../../utils/useMediaQuery";
 
 const { Text } = Typography;
 
@@ -17,6 +18,7 @@ const TagsCard = ({
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [array, updateArray] = useState(ProfileArray);
   const [arrayDisplay, updateDisplayArray] = useState(ProfileArray);
+  const [width] = useMediaQuery();
 
   const showModal = () => {
     updateArray(arrayDisplay);
@@ -33,7 +35,9 @@ const TagsCard = ({
       updateArray(filteredArray);
     } else {
       if (industryTags) {
-        array.length < 3 ? updateArray((arr) => [...arr, item]) : null;
+        array.length < 3
+          ? updateArray((arr) => [...arr, item])
+          : alert("you can select max 3 tags only");
       } else {
         updateArray((arr) => [...arr, item]);
       }
@@ -78,7 +82,7 @@ const TagsCard = ({
         visible={isModalVisible}
         onCancel={handleCancel}
         footer={null}
-        width={500}
+        width={width > 2500 ? "40%" : width < 800 ? "90%" : "50%"}
       >
         <div>
           <Row className={styles.ModalRow}>
@@ -86,7 +90,8 @@ const TagsCard = ({
               {Title} {industryTags ? "(max 3 Tags)" : null}
             </Text>
           </Row>
-          <Row className={styles.ModalRow}>
+
+          <Row>
             {ModalArray?.map((item) => {
               return (
                 <button

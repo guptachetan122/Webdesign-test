@@ -1,6 +1,6 @@
 import { Col, Input, Modal, Row, Typography } from "antd";
 import React, { useState } from "react";
-import styles from "../Profile.module.css";
+import styles from "./EditPrompt.module.css";
 import modalStyles from "../ProfileModals.module.css";
 import { prompts } from "../../../constants";
 import { useMediaQuery } from "../../../utils/useMediaQuery";
@@ -37,6 +37,7 @@ const EditPrompt = ({
   const isPresent = (item: any) => {
     return item?.description != "" && item?.description === promptDescription;
   };
+  
   const showModal = () => {
     setIsEditModalVisible(true);
   };
@@ -64,6 +65,7 @@ const EditPrompt = ({
       description: description.trim(),
     };
     dispatch(removePrompt(data));
+    setDescription("");
     setIsEditModalVisible(false);
   };
 
@@ -72,22 +74,11 @@ const EditPrompt = ({
       <div className={styles.item}>
         {promptsData.some(isPresent) ? (
           <span className={styles.notify_badge}>
-            <XCircle className={styles.notify_badge_style} />
+            <XCircle className={styles.notify_badge_style} onClick={handleRemove}/>
           </span>
-        ) : (
-          null
-        )}
+        ) : null}
 
-        <div
-          className={styles.EditPromptText}
-          onClick={
-            calLength() < 3 || promptsData.some(isPresent)
-              ? showModal
-              : () => {
-                  alert("max 3 propmts");
-                }
-          }
-        >
+        <div className={styles.EditPromptText} onClick={showModal}>
           <div>{promptTitle}</div>
           {promptsData.some(isPresent) ? (
             <div>
@@ -107,6 +98,7 @@ const EditPrompt = ({
         visible={isEditModalVisible}
         onCancel={handleCancel}
         footer={null}
+        afterClose={()=> null}
       >
         <div className={modalStyles.Wrapper}>
           {" "}

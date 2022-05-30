@@ -59,7 +59,7 @@ const TextCard = ({ Title = "", Title2 = "", Input = "", Input2 = "" }) => {
                 <div className={styles.Name}>{Title}</div>
               </div>
               <div className={styles.DetailRow}>
-                <div className={styles.SubDescription}>
+                <div className={styles.Description}>
                   {finalValue}
                 </div>
               </div>
@@ -72,7 +72,7 @@ const TextCard = ({ Title = "", Title2 = "", Input = "", Input2 = "" }) => {
                     <div className={styles.Name}>{Title2}</div>
                   </div>
                   <div className={styles.DetailRow}>
-                    <div className={styles.SubDescription}>
+                    <div className={styles.Description}>
                       {finalValue2}
                     </div>
                   </div>

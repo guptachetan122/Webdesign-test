@@ -101,7 +101,7 @@ const FeedCard = ({ isConnect = false, isLoggedIn = false }) => {
           </Col>
           
           <Col span={6} className={styles.ButtonColumn}>
-            {isConnect ? <ButtonLight name="chat" /> : <ScModal />}
+            {isConnect ? <ButtonLight name="chat" onlyIcon/> : <ScModal onlyIcon/>}
           </Col>
         </Row>
         <Row className={styles.Row}>
